@@ -1,0 +1,3234 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   TERN Sensors Ontology
+  </title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div id="pylode">
+   made by
+   <a href="http://github.com/rdflib/pyLODE">
+    pyLODE
+   </a>
+  </div>  <a href="https://www.tern.org.au">
+   <img alt="TERN logo." src="https://www.tern.org.au/rs/7/sites/998/custom_files/tpl_images/assets/images/logo.png"/>
+  </a>
+  <h1>
+   TERN Sensors Ontology
+  </h1>
+  <section id="metadata">
+   <h2 style="display:none;">
+    Metadata
+   </h2>
+   <dl>
+    <dt>
+     IRI
+    </dt>
+    <dd>
+     <code>
+      https://w3id.org/tern/ontologies/sensor/
+     </code>
+    </dd>
+    <dt>
+     Version Information
+    </dt>
+    <dd>
+     Draft
+    </dd>
+    <dt>
+     Imports
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#">
+      skos:
+     </a>
+     <br/>
+     <a href="http://www.w3.org/ns/ssn/">
+      ssn:
+     </a>
+     <br/>
+     <a href="http://www.w3.org/ns/sosa/">
+      sosa:
+     </a>
+     <br/>
+     <a href="http://www.w3.org/ns/ssn/systems/">
+      http://www.w3.org/ns/ssn/systems/
+     </a>
+     <br/>
+     <a href="http://topbraid.org/schema/">
+      http://topbraid.org/schema/
+     </a>
+     <br/>
+    </dd>
+    <dt>
+     Ontology Source
+    </dt>
+    <dd>
+     <a href="tern-sensor.ttl">
+      RDF (turtle)
+     </a>
+    </dd>
+   </dl>
+  </section>
+  <section id="toc">
+   <h2>
+    Table of Contents
+   </h2>
+   <ol>
+    <li>
+     <a href="#overview">
+      Overview
+     </a>
+    </li>
+    <li>
+     <a href="#classes">
+      Classes
+     </a>
+    </li>
+    <li>
+     <a href="#namespaces">
+      Namespaces
+     </a>
+    </li>
+   </ol>
+  </section>
+  <section id="overview">
+   <h2>
+    Overview
+   </h2>
+   <p style="padding-bottom: 1rem;">
+    An overview of the TERN Sensors ontology.
+   </p>
+   <figure>
+    <img alt="TERN Sensors ontology overview diagram." src="tern-sensor.ttl.txt.svg"/>
+    <figcaption style="padding-bottom: 3rem">
+     <strong>
+      Figure 1:
+     </strong>
+     TERN Sensors ontology overview.
+    </figcaption>
+   </figure>
+  </section>
+  <section id="classes">
+   <h2>
+    Classes
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &uparrow
+     </a>
+    </span>
+   </h2>
+   <ul class="hlist">
+    <li>
+     <a href="#2Dsonicanemometer">
+      2D sonic anemometer
+     </a>
+    </li>
+    <li>
+     <a href="#3Dsonicanemometer">
+      3D sonic anemometer
+     </a>
+    </li>
+    <li>
+     <a href="#Actinometer">
+      Actinometer
+     </a>
+    </li>
+    <li>
+     <a href="#Aircraft">
+      Aircraft
+     </a>
+    </li>
+    <li>
+     <a href="#Anemometer">
+      Anemometer
+     </a>
+    </li>
+    <li>
+     <a href="#Aneroidbarometer">
+      Aneroid barometer
+     </a>
+    </li>
+    <li>
+     <a href="#Barometer">
+      Barometer
+     </a>
+    </li>
+    <li>
+     <a href="#Capactitivesensor">
+      Capactitive sensor
+     </a>
+    </li>
+    <li>
+     <a href="#Ceilometer">
+      Ceilometer
+     </a>
+    </li>
+    <li>
+     <a href="#Cupanemometer">
+      Cup anemometer
+     </a>
+    </li>
+    <li>
+     <a href="#Dendrometer">
+      Dendrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Dewpointhygrometer">
+      Dew point hygrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Drone">
+      Drone
+     </a>
+    </li>
+    <li>
+     <a href="#Ecologicalplot">
+      Ecological plot
+     </a>
+    </li>
+    <li>
+     <a href="#Electromagneticradiationabsorptionhygrometer">
+      Electromagnetic radiation absorption hygrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Electronicbarometer">
+      Electronic barometer
+     </a>
+    </li>
+    <li>
+     <a href="#Fixedplatform">
+      Fixed platform
+     </a>
+    </li>
+    <li>
+     <a href="#Fluxtower">
+      Flux tower
+     </a>
+    </li>
+    <li>
+     <a href="#Fluxtowersensor">
+      Flux tower sensor
+     </a>
+    </li>
+    <li>
+     <a href="#Frequencydomainreflectometer">
+      Frequency domain reflectometer
+     </a>
+    </li>
+    <li>
+     <a href="#Gravimetrichygrometer">
+      Gravimetric hygrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Hairhygrometer">
+      Hair hygrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Heatfluxsensor">
+      Heat flux sensor
+     </a>
+    </li>
+    <li>
+     <a href="#Hotwireanemometer">
+      Hot wire anemometer
+     </a>
+    </li>
+    <li>
+     <a href="#Hygrometer">
+      Hygrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Infraredgasanalyzer">
+      Infrared gas analyzer
+     </a>
+    </li>
+    <li>
+     <a href="#Lithiumchlorideheatedcondensationhygrometer">
+      Lithium chloride heated condensation hygrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Mercurybarometer">
+      Mercury barometer
+     </a>
+    </li>
+    <li>
+     <a href="#Mobileplatform">
+      Mobile platform
+     </a>
+    </li>
+    <li>
+     <a href="#Netradiometer">
+      Net radiometer
+     </a>
+    </li>
+    <li>
+     <a href="#Opticalraingauge">
+      Optical rain gauge
+     </a>
+    </li>
+    <li>
+     <a href="#Psychrometer">
+      Psychrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Pyranometer">
+      Pyranometer
+     </a>
+    </li>
+    <li>
+     <a href="#Pyrgeometer">
+      Pyrgeometer
+     </a>
+    </li>
+    <li>
+     <a href="#Pyrheliometer">
+      Pyrheliometer
+     </a>
+    </li>
+    <li>
+     <a href="#Pyrradiometer">
+      Pyrradiometer
+     </a>
+    </li>
+    <li>
+     <a href="#Quantumsensor">
+      Quantum sensor
+     </a>
+    </li>
+    <li>
+     <a href="#Radiationsensor">
+      Radiation sensor
+     </a>
+    </li>
+    <li>
+     <a href="#Radiometer">
+      Radiometer
+     </a>
+    </li>
+    <li>
+     <a href="#Raingauge">
+      Rain gauge
+     </a>
+    </li>
+    <li>
+     <a href="#Resistancethermometer">
+      Resistance thermometer
+     </a>
+    </li>
+    <li>
+     <a href="#Resistivehygrometer">
+      Resistive hygrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Sapflowsensor">
+      Sap flow sensor
+     </a>
+    </li>
+    <li>
+     <a href="#Satellite">
+      Satellite
+     </a>
+    </li>
+    <li>
+     <a href="#Soilmoisturesensor">
+      Soil moisture sensor
+     </a>
+    </li>
+    <li>
+     <a href="#Sonicanemometer">
+      Sonic anemometer
+     </a>
+    </li>
+    <li>
+     <a href="#Spectrometer">
+      Spectrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Supersite">
+      Super site
+     </a>
+    </li>
+    <li>
+     <a href="#Temperaturesensor">
+      Temperature sensor
+     </a>
+    </li>
+    <li>
+     <a href="#Thermistor">
+      Thermistor
+     </a>
+    </li>
+    <li>
+     <a href="#Thermocouple">
+      Thermocouple
+     </a>
+    </li>
+    <li>
+     <a href="#Timedomainreflectometer">
+      Time domain reflectometer
+     </a>
+    </li>
+    <li>
+     <a href="#Tippingbucketraingauge">
+      Tipping bucket rain gauge
+     </a>
+    </li>
+    <li>
+     <a href="#Weatherstation">
+      Weather station
+     </a>
+    </li>
+    <li>
+     <a href="#Weighingprecipitationgauge">
+      Weighing precipitation gauge
+     </a>
+    </li>
+    <li>
+     <a href="#Windsensor">
+      Wind sensor
+     </a>
+    </li>
+   </ul>
+   <div class="entity class" id="2Dsonicanemometer">
+    <h3>
+     2D sonic anemometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/SonicAnemometer">
+        tern-sensor:SonicAnemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="3Dsonicanemometer">
+    <h3>
+     3D sonic anemometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/SonicAnemometer">
+        tern-sensor:SonicAnemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Actinometer">
+    <h3>
+     Actinometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Actinometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Actinometers are instruments used to measure the heating power of radiation.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Radiometer">
+        tern-sensor:Radiometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/NetRadiometer">
+        tern-sensor:NetRadiometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/Pyranometer">
+        tern-sensor:Pyranometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Aircraft">
+    <h3>
+     Aircraft
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Aircraft
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/MobilePlatform">
+        tern-sensor:MobilePlatform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Drone">
+        tern-sensor:Drone
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Anemometer">
+    <h3>
+     Anemometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Anemometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       An anemometer is a device used for measuring wind speed and direction.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/WindSensor">
+        tern-sensor:WindSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/HotWireAnemometer">
+        tern-sensor:HotWireAnemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/SonicAnemometer">
+        tern-sensor:SonicAnemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/CupAnemometer">
+        tern-sensor:CupAnemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Aneroidbarometer">
+    <h3>
+     Aneroid barometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/AneroidBarometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Barometer">
+        tern-sensor:Barometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Barometer">
+    <h3>
+     Barometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Barometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A barometer is a scientific instrument that is used to measure air pressure in a certain environment.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FluxTowerSensor">
+        tern-sensor:FluxTowerSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/MercuryBarometer">
+        tern-sensor:MercuryBarometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/AneroidBarometer">
+        tern-sensor:AneroidBarometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/ElectronicBarometer">
+        tern-sensor:ElectronicBarometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Capactitivesensor">
+    <h3>
+     Capactitive sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/CapactitiveSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FluxTowerSensor">
+        tern-sensor:FluxTowerSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Ceilometer">
+    <h3>
+     Ceilometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Ceilometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Cupanemometer">
+    <h3>
+     Cup anemometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/CupAnemometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Anemometer">
+        tern-sensor:Anemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Dendrometer">
+    <h3>
+     Dendrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Dendrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Dendrometers are precision sensors that can measure the growth of plants. More specifically, dendrometers are used by researchers, growers and foresters to measure the growth of a stem, trunk, branch, roots or fruits over time.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Dewpointhygrometer">
+    <h3>
+     Dew point hygrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/DewPointHygrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Hygrometer">
+        tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Drone">
+    <h3>
+     Drone
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Drone
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Aircraft">
+        tern-sensor:Aircraft
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Ecologicalplot">
+    <h3>
+     Ecological plot
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/EcologicalPlot
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FixedPlatform">
+        tern-sensor:FixedPlatform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/SuperSite">
+        tern-sensor:SuperSite
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Electromagneticradiationabsorptionhygrometer">
+    <h3>
+     Electromagnetic radiation absorption hygrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/ElectromagneticRadiationHygrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Hygrometer">
+        tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Electronicbarometer">
+    <h3>
+     Electronic barometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/ElectronicBarometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Barometer">
+        tern-sensor:Barometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Fixedplatform">
+    <h3>
+     Fixed platform
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/FixedPlatform
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/EcologicalPlot">
+        tern-sensor:EcologicalPlot
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/FluxTower">
+        tern-sensor:FluxTower
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/WeatherStation">
+        tern-sensor:WeatherStation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Fluxtower">
+    <h3>
+     Flux tower
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/FluxTower
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FixedPlatform">
+        tern-sensor:FixedPlatform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Fluxtowersensor">
+    <h3>
+     Flux tower sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/FluxTowerSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Barometer">
+        tern-sensor:Barometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/InfraredGasAnalyzer">
+        tern-sensor:InfraredGasAnalyzer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/Hygrometer">
+        tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/WindSensor">
+        tern-sensor:WindSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/CapactitiveSensor">
+        tern-sensor:CapactitiveSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/RadiationSensor">
+        tern-sensor:RadiationSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/TemperatureSensor">
+        tern-sensor:TemperatureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Frequencydomainreflectometer">
+    <h3>
+     Frequency domain reflectometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/FrequencyDomainReflectometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A frequency domain reflectometry probe can measure the capitance from the change in frequency of a reflected radio wave or resonance frequency. An oscillator propagates an electromagnetic signal through a metal tine or other wave guide, and the difference in the output wave and the return wave frequency determines the soil moisture.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/SoilMoistureSensor">
+        tern-sensor:SoilMoistureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Gravimetrichygrometer">
+    <h3>
+     Gravimetric hygrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/GravimetricHygrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Hygrometer">
+        tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Hairhygrometer">
+    <h3>
+     Hair hygrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/HairHygrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A hygrometer that measures relative humidity by means of the variation in length of a strand of human hair.
+
+The length variation of a properly treated hair is 2%–2.5% when the humidity changes from 0%–100%. The hair hygrometer is considered to be a satisfactory instrument in situations where extreme and very low humidities are seldom or never found. The rate of response is very dependent on air temperature; the lag time increases with decreasing temperature. For air temperatures between 0° and 30°C and relative humidities between 20% and 80%, a good hair hygrometer should indicate 90% of a sudden change in humidity within about three minutes.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Hygrometer">
+        tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Heatfluxsensor">
+    <h3>
+     Heat flux sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/HeatFluxSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A heat flux sensor is a transducer that generates an electrical signal proportional to the total heat rate applied to the surface of the sensor. The measured heat rate is divided by the surface area of the sensor to determine the heat flux.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Hotwireanemometer">
+    <h3>
+     Hot wire anemometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/HotWireAnemometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Anemometer">
+        tern-sensor:Anemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Hygrometer">
+    <h3>
+     Hygrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Hygrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FluxTowerSensor">
+        tern-sensor:FluxTowerSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Psychrometer">
+        tern-sensor:Psychrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/LithiumChlorideHeatedCondensationHygrometer">
+        tern-sensor:LithiumChlorideHeatedCondensationHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/ElectromagneticRadiationHygrometer">
+        tern-sensor:ElectromagneticRadiationHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/DewPointHygrometer">
+        tern-sensor:DewPointHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/ResistiveHygrometer">
+        tern-sensor:ResistiveHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/HairHygrometer">
+        tern-sensor:HairHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/GravimetricHygrometer">
+        tern-sensor:GravimetricHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Infraredgasanalyzer">
+    <h3>
+     Infrared gas analyzer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/InfraredGasAnalyzer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FluxTowerSensor">
+        tern-sensor:FluxTowerSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Lithiumchlorideheatedcondensationhygrometer">
+    <h3>
+     Lithium chloride heated condensation hygrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/LithiumChlorideHeatedCondensationHygrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 °C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh).
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Hygrometer">
+        tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Mercurybarometer">
+    <h3>
+     Mercury barometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/MercuryBarometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Barometer">
+        tern-sensor:Barometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Mobileplatform">
+    <h3>
+     Mobile platform
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/MobilePlatform
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Satellite">
+        tern-sensor:Satellite
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/Aircraft">
+        tern-sensor:Aircraft
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Netradiometer">
+    <h3>
+     Net radiometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/NetRadiometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Actinometer">
+        tern-sensor:Actinometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Opticalraingauge">
+    <h3>
+     Optical rain gauge
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/OpticalRainGauge
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/RainGauge">
+        tern-sensor:RainGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Psychrometer">
+    <h3>
+     Psychrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Psychrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: 
+
+1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. 
+2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Hygrometer">
+        tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Pyranometer">
+    <h3>
+     Pyranometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Pyranometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m²) from the hemisphere above within a wavelength range 0.3 μm to 3 μm.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Actinometer">
+        tern-sensor:Actinometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Pyrgeometer">
+    <h3>
+     Pyrgeometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Pyrgeometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A pyrgeometer is a device that measures near-surface infra-red radiation spectrum in the wavelength spectrum approximately from 4.5 μm to 100 μm.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/RadiationSensor">
+        tern-sensor:RadiationSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Pyrheliometer">
+    <h3>
+     Pyrheliometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Pyrheliometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A pyrheliometer is an instrument for measurement of direct beam solar irradiance.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/RadiationSensor">
+        tern-sensor:RadiationSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Pyrradiometer">
+    <h3>
+     Pyrradiometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Pyrradiometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Radiometer">
+        tern-sensor:Radiometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Quantumsensor">
+    <h3>
+     Quantum sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/QuantumSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/RadiationSensor">
+        tern-sensor:RadiationSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Radiationsensor">
+    <h3>
+     Radiation sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/RadiationSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FluxTowerSensor">
+        tern-sensor:FluxTowerSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Pyrheliometer">
+        tern-sensor:Pyrheliometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/Pyrgeometer">
+        tern-sensor:Pyrgeometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/QuantumSensor">
+        tern-sensor:QuantumSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/Radiometer">
+        tern-sensor:Radiometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Radiometer">
+    <h3>
+     Radiometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Radiometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/RadiationSensor">
+        tern-sensor:RadiationSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Pyrradiometer">
+        tern-sensor:Pyrradiometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/Actinometer">
+        tern-sensor:Actinometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Raingauge">
+    <h3>
+     Rain gauge
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/RainGauge
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over an area in a predefined period of time.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/OpticalRainGauge">
+        tern-sensor:OpticalRainGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/TippingBucketRainGauge">
+        tern-sensor:TippingBucketRainGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/WeighingPrecipitationGauge">
+        tern-sensor:WeighingPrecipitationGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Resistancethermometer">
+    <h3>
+     Resistance thermometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/ResistanceThermometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/TemperatureSensor">
+        tern-sensor:TemperatureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Resistivehygrometer">
+    <h3>
+     Resistive hygrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/ResistiveHygrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Hygrometer">
+        tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Sapflowsensor">
+    <h3>
+     Sap flow sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/SapFlowSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Satellite">
+    <h3>
+     Satellite
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Satellite
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/MobilePlatform">
+        tern-sensor:MobilePlatform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Soilmoisturesensor">
+    <h3>
+     Soil moisture sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/SoilMoistureSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/TimeDomainReflectometer">
+        tern-sensor:TimeDomainReflectometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/FrequencyDomainReflectometer">
+        tern-sensor:FrequencyDomainReflectometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Sonicanemometer">
+    <h3>
+     Sonic anemometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/SonicAnemometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Anemometer">
+        tern-sensor:Anemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer">
+        tern-sensor:3DSonicAnemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer">
+        tern-sensor:2DSonicAnemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Spectrometer">
+    <h3>
+     Spectrometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Spectrometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Supersite">
+    <h3>
+     Super site
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/SuperSite
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/EcologicalPlot">
+        tern-sensor:EcologicalPlot
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Temperaturesensor">
+    <h3>
+     Temperature sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/TemperatureSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FluxTowerSensor">
+        tern-sensor:FluxTowerSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/ResistanceThermometer">
+        tern-sensor:ResistanceThermometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/Thermocouple">
+        tern-sensor:Thermocouple
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/sensor/Thermistor">
+        tern-sensor:Thermistor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Thermistor">
+    <h3>
+     Thermistor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Thermistor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A thermistor is a type of resistor whose resistance is dependent on temperature, more so than in standard resistors. The word is a combination of thermal and resistor. Thermistors are widely used as inrush current limiters, temperature sensors (negative temperature coefficient or NTC type typically), self-resetting overcurrent protectors, and self-regulating heating elements (positive temperature coefficient or PTC type typically).
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/TemperatureSensor">
+        tern-sensor:TemperatureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Thermocouple">
+    <h3>
+     Thermocouple
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/Thermocouple
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/TemperatureSensor">
+        tern-sensor:TemperatureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Timedomainreflectometer">
+    <h3>
+     Time domain reflectometer
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/TimeDomainReflectometer
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.
+
+Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/SoilMoistureSensor">
+        tern-sensor:SoilMoistureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Tippingbucketraingauge">
+    <h3>
+     Tipping bucket rain gauge
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/TippingBucketRainGauge
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/RainGauge">
+        tern-sensor:RainGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Weatherstation">
+    <h3>
+     Weather station
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/WeatherStation
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FixedPlatform">
+        tern-sensor:FixedPlatform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Weighingprecipitationgauge">
+    <h3>
+     Weighing precipitation gauge
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/WeighingPrecipitationGauge
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/RainGauge">
+        tern-sensor:RainGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Windsensor">
+    <h3>
+     Wind sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/sensor/WindSensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/FluxTowerSensor">
+        tern-sensor:FluxTowerSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="https://w3id.org/tern/ontologies/sensor/Anemometer">
+        tern-sensor:Anemometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="namespaces">
+   <h2>
+    Namespaces
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &uparrow
+     </a>
+    </span>
+   </h2>
+   <dl>
+    <dt>
+     owl
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/2002/07/owl#
+     </code>
+    </dd>
+    <dt>
+     rdf
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/1999/02/22-rdf-syntax-ns#
+     </code>
+    </dd>
+    <dt>
+     rdfs
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/2000/01/rdf-schema#
+     </code>
+    </dd>
+    <dt>
+     schema
+    </dt>
+    <dd>
+     <code>
+      http://schema.org/
+     </code>
+    </dd>
+    <dt>
+     skos
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/2004/02/skos/core#
+     </code>
+    </dd>
+    <dt>
+     sosa
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/ns/sosa/
+     </code>
+    </dd>
+    <dt>
+     ssn
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/ns/ssn/
+     </code>
+    </dd>
+    <dt>
+     tern-sensor
+    </dt>
+    <dd>
+     <code>
+      https://w3id.org/tern/ontologies/sensor/
+     </code>
+    </dd>
+    <dt>
+     xml
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/XML/1998/namespace
+     </code>
+    </dd>
+    <dt>
+     xsd
+    </dt>
+    <dd>
+     <code>
+      http://www.w3.org/2001/XMLSchema#
+     </code>
+    </dd>
+   </dl>
+  </section>
+  <section id="legend">
+   <h2>
+    Legend
+   </h2>
+   <table class="entity">
+    <tr>
+     <td>
+      <sup class="sup-c" title="Classes">
+       c
+      </sup>
+     </td>
+     <td>
+      Classes
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-op" title="Object Properties">
+       op
+      </sup>
+     </td>
+     <td>
+      Object Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-fp" title="Functional Properties">
+       fp
+      </sup>
+     </td>
+     <td>
+      Functional Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-dp" title="Data Properties">
+       dp
+      </sup>
+     </td>
+     <td>
+      Data Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-ap" title="Annotation Properties">
+       dp
+      </sup>
+     </td>
+     <td>
+      Annotation Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-p" title="Properties">
+       p
+      </sup>
+     </td>
+     <td>
+      Properties
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <sup class="sup-ni" title="Named Individuals">
+       ni
+      </sup>
+     </td>
+     <td>
+      Named Individuals
+     </td>
+    </tr>
+   </table>
+  </section>
+ </body>
+</html>

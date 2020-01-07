@@ -1,0 +1,453 @@
+# baseURI: https://w3id.org/tern/ontologies/sensor/
+# imports: http://topbraid.org/schema/
+# imports: http://www.w3.org/2004/02/skos/core#
+# imports: http://www.w3.org/ns/sosa/
+# imports: http://www.w3.org/ns/ssn/
+# imports: http://www.w3.org/ns/ssn/systems/
+# prefix: tern-sensor
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix tern-sensor: <https://w3id.org/tern/ontologies/sensor/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+tern-sensor:
+  a owl:Ontology ;
+  rdfs:label "TERN Sensors Ontology" ;
+  owl:imports <http://topbraid.org/schema/> ;
+  owl:imports skos: ;
+  owl:imports sosa: ;
+  owl:imports ssn: ;
+  owl:imports <http://www.w3.org/ns/ssn/systems/> ;
+  owl:versionInfo "Draft" ;
+.
+<https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys." ;
+  rdfs:label "2D sonic anemometer" ;
+  rdfs:subClassOf tern-sensor:SonicAnemometer ;
+.
+<https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers." ;
+  rdfs:label "3D sonic anemometer" ;
+  rdfs:subClassOf tern-sensor:SonicAnemometer ;
+.
+tern-sensor:Actinometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Actinometers are instruments used to measure the heating power of radiation." ;
+  rdfs:label "Actinometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Actinometer> ;
+  rdfs:subClassOf tern-sensor:Radiometer ;
+.
+tern-sensor:Aircraft
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Aircraft" ;
+  rdfs:subClassOf tern-sensor:MobilePlatform ;
+.
+tern-sensor:Anemometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "An anemometer is a device used for measuring wind speed and direction." ;
+  rdfs:label "Anemometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Anemometer> ;
+  rdfs:subClassOf tern-sensor:WindSensor ;
+.
+tern-sensor:AneroidBarometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid." ;
+  rdfs:label "Aneroid barometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers> ;
+  rdfs:subClassOf tern-sensor:Barometer ;
+.
+tern-sensor:Barometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A barometer is a scientific instrument that is used to measure air pressure in a certain environment." ;
+  rdfs:label "Barometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer> ;
+  rdfs:subClassOf tern-sensor:FluxTowerSensor ;
+.
+tern-sensor:CapactitiveSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor." ;
+  rdfs:label "Capactitive sensor" ;
+  rdfs:seeAlso <http://www.cs.cmu.edu/~ram/capsense/intro.html> ;
+  rdfs:subClassOf tern-sensor:FluxTowerSensor ;
+.
+tern-sensor:Ceilometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar." ;
+  rdfs:label "Ceilometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Ceilometer> ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-sensor:CupAnemometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft." ;
+  rdfs:label "Cup anemometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers> ;
+  rdfs:subClassOf tern-sensor:Anemometer ;
+.
+tern-sensor:Dendrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Dendrometers are precision sensors that can measure the growth of plants. More specifically, dendrometers are used by researchers, growers and foresters to measure the growth of a stem, trunk, branch, roots or fruits over time." ;
+  rdfs:label "Dendrometer" ;
+  rdfs:seeAlso <https://www.edaphic.com.au/dendrometers-multi-purpose-sensors/> ;
+  rdfs:seeAlso <https://www.edaphic.com.au/products/dendrometers/> ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-sensor:DewPointHygrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point." ;
+  rdfs:label "Dew point hygrometer" ;
+  rdfs:seeAlso <https://www.britannica.com/science/hygrometer#ref111343> ;
+  rdfs:subClassOf tern-sensor:Hygrometer ;
+.
+tern-sensor:Drone
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Drone" ;
+  rdfs:subClassOf tern-sensor:Aircraft ;
+.
+tern-sensor:EcologicalPlot
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Ecological plot" ;
+  rdfs:subClassOf tern-sensor:FixedPlatform ;
+.
+tern-sensor:ElectromagneticRadiationHygrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Electromagnetic radiation absorption hygrometer" ;
+  rdfs:subClassOf tern-sensor:Hygrometer ;
+.
+tern-sensor:ElectronicBarometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Electronic barometer" ;
+  rdfs:subClassOf tern-sensor:Barometer ;
+.
+tern-sensor:FixedPlatform
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Fixed platform" ;
+  rdfs:subClassOf sosa:Platform ;
+.
+tern-sensor:FluxTower
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Flux tower" ;
+  rdfs:subClassOf tern-sensor:FixedPlatform ;
+.
+tern-sensor:FluxTowerSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Flux tower sensor" ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-sensor:FrequencyDomainReflectometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A frequency domain reflectometry probe can measure the capitance from the change in frequency of a reflected radio wave or resonance frequency. An oscillator propagates an electromagnetic signal through a metal tine or other wave guide, and the difference in the output wave and the return wave frequency determines the soil moisture." ;
+  rdfs:label "Frequency domain reflectometer" ;
+  rdfs:seeAlso <https://soilsensor.com/articles/capacitance-frequency-frequency-domain-reflectometry-fdr/> ;
+  rdfs:subClassOf tern-sensor:SoilMoistureSensor ;
+  skos:altLabel "FDR" ;
+.
+tern-sensor:GravimetricHygrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air." ;
+  rdfs:label "Gravimetric hygrometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Hygrometer#Gravimetric> ;
+  rdfs:subClassOf tern-sensor:Hygrometer ;
+.
+tern-sensor:HairHygrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment """A hygrometer that measures relative humidity by means of the variation in length of a strand of human hair.
+
+The length variation of a properly treated hair is 2%–2.5% when the humidity changes from 0%–100%. The hair hygrometer is considered to be a satisfactory instrument in situations where extreme and very low humidities are seldom or never found. The rate of response is very dependent on air temperature; the lag time increases with decreasing temperature. For air temperatures between 0° and 30°C and relative humidities between 20% and 80%, a good hair hygrometer should indicate 90% of a sudden change in humidity within about three minutes.""" ;
+  rdfs:label "Hair hygrometer" ;
+  rdfs:seeAlso <http://glossary.ametsoc.org/wiki/Hair_hygrometer> ;
+  rdfs:subClassOf tern-sensor:Hygrometer ;
+.
+tern-sensor:HeatFluxSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A heat flux sensor is a transducer that generates an electrical signal proportional to the total heat rate applied to the surface of the sensor. The measured heat rate is divided by the surface area of the sensor to determine the heat flux." ;
+  rdfs:label "Heat flux sensor" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Heat_flux_sensor> ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-sensor:HotWireAnemometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity." ;
+  rdfs:label "Hot wire anemometer" ;
+  rdfs:seeAlso <https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer> ;
+  rdfs:subClassOf tern-sensor:Anemometer ;
+.
+tern-sensor:Hygrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces." ;
+  rdfs:label "Hygrometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Hygrometer> ;
+  rdfs:subClassOf tern-sensor:FluxTowerSensor ;
+.
+tern-sensor:InfraredGasAnalyzer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample." ;
+  rdfs:label "Infrared gas analyzer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Infrared_gas_analyzer> ;
+  rdfs:subClassOf tern-sensor:FluxTowerSensor ;
+.
+tern-sensor:LithiumChlorideHeatedCondensationHygrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 °C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh)." ;
+  rdfs:label "Lithium chloride heated condensation hygrometer" ;
+  rdfs:seeAlso <https://www.wmo.int/pages/prog/www/IMOP/publications/CIMO-Guide/Prelim_2018_ed/8_I_4_en_MR_clean.pdf> ;
+  rdfs:subClassOf tern-sensor:Hygrometer ;
+.
+tern-sensor:MercuryBarometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column." ;
+  rdfs:label "Mercury barometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer#Mercury_barometers> ;
+  rdfs:subClassOf tern-sensor:Barometer ;
+.
+tern-sensor:MobilePlatform
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Mobile platform" ;
+  rdfs:subClassOf sosa:Platform ;
+.
+tern-sensor:NetRadiometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications." ;
+  rdfs:label "Net radiometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Net_radiometer> ;
+  rdfs:subClassOf tern-sensor:Actinometer ;
+.
+tern-sensor:OpticalRainGauge
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded." ;
+  rdfs:label "Optical rain gauge" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge> ;
+  rdfs:subClassOf tern-sensor:RainGauge ;
+.
+tern-sensor:Psychrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment """A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: 
+
+1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. 
+2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid.""" ;
+  rdfs:label "Psychrometer" ;
+  rdfs:seeAlso <https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer> ;
+  rdfs:subClassOf tern-sensor:Hygrometer ;
+.
+tern-sensor:Pyranometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m²) from the hemisphere above within a wavelength range 0.3 μm to 3 μm." ;
+  rdfs:label "Pyranometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Pyranometer> ;
+  rdfs:subClassOf tern-sensor:Actinometer ;
+.
+tern-sensor:Pyrgeometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A pyrgeometer is a device that measures near-surface infra-red radiation spectrum in the wavelength spectrum approximately from 4.5 μm to 100 μm." ;
+  rdfs:label "Pyrgeometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Pyrgeometer> ;
+  rdfs:subClassOf tern-sensor:RadiationSensor ;
+.
+tern-sensor:Pyrheliometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A pyrheliometer is an instrument for measurement of direct beam solar irradiance." ;
+  rdfs:label "Pyrheliometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Pyrheliometer> ;
+  rdfs:subClassOf tern-sensor:RadiationSensor ;
+.
+tern-sensor:Pyrradiometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface." ;
+  rdfs:label "Pyrradiometer" ;
+  rdfs:seeAlso <https://www.energy.eu/dictionary/data/1446.html> ;
+  rdfs:subClassOf tern-sensor:Radiometer ;
+.
+tern-sensor:QuantumSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors." ;
+  rdfs:label "Quantum sensor" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Quantum_sensor> ;
+  rdfs:subClassOf tern-sensor:RadiationSensor ;
+.
+tern-sensor:RadiationSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Radiation sensor" ;
+  rdfs:subClassOf tern-sensor:FluxTowerSensor ;
+.
+tern-sensor:Radiometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector." ;
+  rdfs:label "Radiometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Radiometer> ;
+  rdfs:subClassOf tern-sensor:RadiationSensor ;
+.
+tern-sensor:RainGauge
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over an area in a predefined period of time." ;
+  rdfs:label "Rain gauge" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Rain_gauge> ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-sensor:ResistanceThermometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature." ;
+  rdfs:label "Resistance thermometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Resistance_thermometer> ;
+  rdfs:subClassOf tern-sensor:TemperatureSensor ;
+  skos:altLabel "Electrical resistance thermometer" ;
+.
+tern-sensor:ResistiveHygrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured." ;
+  rdfs:label "Resistive hygrometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Hygrometer#Resistive> ;
+  rdfs:subClassOf tern-sensor:Hygrometer ;
+  skos:altLabel "Electrical resistive hygrometer" ;
+.
+tern-sensor:SapFlowSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood." ;
+  rdfs:label "Sap flow sensor" ;
+  rdfs:seeAlso <https://www.edaphic.com.au/products/sap-flow-sensors/> ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-sensor:Satellite
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Satellite" ;
+  rdfs:subClassOf tern-sensor:MobilePlatform ;
+.
+tern-sensor:SoilMoistureSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Soil moisture sensor" ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-sensor:SonicAnemometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Sonic anemometer" ;
+  rdfs:subClassOf tern-sensor:Anemometer ;
+.
+tern-sensor:Spectrometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source." ;
+  rdfs:label "Spectrometer" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Spectroradiometer> ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-sensor:SuperSite
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Super site" ;
+  rdfs:subClassOf tern-sensor:EcologicalPlot ;
+.
+tern-sensor:TemperatureSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Temperature sensor" ;
+  rdfs:subClassOf tern-sensor:FluxTowerSensor ;
+.
+tern-sensor:Thermistor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A thermistor is a type of resistor whose resistance is dependent on temperature, more so than in standard resistors. The word is a combination of thermal and resistor. Thermistors are widely used as inrush current limiters, temperature sensors (negative temperature coefficient or NTC type typically), self-resetting overcurrent protectors, and self-regulating heating elements (positive temperature coefficient or PTC type typically)." ;
+  rdfs:label "Thermistor" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Thermistor> ;
+  rdfs:subClassOf tern-sensor:TemperatureSensor ;
+.
+tern-sensor:Thermocouple
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature." ;
+  rdfs:label "Thermocouple" ;
+  rdfs:seeAlso <https://www.thermocoupleinfo.com/index.htm> ;
+  rdfs:subClassOf tern-sensor:TemperatureSensor ;
+.
+tern-sensor:TimeDomainReflectometer
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment """Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.
+
+Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32.""" ;
+  rdfs:label "Time domain reflectometer" ;
+  rdfs:seeAlso <https://soilsensor.com/articles/time-domain-reflectometry-tdr/> ;
+  rdfs:subClassOf tern-sensor:SoilMoistureSensor ;
+  skos:altLabel "TDR" ;
+.
+tern-sensor:TippingBucketRainGauge
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container." ;
+  rdfs:label "Tipping bucket rain gauge" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge> ;
+  rdfs:subClassOf tern-sensor:RainGauge ;
+.
+tern-sensor:WeatherStation
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Weather station" ;
+  rdfs:subClassOf tern-sensor:FixedPlatform ;
+.
+tern-sensor:WeighingPrecipitationGauge
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass." ;
+  rdfs:label "Weighing precipitation gauge" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge> ;
+  rdfs:subClassOf tern-sensor:RainGauge ;
+  skos:altLabel "Weighing rain gauge" ;
+.
+tern-sensor:WindSensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Wind sensor" ;
+  rdfs:subClassOf tern-sensor:FluxTowerSensor ;
+.
