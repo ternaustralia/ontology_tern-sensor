@@ -15,6 +15,9 @@
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
 @prefix tern-sensor: <https://w3id.org/tern/ontologies/sensor/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 
 tern-sensor:
   a owl:Ontology ;
@@ -25,6 +28,27 @@ tern-sensor:
   owl:imports ssn: ;
   owl:imports <http://www.w3.org/ns/ssn/systems/> ;
   owl:versionInfo "Draft" ;
+  dct:created "2020-01-07"^^xsd:date ;
+  dct:creator [
+      a schema:Person ;
+      schema:affiliation <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
+      schema:email "e.chuc@uq.edu.au" ;
+      schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
+      schema:name "Edmond Chuc" ;
+    ] ;
+  dct:modified "2020-01-08"^^xsd:date ;
+  dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
+  vann:preferredNamespacePrefix "tern-sensor" ;
+  vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/sensor/" ;
+  rdfs:comment "A vocabulary of TERN sensors and platforms." ;
+  rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-sensor> ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/sensor/0.1> ;
+.
+<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
+  a schema:Organization ;
+  schema:name "Terrestrial Ecoystem Research Network" ;
+  schema:alternateName "TERN" ;
+  schema:url <https://www.tern.org.au/> ;
 .
 <https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer>
   a rdfs:Class ;
