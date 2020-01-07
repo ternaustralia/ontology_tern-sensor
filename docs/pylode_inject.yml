@@ -9,6 +9,10 @@ overview:
   p: An overview of the TERN Sensors ontology.
   figures:
     - figure:
+        src: tern-sensor-conceptual-model.png
+        alt: TERN Sensors conceptual model
+        caption: TERN Sensors conceptual model
+    - figure:
         src: tern-sensor.ttl.txt.svg
         alt: TERN Sensors ontology overview diagram.
         caption: TERN Sensors ontology overview.
