@@ -44,7 +44,7 @@ tern-sensor:
   rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-sensor> ;
   owl:versionIRI <https://w3id.org/tern/ontologies/sensor/0.1> ;
 .
-<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
+<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66>
   a schema:Organization ;
   schema:name "Terrestrial Ecoystem Research Network" ;
   schema:alternateName "TERN" ;

@@ -1,172 +1,172 @@
 @startuml
 title TERN Sensors Ontology
-"tern-sensor:TemperatureSensor" <|-- "tern-sensor:Thermocouple"
-"sosa:Sensor" <|-- "tern-sensor:RainGauge"
-"tern-sensor:RainGauge" <|-- "tern-sensor:WeighingPrecipitationGauge"
-"sosa:Sensor" <|-- "tern-sensor:Ceilometer"
-"tern-sensor:RainGauge" <|-- "tern-sensor:OpticalRainGauge"
-"tern-sensor:Hygrometer" <|-- "tern-sensor:ResistiveHygrometer"
-"tern-sensor:Actinometer" <|-- "tern-sensor:NetRadiometer"
-"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:CapactitiveSensor"
-"tern-sensor:FixedPlatform" <|-- "tern-sensor:FluxTower"
-"tern-sensor:Aircraft" <|-- "tern-sensor:Drone"
-"tern-sensor:Radiometer" <|-- "tern-sensor:Pyrradiometer"
-"tern-sensor:SonicAnemometer" <|-- "tern-sensor:3DSonicAnemometer"
-"tern-sensor:Anemometer" <|-- "tern-sensor:CupAnemometer"
-"tern-sensor:SoilMoistureSensor" <|-- "tern-sensor:FrequencyDomainReflectometer"
-"tern-sensor:Hygrometer" <|-- "tern-sensor:HairHygrometer"
-"tern-sensor:WindSensor" <|-- "tern-sensor:Anemometer"
-"tern-sensor:Radiometer" <|-- "tern-sensor:Actinometer"
-"tern-sensor:Hygrometer" <|-- "tern-sensor:ElectromagneticRadiationHygrometer"
-"sosa:Sensor" <|-- "tern-sensor:SapFlowSensor"
-"tern-sensor:MobilePlatform" <|-- "tern-sensor:Satellite"
-"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:TemperatureSensor"
-"tern-sensor:TemperatureSensor" <|-- "tern-sensor:ResistanceThermometer"
-"sosa:Sensor" <|-- "tern-sensor:Dendrometer"
-"sosa:Sensor" <|-- "tern-sensor:HeatFluxSensor"
-"tern-sensor:RadiationSensor" <|-- "tern-sensor:Pyrheliometer"
-"tern-sensor:Anemometer" <|-- "tern-sensor:SonicAnemometer"
-"tern-sensor:SoilMoistureSensor" <|-- "tern-sensor:TimeDomainReflectometer"
-"tern-sensor:Hygrometer" <|-- "tern-sensor:DewPointHygrometer"
-"tern-sensor:MobilePlatform" <|-- "tern-sensor:Aircraft"
-"sosa:Sensor" <|-- "tern-sensor:SoilMoistureSensor"
-"tern-sensor:TemperatureSensor" <|-- "tern-sensor:Thermistor"
-"tern-sensor:RainGauge" <|-- "tern-sensor:TippingBucketRainGauge"
-"tern-sensor:Hygrometer" <|-- "tern-sensor:GravimetricHygrometer"
-"tern-sensor:Barometer" <|-- "tern-sensor:AneroidBarometer"
-"tern-sensor:Actinometer" <|-- "tern-sensor:Pyranometer"
-"sosa:Sensor" <|-- "tern-sensor:Spectrometer"
-"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:Hygrometer"
-"sosa:Platform" <|-- "tern-sensor:MobilePlatform"
-"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:Barometer"
-"tern-sensor:RadiationSensor" <|-- "tern-sensor:QuantumSensor"
-"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:RadiationSensor"
-"sosa:Platform" <|-- "tern-sensor:FixedPlatform"
-"tern-sensor:SonicAnemometer" <|-- "tern-sensor:2DSonicAnemometer"
-"tern-sensor:Anemometer" <|-- "tern-sensor:HotWireAnemometer"
-"tern-sensor:FixedPlatform" <|-- "tern-sensor:WeatherStation"
-"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:WindSensor"
-"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:InfraredGasAnalyzer"
-"tern-sensor:Barometer" <|-- "tern-sensor:ElectronicBarometer"
-"tern-sensor:RadiationSensor" <|-- "tern-sensor:Pyrgeometer"
-"tern-sensor:Hygrometer" <|-- "tern-sensor:Psychrometer"
 "tern-sensor:Barometer" <|-- "tern-sensor:MercuryBarometer"
-"sosa:Sensor" <|-- "tern-sensor:FluxTowerSensor"
-"tern-sensor:FixedPlatform" <|-- "tern-sensor:EcologicalPlot"
-"tern-sensor:Hygrometer" <|-- "tern-sensor:LithiumChlorideHeatedCondensationHygrometer"
-"tern-sensor:RadiationSensor" <|-- "tern-sensor:Radiometer"
+"tern-sensor:SoilMoistureSensor" <|-- "tern-sensor:TimeDomainReflectometer"
+"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:TemperatureSensor"
+"sosa:Sensor" <|-- "tern-sensor:HeatFluxSensor"
+"sosa:Sensor" <|-- "tern-sensor:RainGauge"
+"tern-sensor:TemperatureSensor" <|-- "tern-sensor:Thermistor"
+"tern-sensor:Radiometer" <|-- "tern-sensor:Pyrradiometer"
+"tern-sensor:RainGauge" <|-- "tern-sensor:TippingBucketRainGauge"
+"tern-sensor:WindSensor" <|-- "tern-sensor:Anemometer"
+"tern-sensor:MobilePlatform" <|-- "tern-sensor:Satellite"
+"tern-sensor:MobilePlatform" <|-- "tern-sensor:Aircraft"
+"tern-sensor:RainGauge" <|-- "tern-sensor:WeighingPrecipitationGauge"
 "tern-sensor:EcologicalPlot" <|-- "tern-sensor:SuperSite"
-Class "tern-sensor:Thermocouple" [[https://w3id.org/tern/ontologies/sensor/Thermocouple]] {
-}
-Class "tern-sensor:RainGauge" [[https://w3id.org/tern/ontologies/sensor/RainGauge]] {
-}
-Class "tern-sensor:WeighingPrecipitationGauge" [[https://w3id.org/tern/ontologies/sensor/WeighingPrecipitationGauge]] {
-}
-Class "tern-sensor:Ceilometer" [[https://w3id.org/tern/ontologies/sensor/Ceilometer]] {
-}
-Class "tern-sensor:OpticalRainGauge" [[https://w3id.org/tern/ontologies/sensor/OpticalRainGauge]] {
-}
-Class "tern-sensor:ResistiveHygrometer" [[https://w3id.org/tern/ontologies/sensor/ResistiveHygrometer]] {
-}
-Class "tern-sensor:NetRadiometer" [[https://w3id.org/tern/ontologies/sensor/NetRadiometer]] {
-}
-Class "tern-sensor:CapactitiveSensor" [[https://w3id.org/tern/ontologies/sensor/CapactitiveSensor]] {
-}
-Class "tern-sensor:FluxTower" [[https://w3id.org/tern/ontologies/sensor/FluxTower]] {
-}
-Class "tern-sensor:Drone" [[https://w3id.org/tern/ontologies/sensor/Drone]] {
-}
-Class "tern-sensor:Pyrradiometer" [[https://w3id.org/tern/ontologies/sensor/Pyrradiometer]] {
-}
-Class "tern-sensor:3DSonicAnemometer" [[https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer]] {
-}
-Class "tern-sensor:CupAnemometer" [[https://w3id.org/tern/ontologies/sensor/CupAnemometer]] {
-}
-Class "tern-sensor:FrequencyDomainReflectometer" [[https://w3id.org/tern/ontologies/sensor/FrequencyDomainReflectometer]] {
-}
-Class "tern-sensor:HairHygrometer" [[https://w3id.org/tern/ontologies/sensor/HairHygrometer]] {
-}
-Class "tern-sensor:Anemometer" [[https://w3id.org/tern/ontologies/sensor/Anemometer]] {
-}
-Class "tern-sensor:Actinometer" [[https://w3id.org/tern/ontologies/sensor/Actinometer]] {
-}
-Class "tern-sensor:ElectromagneticRadiationHygrometer" [[https://w3id.org/tern/ontologies/sensor/ElectromagneticRadiationHygrometer]] {
-}
-Class "tern-sensor:SapFlowSensor" [[https://w3id.org/tern/ontologies/sensor/SapFlowSensor]] {
-}
-Class "tern-sensor:Satellite" [[https://w3id.org/tern/ontologies/sensor/Satellite]] {
-}
-Class "tern-sensor:TemperatureSensor" [[https://w3id.org/tern/ontologies/sensor/TemperatureSensor]] {
-}
-Class "tern-sensor:ResistanceThermometer" [[https://w3id.org/tern/ontologies/sensor/ResistanceThermometer]] {
-}
-Class "tern-sensor:Dendrometer" [[https://w3id.org/tern/ontologies/sensor/Dendrometer]] {
-}
-Class "tern-sensor:HeatFluxSensor" [[https://w3id.org/tern/ontologies/sensor/HeatFluxSensor]] {
-}
-Class "tern-sensor:Pyrheliometer" [[https://w3id.org/tern/ontologies/sensor/Pyrheliometer]] {
-}
-Class "tern-sensor:SonicAnemometer" [[https://w3id.org/tern/ontologies/sensor/SonicAnemometer]] {
+"tern-sensor:SoilMoistureSensor" <|-- "tern-sensor:FrequencyDomainReflectometer"
+"sosa:Sensor" <|-- "tern-sensor:SapFlowSensor"
+"tern-sensor:Aircraft" <|-- "tern-sensor:Drone"
+"tern-sensor:RadiationSensor" <|-- "tern-sensor:Radiometer"
+"tern-sensor:Radiometer" <|-- "tern-sensor:Actinometer"
+"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:CapactitiveSensor"
+"tern-sensor:SonicAnemometer" <|-- "tern-sensor:3DSonicAnemometer"
+"tern-sensor:FixedPlatform" <|-- "tern-sensor:WeatherStation"
+"tern-sensor:Anemometer" <|-- "tern-sensor:SonicAnemometer"
+"tern-sensor:RadiationSensor" <|-- "tern-sensor:QuantumSensor"
+"tern-sensor:Hygrometer" <|-- "tern-sensor:DewPointHygrometer"
+"sosa:Platform" <|-- "tern-sensor:FixedPlatform"
+"sosa:Sensor" <|-- "tern-sensor:FluxTowerSensor"
+"tern-sensor:TemperatureSensor" <|-- "tern-sensor:ResistanceThermometer"
+"sosa:Sensor" <|-- "tern-sensor:Spectrometer"
+"tern-sensor:TemperatureSensor" <|-- "tern-sensor:Thermocouple"
+"tern-sensor:Barometer" <|-- "tern-sensor:AneroidBarometer"
+"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:Barometer"
+"tern-sensor:Hygrometer" <|-- "tern-sensor:HairHygrometer"
+"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:WindSensor"
+"tern-sensor:RadiationSensor" <|-- "tern-sensor:Pyrheliometer"
+"tern-sensor:Hygrometer" <|-- "tern-sensor:GravimetricHygrometer"
+"tern-sensor:Actinometer" <|-- "tern-sensor:Pyranometer"
+"tern-sensor:RadiationSensor" <|-- "tern-sensor:Pyrgeometer"
+"tern-sensor:Hygrometer" <|-- "tern-sensor:ResistiveHygrometer"
+"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:InfraredGasAnalyzer"
+"sosa:Platform" <|-- "tern-sensor:MobilePlatform"
+"tern-sensor:RainGauge" <|-- "tern-sensor:OpticalRainGauge"
+"sosa:Sensor" <|-- "tern-sensor:SoilMoistureSensor"
+"tern-sensor:FixedPlatform" <|-- "tern-sensor:EcologicalPlot"
+"tern-sensor:Barometer" <|-- "tern-sensor:ElectronicBarometer"
+"sosa:Sensor" <|-- "tern-sensor:Dendrometer"
+"sosa:Sensor" <|-- "tern-sensor:Ceilometer"
+"tern-sensor:Actinometer" <|-- "tern-sensor:NetRadiometer"
+"tern-sensor:Anemometer" <|-- "tern-sensor:CupAnemometer"
+"tern-sensor:Hygrometer" <|-- "tern-sensor:ElectromagneticRadiationHygrometer"
+"tern-sensor:FixedPlatform" <|-- "tern-sensor:FluxTower"
+"tern-sensor:Anemometer" <|-- "tern-sensor:HotWireAnemometer"
+"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:Hygrometer"
+"tern-sensor:Hygrometer" <|-- "tern-sensor:Psychrometer"
+"tern-sensor:SonicAnemometer" <|-- "tern-sensor:2DSonicAnemometer"
+"tern-sensor:Hygrometer" <|-- "tern-sensor:LithiumChlorideHeatedCondensationHygrometer"
+"tern-sensor:FluxTowerSensor" <|-- "tern-sensor:RadiationSensor"
+Class "tern-sensor:MercuryBarometer" [[https://w3id.org/tern/ontologies/sensor/MercuryBarometer]] {
 }
 Class "tern-sensor:TimeDomainReflectometer" [[https://w3id.org/tern/ontologies/sensor/TimeDomainReflectometer]] {
 }
-Class "tern-sensor:DewPointHygrometer" [[https://w3id.org/tern/ontologies/sensor/DewPointHygrometer]] {
+Class "tern-sensor:TemperatureSensor" [[https://w3id.org/tern/ontologies/sensor/TemperatureSensor]] {
 }
-Class "tern-sensor:Aircraft" [[https://w3id.org/tern/ontologies/sensor/Aircraft]] {
+Class "tern-sensor:HeatFluxSensor" [[https://w3id.org/tern/ontologies/sensor/HeatFluxSensor]] {
 }
-Class "tern-sensor:SoilMoistureSensor" [[https://w3id.org/tern/ontologies/sensor/SoilMoistureSensor]] {
+Class "tern-sensor:RainGauge" [[https://w3id.org/tern/ontologies/sensor/RainGauge]] {
 }
 Class "tern-sensor:Thermistor" [[https://w3id.org/tern/ontologies/sensor/Thermistor]] {
 }
+Class "tern-sensor:Pyrradiometer" [[https://w3id.org/tern/ontologies/sensor/Pyrradiometer]] {
+}
 Class "tern-sensor:TippingBucketRainGauge" [[https://w3id.org/tern/ontologies/sensor/TippingBucketRainGauge]] {
 }
-Class "tern-sensor:GravimetricHygrometer" [[https://w3id.org/tern/ontologies/sensor/GravimetricHygrometer]] {
+Class "tern-sensor:Anemometer" [[https://w3id.org/tern/ontologies/sensor/Anemometer]] {
 }
-Class "tern-sensor:AneroidBarometer" [[https://w3id.org/tern/ontologies/sensor/AneroidBarometer]] {
+Class "tern-sensor:Satellite" [[https://w3id.org/tern/ontologies/sensor/Satellite]] {
 }
-Class "tern-sensor:Pyranometer" [[https://w3id.org/tern/ontologies/sensor/Pyranometer]] {
+Class "tern-sensor:Aircraft" [[https://w3id.org/tern/ontologies/sensor/Aircraft]] {
 }
-Class "tern-sensor:Spectrometer" [[https://w3id.org/tern/ontologies/sensor/Spectrometer]] {
+Class "tern-sensor:WeighingPrecipitationGauge" [[https://w3id.org/tern/ontologies/sensor/WeighingPrecipitationGauge]] {
 }
-Class "tern-sensor:Hygrometer" [[https://w3id.org/tern/ontologies/sensor/Hygrometer]] {
+Class "tern-sensor:SuperSite" [[https://w3id.org/tern/ontologies/sensor/SuperSite]] {
 }
-Class "tern-sensor:MobilePlatform" [[https://w3id.org/tern/ontologies/sensor/MobilePlatform]] {
+Class "tern-sensor:FrequencyDomainReflectometer" [[https://w3id.org/tern/ontologies/sensor/FrequencyDomainReflectometer]] {
 }
-Class "tern-sensor:Barometer" [[https://w3id.org/tern/ontologies/sensor/Barometer]] {
+Class "tern-sensor:SapFlowSensor" [[https://w3id.org/tern/ontologies/sensor/SapFlowSensor]] {
 }
-Class "tern-sensor:QuantumSensor" [[https://w3id.org/tern/ontologies/sensor/QuantumSensor]] {
-}
-Class "tern-sensor:RadiationSensor" [[https://w3id.org/tern/ontologies/sensor/RadiationSensor]] {
-}
-Class "tern-sensor:FixedPlatform" [[https://w3id.org/tern/ontologies/sensor/FixedPlatform]] {
-}
-Class "tern-sensor:2DSonicAnemometer" [[https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer]] {
-}
-Class "tern-sensor:HotWireAnemometer" [[https://w3id.org/tern/ontologies/sensor/HotWireAnemometer]] {
-}
-Class "tern-sensor:WeatherStation" [[https://w3id.org/tern/ontologies/sensor/WeatherStation]] {
-}
-Class "tern-sensor:WindSensor" [[https://w3id.org/tern/ontologies/sensor/WindSensor]] {
-}
-Class "tern-sensor:InfraredGasAnalyzer" [[https://w3id.org/tern/ontologies/sensor/InfraredGasAnalyzer]] {
-}
-Class "tern-sensor:ElectronicBarometer" [[https://w3id.org/tern/ontologies/sensor/ElectronicBarometer]] {
-}
-Class "tern-sensor:Pyrgeometer" [[https://w3id.org/tern/ontologies/sensor/Pyrgeometer]] {
-}
-Class "tern-sensor:Psychrometer" [[https://w3id.org/tern/ontologies/sensor/Psychrometer]] {
-}
-Class "tern-sensor:MercuryBarometer" [[https://w3id.org/tern/ontologies/sensor/MercuryBarometer]] {
-}
-Class "tern-sensor:FluxTowerSensor" [[https://w3id.org/tern/ontologies/sensor/FluxTowerSensor]] {
-}
-Class "tern-sensor:EcologicalPlot" [[https://w3id.org/tern/ontologies/sensor/EcologicalPlot]] {
-}
-Class "tern-sensor:LithiumChlorideHeatedCondensationHygrometer" [[https://w3id.org/tern/ontologies/sensor/LithiumChlorideHeatedCondensationHygrometer]] {
+Class "tern-sensor:Drone" [[https://w3id.org/tern/ontologies/sensor/Drone]] {
 }
 Class "tern-sensor:Radiometer" [[https://w3id.org/tern/ontologies/sensor/Radiometer]] {
 }
-Class "tern-sensor:SuperSite" [[https://w3id.org/tern/ontologies/sensor/SuperSite]] {
+Class "tern-sensor:Actinometer" [[https://w3id.org/tern/ontologies/sensor/Actinometer]] {
+}
+Class "tern-sensor:CapactitiveSensor" [[https://w3id.org/tern/ontologies/sensor/CapactitiveSensor]] {
+}
+Class "tern-sensor:3DSonicAnemometer" [[https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer]] {
+}
+Class "tern-sensor:WeatherStation" [[https://w3id.org/tern/ontologies/sensor/WeatherStation]] {
+}
+Class "tern-sensor:SonicAnemometer" [[https://w3id.org/tern/ontologies/sensor/SonicAnemometer]] {
+}
+Class "tern-sensor:QuantumSensor" [[https://w3id.org/tern/ontologies/sensor/QuantumSensor]] {
+}
+Class "tern-sensor:DewPointHygrometer" [[https://w3id.org/tern/ontologies/sensor/DewPointHygrometer]] {
+}
+Class "tern-sensor:FixedPlatform" [[https://w3id.org/tern/ontologies/sensor/FixedPlatform]] {
+}
+Class "tern-sensor:FluxTowerSensor" [[https://w3id.org/tern/ontologies/sensor/FluxTowerSensor]] {
+}
+Class "tern-sensor:ResistanceThermometer" [[https://w3id.org/tern/ontologies/sensor/ResistanceThermometer]] {
+}
+Class "tern-sensor:Spectrometer" [[https://w3id.org/tern/ontologies/sensor/Spectrometer]] {
+}
+Class "tern-sensor:Thermocouple" [[https://w3id.org/tern/ontologies/sensor/Thermocouple]] {
+}
+Class "tern-sensor:AneroidBarometer" [[https://w3id.org/tern/ontologies/sensor/AneroidBarometer]] {
+}
+Class "tern-sensor:Barometer" [[https://w3id.org/tern/ontologies/sensor/Barometer]] {
+}
+Class "tern-sensor:HairHygrometer" [[https://w3id.org/tern/ontologies/sensor/HairHygrometer]] {
+}
+Class "tern-sensor:WindSensor" [[https://w3id.org/tern/ontologies/sensor/WindSensor]] {
+}
+Class "tern-sensor:Pyrheliometer" [[https://w3id.org/tern/ontologies/sensor/Pyrheliometer]] {
+}
+Class "tern-sensor:GravimetricHygrometer" [[https://w3id.org/tern/ontologies/sensor/GravimetricHygrometer]] {
+}
+Class "tern-sensor:Pyranometer" [[https://w3id.org/tern/ontologies/sensor/Pyranometer]] {
+}
+Class "tern-sensor:Pyrgeometer" [[https://w3id.org/tern/ontologies/sensor/Pyrgeometer]] {
+}
+Class "tern-sensor:ResistiveHygrometer" [[https://w3id.org/tern/ontologies/sensor/ResistiveHygrometer]] {
+}
+Class "tern-sensor:InfraredGasAnalyzer" [[https://w3id.org/tern/ontologies/sensor/InfraredGasAnalyzer]] {
+}
+Class "tern-sensor:MobilePlatform" [[https://w3id.org/tern/ontologies/sensor/MobilePlatform]] {
+}
+Class "tern-sensor:OpticalRainGauge" [[https://w3id.org/tern/ontologies/sensor/OpticalRainGauge]] {
+}
+Class "tern-sensor:SoilMoistureSensor" [[https://w3id.org/tern/ontologies/sensor/SoilMoistureSensor]] {
+}
+Class "tern-sensor:EcologicalPlot" [[https://w3id.org/tern/ontologies/sensor/EcologicalPlot]] {
+}
+Class "tern-sensor:ElectronicBarometer" [[https://w3id.org/tern/ontologies/sensor/ElectronicBarometer]] {
+}
+Class "tern-sensor:Dendrometer" [[https://w3id.org/tern/ontologies/sensor/Dendrometer]] {
+}
+Class "tern-sensor:Ceilometer" [[https://w3id.org/tern/ontologies/sensor/Ceilometer]] {
+}
+Class "tern-sensor:NetRadiometer" [[https://w3id.org/tern/ontologies/sensor/NetRadiometer]] {
+}
+Class "tern-sensor:CupAnemometer" [[https://w3id.org/tern/ontologies/sensor/CupAnemometer]] {
+}
+Class "tern-sensor:ElectromagneticRadiationHygrometer" [[https://w3id.org/tern/ontologies/sensor/ElectromagneticRadiationHygrometer]] {
+}
+Class "tern-sensor:FluxTower" [[https://w3id.org/tern/ontologies/sensor/FluxTower]] {
+}
+Class "tern-sensor:HotWireAnemometer" [[https://w3id.org/tern/ontologies/sensor/HotWireAnemometer]] {
+}
+Class "tern-sensor:Hygrometer" [[https://w3id.org/tern/ontologies/sensor/Hygrometer]] {
+}
+Class "tern-sensor:Psychrometer" [[https://w3id.org/tern/ontologies/sensor/Psychrometer]] {
+}
+Class "tern-sensor:2DSonicAnemometer" [[https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer]] {
+}
+Class "tern-sensor:LithiumChlorideHeatedCondensationHygrometer" [[https://w3id.org/tern/ontologies/sensor/LithiumChlorideHeatedCondensationHygrometer]] {
+}
+Class "tern-sensor:RadiationSensor" [[https://w3id.org/tern/ontologies/sensor/RadiationSensor]] {
 }
 header
 Creator: Edmond Chuc (e.chuc@uq.edu.au) 

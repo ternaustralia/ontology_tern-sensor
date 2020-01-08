@@ -90,20 +90,20 @@
       ssn:
      </a>
      <br/>
-     <a href="http://www.w3.org/ns/sosa/">
-      sosa:
+     <a href="http://www.w3.org/2004/02/skos/core#">
+      skos:
      </a>
      <br/>
      <a href="http://topbraid.org/schema/">
       http://topbraid.org/schema/
      </a>
      <br/>
-     <a href="http://www.w3.org/2004/02/skos/core#">
-      skos:
-     </a>
-     <br/>
      <a href="http://www.w3.org/ns/ssn/systems/">
       http://www.w3.org/ns/ssn/systems/
+     </a>
+     <br/>
+     <a href="http://www.w3.org/ns/sosa/">
+      sosa:
      </a>
      <br/>
     </dd>
@@ -593,15 +593,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Netradiometer">
-        tern-sensor:NetRadiometer
+       <a href="#Pyranometer">
+        tern-sensor:Pyranometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Pyranometer">
-        tern-sensor:Pyranometer
+       <a href="#Netradiometer">
+        tern-sensor:NetRadiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -711,15 +711,15 @@
         c
        </sup>
        <br/>
-       <a href="#Cupanemometer">
-        tern-sensor:CupAnemometer
+       <a href="#Sonicanemometer">
+        tern-sensor:SonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Sonicanemometer">
-        tern-sensor:SonicAnemometer
+       <a href="#Cupanemometer">
+        tern-sensor:CupAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -816,13 +816,6 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Mercurybarometer">
-        tern-sensor:MercuryBarometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Electronicbarometer">
         tern-sensor:ElectronicBarometer
        </a>
@@ -832,6 +825,13 @@
        <br/>
        <a href="#Aneroidbarometer">
         tern-sensor:AneroidBarometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Mercurybarometer">
+        tern-sensor:MercuryBarometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1334,27 +1334,6 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Windsensor">
-        tern-sensor:WindSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Radiationsensor">
-        tern-sensor:RadiationSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Temperaturesensor">
-        tern-sensor:TemperatureSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Infraredgasanalyzer">
         tern-sensor:InfraredGasAnalyzer
        </a>
@@ -1362,8 +1341,8 @@
         c
        </sup>
        <br/>
-       <a href="#Capactitivesensor">
-        tern-sensor:CapactitiveSensor
+       <a href="#Windsensor">
+        tern-sensor:WindSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1376,8 +1355,29 @@
         c
        </sup>
        <br/>
+       <a href="#Temperaturesensor">
+        tern-sensor:TemperatureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#Hygrometer">
         tern-sensor:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Capactitivesensor">
+        tern-sensor:CapactitiveSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Radiationsensor">
+        tern-sensor:RadiationSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1644,22 +1644,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Electromagneticradiationabsorptionhygrometer">
-        tern-sensor:ElectromagneticRadiationHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Hairhygrometer">
-        tern-sensor:HairHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Psychrometer">
-        tern-sensor:Psychrometer
+       <a href="#Gravimetrichygrometer">
+        tern-sensor:GravimetricHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1672,13 +1658,6 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Gravimetrichygrometer">
-        tern-sensor:GravimetricHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Lithiumchlorideheatedcondensationhygrometer">
         tern-sensor:LithiumChlorideHeatedCondensationHygrometer
        </a>
@@ -1686,8 +1665,29 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
+       <a href="#Hairhygrometer">
+        tern-sensor:HairHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Electromagneticradiationabsorptionhygrometer">
+        tern-sensor:ElectromagneticRadiationHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#Resistivehygrometer">
         tern-sensor:ResistiveHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Psychrometer">
+        tern-sensor:Psychrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2254,15 +2254,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Radiometer">
-        tern-sensor:Radiometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Pyrgeometer">
-        tern-sensor:Pyrgeometer
+       <a href="#Pyrheliometer">
+        tern-sensor:Pyrheliometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2275,8 +2268,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Pyrheliometer">
-        tern-sensor:Pyrheliometer
+       <a href="#Pyrgeometer">
+        tern-sensor:Pyrgeometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Radiometer">
+        tern-sensor:Radiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2394,15 +2394,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Weighingprecipitationgauge">
-        tern-sensor:WeighingPrecipitationGauge
+       <a href="#Tippingbucketraingauge">
+        tern-sensor:TippingBucketRainGauge
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Tippingbucketraingauge">
-        tern-sensor:TippingBucketRainGauge
+       <a href="#Weighingprecipitationgauge">
+        tern-sensor:WeighingPrecipitationGauge
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2802,13 +2802,6 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Thermistor">
-        tern-sensor:Thermistor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Thermocouple">
         tern-sensor:Thermocouple
        </a>
@@ -2818,6 +2811,13 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        <br/>
        <a href="#Resistancethermometer">
         tern-sensor:ResistanceThermometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Thermistor">
+        tern-sensor:Thermistor
        </a>
        <sup class="sup-c" title="class">
         c
