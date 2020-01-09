@@ -13,7 +13,7 @@ overview:
         alt: TERN Sensors conceptual model
         caption: TERN Sensors conceptual model
     - figure:
-        src: tern-sensor.ttl.txt.svg
+        src: tern-ssn.ttl.txt.svg
         alt: TERN SSN extension overview diagram.
         caption: TERN SSN extension overview.
 

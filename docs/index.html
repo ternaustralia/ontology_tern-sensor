@@ -86,28 +86,28 @@
      Imports
     </dt>
     <dd>
-     <a href="http://purl.org/dc/terms/">
-      dct:
+     <a href="http://www.w3.org/2004/02/skos/core#">
+      skos:
+     </a>
+     <br/>
+     <a href="http://www.w3.org/ns/ssn/">
+      ssn:
      </a>
      <br/>
      <a href="https://w3id.org/tern/ontologies/org">
       https://w3id.org/tern/ontologies/org
      </a>
      <br/>
-     <a href="http://www.w3.org/2004/02/skos/core#">
-      skos:
-     </a>
-     <br/>
-     <a href="http://www.w3.org/ns/sosa/">
-      sosa:
-     </a>
-     <br/>
      <a href="http://www.w3.org/ns/ssn/systems/">
       http://www.w3.org/ns/ssn/systems/
      </a>
      <br/>
-     <a href="http://www.w3.org/ns/ssn/">
-      ssn:
+     <a href="http://purl.org/dc/terms/">
+      dct:
+     </a>
+     <br/>
+     <a href="http://www.w3.org/ns/sosa/">
+      sosa:
      </a>
      <br/>
     </dd>
@@ -173,7 +173,7 @@
     </figcaption>
    </figure>
    <figure>
-    <img alt="TERN SSN extension overview diagram." src="tern-sensor.ttl.txt.svg"/>
+    <img alt="TERN SSN extension overview diagram." src="tern-ssn.ttl.txt.svg"/>
     <figcaption style="padding-bottom: 3rem">
      <strong>
       Figure 2:
@@ -602,15 +602,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Pyranometer">
-        tern-ssn:Pyranometer
+       <a href="#Netradiometer">
+        tern-ssn:NetRadiometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Netradiometer">
-        tern-ssn:NetRadiometer
+       <a href="#Pyranometer">
+        tern-ssn:Pyranometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -713,8 +713,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Sonicanemometer">
-        tern-ssn:SonicAnemometer
+       <a href="#Cupanemometer">
+        tern-ssn:CupAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -727,8 +727,8 @@
         c
        </sup>
        <br/>
-       <a href="#Cupanemometer">
-        tern-ssn:CupAnemometer
+       <a href="#Sonicanemometer">
+        tern-ssn:SonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -832,15 +832,15 @@
         c
        </sup>
        <br/>
-       <a href="#Mercurybarometer">
-        tern-ssn:MercuryBarometer
+       <a href="#Aneroidbarometer">
+        tern-ssn:AneroidBarometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Aneroidbarometer">
-        tern-ssn:AneroidBarometer
+       <a href="#Mercurybarometer">
+        tern-ssn:MercuryBarometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1063,17 +1063,14 @@
        Restrictions
       </th>
       <td>
-       <a href="#onsystem">
-        tern-ssn:onSystem
+       <a href="http://purl.org/dc/terms/subject">
+        dct:subject
        </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
        <span class="cardinality">
         only
        </span>
-       <a href="http://www.w3.org/ns/ssn/System">
-        ssn:System
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1090,14 +1087,17 @@
        </span>
        1
        <br/>
-       <a href="http://purl.org/dc/terms/subject">
-        dct:subject
+       <a href="#onsystem">
+        tern-ssn:onSystem
        </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
        <span class="cardinality">
         only
        </span>
-       <a href="http://www.w3.org/2004/02/skos/core#Concept">
-        skos:Concept
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1419,13 +1419,6 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Weatherstation">
-        tern-ssn:WeatherStation
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Eddycovariancefluxtower">
         tern-ssn:EddyCovarianceFluxTower
        </a>
@@ -1435,6 +1428,13 @@
        <br/>
        <a href="#Ecologicalplot">
         tern-ssn:EcologicalPlot
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Weatherstation">
+        tern-ssn:WeatherStation
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1708,8 +1708,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Dewpointhygrometer">
-        tern-ssn:DewPointHygrometer
+       <a href="#Electromagneticradiationabsorptionhygrometer">
+        tern-ssn:ElectromagneticRadiationHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Gravimetrichygrometer">
+        tern-ssn:GravimetricHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1722,8 +1729,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Electromagneticradiationabsorptionhygrometer">
-        tern-ssn:ElectromagneticRadiationHygrometer
+       <a href="#Dewpointhygrometer">
+        tern-ssn:DewPointHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1731,13 +1738,6 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        <br/>
        <a href="#Hairhygrometer">
         tern-ssn:HairHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Gravimetrichygrometer">
-        tern-ssn:GravimetricHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1917,15 +1917,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Aircraft">
-        tern-ssn:Aircraft
+       <a href="#Satellite">
+        tern-ssn:Satellite
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Satellite">
-        tern-ssn:Satellite
+       <a href="#Aircraft">
+        tern-ssn:Aircraft
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2311,15 +2311,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Radiometer">
-        tern-ssn:Radiometer
+       <a href="#Pyrheliometer">
+        tern-ssn:Pyrheliometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Pyrheliometer">
-        tern-ssn:Pyrheliometer
+       <a href="#Radiometer">
+        tern-ssn:Radiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2388,15 +2388,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Actinometer">
-        tern-ssn:Actinometer
+       <a href="#Pyrradiometer">
+        tern-ssn:Pyrradiometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Pyrradiometer">
-        tern-ssn:Pyrradiometer
+       <a href="#Actinometer">
+        tern-ssn:Actinometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2451,6 +2451,13 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
+       <a href="#Opticalraingauge">
+        tern-ssn:OpticalRainGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#Tippingbucketraingauge">
         tern-ssn:TippingBucketRainGauge
        </a>
@@ -2460,13 +2467,6 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        <br/>
        <a href="#Weighingprecipitationgauge">
         tern-ssn:WeighingPrecipitationGauge
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Opticalraingauge">
-        tern-ssn:OpticalRainGauge
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2859,8 +2859,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Resistancethermometer">
-        tern-ssn:ResistanceThermometer
+       <a href="#Thermistor">
+        tern-ssn:Thermistor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2873,8 +2873,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Thermistor">
-        tern-ssn:Thermistor
+       <a href="#Resistancethermometer">
+        tern-ssn:ResistanceThermometer
        </a>
        <sup class="sup-c" title="class">
         c

@@ -1,253 +1,28 @@
 [
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Infrared gas analyzer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Infrared_gas_analyzer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/WindSensor",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Wind sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Pyranometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/OpticalRainGauge",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m²) from the hemisphere above within a wavelength range 0.3 μm to 3 μm."
+        "@value": "This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Pyranometer"
+        "@value": "Optical rain gauge"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Pyranometer"
+        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Radiation sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over an area in a predefined period of time."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Rain gauge"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Rain_gauge"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Spectrometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Spectrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Spectroradiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/EcologicalPlot",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Ecological plot"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Ceilometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Ceilometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Ceilometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Drone",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Drone"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Aircraft"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Electromagnetic radiation absorption hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/ResistanceThermometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Resistance thermometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Resistance_thermometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@value": "Electrical resistance thermometer"
+        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
       }
     ]
   },
@@ -269,481 +44,6 @@
     "http://schema.org/url": [
       {
         "@id": "https://www.tern.org.au/"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 °C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh)."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Lithium chloride heated condensation hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.wmo.int/pages/prog/www/IMOP/publications/CIMO-Guide/Prelim_2018_ed/8_I_4_en_MR_clean.pdf"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "2D sonic anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/CapactitiveSensor",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Capactitive sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "http://www.cs.cmu.edu/~ram/capsense/intro.html"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/NetRadiometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Net radiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Net_radiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/contactPoint",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "contact point"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/DeploymentInfo",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Deployment information of a system."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Deployment info"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ub1bL195C19"
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Thing"
-      },
-      {
-        "@id": "_:ub1bL178C19"
-      },
-      {
-        "@id": "_:ub1bL190C19"
-      },
-      {
-        "@id": "_:ub1bL185C19"
-      },
-      {
-        "@id": "_:ub1bL173C19"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL195C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/onSystem"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL178C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/Deployment"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "_:ub1bL181C22"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL181C22",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/deploymentInfo"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL190C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#cardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/subject"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL185C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/System"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/onSystem"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL173C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/subject"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/AneroidBarometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Aneroid barometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Satellite",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Satellite"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/sosa/Sensor",
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ub1bL36C19"
-      },
-      {
-        "@id": "_:ub1bL51C19"
-      },
-      {
-        "@id": "_:ub1bL41C19"
-      },
-      {
-        "@id": "_:ub1bL46C19"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL36C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://schema.org/Organization"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://schema.org/manufacturer"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL51C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://schema.org/manufacturer"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL41C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://schema.org/model"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL46C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#cardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://schema.org/model"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Radiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Radiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/QuantumSensor",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Quantum sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Quantum_sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An anemometer is a device used for measuring wind speed and direction."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/WindSensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Psychrometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: \n\n1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. \n2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Psychrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
       }
     ]
   },
@@ -790,81 +90,10 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrgeometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A pyrgeometer is a device that measures near-surface infra-red radiation spectrum in the wavelength spectrum approximately from 4.5 μm to 100 μm."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Pyrgeometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Pyrgeometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Eddy covariance flux tower"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/SapFlowSensor",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Gravimetric hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Hygrometer#Gravimetric"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/SapFlowSensor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -888,107 +117,68 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/ElectronicBarometer",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Sonic anemometer"
+        "@value": "Electronic barometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
+        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Aircraft",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Aircraft"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/Psychrometer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.\n\nExamples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32."
+        "@value": "A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: \n\n1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. \n2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Time domain reflectometer"
+        "@value": "Psychrometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://soilsensor.com/articles/time-domain-reflectometry-tdr/"
+        "@id": "https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@value": "TDR"
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform",
+    "@id": "https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Mobile platform"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Barometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A barometer is a scientific instrument that is used to measure air pressure in a certain environment."
+        "@value": "An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Barometer"
+        "@value": "Infrared gas analyzer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Barometer"
+        "@id": "https://en.wikipedia.org/wiki/Infrared_gas_analyzer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -998,10 +188,208 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer",
+    "@id": "http://www.w3.org/ns/sosa/Sensor",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL51C19"
+      },
+      {
+        "@id": "_:ub1bL41C19"
+      },
+      {
+        "@id": "_:ub1bL36C19"
+      },
+      {
+        "@id": "_:ub1bL46C19"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL51C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/manufacturer"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL41C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/model"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL36C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://schema.org/Organization"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/manufacturer"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL46C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/model"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/WeatherStation",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Weather station"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Ceilometer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Ceilometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Ceilometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/CupAnemometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cup anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Spectrometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Spectrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Spectroradiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Drone",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Drone"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Aircraft"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1025,59 +413,37 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/OpticalRainGauge",
+    "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded."
+        "@value": "A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Optical rain gauge"
+        "@value": "Radiometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge"
+        "@id": "https://en.wikipedia.org/wiki/Radiometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "3D sonic anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer"
+        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
       }
     ]
   },
   {
     "@id": "https://w3id.org/tern/ontologies/ssn/Thermistor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1101,99 +467,167 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/ElectronicBarometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Electronic barometer"
+        "@value": "Radiation sensor"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge",
+    "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Soil moisture sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrradiometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass."
+        "@value": "An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Weighing precipitation gauge"
+        "@value": "Pyrradiometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge"
+        "@id": "https://www.energy.eu/dictionary/data/1446.html"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@value": "Weighing rain gauge"
+        "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Thermocouple",
+    "@id": "https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature."
+        "@value": "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Thermocouple"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.thermocoupleinfo.com/index.htm"
+        "@value": "2D sonic anemometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
+        "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/deploymentInfo",
+    "@id": "https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Electromagnetic radiation absorption hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/NetRadiometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Net radiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Net_radiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/contactPoint",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@id": "http://www.w3.org/ns/ssn/Deployment"
+        "@value": "contact point"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrgeometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A pyrgeometer is a device that measures near-surface infra-red radiation spectrum in the wavelength spectrum approximately from 4.5 μm to 100 μm."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "deployment info"
+        "@value": "Pyrgeometer"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/DeploymentInfo"
+        "@id": "https://en.wikipedia.org/wiki/Pyrgeometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
       }
     ]
   },
@@ -1228,227 +662,14 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/MercuryBarometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Mercury barometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Barometer#Mercury_barometers"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces."
-      }
-    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/HotWireAnemometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Hot wire anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrheliometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A pyrheliometer is an instrument for measurement of direct beam solar irradiance."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Pyrheliometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Pyrheliometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/CupAnemometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Cup anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/DewPointHygrometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Dew point hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.britannica.com/science/hygrometer#ref111343"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Soil moisture sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/SuperSite",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Super site"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/EcologicalPlot"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Fixed platform"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/WeatherStation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Weather station"
+        "@value": "Eddy covariance flux tower"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -1458,29 +679,34 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge",
+    "@id": "https://w3id.org/tern/ontologies/ssn/ResistanceThermometer",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container."
+        "@value": "Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Tipping bucket rain gauge"
+        "@value": "Resistance thermometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge"
+        "@id": "https://en.wikipedia.org/wiki/Resistance_thermometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
+        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "Electrical resistance thermometer"
       }
     ]
   },
@@ -1538,22 +764,22 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "http://www.w3.org/ns/ssn/"
-      },
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#"
+        "@id": "http://purl.org/dc/terms/"
       },
       {
         "@id": "http://www.w3.org/ns/sosa/"
-      },
-      {
-        "@id": "http://purl.org/dc/terms/"
       },
       {
         "@id": "http://www.w3.org/ns/ssn/systems/"
       },
       {
         "@id": "https://w3id.org/tern/ontologies/org"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      },
+      {
+        "@id": "http://www.w3.org/ns/ssn/"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
@@ -1594,34 +820,362 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/QuantumSensor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured."
+        "@value": "A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Resistive hygrometer"
+        "@value": "Quantum sensor"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Hygrometer#Resistive"
+        "@id": "https://en.wikipedia.org/wiki/Quantum_sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/AneroidBarometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Aneroid barometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 °C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Lithium chloride heated condensation hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.wmo.int/pages/prog/www/IMOP/publications/CIMO-Guide/Prelim_2018_ed/8_I_4_en_MR_clean.pdf"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/CapactitiveSensor",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Capactitive sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.cs.cmu.edu/~ram/capsense/intro.html"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Fixed platform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Mobile platform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Weighing precipitation gauge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
-        "@value": "Electrical resistive hygrometer"
+        "@value": "Weighing rain gauge"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/DewPointHygrometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dew point hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.britannica.com/science/hygrometer#ref111343"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An anemometer is a device used for measuring wind speed and direction."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/WindSensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Satellite",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Satellite"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Gravimetric hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Hygrometer#Gravimetric"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Tipping bucket rain gauge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/WindSensor",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Wind sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Aircraft",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Aircraft"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Pyranometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m²) from the hemisphere above within a wavelength range 0.3 μm to 3 μm."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pyranometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Pyranometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer"
       }
     ]
   },
@@ -1658,6 +1212,391 @@
     ]
   },
   {
+    "@id": "https://w3id.org/tern/ontologies/ssn/deploymentInfo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/Deployment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "deployment info"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/DeploymentInfo"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/HotWireAnemometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hot wire anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "3D sonic anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Barometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A barometer is a scientific instrument that is used to measure air pressure in a certain environment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Barometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Barometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.\n\nExamples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Time domain reflectometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://soilsensor.com/articles/time-domain-reflectometry-tdr/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "TDR"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/DeploymentInfo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Deployment information of a system."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Deployment info"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL178C19"
+      },
+      {
+        "@id": "_:ub1bL185C19"
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      },
+      {
+        "@id": "_:ub1bL195C19"
+      },
+      {
+        "@id": "_:ub1bL173C19"
+      },
+      {
+        "@id": "_:ub1bL190C19"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL178C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/Deployment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:ub1bL181C22"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL181C22",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/deploymentInfo"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL185C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/System"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/onSystem"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL195C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/onSystem"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL173C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/subject"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL190C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/subject"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrheliometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A pyrheliometer is an instrument for measurement of direct beam solar irradiance."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pyrheliometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Pyrheliometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Resistive hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Hygrometer#Resistive"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "Electrical resistive hygrometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/SuperSite",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Super site"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/EcologicalPlot"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/MercuryBarometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Mercury barometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Barometer#Mercury_barometers"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/tern/ontologies/ssn/onSystem",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -1679,27 +1618,10 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor",
+    "@id": "https://w3id.org/tern/ontologies/ssn/HairHygrometer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Temperature sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/HairHygrometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1723,10 +1645,71 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/HeatFluxSensor",
+    "@id": "https://w3id.org/tern/ontologies/ssn/EcologicalPlot",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Ecological plot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over an area in a predefined period of time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Rain gauge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Rain_gauge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Sonic anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/HeatFluxSensor",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1750,29 +1733,46 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrradiometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Temperature sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Thermocouple",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface."
+        "@value": "A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Pyrradiometer"
+        "@value": "Thermocouple"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://www.energy.eu/dictionary/data/1446.html"
+        "@id": "https://www.thermocoupleinfo.com/index.htm"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer"
+        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
       }
     ]
   }
