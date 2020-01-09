@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <title>
-   TERN Sensors Ontology
+   TERN SSN ontology extension and vocabulary
   </title>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
   <link href="style.css" rel="stylesheet" type="text/css"/>
@@ -17,7 +17,7 @@
    <img alt="TERN logo." src="https://www.tern.org.au/rs/7/sites/998/custom_files/tpl_images/assets/images/logo.png"/>
   </a>
   <h1>
-   TERN Sensors Ontology
+   TERN SSN ontology extension and vocabulary
   </h1>
   <section id="metadata">
    <h2 style="display:none;">
@@ -29,7 +29,7 @@
     </dt>
     <dd>
      <code>
-      https://w3id.org/tern/ontologies/sensor/
+      https://w3id.org/tern/ontologies/ssn/
      </code>
     </dd>
     <dt>
@@ -78,32 +78,36 @@
      Version IRI
     </dt>
     <dd>
-     <a href="https://w3id.org/tern/ontologies/sensor/0.1">
-      https://w3id.org/tern/ontologies/sensor/0.1
+     <a href="https://w3id.org/tern/ontologies/ssn/0.1">
+      https://w3id.org/tern/ontologies/ssn/0.1
      </a>
     </dd>
     <dt>
      Imports
     </dt>
     <dd>
-     <a href="http://www.w3.org/ns/ssn/">
-      ssn:
+     <a href="http://purl.org/dc/terms/">
+      dct:
+     </a>
+     <br/>
+     <a href="https://w3id.org/tern/ontologies/org">
+      https://w3id.org/tern/ontologies/org
      </a>
      <br/>
      <a href="http://www.w3.org/2004/02/skos/core#">
       skos:
      </a>
      <br/>
-     <a href="http://topbraid.org/schema/">
-      http://topbraid.org/schema/
+     <a href="http://www.w3.org/ns/sosa/">
+      sosa:
      </a>
      <br/>
      <a href="http://www.w3.org/ns/ssn/systems/">
       http://www.w3.org/ns/ssn/systems/
      </a>
      <br/>
-     <a href="http://www.w3.org/ns/sosa/">
-      sosa:
+     <a href="http://www.w3.org/ns/ssn/">
+      ssn:
      </a>
      <br/>
     </dd>
@@ -111,7 +115,7 @@
      Ontology Source
     </dt>
     <dd>
-     <a href="tern-sensor.ttl">
+     <a href="tern-ssn.ttl">
       RDF (turtle)
      </a>
     </dd>
@@ -121,7 +125,7 @@
    </h2>
    <div id="description">
     <p>
-     A vocabulary of TERN sensors and platforms.
+     A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System.
     </p>
    </div>
   </section>
@@ -141,6 +145,11 @@
      </a>
     </li>
     <li>
+     <a href="#objectproperties">
+      Object Properties
+     </a>
+    </li>
+    <li>
      <a href="#namespaces">
       Namespaces
      </a>
@@ -152,7 +161,7 @@
     Overview
    </h2>
    <p style="padding-bottom: 1rem;">
-    An overview of the TERN Sensors ontology.
+    An overview of the TERN SSN ontology extension.
    </p>
    <figure>
     <img alt="TERN Sensors conceptual model" src="tern-sensor-conceptual-model.png"/>
@@ -164,12 +173,12 @@
     </figcaption>
    </figure>
    <figure>
-    <img alt="TERN Sensors ontology overview diagram." src="tern-sensor.ttl.txt.svg"/>
+    <img alt="TERN SSN extension overview diagram." src="tern-sensor.ttl.txt.svg"/>
     <figcaption style="padding-bottom: 3rem">
      <strong>
       Figure 2:
      </strong>
-     TERN Sensors ontology overview.
+     TERN SSN extension overview.
     </figcaption>
    </figure>
   </section>
@@ -239,6 +248,11 @@
      </a>
     </li>
     <li>
+     <a href="#Deploymentinfo">
+      Deployment info
+     </a>
+    </li>
+    <li>
      <a href="#Dewpointhygrometer">
       Dew point hygrometer
      </a>
@@ -254,6 +268,11 @@
      </a>
     </li>
     <li>
+     <a href="#Eddycovariancefluxtower">
+      Eddy covariance flux tower
+     </a>
+    </li>
+    <li>
      <a href="#Electromagneticradiationabsorptionhygrometer">
       Electromagnetic radiation absorption hygrometer
      </a>
@@ -266,16 +285,6 @@
     <li>
      <a href="#Fixedplatform">
       Fixed platform
-     </a>
-    </li>
-    <li>
-     <a href="#Fluxtower">
-      Flux tower
-     </a>
-    </li>
-    <li>
-     <a href="#Fluxtowersensor">
-      Flux tower sensor
      </a>
     </li>
     <li>
@@ -496,7 +505,7 @@
       </th>
       <td>
        <a href="#Sonicanemometer">
-        tern-sensor:SonicAnemometer
+        tern-ssn:SonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -538,7 +547,7 @@
       </th>
       <td>
        <a href="#Sonicanemometer">
-        tern-sensor:SonicAnemometer
+        tern-ssn:SonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -562,7 +571,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Actinometer
+        https://w3id.org/tern/ontologies/ssn/Actinometer
        </code>
       </td>
      </tr>
@@ -580,7 +589,7 @@
       </th>
       <td>
        <a href="#Radiometer">
-        tern-sensor:Radiometer
+        tern-ssn:Radiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -594,14 +603,14 @@
       </th>
       <td>
        <a href="#Pyranometer">
-        tern-sensor:Pyranometer
+        tern-ssn:Pyranometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Netradiometer">
-        tern-sensor:NetRadiometer
+        tern-ssn:NetRadiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -625,7 +634,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Aircraft
+        https://w3id.org/tern/ontologies/ssn/Aircraft
        </code>
       </td>
      </tr>
@@ -635,7 +644,7 @@
       </th>
       <td>
        <a href="#Mobileplatform">
-        tern-sensor:MobilePlatform
+        tern-ssn:MobilePlatform
        </a>
        <sup class="sup-c" title="class">
         c
@@ -649,7 +658,7 @@
       </th>
       <td>
        <a href="#Drone">
-        tern-sensor:Drone
+        tern-ssn:Drone
        </a>
        <sup class="sup-c" title="class">
         c
@@ -673,7 +682,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Anemometer
+        https://w3id.org/tern/ontologies/ssn/Anemometer
        </code>
       </td>
      </tr>
@@ -691,7 +700,7 @@
       </th>
       <td>
        <a href="#Windsensor">
-        tern-sensor:WindSensor
+        tern-ssn:WindSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -704,22 +713,22 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Hotwireanemometer">
-        tern-sensor:HotWireAnemometer
+       <a href="#Sonicanemometer">
+        tern-ssn:SonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Sonicanemometer">
-        tern-sensor:SonicAnemometer
+       <a href="#Hotwireanemometer">
+        tern-ssn:HotWireAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Cupanemometer">
-        tern-sensor:CupAnemometer
+        tern-ssn:CupAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -743,7 +752,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/AneroidBarometer
+        https://w3id.org/tern/ontologies/ssn/AneroidBarometer
        </code>
       </td>
      </tr>
@@ -761,7 +770,7 @@
       </th>
       <td>
        <a href="#Barometer">
-        tern-sensor:Barometer
+        tern-ssn:Barometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -785,7 +794,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Barometer
+        https://w3id.org/tern/ontologies/ssn/Barometer
        </code>
       </td>
      </tr>
@@ -802,8 +811,8 @@
        Super-classes
       </th>
       <td>
-       <a href="#Fluxtowersensor">
-        tern-sensor:FluxTowerSensor
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -817,21 +826,21 @@
       </th>
       <td>
        <a href="#Electronicbarometer">
-        tern-sensor:ElectronicBarometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Aneroidbarometer">
-        tern-sensor:AneroidBarometer
+        tern-ssn:ElectronicBarometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Mercurybarometer">
-        tern-sensor:MercuryBarometer
+        tern-ssn:MercuryBarometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Aneroidbarometer">
+        tern-ssn:AneroidBarometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -855,7 +864,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/CapactitiveSensor
+        https://w3id.org/tern/ontologies/ssn/CapactitiveSensor
        </code>
       </td>
      </tr>
@@ -872,8 +881,8 @@
        Super-classes
       </th>
       <td>
-       <a href="#Fluxtowersensor">
-        tern-sensor:FluxTowerSensor
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -897,7 +906,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Ceilometer
+        https://w3id.org/tern/ontologies/ssn/Ceilometer
        </code>
       </td>
      </tr>
@@ -939,7 +948,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/CupAnemometer
+        https://w3id.org/tern/ontologies/ssn/CupAnemometer
        </code>
       </td>
      </tr>
@@ -957,7 +966,7 @@
       </th>
       <td>
        <a href="#Anemometer">
-        tern-sensor:Anemometer
+        tern-ssn:Anemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -981,7 +990,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Dendrometer
+        https://w3id.org/tern/ontologies/ssn/Dendrometer
        </code>
       </td>
      </tr>
@@ -1009,6 +1018,144 @@
      </tr>
     </table>
    </div>
+   <div class="entity class" id="Deploymentinfo">
+    <h3>
+     Deployment info
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/ssn/DeploymentInfo
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Deployment information of a system.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/2002/07/owl#Thing">
+        owl:Thing
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="#onsystem">
+        tern-ssn:onSystem
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#onsystem">
+        tern-ssn:onSystem
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        min
+       </span>
+       1
+       <br/>
+       <a href="http://purl.org/dc/terms/subject">
+        dct:subject
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://purl.org/dc/terms/subject">
+        dct:subject
+       </a>
+       <span class="cardinality">
+        exactly
+       </span>
+       1
+       <br/>
+       <a href="ub1bL181C22">
+        ub1bL181C22
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/Deployment">
+        ssn:Deployment
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#onsystem">
+        tern-ssn:onSystem
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#deploymentinfo">
+        tern-ssn:deploymentInfo
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
    <div class="entity class" id="Dewpointhygrometer">
     <h3>
      Dew point hygrometer
@@ -1023,7 +1170,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/DewPointHygrometer
+        https://w3id.org/tern/ontologies/ssn/DewPointHygrometer
        </code>
       </td>
      </tr>
@@ -1041,7 +1188,7 @@
       </th>
       <td>
        <a href="#Hygrometer">
-        tern-sensor:Hygrometer
+        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1065,7 +1212,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Drone
+        https://w3id.org/tern/ontologies/ssn/Drone
        </code>
       </td>
      </tr>
@@ -1075,7 +1222,7 @@
       </th>
       <td>
        <a href="#Aircraft">
-        tern-sensor:Aircraft
+        tern-ssn:Aircraft
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1099,7 +1246,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/EcologicalPlot
+        https://w3id.org/tern/ontologies/ssn/EcologicalPlot
        </code>
       </td>
      </tr>
@@ -1109,7 +1256,7 @@
       </th>
       <td>
        <a href="#Fixedplatform">
-        tern-sensor:FixedPlatform
+        tern-ssn:FixedPlatform
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1123,7 +1270,41 @@
       </th>
       <td>
        <a href="#Supersite">
-        tern-sensor:SuperSite
+        tern-ssn:SuperSite
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Eddycovariancefluxtower">
+    <h3>
+     Eddy covariance flux tower
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="#Fixedplatform">
+        tern-ssn:FixedPlatform
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1147,7 +1328,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/ElectromagneticRadiationHygrometer
+        https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer
        </code>
       </td>
      </tr>
@@ -1157,7 +1338,7 @@
       </th>
       <td>
        <a href="#Hygrometer">
-        tern-sensor:Hygrometer
+        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1181,7 +1362,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/ElectronicBarometer
+        https://w3id.org/tern/ontologies/ssn/ElectronicBarometer
        </code>
       </td>
      </tr>
@@ -1191,7 +1372,7 @@
       </th>
       <td>
        <a href="#Barometer">
-        tern-sensor:Barometer
+        tern-ssn:Barometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1215,7 +1396,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/FixedPlatform
+        https://w3id.org/tern/ontologies/ssn/FixedPlatform
        </code>
       </td>
      </tr>
@@ -1238,146 +1419,22 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Ecologicalplot">
-        tern-sensor:EcologicalPlot
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Fluxtower">
-        tern-sensor:FluxTower
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Weatherstation">
-        tern-sensor:WeatherStation
+        tern-ssn:WeatherStation
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-      </td>
-     </tr>
-    </table>
-   </div>
-   <div class="entity class" id="Fluxtower">
-    <h3>
-     Flux tower
-     <sup class="sup-c" title="class">
-      c
-     </sup>
-    </h3>
-    <table>
-     <tr>
-      <th>
-       IRI
-      </th>
-      <td>
-       <code>
-        https://w3id.org/tern/ontologies/sensor/FluxTower
-       </code>
-      </td>
-     </tr>
-     <tr>
-      <th>
-       Super-classes
-      </th>
-      <td>
-       <a href="#Fixedplatform">
-        tern-sensor:FixedPlatform
+       <a href="#Eddycovariancefluxtower">
+        tern-ssn:EddyCovarianceFluxTower
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-      </td>
-     </tr>
-    </table>
-   </div>
-   <div class="entity class" id="Fluxtowersensor">
-    <h3>
-     Flux tower sensor
-     <sup class="sup-c" title="class">
-      c
-     </sup>
-    </h3>
-    <table>
-     <tr>
-      <th>
-       IRI
-      </th>
-      <td>
-       <code>
-        https://w3id.org/tern/ontologies/sensor/FluxTowerSensor
-       </code>
-      </td>
-     </tr>
-     <tr>
-      <th>
-       Super-classes
-      </th>
-      <td>
-       <a href="http://www.w3.org/ns/sosa/Sensor">
-        sosa:Sensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-      </td>
-     </tr>
-     <tr>
-      <th>
-       Sub-classes
-      </th>
-      <td>
-       <a href="#Infraredgasanalyzer">
-        tern-sensor:InfraredGasAnalyzer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Windsensor">
-        tern-sensor:WindSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Barometer">
-        tern-sensor:Barometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Temperaturesensor">
-        tern-sensor:TemperatureSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Hygrometer">
-        tern-sensor:Hygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Capactitivesensor">
-        tern-sensor:CapactitiveSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Radiationsensor">
-        tern-sensor:RadiationSensor
+       <a href="#Ecologicalplot">
+        tern-ssn:EcologicalPlot
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1401,7 +1458,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/FrequencyDomainReflectometer
+        https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer
        </code>
       </td>
      </tr>
@@ -1419,7 +1476,7 @@
       </th>
       <td>
        <a href="#Soilmoisturesensor">
-        tern-sensor:SoilMoistureSensor
+        tern-ssn:SoilMoistureSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1443,7 +1500,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/GravimetricHygrometer
+        https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer
        </code>
       </td>
      </tr>
@@ -1461,7 +1518,7 @@
       </th>
       <td>
        <a href="#Hygrometer">
-        tern-sensor:Hygrometer
+        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1485,7 +1542,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/HairHygrometer
+        https://w3id.org/tern/ontologies/ssn/HairHygrometer
        </code>
       </td>
      </tr>
@@ -1505,7 +1562,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Hygrometer">
-        tern-sensor:Hygrometer
+        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1529,7 +1586,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/HeatFluxSensor
+        https://w3id.org/tern/ontologies/ssn/HeatFluxSensor
        </code>
       </td>
      </tr>
@@ -1571,7 +1628,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/HotWireAnemometer
+        https://w3id.org/tern/ontologies/ssn/HotWireAnemometer
        </code>
       </td>
      </tr>
@@ -1589,7 +1646,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Anemometer">
-        tern-sensor:Anemometer
+        tern-ssn:Anemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1613,7 +1670,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Hygrometer
+        https://w3id.org/tern/ontologies/ssn/Hygrometer
        </code>
       </td>
      </tr>
@@ -1630,8 +1687,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Super-classes
       </th>
       <td>
-       <a href="#Fluxtowersensor">
-        tern-sensor:FluxTowerSensor
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1644,50 +1701,50 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Gravimetrichygrometer">
-        tern-sensor:GravimetricHygrometer
+       <a href="#Resistivehygrometer">
+        tern-ssn:ResistiveHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Dewpointhygrometer">
-        tern-sensor:DewPointHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Lithiumchlorideheatedcondensationhygrometer">
-        tern-sensor:LithiumChlorideHeatedCondensationHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Hairhygrometer">
-        tern-sensor:HairHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Electromagneticradiationabsorptionhygrometer">
-        tern-sensor:ElectromagneticRadiationHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Resistivehygrometer">
-        tern-sensor:ResistiveHygrometer
+        tern-ssn:DewPointHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Psychrometer">
-        tern-sensor:Psychrometer
+        tern-ssn:Psychrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Electromagneticradiationabsorptionhygrometer">
+        tern-ssn:ElectromagneticRadiationHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Hairhygrometer">
+        tern-ssn:HairHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Gravimetrichygrometer">
+        tern-ssn:GravimetricHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Lithiumchlorideheatedcondensationhygrometer">
+        tern-ssn:LithiumChlorideHeatedCondensationHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1711,7 +1768,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/InfraredGasAnalyzer
+        https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer
        </code>
       </td>
      </tr>
@@ -1728,8 +1785,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Super-classes
       </th>
       <td>
-       <a href="#Fluxtowersensor">
-        tern-sensor:FluxTowerSensor
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1753,7 +1810,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/LithiumChlorideHeatedCondensationHygrometer
+        https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer
        </code>
       </td>
      </tr>
@@ -1771,7 +1828,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Hygrometer">
-        tern-sensor:Hygrometer
+        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1795,7 +1852,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/MercuryBarometer
+        https://w3id.org/tern/ontologies/ssn/MercuryBarometer
        </code>
       </td>
      </tr>
@@ -1813,7 +1870,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Barometer">
-        tern-sensor:Barometer
+        tern-ssn:Barometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1837,7 +1894,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/MobilePlatform
+        https://w3id.org/tern/ontologies/ssn/MobilePlatform
        </code>
       </td>
      </tr>
@@ -1861,14 +1918,14 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Aircraft">
-        tern-sensor:Aircraft
+        tern-ssn:Aircraft
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Satellite">
-        tern-sensor:Satellite
+        tern-ssn:Satellite
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1892,7 +1949,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/NetRadiometer
+        https://w3id.org/tern/ontologies/ssn/NetRadiometer
        </code>
       </td>
      </tr>
@@ -1910,7 +1967,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Actinometer">
-        tern-sensor:Actinometer
+        tern-ssn:Actinometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1934,7 +1991,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/OpticalRainGauge
+        https://w3id.org/tern/ontologies/ssn/OpticalRainGauge
        </code>
       </td>
      </tr>
@@ -1952,7 +2009,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Raingauge">
-        tern-sensor:RainGauge
+        tern-ssn:RainGauge
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1976,7 +2033,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Psychrometer
+        https://w3id.org/tern/ontologies/ssn/Psychrometer
        </code>
       </td>
      </tr>
@@ -1997,7 +2054,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Hygrometer">
-        tern-sensor:Hygrometer
+        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2021,7 +2078,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Pyranometer
+        https://w3id.org/tern/ontologies/ssn/Pyranometer
        </code>
       </td>
      </tr>
@@ -2039,7 +2096,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Actinometer">
-        tern-sensor:Actinometer
+        tern-ssn:Actinometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2063,7 +2120,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Pyrgeometer
+        https://w3id.org/tern/ontologies/ssn/Pyrgeometer
        </code>
       </td>
      </tr>
@@ -2081,7 +2138,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Radiationsensor">
-        tern-sensor:RadiationSensor
+        tern-ssn:RadiationSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2105,7 +2162,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Pyrheliometer
+        https://w3id.org/tern/ontologies/ssn/Pyrheliometer
        </code>
       </td>
      </tr>
@@ -2123,7 +2180,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Radiationsensor">
-        tern-sensor:RadiationSensor
+        tern-ssn:RadiationSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2147,7 +2204,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Pyrradiometer
+        https://w3id.org/tern/ontologies/ssn/Pyrradiometer
        </code>
       </td>
      </tr>
@@ -2165,7 +2222,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Radiometer">
-        tern-sensor:Radiometer
+        tern-ssn:Radiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2189,7 +2246,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/QuantumSensor
+        https://w3id.org/tern/ontologies/ssn/QuantumSensor
        </code>
       </td>
      </tr>
@@ -2207,7 +2264,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Radiationsensor">
-        tern-sensor:RadiationSensor
+        tern-ssn:RadiationSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2231,7 +2288,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/RadiationSensor
+        https://w3id.org/tern/ontologies/ssn/RadiationSensor
        </code>
       </td>
      </tr>
@@ -2240,8 +2297,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Super-classes
       </th>
       <td>
-       <a href="#Fluxtowersensor">
-        tern-sensor:FluxTowerSensor
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2254,29 +2311,29 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Pyrheliometer">
-        tern-sensor:Pyrheliometer
+       <a href="#Radiometer">
+        tern-ssn:Radiometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Quantumsensor">
-        tern-sensor:QuantumSensor
+       <a href="#Pyrheliometer">
+        tern-ssn:Pyrheliometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Pyrgeometer">
-        tern-sensor:Pyrgeometer
+        tern-ssn:Pyrgeometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Radiometer">
-        tern-sensor:Radiometer
+       <a href="#Quantumsensor">
+        tern-ssn:QuantumSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2300,7 +2357,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Radiometer
+        https://w3id.org/tern/ontologies/ssn/Radiometer
        </code>
       </td>
      </tr>
@@ -2318,7 +2375,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Radiationsensor">
-        tern-sensor:RadiationSensor
+        tern-ssn:RadiationSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2332,14 +2389,14 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Actinometer">
-        tern-sensor:Actinometer
+        tern-ssn:Actinometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Pyrradiometer">
-        tern-sensor:Pyrradiometer
+        tern-ssn:Pyrradiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2363,7 +2420,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/RainGauge
+        https://w3id.org/tern/ontologies/ssn/RainGauge
        </code>
       </td>
      </tr>
@@ -2395,21 +2452,21 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Tippingbucketraingauge">
-        tern-sensor:TippingBucketRainGauge
+        tern-ssn:TippingBucketRainGauge
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Weighingprecipitationgauge">
-        tern-sensor:WeighingPrecipitationGauge
+        tern-ssn:WeighingPrecipitationGauge
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Opticalraingauge">
-        tern-sensor:OpticalRainGauge
+        tern-ssn:OpticalRainGauge
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2433,7 +2490,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/ResistanceThermometer
+        https://w3id.org/tern/ontologies/ssn/ResistanceThermometer
        </code>
       </td>
      </tr>
@@ -2451,7 +2508,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Temperaturesensor">
-        tern-sensor:TemperatureSensor
+        tern-ssn:TemperatureSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2475,7 +2532,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/ResistiveHygrometer
+        https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer
        </code>
       </td>
      </tr>
@@ -2493,7 +2550,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Hygrometer">
-        tern-sensor:Hygrometer
+        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2517,7 +2574,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/SapFlowSensor
+        https://w3id.org/tern/ontologies/ssn/SapFlowSensor
        </code>
       </td>
      </tr>
@@ -2559,7 +2616,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Satellite
+        https://w3id.org/tern/ontologies/ssn/Satellite
        </code>
       </td>
      </tr>
@@ -2569,7 +2626,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Mobileplatform">
-        tern-sensor:MobilePlatform
+        tern-ssn:MobilePlatform
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2593,7 +2650,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/SoilMoistureSensor
+        https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor
        </code>
       </td>
      </tr>
@@ -2616,15 +2673,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Frequencydomainreflectometer">
-        tern-sensor:FrequencyDomainReflectometer
+       <a href="#Timedomainreflectometer">
+        tern-ssn:TimeDomainReflectometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Timedomainreflectometer">
-        tern-sensor:TimeDomainReflectometer
+       <a href="#Frequencydomainreflectometer">
+        tern-ssn:FrequencyDomainReflectometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2648,7 +2705,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/SonicAnemometer
+        https://w3id.org/tern/ontologies/ssn/SonicAnemometer
        </code>
       </td>
      </tr>
@@ -2658,7 +2715,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Anemometer">
-        tern-sensor:Anemometer
+        tern-ssn:Anemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2671,15 +2728,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#3Dsonicanemometer">
-        tern-sensor:3DSonicAnemometer
+       <a href="https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer">
+        https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#2Dsonicanemometer">
-        tern-sensor:2DSonicAnemometer
+       <a href="https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer">
+        https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2703,7 +2760,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Spectrometer
+        https://w3id.org/tern/ontologies/ssn/Spectrometer
        </code>
       </td>
      </tr>
@@ -2745,7 +2802,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/SuperSite
+        https://w3id.org/tern/ontologies/ssn/SuperSite
        </code>
       </td>
      </tr>
@@ -2755,7 +2812,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Ecologicalplot">
-        tern-sensor:EcologicalPlot
+        tern-ssn:EcologicalPlot
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2779,7 +2836,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/TemperatureSensor
+        https://w3id.org/tern/ontologies/ssn/TemperatureSensor
        </code>
       </td>
      </tr>
@@ -2788,8 +2845,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Super-classes
       </th>
       <td>
-       <a href="#Fluxtowersensor">
-        tern-sensor:FluxTowerSensor
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2802,22 +2859,22 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Thermocouple">
-        tern-sensor:Thermocouple
+       <a href="#Resistancethermometer">
+        tern-ssn:ResistanceThermometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Resistancethermometer">
-        tern-sensor:ResistanceThermometer
+       <a href="#Thermocouple">
+        tern-ssn:Thermocouple
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
        <a href="#Thermistor">
-        tern-sensor:Thermistor
+        tern-ssn:Thermistor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2841,7 +2898,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Thermistor
+        https://w3id.org/tern/ontologies/ssn/Thermistor
        </code>
       </td>
      </tr>
@@ -2859,7 +2916,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Temperaturesensor">
-        tern-sensor:TemperatureSensor
+        tern-ssn:TemperatureSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2883,7 +2940,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/Thermocouple
+        https://w3id.org/tern/ontologies/ssn/Thermocouple
        </code>
       </td>
      </tr>
@@ -2901,7 +2958,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <a href="#Temperaturesensor">
-        tern-sensor:TemperatureSensor
+        tern-ssn:TemperatureSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2925,7 +2982,7 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/TimeDomainReflectometer
+        https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer
        </code>
       </td>
      </tr>
@@ -2945,7 +3002,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <a href="#Soilmoisturesensor">
-        tern-sensor:SoilMoistureSensor
+        tern-ssn:SoilMoistureSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2969,7 +3026,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/TippingBucketRainGauge
+        https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge
        </code>
       </td>
      </tr>
@@ -2987,7 +3044,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <a href="#Raingauge">
-        tern-sensor:RainGauge
+        tern-ssn:RainGauge
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3011,7 +3068,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/WeatherStation
+        https://w3id.org/tern/ontologies/ssn/WeatherStation
        </code>
       </td>
      </tr>
@@ -3021,7 +3078,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <a href="#Fixedplatform">
-        tern-sensor:FixedPlatform
+        tern-ssn:FixedPlatform
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3045,7 +3102,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/WeighingPrecipitationGauge
+        https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge
        </code>
       </td>
      </tr>
@@ -3063,7 +3120,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <a href="#Raingauge">
-        tern-sensor:RainGauge
+        tern-ssn:RainGauge
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3087,7 +3144,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/WindSensor
+        https://w3id.org/tern/ontologies/ssn/WindSensor
        </code>
       </td>
      </tr>
@@ -3096,8 +3153,8 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
        Super-classes
       </th>
       <td>
-       <a href="#Fluxtowersensor">
-        tern-sensor:FluxTowerSensor
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3111,12 +3168,146 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       </th>
       <td>
        <a href="#Anemometer">
-        tern-sensor:Anemometer
+        tern-ssn:Anemometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="objectproperties">
+   <h2>
+    Object Properties
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &uparrow
+     </a>
+    </span>
+   </h2>
+   <ul class="hlist">
+    <li>
+     <a href="#contactpoint">
+      contact point
+     </a>
+    </li>
+    <li>
+     <a href="#deploymentinfo">
+      deployment info
+     </a>
+    </li>
+    <li>
+     <a href="#onsystem">
+      on system
+     </a>
+    </li>
+   </ul>
+   <div class="entity property" id="contactpoint">
+    <h3>
+     contact point
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/ssn/contactPoint
+       </code>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="deploymentinfo">
+    <h3>
+     deployment info
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/ssn/deploymentInfo
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/ssn/Deployment">
+        ssn:Deployment
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Deploymentinfo">
+        tern-ssn:DeploymentInfo
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="onsystem">
+    <h3>
+     on system
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/ssn/onSystem
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Link deployment information to a system.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Deploymentinfo">
+        tern-ssn:DeploymentInfo
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
       </td>
      </tr>
     </table>
@@ -3139,7 +3330,7 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
     </dt>
     <dd>
      <code>
-      https://w3id.org/tern/ontologies/sensor/
+      https://w3id.org/tern/ontologies/ssn/
      </code>
     </dd>
     <dt>
@@ -3215,11 +3406,11 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
      </code>
     </dd>
     <dt>
-     tern-sensor
+     tern-ssn
     </dt>
     <dd>
      <code>
-      https://w3id.org/tern/ontologies/sensor/
+      https://w3id.org/tern/ontologies/ssn/
      </code>
     </dd>
     <dt>

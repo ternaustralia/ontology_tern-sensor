@@ -6,7 +6,7 @@ logo:
   href: 'https://www.tern.org.au'
 
 overview:
-  p: An overview of the TERN Sensors ontology.
+  p: An overview of the TERN SSN ontology extension.
   figures:
     - figure:
         src: tern-sensor-conceptual-model.png
@@ -14,8 +14,8 @@ overview:
         caption: TERN Sensors conceptual model
     - figure:
         src: tern-sensor.ttl.txt.svg
-        alt: TERN Sensors ontology overview diagram.
-        caption: TERN Sensors ontology overview.
+        alt: TERN SSN extension overview diagram.
+        caption: TERN SSN extension overview.
 
 classes:
   figures: []
