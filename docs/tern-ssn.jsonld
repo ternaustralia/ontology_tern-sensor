@@ -1,245 +1,28 @@
 [
   {
-    "@id": "https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66",
-    "@type": [
-      "http://schema.org/Organization"
-    ],
-    "http://schema.org/alternateName": [
-      {
-        "@value": "TERN"
-      }
-    ],
-    "http://schema.org/name": [
-      {
-        "@value": "Terrestrial Ecoystem Research Network"
-      }
-    ],
-    "http://schema.org/url": [
-      {
-        "@id": "https://www.tern.org.au/"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrheliometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A pyrheliometer is an instrument for measurement of direct beam solar irradiance."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Pyrheliometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Pyrheliometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge",
+    "@id": "https://w3id.org/tern/ontologies/ssn/AneroidBarometer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass."
+        "@value": "An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Weighing precipitation gauge"
+        "@value": "Aneroid barometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge"
+        "@id": "https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@value": "Weighing rain gauge"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/SuperSite",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Super site"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/EcologicalPlot"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/ssn/systems/hasSystemCapability",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has system capability"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/hasProperty"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A frequency domain reflectometry probe can measure the capitance from the change in frequency of a reflected radio wave or resonance frequency. An oscillator propagates an electromagnetic signal through a metal tine or other wave guide, and the difference in the output wave and the return wave frequency determines the soil moisture."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Frequency domain reflectometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://soilsensor.com/articles/capacitance-frequency-frequency-domain-reflectometry-fdr/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@value": "FDR"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrradiometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Pyrradiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.energy.eu/dictionary/data/1446.html"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Barometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A barometer is a scientific instrument that is used to measure air pressure in a certain environment."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Barometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Barometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/QuantumSensor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Quantum sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Quantum_sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
+        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
       }
     ]
   },
@@ -260,88 +43,22 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:ub1bL387C19"
+        "@id": "_:ub1bL370C19"
       },
       {
         "@id": "_:ub1bL365C19"
       },
       {
-        "@id": "_:ub1bL377C19"
-      },
-      {
         "@id": "_:ub1bL382C19"
       },
       {
-        "@id": "_:ub1bL370C19"
+        "@id": "_:ub1bL387C19"
+      },
+      {
+        "@id": "_:ub1bL377C19"
       },
       {
         "@id": "http://www.w3.org/2002/07/owl#Thing"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL387C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/onSystem"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL365C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/subject"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL377C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/System"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/onSystem"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL382C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#cardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/subject"
       }
     ]
   },
@@ -370,425 +87,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Thermocouple",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Thermocouple"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.thermocoupleinfo.com/index.htm"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/contactPoint",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "contact point"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 °C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh)."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Lithium chloride heated condensation hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.wmo.int/pages/prog/www/IMOP/publications/CIMO-Guide/Prelim_2018_ed/8_I_4_en_MR_clean.pdf"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Actinometers are instruments used to measure the heating power of radiation."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Actinometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Actinometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/CapactitiveSensor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Capactitive sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "http://www.cs.cmu.edu/~ram/capsense/intro.html"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/NetRadiometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Net radiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Net_radiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Dendrometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Dendrometers are precision sensors that can measure the growth of plants. More specifically, dendrometers are used by researchers, growers and foresters to measure the growth of a stem, trunk, branch, roots or fruits over time."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Dendrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.edaphic.com.au/products/dendrometers/"
-      },
-      {
-        "@id": "https://www.edaphic.com.au/dendrometers-multi-purpose-sensors/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/ResistanceThermometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Resistance thermometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Resistance_thermometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@value": "Electrical resistance thermometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Spectrometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Spectrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Spectroradiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/sosa/Sensor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ub1bL86C19"
-      },
-      {
-        "@id": "_:ub1bL101C19"
-      },
-      {
-        "@id": "_:ub1bL81C19"
-      },
-      {
-        "@id": "http://www.w3.org/ns/ssn/System"
-      },
-      {
-        "@id": "_:ub1bL61C19"
-      },
-      {
-        "@id": "_:ub1bL96C19"
-      },
-      {
-        "@id": "_:ub1bL71C19"
-      },
-      {
-        "@id": "_:ub1bL76C19"
-      },
-      {
-        "@id": "_:ub1bL66C19"
-      },
-      {
-        "@id": "_:ub1bL91C19"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@language": "en",
-        "@value": "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL86C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#cardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://schema.org/model"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL101C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/implements"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL81C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/Stimulus"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/detects"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL61C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://schema.org/Organization"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://schema.org/manufacturer"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL96C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://schema.org/manufacturer"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL71C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/ObservableProperty"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/observes"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL76C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Observation"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/madeObservation"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL66C19",
+    "@id": "_:ub1bL365C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -799,12 +98,12 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://schema.org/model"
+        "@id": "http://purl.org/dc/terms/subject"
       }
     ]
   },
   {
-    "@id": "_:ub1bL91C19",
+    "@id": "_:ub1bL382C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -816,228 +115,12 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/isDeployed"
+        "@id": "http://purl.org/dc/terms/subject"
       }
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/ssn/Deployment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Deployment"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ub1bL164C19"
-      },
-      {
-        "@id": "_:ub1bL159C19"
-      },
-      {
-        "@id": "_:ub1bL154C19"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@language": "en",
-        "@value": "For example, a temperature Sensor deployed on a wall, or a whole network of Sensors deployed for an Observation campaign."
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL164C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/System"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/deployedSystem"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL159C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/Property"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/forProperty"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL154C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/deployedOnPlatform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/deploymentInfo",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/Deployment"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "deployment info"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/DeploymentInfo"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Eddy covariance flux tower"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/ElectronicBarometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Electronic barometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/MercuryBarometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Mercury barometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Barometer#Mercury_barometers"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/ssn/systems/SystemProperty",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "System Property"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ub1bL806C19"
-      },
-      {
-        "@id": "http://www.w3.org/ns/ssn/Property"
-      },
-      {
-        "@id": "_:ub1bL799C19"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL806C19",
+    "@id": "_:ub1bL387C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1049,374 +132,111 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:ub1bL809C22"
+        "@id": "https://w3id.org/tern/ontologies/ssn/onSystem"
       }
     ]
   },
   {
-    "@id": "_:ub1bL809C22",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemProperty"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL799C19",
+    "@id": "_:ub1bL377C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "https://www.w3.org/ns/ssn/systems/SystemCapability"
+        "@id": "http://www.w3.org/ns/ssn/System"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:ub1bL802C22"
+        "@id": "https://w3id.org/tern/ontologies/ssn/onSystem"
       }
     ]
   },
   {
-    "@id": "_:ub1bL802C22",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemProperty"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Radiation sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Thermistor",
+    "@id": "https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A thermistor is a type of resistor whose resistance is dependent on temperature, more so than in standard resistors. The word is a combination of thermal and resistor. Thermistors are widely used as inrush current limiters, temperature sensors (negative temperature coefficient or NTC type typically), self-resetting overcurrent protectors, and self-regulating heating elements (positive temperature coefficient or PTC type typically)."
+        "@value": "The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Thermistor"
+        "@value": "Tipping bucket rain gauge"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Thermistor"
+        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
+        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/HotWireAnemometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/Psychrometer",
     "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity."
+        "@value": "A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: \n\n1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. \n2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Hot wire anemometer"
+        "@value": "Psychrometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer"
+        "@id": "https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor",
+    "@id": "https://w3id.org/tern/ontologies/ssn/EcologicalPlot",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Temperature sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Aircraft",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Aircraft"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "3D sonic anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/ssn/System",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "System"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ub1bL209C19"
-      },
-      {
-        "@id": "_:ub1bL214C19"
-      },
-      {
-        "@id": "_:ub1bL177C19"
-      },
-      {
-        "@id": "_:ub1bL197C19"
-      },
-      {
-        "@id": "_:ub1bL187C19"
-      },
-      {
-        "@id": "_:ub1bL192C19"
-      },
-      {
-        "@id": "_:ub1bL204C19"
-      },
-      {
-        "@id": "_:ub1bL182C19"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL209C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/SurvivalRange"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/hasSurvivalRange"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL214C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/SystemCapability"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemCapability"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL177C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/isHostedBy"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL197C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/System"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "_:ub1bL200C22"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL200C22",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/hasSubSystem"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL187C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/Deployment"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/hasDeployment"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL192C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/System"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/hasSubSystem"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL204C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/OperatingRange"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/hasOperatingRange"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL182C19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Procedure"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/implements"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/WeatherStation",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Weather station"
+        "@value": "Ecological plot"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Sonic anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
       }
     ]
   },
@@ -1448,6 +268,340 @@
     ]
   },
   {
+    "@id": "https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Resistive hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Hygrometer#Resistive"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "Electrical resistive hygrometer"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/sosa/isHostedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://schema.org/domainIncludes": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/Actuator"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sampler"
+      }
+    ],
+    "http://schema.org/rangeIncludes": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is hosted by"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/hosts"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Actinometers are instruments used to measure the heating power of radiation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Actinometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Actinometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/ssn/hasDeployment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Relation between a System and a Deployment, recording that the System is deployed in that Deployment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has deployment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/deployedSystem"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Relation between a System and a Deployment, recording that the System is deployed in that Deployment."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/sosa/hosts",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://schema.org/domainIncludes": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      }
+    ],
+    "http://schema.org/rangeIncludes": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Actuator"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sampler"
+      },
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hosts"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/isHostedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/ssn/inDeployment"
+          },
+          {
+            "@id": "http://www.w3.org/ns/ssn/deployedSystem"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "3D sonic anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Satellite",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Satellite"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/ssn/inDeployment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "in deployment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/deployedOnPlatform"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@language": "en",
+        "@value": "For example, a relation between a buoy and a deployment of several Sensors."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Soil moisture sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Radiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Radiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/tern/ontologies/ssn/Ceilometer",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
@@ -1475,54 +629,37 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Drone",
+    "@id": "https://w3id.org/tern/ontologies/ssn/CapactitiveSensor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Drone"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Aircraft"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/DewPointHygrometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point."
+        "@value": "A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Dew point hygrometer"
+        "@value": "Capactitive sensor"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://www.britannica.com/science/hygrometer#ref111343"
+        "@id": "http://www.cs.cmu.edu/~ram/capsense/intro.html"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
       }
     ]
   },
   {
     "@id": "https://w3id.org/tern/ontologies/ssn/Pyrgeometer",
     "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1640,37 +777,55 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/HeatFluxSensor",
+    "@id": "https://w3id.org/tern/ontologies/ssn/contactPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "contact point"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/WeatherStation",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A heat flux sensor is a transducer that generates an electrical signal proportional to the total heat rate applied to the surface of the sensor. The measured heat rate is divided by the surface area of the sensor to determine the heat flux."
-      }
-    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Heat flux sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Heat_flux_sensor"
+        "@value": "Weather station"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
+        "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Eddy covariance flux tower"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
       }
     ]
   },
   {
     "@id": "https://w3id.org/tern/ontologies/ssn/HairHygrometer",
     "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -1690,178 +845,6 @@
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/isDeployed",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "is deployed"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Sonic anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/ssn/systems/hasSystemProperty",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has system property"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/hasProperty"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Psychrometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: \n\n1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. \n2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Psychrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Soil moisture sensor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Tipping bucket rain gauge"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/ssn/deployedSystem",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Relation between a Deployment and a deployed System."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "deployed system"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/hasDeployment"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Relation between a Deployment and a deployed System."
       }
     ]
   },
@@ -1900,10 +883,191 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform",
+    "@id": "https://w3id.org/tern/ontologies/ssn/Drone",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Drone"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Aircraft"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.w3.org/ns/ssn/systems/SystemProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "System Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL799C19"
+      },
+      {
+        "@id": "http://www.w3.org/ns/ssn/Property"
+      },
+      {
+        "@id": "_:ub1bL806C19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL799C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/SystemCapability"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:ub1bL802C22"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL802C22",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemProperty"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL806C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:ub1bL809C22"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL809C22",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Infrared gas analyzer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Infrared_gas_analyzer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66",
+    "@type": [
+      "http://schema.org/Organization"
+    ],
+    "http://schema.org/alternateName": [
+      {
+        "@value": "TERN"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Terrestrial Ecoystem Research Network"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@id": "https://www.tern.org.au/"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Thermistor",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A thermistor is a type of resistor whose resistance is dependent on temperature, more so than in standard resistors. The word is a combination of thermal and resistor. Thermistors are widely used as inrush current limiters, temperature sensors (negative temperature coefficient or NTC type typically), self-resetting overcurrent protectors, and self-regulating heating elements (positive temperature coefficient or PTC type typically)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Thermistor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Thermistor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -1917,308 +1081,142 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/CupAnemometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/isDeployed",
     "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft."
-      }
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Cup anemometer"
+        "@value": "is deployed"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Gravimetric hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Hygrometer#Gravimetric"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Pyranometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m²) from the hemisphere above within a wavelength range 0.3 μm to 3 μm."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Pyranometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Pyranometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer"
-      }
-    ]
-  },
-  {
-    "@id": "http://schema.org/manufacturer",
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "https://w3id.org/tern/ontologies/org/Manufacturer"
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
       }
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/sosa/hosts",
+    "@id": "http://www.w3.org/ns/ssn/System",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://schema.org/domainIncludes": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      }
-    ],
-    "http://schema.org/rangeIncludes": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sampler"
-      },
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      },
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      },
-      {
-        "@id": "http://www.w3.org/ns/sosa/Actuator"
-      }
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+        "@value": "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://www.w3.org/ns/sosa/"
+        "@id": "http://www.w3.org/ns/ssn/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "hosts"
+        "@value": "System"
       }
     ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/ns/sosa/isHostedBy"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+        "@id": "_:ub1bL187C19"
+      },
       {
-        "@list": [
-          {
-            "@id": "http://www.w3.org/ns/ssn/inDeployment"
-          },
-          {
-            "@id": "http://www.w3.org/ns/ssn/deployedSystem"
-          }
-        ]
+        "@id": "_:ub1bL182C19"
+      },
+      {
+        "@id": "_:ub1bL209C19"
+      },
+      {
+        "@id": "_:ub1bL214C19"
+      },
+      {
+        "@id": "_:ub1bL197C19"
+      },
+      {
+        "@id": "_:ub1bL204C19"
+      },
+      {
+        "@id": "_:ub1bL177C19"
+      },
+      {
+        "@id": "_:ub1bL192C19"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+        "@value": "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/OpticalRainGauge",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Optical rain gauge"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Mobile platform"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/onSystem",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Link deployment information to a system."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/DeploymentInfo"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "on system"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/ssn/systems/SystemCapability",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.\n\n    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/ns/ssn/systems/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "System Capability"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ub1bL774C19"
-      },
-      {
-        "@id": "_:ub1bL784C19"
-      },
-      {
-        "@id": "_:ub1bL767C19"
-      },
-      {
-        "@id": "_:ub1bL779C19"
-      },
-      {
-        "@id": "_:ub1bL762C19"
-      },
-      {
-        "@id": "http://www.w3.org/ns/ssn/Property"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.\n\n    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations."
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL774C19",
+    "@id": "_:ub1bL187C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "https://www.w3.org/ns/ssn/systems/Condition"
+        "@id": "http://www.w3.org/ns/ssn/Deployment"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "https://www.w3.org/ns/ssn/systems/inCondition"
+        "@id": "http://www.w3.org/ns/ssn/hasDeployment"
       }
     ]
   },
   {
-    "@id": "_:ub1bL784C19",
+    "@id": "_:ub1bL182C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
+        "@id": "http://www.w3.org/ns/sosa/Procedure"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "https://www.w3.org/ns/ssn/systems/inCondition"
+        "@id": "http://www.w3.org/ns/ssn/implements"
       }
     ]
   },
   {
-    "@id": "_:ub1bL767C19",
+    "@id": "_:ub1bL209C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/SurvivalRange"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/hasSurvivalRange"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL214C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/SystemCapability"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemCapability"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL197C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2229,36 +1227,146 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:ub1bL770C22"
+        "@id": "_:ub1bL200C22"
       }
     ]
   },
   {
-    "@id": "_:ub1bL770C22",
+    "@id": "_:ub1bL200C22",
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
-        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemCapability"
+        "@id": "http://www.w3.org/ns/ssn/hasSubSystem"
       }
     ]
   },
   {
-    "@id": "_:ub1bL779C19",
+    "@id": "_:ub1bL204C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "https://www.w3.org/ns/ssn/systems/SystemProperty"
+        "@id": "https://www.w3.org/ns/ssn/systems/OperatingRange"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemProperty"
+        "@id": "https://www.w3.org/ns/ssn/systems/hasOperatingRange"
       }
     ]
   },
   {
-    "@id": "_:ub1bL762C19",
+    "@id": "_:ub1bL177C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/isHostedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL192C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/System"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/hasSubSystem"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/ssn/Deployment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Deployment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL164C19"
+      },
+      {
+        "@id": "_:ub1bL154C19"
+      },
+      {
+        "@id": "_:ub1bL159C19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@language": "en",
+        "@value": "For example, a temperature Sensor deployed on a wall, or a whole network of Sensors deployed for an Observation campaign."
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL164C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/System"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/deployedSystem"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL154C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/deployedOnPlatform"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL159C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2274,129 +1382,10 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "@id": "http://schema.org/manufacturer",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@value": "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "2D sonic anemometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Satellite",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Satellite"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/ssn/hasDeployment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Relation between a System and a Deployment, recording that the System is deployed in that Deployment."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has deployment"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/deployedSystem"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Relation between a System and a Deployment, recording that the System is deployed in that Deployment."
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Hygrometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class",
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Radiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Radiometer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
+        "@id": "https://w3id.org/tern/ontologies/org/Manufacturer"
       }
     ]
   },
@@ -2445,10 +1434,148 @@
     ]
   },
   {
+    "@id": "https://www.w3.org/ns/ssn/systems/SystemCapability",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.\n\n    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "System Capability"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL762C19"
+      },
+      {
+        "@id": "_:ub1bL784C19"
+      },
+      {
+        "@id": "_:ub1bL779C19"
+      },
+      {
+        "@id": "_:ub1bL767C19"
+      },
+      {
+        "@id": "_:ub1bL774C19"
+      },
+      {
+        "@id": "http://www.w3.org/ns/ssn/Property"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.\n\n    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations."
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL762C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/Property"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/forProperty"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL784C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/inCondition"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL779C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/SystemProperty"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemProperty"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL767C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/System"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:ub1bL770C22"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL770C22",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/hasSystemCapability"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL774C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/Condition"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/inCondition"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer",
     "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -2472,24 +1599,98 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/SapFlowSensor",
+    "@id": "http://schema.org/OwnershipInfo",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL20C19"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL20C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:ub1bL22C25"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/acquiredFrom"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL22C25",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://schema.org/Organization"
+          },
+          {
+            "@id": "http://schema.org/Person"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood."
+        "@value": "A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Sap flow sensor"
+        "@value": "Weighing precipitation gauge"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://www.edaphic.com.au/products/sap-flow-sensors/"
+        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "Weighing rain gauge"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/HeatFluxSensor",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A heat flux sensor is a transducer that generates an electrical signal proportional to the total heat rate applied to the surface of the sensor. The measured heat rate is divided by the surface area of the sensor to determine the heat flux."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Heat flux sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Heat_flux_sensor"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -2499,54 +1700,105 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/ssn/inDeployment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "in deployment"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://www.w3.org/ns/ssn/deployedOnPlatform"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@language": "en",
-        "@value": "For example, a relation between a buoy and a deployment of several Sensors."
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/Pyranometer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m²) from the hemisphere above within a wavelength range 0.3 μm to 3 μm."
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Electromagnetic radiation absorption hygrometer"
+        "@value": "Pyranometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Pyranometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Thermocouple",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Thermocouple"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.thermocoupleinfo.com/index.htm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrradiometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pyrradiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.energy.eu/dictionary/data/1446.html"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Radiometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 °C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Lithium chloride heated condensation hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.wmo.int/pages/prog/www/IMOP/publications/CIMO-Guide/Prelim_2018_ed/8_I_4_en_MR_clean.pdf"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -2556,34 +1808,103 @@
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/DewPointHygrometer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class",
       "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.\n\nExamples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32."
+        "@value": "Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Time domain reflectometer"
+        "@value": "Dew point hygrometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://soilsensor.com/articles/time-domain-reflectometry-tdr/"
+        "@id": "https://www.britannica.com/science/hygrometer#ref111343"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Barometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A barometer is a scientific instrument that is used to measure air pressure in a certain environment."
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "TDR"
+        "@value": "Barometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Barometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Dendrometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Dendrometers are precision sensors that can measure the growth of plants. More specifically, dendrometers are used by researchers, growers and foresters to measure the growth of a stem, trunk, branch, roots or fruits over time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dendrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.edaphic.com.au/dendrometers-multi-purpose-sensors/"
+      },
+      {
+        "@id": "https://www.edaphic.com.au/products/dendrometers/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/SuperSite",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Super site"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/EcologicalPlot"
       }
     ]
   },
@@ -2605,158 +1926,61 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/sosa/isHostedBy",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://schema.org/domainIncludes": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      },
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      },
-      {
-        "@id": "http://www.w3.org/ns/sosa/Actuator"
-      },
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sampler"
-      }
-    ],
-    "http://schema.org/rangeIncludes": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Platform"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "is hosted by"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/hosts"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/ResistanceThermometer",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured."
+        "@value": "Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Resistive hygrometer"
+        "@value": "Resistance thermometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Hygrometer#Resistive"
+        "@id": "https://en.wikipedia.org/wiki/Resistance_thermometer"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+        "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
-        "@value": "Electrical resistive hygrometer"
+        "@value": "Electrical resistance thermometer"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/tern/ontologies/ssn/AneroidBarometer",
+    "@id": "https://w3id.org/tern/ontologies/ssn/OpticalRainGauge",
     "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid."
+        "@value": "This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Aneroid barometer"
+        "@value": "Optical rain gauge"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers"
+        "@id": "https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Infrared gas analyzer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://en.wikipedia.org/wiki/Infrared_gas_analyzer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/sosa/Sensor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/tern/ontologies/ssn/EcologicalPlot",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Ecological plot"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://w3id.org/tern/ontologies/ssn/FixedPlatform"
+        "@id": "https://w3id.org/tern/ontologies/ssn/RainGauge"
       }
     ]
   },
@@ -2837,44 +2061,820 @@
     ]
   },
   {
-    "@id": "http://schema.org/OwnershipInfo",
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "@id": "http://www.w3.org/ns/ssn/deployedSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@id": "_:ub1bL20C19"
+        "@language": "en",
+        "@value": "Relation between a Deployment and a deployed System."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "deployed system"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/hasDeployment"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Relation between a Deployment and a deployed System."
       }
     ]
   },
   {
-    "@id": "_:ub1bL20C19",
+    "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Mobile platform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Platform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/CupAnemometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cup anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/sosa/Sensor",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL76C19"
+      },
+      {
+        "@id": "_:ub1bL61C19"
+      },
+      {
+        "@id": "_:ub1bL96C19"
+      },
+      {
+        "@id": "http://www.w3.org/ns/ssn/System"
+      },
+      {
+        "@id": "_:ub1bL81C19"
+      },
+      {
+        "@id": "_:ub1bL101C19"
+      },
+      {
+        "@id": "_:ub1bL91C19"
+      },
+      {
+        "@id": "_:ub1bL71C19"
+      },
+      {
+        "@id": "_:ub1bL86C19"
+      },
+      {
+        "@id": "_:ub1bL66C19"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@language": "en",
+        "@value": "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL76C19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "_:ub1bL22C25"
+        "@id": "http://www.w3.org/ns/sosa/Observation"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://schema.org/acquiredFrom"
+        "@id": "http://www.w3.org/ns/sosa/madeObservation"
       }
     ]
   },
   {
-    "@id": "_:ub1bL22C25",
+    "@id": "_:ub1bL61C19",
     "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://schema.org/Organization"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/manufacturer"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL96C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/manufacturer"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL81C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/Stimulus"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/detects"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL101C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/implements"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL91C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/isDeployed"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL71C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/ObservableProperty"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/observes"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL86C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/model"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL66C19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/model"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@list": [
-          {
-            "@id": "http://schema.org/Organization"
-          },
-          {
-            "@id": "http://schema.org/Person"
-          }
-        ]
+        "@value": "Electromagnetic radiation absorption hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/SapFlowSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Sap flow sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.edaphic.com.au/products/sap-flow-sensors/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.\n\nExamples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Time domain reflectometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://soilsensor.com/articles/time-domain-reflectometry-tdr/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "TDR"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.w3.org/ns/ssn/systems/hasSystemCapability",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has system capability"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/hasProperty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Aircraft",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Aircraft"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/MobilePlatform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/TemperatureSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Temperature sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/onSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Link deployment information to a system."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/DeploymentInfo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "on system"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Radiation sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/ElectronicBarometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Electronic barometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/QuantumSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Quantum sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Quantum_sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/NetRadiometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Net radiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Net_radiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Actinometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Gravimetric hygrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Hygrometer#Gravimetric"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Hygrometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/deploymentInfo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/Deployment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "deployment info"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/DeploymentInfo"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Spectrometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Spectrometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Spectroradiometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/sosa/Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "2D sonic anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/SonicAnemometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.w3.org/ns/ssn/systems/hasSystemProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.w3.org/ns/ssn/systems/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has system property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/ssn/hasProperty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/MercuryBarometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Mercury barometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Barometer#Mercury_barometers"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Barometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/HotWireAnemometer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hot wire anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/Anemometer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/Pyrheliometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A pyrheliometer is an instrument for measurement of direct beam solar irradiance."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Pyrheliometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Pyrheliometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/RadiationSensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A frequency domain reflectometry probe can measure the capitance from the change in frequency of a reflected radio wave or resonance frequency. An oscillator propagates an electromagnetic signal through a metal tine or other wave guide, and the difference in the output wave and the return wave frequency determines the soil moisture."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Frequency domain reflectometer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://soilsensor.com/articles/capacitance-frequency-frequency-domain-reflectometry-fdr/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "FDR"
       }
     ]
   }

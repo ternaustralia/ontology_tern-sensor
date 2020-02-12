@@ -9,7 +9,7 @@ overview:
   p: An overview of the TERN SSN ontology extension.
   figures:
     - figure:
-        src: tern-sensor-conceptual-model.png
+        src: tern-ssn.png
         alt: TERN Sensors conceptual model
         caption: TERN Sensors conceptual model
     - figure:
