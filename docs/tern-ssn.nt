@@ -1,391 +1,604 @@
-<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Heat_flux_sensor> .
-<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/2000/01/rdf-schema#comment> "An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface." .
-<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL51C19 .
-<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.edaphic.com.au/products/sap-flow-sensors/> .
-<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ub1bL190C19 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:ub1bL185C19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tern/ontologies/ssn/onSystem> .
-<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Lithium chloride heated condensation hygrometer" .
-<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> .
-<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2004/02/skos/core#altLabel> "FDR" .
-<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/SonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Drone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/2000/01/rdf-schema#label> "Mercury barometer" .
-<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Thermistor> .
-<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector." .
-<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL36C19 .
-<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> <http://schema.org/url> <https://www.tern.org.au/> .
-<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> .
-<https://w3id.org/tern/ontologies/ssn/SonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "Sonic anemometer" .
-<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air." .
-_:fefde99022bc646c38b4c83e6a89a06e9b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:fefde99022bc646c38b4c83e6a89a06e9b2 .
-<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> <http://schema.org/name> "Terrestrial Ecoystem Research Network" .
-<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Barometer> .
-<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/2000/01/rdf-schema#label> "Pyrradiometer" .
-<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
-_:ub1bL190C19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/subject> .
-<https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
-<https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers." .
-<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Spectroradiometer> .
-_:ub1bL23C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/acquiredFrom> .
-<https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-_:ub1bL41C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/onSystem> <http://www.w3.org/2000/01/rdf-schema#label> "on system" .
-<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ub1bL185C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Rain gauge" .
-<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Barometer> .
-_:ub1bL190C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:ub1bL74C15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
-<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RainGauge> .
-<https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/SonicAnemometer> .
-<https://w3id.org/tern/ontologies/ssn/deploymentInfo> <http://www.w3.org/2000/01/rdf-schema#label> "deployment info" .
-<https://w3id.org/tern/ontologies/ssn/Drone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/SuperSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Heat flux sensor" .
-<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ub1bL74C15 <http://schema.org/affiliation> <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> .
-<https://w3id.org/tern/ontologies/ssn/MobilePlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/2000/01/rdf-schema#label> "Thermocouple" .
-<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Ceilometer> .
-<https://w3id.org/tern/ontologies/ssn/MobilePlatform> <http://www.w3.org/2000/01/rdf-schema#label> "Mobile platform" .
-<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/2000/01/rdf-schema#label> "Pyrheliometer" .
-<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL46C19 .
-<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/TemperatureSensor> .
-<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature." .
-<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/WindSensor> .
-_:ub1bL195C19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tern/ontologies/ssn/onSystem> .
-<https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/dc/terms/modified> "2020-01-08"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/RadiationSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation sensor" .
-<https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://soilsensor.com/articles/capacitance-frequency-frequency-domain-reflectometry-fdr/> .
-<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL190C19 .
-<https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "2D sonic anemometer" .
-<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Anemometer> .
-_:ub1bL51C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/2000/01/rdf-schema#label> "Radiometer" .
-<https://w3id.org/tern/ontologies/ssn/SuperSite> <http://www.w3.org/2000/01/rdf-schema#label> "Super site" .
-<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "Hot wire anemometer" .
-<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A frequency domain reflectometry probe can measure the capitance from the change in frequency of a reflected radio wave or resonance frequency. An oscillator propagates an electromagnetic signal through a metal tine or other wave guide, and the difference in the output wave and the return wave frequency determines the soil moisture." .
-<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Radiometer> .
-<https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/systems/> .
-<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Dendrometers are precision sensors that can measure the growth of plants. More specifically, dendrometers are used by researchers, growers and foresters to measure the growth of a stem, trunk, branch, roots or fruits over time." .
-<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Dendrometer" .
-<https://w3id.org/tern/ontologies/ssn/EcologicalPlot> <http://www.w3.org/2000/01/rdf-schema#label> "Ecological plot" .
-<https://w3id.org/tern/ontologies/ssn/MobilePlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.edaphic.com.au/dendrometers-multi-purpose-sensors/> .
-<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL185C19 .
-<https://w3id.org/tern/ontologies/ssn/RadiationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Net_radiometer> .
-<https://w3id.org/tern/ontologies/ssn/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
-<https://w3id.org/tern/ontologies/ssn/FixedPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/2000/01/rdf-schema#label> "Actinometer" .
-<https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower> <http://www.w3.org/2000/01/rdf-schema#label> "Eddy covariance flux tower" .
-<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/2000/01/rdf-schema#label> "Pyrgeometer" .
-<https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RainGauge> .
-<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tern/ontologies/ssn/" .
-<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Radiometer> .
-<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass." .
-<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.britannica.com/science/hygrometer#ref111343> .
-<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer> .
-<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/2000/01/rdf-schema#label> "Aneroid barometer" .
-<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers> .
-_:fefde99022bc646c38b4c83e6a89a06e9b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Person> .
-<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container." .
-<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A pyrgeometer is a device that measures near-surface infra-red radiation spectrum in the wavelength spectrum approximately from 4.5 \u03BCm to 100 \u03BCm." .
-<https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-_:ub1bL74C15 <http://schema.org/name> "Edmond Chuc" .
-<https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/2000/01/rdf-schema#label> "Pyranometer" .
-<https://w3id.org/tern/ontologies/ssn/FixedPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
-<https://w3id.org/tern/ontologies/ssn/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature sensor" .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys." .
-<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/2000/01/rdf-schema#label> "Infrared gas analyzer" .
-<https://w3id.org/tern/ontologies/ssn/onSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tern/ontologies/ssn/DeploymentInfo> .
-<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "Cup anemometer" .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#versionInfo> "Draft" .
-<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Pyrgeometer> .
-<https://w3id.org/tern/ontologies/ssn/Satellite> <http://www.w3.org/2000/01/rdf-schema#label> "Satellite" .
-<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Hygrometer" .
-<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RadiationSensor> .
-<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Hygrometer#Resistive> .
-<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured." .
-<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2004/02/skos/core#altLabel> "Weighing rain gauge" .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
-<https://w3id.org/tern/ontologies/ssn/WindSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/dc/terms/created> "2020-01-07"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Satellite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/MobilePlatform> .
-<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RadiationSensor> .
-<https://w3id.org/tern/ontologies/ssn/SuperSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/RadiationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Pyranometer> .
-<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Gravimetric hygrometer" .
-<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-_:ub1bL178C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/Deployment> .
-_:ub1bL25C25 <http://www.w3.org/2002/07/owl#unionOf> _:fefde99022bc646c38b4c83e6a89a06e9b1 .
-<https://w3id.org/tern/ontologies/ssn/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/tern/ontologies/ssn/Satellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge> .
-_:fefde99022bc646c38b4c83e6a89a06e9b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2000/01/rdf-schema#label> "TERN SSN ontology extension and vocabulary" .
-<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/TemperatureSensor> .
-<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Actinometers are instruments used to measure the heating power of radiation." .
-<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: \n\n1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. \n2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid." .
-<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Hygrometer> .
-<https://w3id.org/tern/ontologies/ssn/deploymentInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:ub1bL181C22 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/tern/ontologies/ssn/deploymentInfo> .
-<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/tern/ontologies/ssn/0.1> .
-<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge> .
-<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Hair hygrometer" .
-<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft." .
-<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood." .
-<https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/SonicAnemometer> .
-<https://w3id.org/tern/ontologies/ssn/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> "Weather station" .
-<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.cs.cmu.edu/~ram/capsense/intro.html> .
-<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Psychrometer" .
-<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "3D sonic anemometer" .
-<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/EcologicalPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/2000/01/rdf-schema#comment> "An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample." .
-<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A hygrometer that measures relative humidity by means of the variation in length of a strand of human hair.\n\nThe length variation of a properly treated hair is 2%\u20132.5% when the humidity changes from 0%\u2013100%. The hair hygrometer is considered to be a satisfactory instrument in situations where extreme and very low humidities are seldom or never found. The rate of response is very dependent on air temperature; the lag time increases with decreasing temperature. For air temperatures between 0\u00B0 and 30\u00B0C and relative humidities between 20% and 80%, a good hair hygrometer should indicate 90% of a sudden change in humidity within about three minutes." .
-_:ub1bL36C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/RadiationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer> .
-_:fefde99022bc646c38b4c83e6a89a06e9b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Organization> .
-<https://w3id.org/tern/ontologies/ssn/Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/MobilePlatform> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/dc/terms/> .
-<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ub1bL23C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor." .
-<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.edaphic.com.au/products/dendrometers/> .
-<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Quantum_sensor> .
-<https://w3id.org/tern/ontologies/ssn/Satellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Actinometer> .
-<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/2000/01/rdf-schema#comment> "A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature." .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#label> "Deployment info" .
-<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL41C19 .
-<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Quantum sensor" .
-<https://w3id.org/tern/ontologies/ssn/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Barometer> .
-<https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/FixedPlatform> .
-<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source." .
-_:ub1bL41C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/model> .
-<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.energy.eu/dictionary/data/1446.html> .
-<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/2000/01/rdf-schema#label> "Thermistor" .
-<https://w3id.org/tern/ontologies/ssn/onSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Link deployment information to a system." .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL173C19 .
-<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A heat flux sensor is a transducer that generates an electrical signal proportional to the total heat rate applied to the surface of the sensor. The measured heat rate is divided by the surface area of the sensor to determine the heat flux." .
-<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/dc/terms/creator> _:ub1bL74C15 .
-<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ub1bL36C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://schema.org/Organization> .
-<https://w3id.org/tern/ontologies/ssn/EcologicalPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.\n\nExamples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32." .
-<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://soilsensor.com/articles/time-domain-reflectometry-tdr/> .
-<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-_:ub1bL195C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tern/ontologies/org> .
-<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/deploymentInfo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/ssn/Deployment> .
-<https://w3id.org/tern/ontologies/ssn/WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded." .
-_:ub1bL173C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.wmo.int/pages/prog/www/IMOP/publications/CIMO-Guide/Prelim_2018_ed/8_I_4_en_MR_clean.pdf> .
-<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/2000/01/rdf-schema#label> "Net radiometer" .
-<https://w3id.org/tern/ontologies/ssn/WindSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sap flow sensor" .
-<https://w3id.org/tern/ontologies/ssn/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/deploymentInfo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tern/ontologies/ssn/DeploymentInfo> .
-<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency domain reflectometer" .
-<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Resistance_thermometer> .
-<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Resistive hygrometer" .
-_:ub1bL74C15 <http://schema.org/identifier> "https://orcid.org/0000-0002-6047-9864" .
-<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://glossary.ametsoc.org/wiki/Hair_hygrometer> .
-<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> <http://schema.org/alternateName> "TERN" .
-<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Capactitive sensor" .
-<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/2000/01/rdf-schema#comment> "An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid." .
-<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/ternaustralia/ontology_tern-ssn> .
-<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors." .
-<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core#> .
-<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ub1bL25C25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/ElectronicBarometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Barometer> .
-<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Pyrheliometer> .
-<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/FixedPlatform> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed platform" .
-_:ub1bL178C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/EcologicalPlot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/FixedPlatform> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/> .
-<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RadiationSensor> .
-_:ub1bL46C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/model> .
-<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Tipping bucket rain gauge" .
-<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications." .
-<https://w3id.org/tern/ontologies/ssn/WindSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/ElectronicBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/SuperSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/EcologicalPlot> .
-<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Radiometer> .
-<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Hygrometer#Gravimetric> .
-<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/TemperatureSensor> .
-<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2000/01/rdf-schema#label> "Resistance thermometer" .
-<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Anemometer> .
-<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
-_:ub1bL51C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/manufacturer> .
-<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-_:ub1bL51C19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Deployment information of a system." .
-<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "An anemometer is a device used for measuring wind speed and direction." .
-<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/WindSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Wind sensor" .
-<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Infrared_gas_analyzer> .
-_:ub1bL195C19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<http://schema.org/OwnershipInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL23C19 .
-<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A pyrheliometer is an instrument for measurement of direct beam solar irradiance." .
-<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.thermocoupleinfo.com/index.htm> .
-<https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar." .
-<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/ElectronicBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#label> "Time domain reflectometer" .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL178C19 .
-<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Spectrometer" .
-<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Barometer#Mercury_barometers> .
-<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Anemometer> .
-<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rain_gauge> .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-_:ub1bL173C19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/subject> .
-<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity." .
-_:ub1bL185C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/System> .
-<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/2000/01/rdf-schema#label> "Anemometer" .
-<https://w3id.org/tern/ontologies/ssn/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point" .
-<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL195C19 .
-<https://w3id.org/tern/ontologies/ssn/MobilePlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
-<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ub1bL173C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers> .
-<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tern-ssn" .
-<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
-<https://w3id.org/tern/ontologies/ssn/Drone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Aircraft> .
-<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces." .
-<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RadiationSensor> .
-<https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2004/02/skos/core#altLabel> "Electrical resistance thermometer" .
-<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/2000/01/rdf-schema#comment> "A thermistor is a type of resistor whose resistance is dependent on temperature, more so than in standard resistors. The word is a combination of thermal and resistor. Thermistors are widely used as inrush current limiters, temperature sensors (negative temperature coefficient or NTC type typically), self-resetting overcurrent protectors, and self-regulating heating elements (positive temperature coefficient or PTC type typically)." .
-<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Dew point hygrometer" .
-<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Actinometer> .
-_:ub1bL23C19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:ub1bL25C25 .
-<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 \u00B0C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh)." .
-<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/2000/01/rdf-schema#label> "Barometer" .
-_:ub1bL36C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/manufacturer> .
-<https://w3id.org/tern/ontologies/ssn/Drone> <http://www.w3.org/2000/01/rdf-schema#label> "Drone" .
-<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Actinometer> .
-_:ub1bL46C19 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
-<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ub1bL178C19 <http://www.w3.org/2002/07/owl#onProperty> _:ub1bL181C22 .
-<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2000/01/rdf-schema#comment> "A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System." .
-<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/FixedPlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
-<https://w3id.org/tern/ontologies/ssn/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/FixedPlatform> .
-<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/onSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/dc/terms/publisher> <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> .
-<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RainGauge> .
-<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/2000/01/rdf-schema#label> "Ceilometer" .
-<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point." .
 <https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Optical rain gauge" .
+<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Hygrometer#Resistive> .
 <https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
-<https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Soil moisture sensor" .
-<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2004/02/skos/core#altLabel> "Electrical resistive hygrometer" .
-<https://w3id.org/tern/ontologies/ssn/SonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/SonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Anemometer> .
-<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge> .
-<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A barometer is a scientific instrument that is used to measure air pressure in a certain environment." .
-<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over an area in a predefined period of time." .
-<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Weighing precipitation gauge" .
-<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column." .
-_:ub1bL41C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:ub1bL74C15 <http://schema.org/email> "e.chuc@uq.edu.au" .
-<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL187C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/Deployment> .
+<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "An anemometer is a device used for measuring wind speed and direction." .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL177C19 .
+<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/WindSensor> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RadiationSensor> .
+<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
+<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#label> "Deployment info" .
+_:ub1bL214C19 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/ssn/systems/hasSystemCapability> .
+_:ub1bL365C19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/subject> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/System> .
+<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.edaphic.com.au/products/sap-flow-sensors/> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#comment> "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en .
+<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/2000/01/rdf-schema#label> "Pyrradiometer" .
+<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Dendrometer" .
+<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL382C19 .
 <https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m\u00B2) from the hemisphere above within a wavelength range 0.3 \u03BCm to 3 \u03BCm." .
-<https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Electromagnetic radiation absorption hygrometer" .
-_:ub1bL46C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2004/02/skos/core#altLabel> "TDR" .
+<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/onSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tern/ontologies/ssn/DeploymentInfo> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+_:ub1bL197C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/System> .
+<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer> .
+<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass." .
+<http://www.w3.org/ns/ssn/deployedSystem> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/ssn/hasDeployment> .
+<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/dc/terms/modified> "2020-02-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/ns/sosa/hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL76C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/hosts> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/isHostedBy> .
+<https://www.w3.org/ns/ssn/systems/hasSystemCapability> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasProperty> .
+<https://w3id.org/tern/ontologies/ssn/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point" .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL377C19 .
+_:ub1bL774C19 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/ssn/systems/inCondition> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL762C19 .
+<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/2000/01/rdf-schema#label> "Infrared gas analyzer" .
+_:ub1bL177C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/isHostedBy> .
+<http://www.w3.org/ns/ssn/deployedSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Deployment and a deployed System."@en .
+<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A hygrometer that measures relative humidity by means of the variation in length of a strand of human hair.\n\nThe length variation of a properly treated hair is 2%\u20132.5% when the humidity changes from 0%\u2013100%. The hair hygrometer is considered to be a satisfactory instrument in situations where extreme and very low humidities are seldom or never found. The rate of response is very dependent on air temperature; the lag time increases with decreasing temperature. For air temperatures between 0\u00B0 and 30\u00B0C and relative humidities between 20% and 80%, a good hair hygrometer should indicate 90% of a sudden change in humidity within about three minutes." .
 <https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Radiometer> .
+_:ub1bL802C22 <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3.org/ns/ssn/systems/hasSystemProperty> .
+<http://schema.org/manufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tern/ontologies/org/Manufacturer> .
+<http://www.w3.org/ns/ssn/deployedOnPlatform> <http://www.w3.org/2000/01/rdf-schema#label> "deployed on platform"@en .
+<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#label> "System Capability"@en .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL370C19 .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.thermocoupleinfo.com/index.htm> .
+<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.britannica.com/science/hygrometer#ref111343> .
+<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL767C19 <http://www.w3.org/2002/07/owl#onProperty> _:ub1bL770C22 .
+<https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/FixedPlatform> .
+<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RadiationSensor> .
+<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/MobilePlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL774C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/2000/01/rdf-schema#comment> "An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface." .
+<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+_:ub1bL377C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/System> .
+_:ub1bL214C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/ssn/systems/SystemCapability> .
+<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL204C19 .
+<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/ssn/deployedOnPlatform> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Deployment and the Platform on which the Systems are deployed."@en .
+<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
+<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
+<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/2000/01/rdf-schema#label> "Thermistor" .
+_:ub1bL91C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ub1bL382C19 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge> .
+<https://w3id.org/tern/ontologies/ssn/isDeployed> <http://www.w3.org/2000/01/rdf-schema#label> "is deployed" .
+<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Actinometer> .
+<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tern-ssn" .
+<https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL81C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.\n\n    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations."@en .
+<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Rain gauge" .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:ub1bL86C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL154C19 .
+<https://w3id.org/tern/ontologies/ssn/WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RadiationSensor> .
+<https://www.w3.org/ns/ssn/systems/hasSystemProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasProperty> .
+_:ub1bL257C15 <http://schema.org/affiliation> <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> .
+<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/inDeployment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Hygrometer" .
+<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector." .
+_:ub1bL61C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/manufacturer> .
+_:ub1bL192C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/onSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<http://schema.org/OwnershipInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL20C19 .
+<https://w3id.org/tern/ontologies/ssn/deploymentInfo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tern/ontologies/ssn/DeploymentInfo> .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#label> "observes"@en .
+<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column." .
+<https://w3id.org/tern/ontologies/ssn/Drone> <http://www.w3.org/2000/01/rdf-schema#label> "Drone" .
+<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/tern/ontologies/org> .
+<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://soilsensor.com/articles/time-domain-reflectometry-tdr/> .
+<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<https://w3id.org/tern/ontologies/ssn/FixedPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL377C19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tern/ontologies/ssn/onSystem> .
+<http://www.w3.org/ns/sosa/observes> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL762C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/Property> .
+<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor." .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL159C19 .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL214C19 .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL192C19 .
+_:ub1bL192C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/System> .
+<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/2000/01/rdf-schema#comment> "A thermistor is a type of resistor whose resistance is dependent on temperature, more so than in standard resistors. The word is a combination of thermal and resistor. Thermistors are widely used as inrush current limiters, temperature sensors (negative temperature coefficient or NTC type typically), self-resetting overcurrent protectors, and self-regulating heating elements (positive temperature coefficient or PTC type typically)." .
+_:f028ef62ffdb8482992b832d767ccdbffb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:f028ef62ffdb8482992b832d767ccdbffb4 .
+<https://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3.org/ns/ssn/systems/> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL382C19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/subject> .
+<https://w3id.org/tern/ontologies/ssn/EcologicalPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Heat flux sensor" .
+<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Weighing precipitation gauge" .
+<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A pyrheliometer is an instrument for measurement of direct beam solar irradiance." .
+<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Barometer> .
+<http://www.w3.org/ns/ssn/inDeployment> <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform."@en .
+<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.wmo.int/pages/prog/www/IMOP/publications/CIMO-Guide/Prelim_2018_ed/8_I_4_en_MR_clean.pdf> .
+<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/2000/01/rdf-schema#label> "Tipping bucket rain gauge" .
+<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Anemometer> .
+_:ub1bL774C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/ssn/systems/Condition> .
+<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Thermistor> .
+<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Psychrometer" .
+_:ub1bL41C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL46C19 .
+_:ub1bL204C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sensor> .
+<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Actinometers are instruments used to measure the heating power of radiation." .
+<https://w3id.org/tern/ontologies/ssn/SonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2004/02/skos/core#altLabel> "FDR" .
+_:ub1bL365C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."@en .
+<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.cs.cmu.edu/~ram/capsense/intro.html> .
+<https://www.w3.org/ns/ssn/systems/hasSystemProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 \u00B0C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh)." .
+<https://w3id.org/tern/ontologies/ssn/WindSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL66C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar." .
+<https://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL799C19 .
+_:ub1bL192C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://www.w3.org/ns/ssn/hasDeployment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Platform> .
+<http://www.w3.org/ns/sosa/hosts> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."@en .
+_:ub1bL177C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL81C19 .
+<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is hosted by"@en .
+_:ub1bL197C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Hygrometer> .
+<https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/2000/01/rdf-schema#label> "Pyranometer" .
+<http://www.w3.org/ns/ssn/inDeployment> <http://www.w3.org/2000/01/rdf-schema#label> "in deployment"@en .
+<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers> .
+<https://w3id.org/tern/ontologies/ssn/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature sensor" .
+<http://www.w3.org/ns/sosa/hosts> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:f028ef62ffdb8482992b832d767ccdbffb3 .
+<https://w3id.org/tern/ontologies/ssn/EcologicalPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL159C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
+_:ub1bL154C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/deployedOnPlatform> .
+<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded." .
+_:ub1bL20C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source." .
+<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air." .
+<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL257C15 <http://schema.org/identifier> "https://orcid.org/0000-0002-6047-9864" .
+_:ub1bL779C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/ssn/deployedSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/ns/ssn/systems/hasSystemProperty> <http://www.w3.org/2004/02/skos/core#definition> "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."@en .
+_:ub1bL96C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/manufacturer> .
+<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Dew point hygrometer" .
+_:ub1bL76C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en .
+<https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Pyranometer> .
+<https://www.w3.org/ns/ssn/systems/hasSystemCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2004/02/skos/core#example> "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."@en .
+<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Radiometer> .
+<https://w3id.org/tern/ontologies/ssn/SonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "Sonic anemometer" .
+<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge> .
+<https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Soil moisture sensor" .
+_:ub1bL257C15 <http://schema.org/name> "Edmond Chuc" .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."@en .
+_:ub1bL200C22 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/ternaustralia/ontology_tern-ssn> .
+<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer> .
+_:ub1bL187C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/WindSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Quantum sensor" .
+<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/TemperatureSensor> .
+<https://w3id.org/tern/ontologies/ssn/Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/MobilePlatform> .
+<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Pyrheliometer> .
+<https://w3id.org/tern/ontologies/ssn/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2000/01/rdf-schema#label> "TERN SSN ontology extension and vocabulary" .
+_:ub1bL91C19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tern/ontologies/ssn/isDeployed> .
+_:ub1bL76C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/madeObservation> .
+<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature." .
+<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#label> "Time domain reflectometer" .
+<https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL22C25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/hosts> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sensor> .
+<https://www.w3.org/ns/ssn/systems/hasSystemCapability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3.org/ns/ssn/systems/> .
+<https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Resistance_thermometer> .
+<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+_:ub1bL365C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL101C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/2000/01/rdf-schema#comment> "An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid." .
+<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2004/02/skos/core#altLabel> "Electrical resistive hygrometer" .
+_:ub1bL154C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/sosa/Platform> .
+<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+_:ub1bL762C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ub1bL86C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/model> .
+<http://www.w3.org/ns/sosa/hosts> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Platform> .
+<https://w3id.org/tern/ontologies/ssn/RadiationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL41C19 .
+<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/deployedOnPlatform> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/ssn/inDeployment> .
+<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL784C19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.edaphic.com.au/products/dendrometers/> .
+_:ub1bL71C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:ub1bL22C25 <http://www.w3.org/2002/07/owl#unionOf> _:f028ef62ffdb8482992b832d767ccdbffb1 .
+<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Anemometer> .
+<https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/hosts> .
+<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL257C15 <http://schema.org/email> "e.chuc@uq.edu.au" .
+_:ub1bL370C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/Deployment> .
+<http://www.w3.org/ns/ssn/hasDeployment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
+_:ub1bL377C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys." .
+<https://w3id.org/tern/ontologies/ssn/WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL76C19 .
+<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/2000/01/rdf-schema#label> "Aneroid barometer" .
+<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://soilsensor.com/articles/capacitance-frequency-frequency-domain-reflectometry-fdr/> .
+<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/deployedSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
+<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuator> .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#label> "System"@en .
+<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/tern/ontologies/ssn/0.0.1> .
+<https://w3id.org/tern/ontologies/ssn/Pyranometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Actinometer> .
+<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/TemperatureSensor> .
+<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<https://www.w3.org/ns/ssn/systems/hasSystemCapability> <http://www.w3.org/2000/01/rdf-schema#label> "has system capability"@en .
+<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/ssn/systems/hasSystemProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3.org/ns/ssn/systems/> .
+<http://www.w3.org/ns/sosa/hosts> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+_:ub1bL101C19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:f028ef62ffdb8482992b832d767ccdbffb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/ssn/inDeployment> .
+<https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL91C19 .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL182C19 .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Platform> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL61C19 .
+<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.edaphic.com.au/dendrometers-multi-purpose-sensors/> .
+<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+_:ub1bL86C19 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#label> "System Property"@en .
+<http://www.w3.org/ns/ssn/hasDeployment> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a System and a Deployment, recording that the System is deployed in that Deployment."@en .
+<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Dendrometers are precision sensors that can measure the growth of plants. More specifically, dendrometers are used by researchers, growers and foresters to measure the growth of a stem, trunk, branch, roots or fruits over time." .
+<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Heat_flux_sensor> .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/2004/02/skos/core#example> "For example, a temperature Sensor deployed on a wall, or a whole network of Sensors deployed for an Observation campaign."@en .
+<https://w3id.org/tern/ontologies/ssn/isDeployed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:ub1bL66C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/model> .
+<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "Hot wire anemometer" .
+<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+_:ub1bL809C22 <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3.org/ns/ssn/systems/hasSystemProperty> .
+<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications." .
+<https://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL86C19 .
+<https://w3id.org/tern/ontologies/ssn/SonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Anemometer> .
+<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Pyrgeometer> .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL187C19 .
+<https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "2D sonic anemometer" .
+<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood." .
+<https://w3id.org/tern/ontologies/ssn/SonicAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Hair hygrometer" .
+<http://www.w3.org/ns/sosa/hosts> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Platform> .
+<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point." .
+<https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers." .
+_:ub1bL61C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://schema.org/Organization> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2004/02/skos/core#definition> "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en .
+_:ub1bL382C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3.org/ns/ssn/systems/> .
+<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Net_radiometer> .
+<https://w3id.org/tern/ontologies/ssn/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/deploymentInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL91C19 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/dc/terms/publisher> <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> .
+<http://www.w3.org/ns/sosa/hosts> <http://www.w3.org/2000/01/rdf-schema#label> "hosts"@en .
+_:ub1bL806C19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL209C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL767C19 .
+<https://w3id.org/tern/ontologies/ssn/Drone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/ElectronicBarometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Barometer> .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<https://w3id.org/tern/ontologies/ssn/WindSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Wind sensor" .
+_:ub1bL41C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/inDeployment> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#comment> "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."@en .
+_:ub1bL209C19 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/ssn/systems/hasSurvivalRange> .
+<https://www.w3.org/ns/ssn/systems/hasSystemProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has system property"@en .
+<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.energy.eu/dictionary/data/1446.html> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+<https://w3id.org/tern/ontologies/ssn/deploymentInfo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/ssn/Deployment> .
+_:f028ef62ffdb8482992b832d767ccdbffb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:ub1bL182C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/implements> .
+<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/2000/01/rdf-schema#label> "Pyrgeometer" .
+_:ub1bL182C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/sosa/Procedure> .
+<https://w3id.org/tern/ontologies/ssn/RadiationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/ssn/deployedSystem> <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Deployment and a deployed System."@en .
+<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> <http://schema.org/alternateName> "TERN" .
+<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container." .
+_:ub1bL71C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/sosa/ObservableProperty> .
+_:ub1bL779C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/ssn/systems/SystemProperty> .
+<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RainGauge> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL71C19 .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/isObservedBy> .
+<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:f028ef62ffdb8482992b832d767ccdbffb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:f028ef62ffdb8482992b832d767ccdbffb2 .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL774C19 .
+<https://w3id.org/tern/ontologies/ssn/Pyrgeometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A pyrgeometer is a device that measures near-surface infra-red radiation spectrum in the wavelength spectrum approximately from 4.5 \u03BCm to 100 \u03BCm." .
+_:ub1bL257C15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<https://w3id.org/tern/ontologies/ssn/Pyrradiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Radiometer> .
+<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2000/01/rdf-schema#label> "Resistance thermometer" .
+<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A frequency domain reflectometry probe can measure the capitance from the change in frequency of a reflected radio wave or resonance frequency. An oscillator propagates an electromagnetic signal through a metal tine or other wave guide, and the difference in the output wave and the return wave frequency determines the soil moisture." .
+_:f028ef62ffdb8482992b832d767ccdbffb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Organization> .
+<https://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Radiometer> <http://www.w3.org/2000/01/rdf-schema#label> "Radiometer" .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/ontologies/ssn/Satellite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/MobilePlatform> .
+<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Anemometer> .
+<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/dc/terms/created> "2020-01-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/2000/01/rdf-schema#label> "Mercury barometer" .
+<https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/SonicAnemometer> .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL387C19 .
+<http://www.w3.org/ns/ssn/deployedOnPlatform> <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Deployment and the Platform on which the Systems are deployed."@en .
+_:ub1bL387C19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> <http://schema.org/url> <https://www.tern.org.au/> .
+_:ub1bL46C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/System> .
+_:ub1bL784C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL101C19 .
+<https://w3id.org/tern/ontologies/ssn/isDeployed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2004/02/skos/core#definition> "Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.\n\n    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations."@en .
+<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Deployment information of a system." .
+_:ub1bL387C19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tern/ontologies/ssn/onSystem> .
+<https://w3id.org/tern/ontologies/ssn/MobilePlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
+<https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Electromagnetic radiation absorption hygrometer" .
+<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A barometer is a scientific instrument that is used to measure air pressure in a certain environment." .
+<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Quantum_sensor> .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampler> .
+<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/EcologicalPlot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/FixedPlatform> .
+<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/TemperatureSensor> .
+_:ub1bL20C19 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/acquiredFrom> .
+<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "Cup anemometer" .
+<https://w3id.org/tern/ontologies/ssn/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/ssn/hasDeployment> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/ssn/deployedSystem> .
+<http://www.w3.org/ns/ssn/hasDeployment> <http://www.w3.org/2000/01/rdf-schema#label> "has deployment"@en .
+<https://w3id.org/tern/ontologies/ssn/SuperSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/SuperSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/EcologicalPlot> .
+_:ub1bL101C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/implements> .
+<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: \n\n1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. \n2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid." .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
+<http://www.w3.org/ns/ssn/deployedSystem> <http://www.w3.org/2000/01/rdf-schema#label> "deployed system"@en .
+_:ub1bL799C19 <http://www.w3.org/2002/07/owl#onProperty> _:ub1bL802C22 .
+<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Ceilometer> .
+<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces." .
+_:ub1bL159C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/forProperty> .
+<https://w3id.org/tern/ontologies/ssn/QuantumSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors." .
+<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/ResistanceThermometer> <http://www.w3.org/2004/02/skos/core#altLabel> "Electrical resistance thermometer" .
+<http://www.w3.org/ns/ssn/inDeployment> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/ssn/deployedOnPlatform> .
+<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Barometer> .
 <https://w3id.org/tern/ontologies/ssn/ElectronicBarometer> <http://www.w3.org/2000/01/rdf-schema#label> "Electronic barometer" .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/2000/01/rdf-schema#label> "Deployment"@en .
+<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge> .
+<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Gravimetric hygrometer" .
+<https://w3id.org/tern/ontologies/ssn/Psychrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/2000/01/rdf-schema#comment> "A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature." .
+<http://www.w3.org/ns/sosa/observes> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/ssn/deployedOnPlatform> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
+_:ub1bL66C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/tern/ontologies/ssn/Thermocouple> <http://www.w3.org/2000/01/rdf-schema#label> "Thermocouple" .
+<https://w3id.org/tern/ontologies/ssn/deploymentInfo> <http://www.w3.org/2000/01/rdf-schema#label> "deployment info" .
+<https://w3id.org/tern/ontologies/ssn/AneroidBarometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Barometer> .
+_:ub1bL209C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/ssn/systems/SurvivalRange> .
+<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Spectroradiometer> .
+_:ub1bL96C19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/FixedPlatform> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed platform" .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL209C19 .
+<https://w3id.org/tern/ontologies/ssn/ElectronicBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/RadiationSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation sensor" .
+<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> .
+<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/2000/01/rdf-schema#comment> "A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over an area in a predefined period of time." .
+<https://w3id.org/tern/ontologies/ssn/MercuryBarometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Barometer#Mercury_barometers> .
+_:f028ef62ffdb8482992b832d767ccdbffb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/ssn/deployedSystem> .
+<https://w3id.org/tern/ontologies/ssn/SuperSite> <http://www.w3.org/2000/01/rdf-schema#label> "Super site" .
+_:ub1bL177C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/sosa/Platform> .
+<http://www.w3.org/ns/sosa/isHostedBy> <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."@en .
+<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Spectrometer" .
+<https://w3id.org/tern/ontologies/ssn/> <http://www.w3.org/2000/01/rdf-schema#comment> "A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System." .
+<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity." .
+_:f028ef62ffdb8482992b832d767ccdbffb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/2004/02/skos/core#definition> "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."@en .
+<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Lithium chloride heated condensation hygrometer" .
+_:ub1bL370C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/sosa/hosts> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sampler> .
+<https://w3id.org/tern/ontologies/ssn/FixedPlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
+_:ub1bL762C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/forProperty> .
+_:ub1bL61C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ub1bL159C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/Property> .
+<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency domain reflectometer" .
+<https://w3id.org/tern/ontologies/ssn/SapFlowSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sap flow sensor" .
+_:ub1bL806C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL779C19 .
+<https://w3id.org/tern/ontologies/ssn/HairHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://glossary.ametsoc.org/wiki/Hair_hygrometer> .
+<http://www.w3.org/ns/sosa/hosts> <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."@en .
+<https://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL806C19 .
+<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/2000/01/rdf-schema#label> "Barometer" .
+<https://w3id.org/tern/ontologies/ssn/WindSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+_:ub1bL197C19 <http://www.w3.org/2002/07/owl#onProperty> _:ub1bL200C22 .
+<http://www.w3.org/ns/ssn/inDeployment> <http://www.w3.org/2004/02/skos/core#example> "For example, a relation between a buoy and a deployment of several Sensors."@en .
+_:ub1bL204C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/ssn/systems/OperatingRange> .
+_:ub1bL164C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Dendrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Drone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/EcologicalPlot> <http://www.w3.org/2000/01/rdf-schema#label> "Ecological plot" .
+<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL373C22 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/tern/ontologies/ssn/deploymentInfo> .
+_:ub1bL81C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/detects> .
+<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2000/01/rdf-schema#label> "Resistive hygrometer" .
+_:ub1bL767C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.w3.org/ns/ssn/systems/hasSystemCapability> <http://www.w3.org/2004/02/skos/core#definition> "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."@en .
+<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Infrared_gas_analyzer> .
+<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL66C19 .
+<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/2000/01/rdf-schema#label> "Actinometer" .
+<https://w3id.org/tern/ontologies/ssn/HotWireAnemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL770C22 <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3.org/ns/ssn/systems/hasSystemCapability> .
+<https://w3id.org/tern/ontologies/ssn/RadiationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL164C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/System> .
+_:ub1bL799C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ub1bL20C19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:ub1bL22C25 .
+<https://w3id.org/tern/ontologies/ssn/DewPointHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
+<https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Hygrometer#Gravimetric> .
+<https://w3id.org/tern/ontologies/ssn/Satellite> <http://www.w3.org/2000/01/rdf-schema#label> "Satellite" .
+<https://w3id.org/tern/ontologies/ssn/TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL370C19 <http://www.w3.org/2002/07/owl#onProperty> _:ub1bL373C22 .
+<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tern/ontologies/ssn/" .
+_:ub1bL46C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RadiationSensor> .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL365C19 .
+<https://w3id.org/tern/ontologies/ssn/Hygrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/OpticalRainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RainGauge> .
+_:ub1bL46C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/hosts> .
+<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.\n\nExamples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32." .
+<https://www.w3.org/ns/ssn/systems/hasSystemProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."@en .
+_:ub1bL387C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/sosa/hosts> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Actuator> .
+<http://www.w3.org/ns/ssn/inDeployment> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform."@en .
+_:ub1bL784C19 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/ssn/systems/inCondition> .
+<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en .
+_:ub1bL187C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/hasDeployment> .
+<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Capactitive sensor" .
+<https://w3id.org/tern/ontologies/ssn/Barometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL71C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/FixedPlatform> .
+<https://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL784C19 .
+<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://www.w3.org/ns/ssn/systems/hasSystemCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:ub1bL204C19 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/ssn/systems/hasOperatingRange> .
+<https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge> <http://www.w3.org/2004/02/skos/core#altLabel> "Weighing rain gauge" .
+<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/DeploymentInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/tern/ontologies/ssn/MobilePlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL81C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/Stimulus> .
+<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Hygrometer> .
+_:ub1bL164C19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/deployedSystem> .
+<https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower> <http://www.w3.org/2000/01/rdf-schema#label> "Eddy covariance flux tower" .
+<https://w3id.org/tern/ontologies/ssn/onSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Link deployment information to a system." .
+<https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/SonicAnemometer> .
+<https://w3id.org/tern/ontologies/ssn/Actinometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Actinometer> .
+<https://w3id.org/tern/ontologies/ssn/NetRadiometer> <http://www.w3.org/2000/01/rdf-schema#label> "Net radiometer" .
+<https://w3id.org/tern/ontologies/ssn/Drone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/Aircraft> .
+<https://w3id.org/tern/ontologies/ssn/TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Pyrheliometer> <http://www.w3.org/2000/01/rdf-schema#label> "Pyrheliometer" .
+<http://www.w3.org/ns/ssn/deployedOnPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/ontologies/ssn/CapactitiveSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<https://w3id.org/tern/ontologies/ssn/Satellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL767C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/System> .
+<https://w3id.org/tern/ontologies/ssn/onSystem> <http://www.w3.org/2000/01/rdf-schema#label> "on system" .
+<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/SuperSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A heat flux sensor is a transducer that generates an electrical signal proportional to the total heat rate applied to the surface of the sensor. The measured heat rate is divided by the surface area of the sensor to determine the heat flux." .
+<https://w3id.org/tern/ontologies/ssn/Anemometer> <http://www.w3.org/2000/01/rdf-schema#label> "Anemometer" .
+<https://w3id.org/tern/ontologies/ssn/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/inDeployment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
+<https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer> <http://www.w3.org/2000/01/rdf-schema#label> "3D sonic anemometer" .
+_:ub1bL41C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/Deployment> .
+_:ub1bL779C19 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/ssn/systems/hasSystemProperty> .
+_:ub1bL96C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ub1bL154C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/RainGauge> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rain_gauge> .
+<https://w3id.org/tern/ontologies/ssn/MobilePlatform> <http://www.w3.org/2000/01/rdf-schema#label> "Mobile platform" .
+<https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/HeatFluxSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL806C19 <http://www.w3.org/2002/07/owl#onProperty> _:ub1bL809C22 .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL96C19 .
+<http://www.w3.org/ns/ssn/Deployment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL164C19 .
+<https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ub1bL197C19 .
+<https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tern/ontologies/ssn/RainGauge> .
+<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> <http://schema.org/name> "Terrestrial Ecoystem Research Network" .
+_:ub1bL182C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/> <http://purl.org/dc/terms/creator> _:ub1bL257C15 .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#label> "Platform"@en .
+<http://www.w3.org/ns/ssn/hasDeployment> <http://www.w3.org/2004/02/skos/core#definition> "Relation between a System and a Deployment, recording that the System is deployed in that Deployment."@en .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/2004/02/skos/core#definition> "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."@en .
+<https://w3id.org/tern/ontologies/ssn/ElectronicBarometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ub1bL214C19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer> <http://www.w3.org/2000/01/rdf-schema#comment> "In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured." .
+<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft." .
+_:f028ef62ffdb8482992b832d767ccdbffb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Person> .
+<https://w3id.org/tern/ontologies/ssn/FixedPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2004/02/skos/core#example> "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."@en .
+<https://w3id.org/tern/ontologies/ssn/Satellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/Thermistor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2004/02/skos/core#definition> "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."@en .
+<https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer> <http://www.w3.org/2004/02/skos/core#altLabel> "TDR" .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<https://w3id.org/tern/ontologies/ssn/Spectrometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> "Weather station" .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:ub1bL799C19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.w3.org/ns/ssn/systems/SystemCapability> .
+<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/2000/01/rdf-schema#comment> "An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample." .
+<https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/tern/ontologies/ssn/CupAnemometer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers> .
+<https://w3id.org/tern/ontologies/ssn/Ceilometer> <http://www.w3.org/2000/01/rdf-schema#label> "Ceilometer" .
 

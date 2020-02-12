@@ -1,9 +1,4 @@
 # baseURI: https://w3id.org/tern/ontologies/ssn/
-# imports: http://purl.org/dc/terms/
-# imports: http://www.w3.org/2004/02/skos/core#
-# imports: http://www.w3.org/ns/sosa/
-# imports: http://www.w3.org/ns/ssn/
-# imports: http://www.w3.org/ns/ssn/systems/
 # imports: https://w3id.org/tern/ontologies/org
 # prefix: tern-ssn
 
@@ -16,6 +11,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix ssn-system: <https://www.w3.org/ns/ssn/systems/> .
+@prefix tern-org: <https://w3id.org/tern/ontologies/org/> .
 @prefix tern-ssn: <https://w3id.org/tern/ontologies/ssn/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -33,7 +30,35 @@ schema:OwnershipInfo
       owl:onProperty schema:acquiredFrom ;
     ] ;
 .
+schema:manufacturer
+  rdfs:range tern-org:Manufacturer ;
+.
+sosa:Platform
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
+  rdfs:isDefinedBy sosa: ;
+  rdfs:label "Platform"@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:Deployment ;
+      owl:onProperty ssn:inDeployment ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:System ;
+      owl:onProperty sosa:hosts ;
+    ] ;
+  skos:definition "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
+  skos:example "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."@en ;
+.
 sosa:Sensor
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."@en ;
+  rdfs:isDefinedBy sosa: ;
+  rdfs:label "Sensor"@en ;
+  rdfs:subClassOf ssn:System ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:allValuesFrom schema:Organization ;
@@ -46,28 +71,186 @@ sosa:Sensor
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
+      owl:allValuesFrom sosa:ObservableProperty ;
+      owl:onProperty sosa:observes ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom sosa:Observation ;
+      owl:onProperty sosa:madeObservation ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:Stimulus ;
+      owl:onProperty ssn:detects ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty schema:model ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty tern-ssn:isDeployed ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty schema:manufacturer ;
     ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty ssn:implements ;
+    ] ;
+  skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."@en ;
+  skos:example "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."@en ;
 .
-<https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer>
-  a rdfs:Class ;
-  a owl:Class ;
-  rdfs:comment "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys." ;
-  rdfs:label "2D sonic anemometer" ;
-  rdfs:subClassOf tern-ssn:SonicAnemometer ;
+sosa:hosts
+  a owl:ObjectProperty ;
+  schema:domainIncludes sosa:Platform ;
+  schema:rangeIncludes sosa:Actuator ;
+  schema:rangeIncludes sosa:Platform ;
+  schema:rangeIncludes sosa:Sampler ;
+  schema:rangeIncludes sosa:Sensor ;
+  rdfs:comment "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."@en ;
+  rdfs:isDefinedBy sosa: ;
+  rdfs:label "hosts"@en ;
+  owl:inverseOf sosa:isHostedBy ;
+  owl:propertyChainAxiom (
+      ssn:inDeployment
+      ssn:deployedSystem
+    ) ;
+  skos:definition "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."@en ;
 .
-<https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer>
-  a rdfs:Class ;
+sosa:isHostedBy
+  a owl:ObjectProperty ;
+  schema:domainIncludes sosa:Actuator ;
+  schema:domainIncludes sosa:Platform ;
+  schema:domainIncludes sosa:Sampler ;
+  schema:domainIncludes sosa:Sensor ;
+  schema:rangeIncludes sosa:Platform ;
+  rdfs:comment "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."@en ;
+  rdfs:isDefinedBy sosa: ;
+  rdfs:label "is hosted by"@en ;
+  owl:inverseOf sosa:hosts ;
+  skos:definition "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."@en ;
+.
+sosa:observes
+  a owl:ObjectProperty ;
+  schema:domainIncludes sosa:Sensor ;
+  schema:rangeIncludes sosa:ObservableProperty ;
+  rdfs:comment "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
+  rdfs:isDefinedBy sosa: ;
+  rdfs:label "observes"@en ;
+  owl:inverseOf sosa:isObservedBy ;
+  skos:definition "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
+.
+ssn:Deployment
   a owl:Class ;
-  rdfs:comment "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers." ;
-  rdfs:label "3D sonic anemometer" ;
-  rdfs:subClassOf tern-ssn:SonicAnemometer ;
+  rdfs:comment "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."@en ;
+  rdfs:isDefinedBy ssn: ;
+  rdfs:label "Deployment"@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom sosa:Platform ;
+      owl:onProperty ssn:deployedOnPlatform ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:Property ;
+      owl:onProperty ssn:forProperty ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:System ;
+      owl:onProperty ssn:deployedSystem ;
+    ] ;
+  skos:definition "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."@en ;
+  skos:example "For example, a temperature Sensor deployed on a wall, or a whole network of Sensors deployed for an Observation campaign."@en ;
+.
+ssn:System
+  a owl:Class ;
+  rdfs:comment "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."@en ;
+  rdfs:isDefinedBy ssn: ;
+  rdfs:label "System"@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom sosa:Platform ;
+      owl:onProperty sosa:isHostedBy ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom sosa:Procedure ;
+      owl:onProperty ssn:implements ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:Deployment ;
+      owl:onProperty ssn:hasDeployment ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:System ;
+      owl:onProperty ssn:hasSubSystem ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:System ;
+      owl:onProperty [
+          owl:inverseOf ssn:hasSubSystem ;
+        ] ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn-system:OperatingRange ;
+      owl:onProperty ssn-system:hasOperatingRange ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn-system:SurvivalRange ;
+      owl:onProperty ssn-system:hasSurvivalRange ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn-system:SystemCapability ;
+      owl:onProperty ssn-system:hasSystemCapability ;
+    ] ;
+  skos:definition "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems."@en ;
+.
+ssn:deployedOnPlatform
+  a owl:ObjectProperty ;
+  rdfs:comment "Relation between a Deployment and the Platform on which the Systems are deployed."@en ;
+  rdfs:isDefinedBy ssn: ;
+  rdfs:label "deployed on platform"@en ;
+  owl:inverseOf ssn:inDeployment ;
+  skos:definition "Relation between a Deployment and the Platform on which the Systems are deployed."@en ;
+.
+ssn:deployedSystem
+  a owl:ObjectProperty ;
+  rdfs:comment "Relation between a Deployment and a deployed System."@en ;
+  rdfs:isDefinedBy ssn: ;
+  rdfs:label "deployed system"@en ;
+  owl:inverseOf ssn:hasDeployment ;
+  skos:definition "Relation between a Deployment and a deployed System."@en ;
+.
+ssn:hasDeployment
+  a owl:ObjectProperty ;
+  rdfs:comment "Relation between a System and a Deployment, recording that the System is deployed in that Deployment."@en ;
+  rdfs:isDefinedBy ssn: ;
+  rdfs:label "has deployment"@en ;
+  owl:inverseOf ssn:deployedSystem ;
+  skos:definition "Relation between a System and a Deployment, recording that the System is deployed in that Deployment."@en ;
+.
+ssn:inDeployment
+  a owl:ObjectProperty ;
+  rdfs:comment "Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform."@en ;
+  rdfs:isDefinedBy ssn: ;
+  rdfs:label "in deployment"@en ;
+  owl:inverseOf ssn:deployedOnPlatform ;
+  skos:definition "Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform."@en ;
+  skos:example "For example, a relation between a buoy and a deployment of several Sensors."@en ;
 .
 tern-ssn:
   a owl:Ontology ;
@@ -79,21 +262,30 @@ tern-ssn:
       schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
       schema:name "Edmond Chuc" ;
     ] ;
-  dct:modified "2020-01-08"^^xsd:date ;
+  dct:modified "2020-02-12"^^xsd:date ;
   dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
   vann:preferredNamespacePrefix "tern-ssn" ;
   vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
   rdfs:comment "A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System." ;
   rdfs:label "TERN SSN ontology extension and vocabulary" ;
   rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
-  owl:imports dct: ;
-  owl:imports skos: ;
-  owl:imports sosa: ;
-  owl:imports ssn: ;
-  owl:imports <http://www.w3.org/ns/ssn/systems/> ;
   owl:imports <https://w3id.org/tern/ontologies/org> ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.1> ;
-  owl:versionInfo "Draft" ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.1> ;
+  owl:versionInfo "0.0.1" ;
+.
+<https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys." ;
+  rdfs:label "2D sonic anemometer" ;
+  rdfs:subClassOf tern-ssn:SonicAnemometer ;
+.
+<https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer>
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers." ;
+  rdfs:label "3D sonic anemometer" ;
+  rdfs:subClassOf tern-ssn:SonicAnemometer ;
 .
 tern-ssn:Actinometer
   a rdfs:Class ;
@@ -543,6 +735,11 @@ tern-ssn:deploymentInfo
   rdfs:label "deployment info" ;
   rdfs:range tern-ssn:DeploymentInfo ;
 .
+tern-ssn:isDeployed
+  a owl:DatatypeProperty ;
+  rdfs:label "is deployed" ;
+  rdfs:range xsd:boolean ;
+.
 tern-ssn:onSystem
   a owl:ObjectProperty ;
   rdfs:comment "Link deployment information to a system." ;
@@ -554,4 +751,81 @@ tern-ssn:onSystem
   schema:alternateName "TERN" ;
   schema:name "Terrestrial Ecoystem Research Network" ;
   schema:url <https://www.tern.org.au/> ;
+.
+ssn-system:SystemCapability
+  a owl:Class ;
+  rdfs:comment """Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.
+
+    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations."""@en ;
+  rdfs:isDefinedBy ssn-system: ;
+  rdfs:label "System Capability"@en ;
+  rdfs:subClassOf ssn:Property ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:Property ;
+      owl:onProperty ssn:forProperty ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:System ;
+      owl:onProperty [
+          owl:inverseOf ssn-system:hasSystemCapability ;
+        ] ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn-system:Condition ;
+      owl:onProperty ssn-system:inCondition ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn-system:SystemProperty ;
+      owl:onProperty ssn-system:hasSystemProperty ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty ssn-system:inCondition ;
+    ] ;
+  skos:definition """Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.
+
+    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations."""@en ;
+.
+ssn-system:SystemProperty
+  a owl:Class ;
+  rdfs:comment "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."@en ;
+  rdfs:isDefinedBy ssn-system: ;
+  rdfs:label "System Property"@en ;
+  rdfs:subClassOf ssn:Property ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn-system:SystemCapability ;
+      owl:onProperty [
+          owl:inverseOf ssn-system:hasSystemProperty ;
+        ] ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty [
+          owl:inverseOf ssn-system:hasSystemProperty ;
+        ] ;
+    ] ;
+  skos:definition "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."@en ;
+.
+ssn-system:hasSystemCapability
+  a owl:ObjectProperty ;
+  rdfs:comment "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."@en ;
+  rdfs:isDefinedBy ssn-system: ;
+  rdfs:label "has system capability"@en ;
+  rdfs:subPropertyOf ssn:hasProperty ;
+  skos:definition "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."@en ;
+.
+ssn-system:hasSystemProperty
+  a owl:ObjectProperty ;
+  rdfs:comment "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."@en ;
+  rdfs:isDefinedBy ssn-system: ;
+  rdfs:label "has system property"@en ;
+  rdfs:subPropertyOf ssn:hasProperty ;
+  skos:definition "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."@en ;
 .

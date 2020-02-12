@@ -66,48 +66,28 @@
      Modified
     </dt>
     <dd>
-     2020-01-08
+     2020-02-12
     </dd>
     <dt>
      Version Information
     </dt>
     <dd>
-     Draft
+     0.0.1
     </dd>
     <dt>
      Version IRI
     </dt>
     <dd>
-     <a href="https://w3id.org/tern/ontologies/ssn/0.1">
-      https://w3id.org/tern/ontologies/ssn/0.1
+     <a href="https://w3id.org/tern/ontologies/ssn/0.0.1">
+      https://w3id.org/tern/ontologies/ssn/0.0.1
      </a>
     </dd>
     <dt>
      Imports
     </dt>
     <dd>
-     <a href="http://www.w3.org/2004/02/skos/core#">
-      skos:
-     </a>
-     <br/>
-     <a href="http://www.w3.org/ns/ssn/">
-      ssn:
-     </a>
-     <br/>
      <a href="https://w3id.org/tern/ontologies/org">
       https://w3id.org/tern/ontologies/org
-     </a>
-     <br/>
-     <a href="http://www.w3.org/ns/ssn/systems/">
-      http://www.w3.org/ns/ssn/systems/
-     </a>
-     <br/>
-     <a href="http://purl.org/dc/terms/">
-      dct:
-     </a>
-     <br/>
-     <a href="http://www.w3.org/ns/sosa/">
-      sosa:
      </a>
      <br/>
     </dd>
@@ -147,6 +127,11 @@
     <li>
      <a href="#objectproperties">
       Object Properties
+     </a>
+    </li>
+    <li>
+     <a href="#datatypeproperties">
+      Datatype Properties
      </a>
     </li>
     <li>
@@ -245,6 +230,11 @@
     <li>
      <a href="#Dendrometer">
       Dendrometer
+     </a>
+    </li>
+    <li>
+     <a href="#Deployment">
+      Deployment
      </a>
     </li>
     <li>
@@ -348,6 +338,11 @@
      </a>
     </li>
     <li>
+     <a href="#Platform">
+      Platform
+     </a>
+    </li>
+    <li>
      <a href="#Psychrometer">
       Psychrometer
      </a>
@@ -413,6 +408,11 @@
      </a>
     </li>
     <li>
+     <a href="#Sensor">
+      Sensor
+     </a>
+    </li>
+    <li>
      <a href="#Soilmoisturesensor">
       Soil moisture sensor
      </a>
@@ -430,6 +430,21 @@
     <li>
      <a href="#Supersite">
       Super site
+     </a>
+    </li>
+    <li>
+     <a href="#System">
+      System
+     </a>
+    </li>
+    <li>
+     <a href="#SystemCapability">
+      System Capability
+     </a>
+    </li>
+    <li>
+     <a href="#SystemProperty">
+      System Property
      </a>
     </li>
     <li>
@@ -473,6 +488,607 @@
      </a>
     </li>
    </ul>
+   <div class="entity class" id="Platform">
+    <h3>
+     Platform
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/sosa/Platform
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/hosts">
+        sosa:hosts
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/inDeployment">
+        ssn:inDeployment
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/Deployment">
+        ssn:Deployment
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#Mobileplatform">
+        tern-ssn:MobilePlatform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Fixedplatform">
+        tern-ssn:FixedPlatform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Sensor">
+    <h3>
+     Sensor
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/sosa/Sensor
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="http://schema.org/model">
+        schema:model
+       </a>
+       <span class="cardinality">
+        exactly
+       </span>
+       1
+       <br/>
+       <a href="http://schema.org/model">
+        schema:model
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://schema.org/manufacturer">
+        schema:manufacturer
+       </a>
+       <span class="cardinality">
+        min
+       </span>
+       1
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/implements">
+        ssn:implements
+       </a>
+       <span class="cardinality">
+        min
+       </span>
+       1
+       <br/>
+       <a href="http://www.w3.org/ns/sosa/observes">
+        sosa:observes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/sosa/ObservableProperty">
+        sosa:ObservableProperty
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/detects">
+        ssn:detects
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/Stimulus">
+        ssn:Stimulus
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#isdeployed">
+        tern-ssn:isDeployed
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
+       </sup>
+       <span class="cardinality">
+        exactly
+       </span>
+       1
+       <br/>
+       <a href="http://www.w3.org/ns/sosa/madeObservation">
+        sosa:madeObservation
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/sosa/Observation">
+        sosa:Observation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://schema.org/manufacturer">
+        schema:manufacturer
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://schema.org/Organization">
+        schema:Organization
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="#Dendrometer">
+        tern-ssn:Dendrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Ceilometer">
+        tern-ssn:Ceilometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Infraredgasanalyzer">
+        tern-ssn:InfraredGasAnalyzer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Windsensor">
+        tern-ssn:WindSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Radiationsensor">
+        tern-ssn:RadiationSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Sapflowsensor">
+        tern-ssn:SapFlowSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Heatfluxsensor">
+        tern-ssn:HeatFluxSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Hygrometer">
+        tern-ssn:Hygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Soilmoisturesensor">
+        tern-ssn:SoilMoistureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Spectrometer">
+        tern-ssn:Spectrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Temperaturesensor">
+        tern-ssn:TemperatureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Capactitivesensor">
+        tern-ssn:CapactitiveSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Barometer">
+        tern-ssn:Barometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Raingauge">
+        tern-ssn:RainGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Deployment">
+    <h3>
+     Deployment
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/ssn/Deployment
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/ssn/deployedSystem">
+        ssn:deployedSystem
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/deployedOnPlatform">
+        ssn:deployedOnPlatform
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/forProperty">
+        ssn:forProperty
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/Property">
+        ssn:Property
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#deploymentinfo">
+        tern-ssn:deploymentInfo
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="System">
+    <h3>
+     System
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/ssn/System
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="https://www.w3.org/ns/ssn/systems/hasOperatingRange">
+        ssn-system:hasOperatingRange
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="https://www.w3.org/ns/ssn/systems/OperatingRange">
+        ssn-system:OperatingRange
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/sosa/isHostedBy">
+        sosa:isHostedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/hasSubSystem">
+        ssn:hasSubSystem
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://www.w3.org/ns/ssn/systems/hasSurvivalRange">
+        ssn-system:hasSurvivalRange
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="https://www.w3.org/ns/ssn/systems/SurvivalRange">
+        ssn-system:SurvivalRange
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/hasDeployment">
+        ssn:hasDeployment
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/Deployment">
+        ssn:Deployment
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="ub1bL200C22">
+        ub1bL200C22
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/implements">
+        ssn:implements
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/sosa/Procedure">
+        sosa:Procedure
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://www.w3.org/ns/ssn/systems/hasSystemCapability">
+        ssn-system:hasSystemCapability
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="https://www.w3.org/ns/ssn/systems/SystemCapability">
+        ssn-system:SystemCapability
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Sub-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
    <div class="entity class" id="2Dsonicanemometer">
     <h3>
      2D sonic anemometer
@@ -487,7 +1103,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer
+        https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer
        </code>
       </td>
      </tr>
@@ -529,7 +1145,7 @@
       </th>
       <td>
        <code>
-        https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer
+        https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer
        </code>
       </td>
      </tr>
@@ -602,15 +1218,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Netradiometer">
-        tern-ssn:NetRadiometer
+       <a href="#Pyranometer">
+        tern-ssn:Pyranometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Pyranometer">
-        tern-ssn:Pyranometer
+       <a href="#Netradiometer">
+        tern-ssn:NetRadiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -713,15 +1329,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Cupanemometer">
-        tern-ssn:CupAnemometer
+       <a href="#Hotwireanemometer">
+        tern-ssn:HotWireAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Hotwireanemometer">
-        tern-ssn:HotWireAnemometer
+       <a href="#Cupanemometer">
+        tern-ssn:CupAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -825,8 +1441,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Electronicbarometer">
-        tern-ssn:ElectronicBarometer
+       <a href="#Mercurybarometer">
+        tern-ssn:MercuryBarometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -839,8 +1455,8 @@
         c
        </sup>
        <br/>
-       <a href="#Mercurybarometer">
-        tern-ssn:MercuryBarometer
+       <a href="#Electronicbarometer">
+        tern-ssn:ElectronicBarometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1063,30 +1679,6 @@
        Restrictions
       </th>
       <td>
-       <a href="http://purl.org/dc/terms/subject">
-        dct:subject
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/2004/02/skos/core#Concept">
-        skos:Concept
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#onsystem">
-        tern-ssn:onSystem
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        min
-       </span>
-       1
-       <br/>
        <a href="#onsystem">
         tern-ssn:onSystem
        </a>
@@ -1107,12 +1699,17 @@
         dct:subject
        </a>
        <span class="cardinality">
-        exactly
+        only
        </span>
-       1
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
        <br/>
-       <a href="ub1bL181C22">
-        ub1bL181C22
+       <a href="ub1bL373C22">
+        ub1bL373C22
        </a>
        <span class="cardinality">
         only
@@ -1123,6 +1720,25 @@
        <sup class="sup-c" title="class">
         c
        </sup>
+       <br/>
+       <a href="#onsystem">
+        tern-ssn:onSystem
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        min
+       </span>
+       1
+       <br/>
+       <a href="http://purl.org/dc/terms/subject">
+        dct:subject
+       </a>
+       <span class="cardinality">
+        exactly
+       </span>
+       1
        <br/>
       </td>
      </tr>
@@ -1419,8 +2035,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Eddycovariancefluxtower">
-        tern-ssn:EddyCovarianceFluxTower
+       <a href="#Weatherstation">
+        tern-ssn:WeatherStation
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1433,8 +2049,8 @@
         c
        </sup>
        <br/>
-       <a href="#Weatherstation">
-        tern-ssn:WeatherStation
+       <a href="#Eddycovariancefluxtower">
+        tern-ssn:EddyCovarianceFluxTower
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1708,8 +2324,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Electromagneticradiationabsorptionhygrometer">
-        tern-ssn:ElectromagneticRadiationHygrometer
+       <a href="#Hairhygrometer">
+        tern-ssn:HairHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1722,13 +2338,6 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Psychrometer">
-        tern-ssn:Psychrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Dewpointhygrometer">
         tern-ssn:DewPointHygrometer
        </a>
@@ -1736,15 +2345,22 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Hairhygrometer">
-        tern-ssn:HairHygrometer
+       <a href="#Lithiumchlorideheatedcondensationhygrometer">
+        tern-ssn:LithiumChlorideHeatedCondensationHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Lithiumchlorideheatedcondensationhygrometer">
-        tern-ssn:LithiumChlorideHeatedCondensationHygrometer
+       <a href="#Psychrometer">
+        tern-ssn:Psychrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Electromagneticradiationabsorptionhygrometer">
+        tern-ssn:ElectromagneticRadiationHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1917,15 +2533,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Satellite">
-        tern-ssn:Satellite
+       <a href="#Aircraft">
+        tern-ssn:Aircraft
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Aircraft">
-        tern-ssn:Aircraft
+       <a href="#Satellite">
+        tern-ssn:Satellite
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2388,15 +3004,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Pyrradiometer">
-        tern-ssn:Pyrradiometer
+       <a href="#Actinometer">
+        tern-ssn:Actinometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Actinometer">
-        tern-ssn:Actinometer
+       <a href="#Pyrradiometer">
+        tern-ssn:Pyrradiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2451,15 +3067,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Opticalraingauge">
-        tern-ssn:OpticalRainGauge
+       <a href="#Tippingbucketraingauge">
+        tern-ssn:TippingBucketRainGauge
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Tippingbucketraingauge">
-        tern-ssn:TippingBucketRainGauge
+       <a href="#Opticalraingauge">
+        tern-ssn:OpticalRainGauge
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2673,15 +3289,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Timedomainreflectometer">
-        tern-ssn:TimeDomainReflectometer
+       <a href="#Frequencydomainreflectometer">
+        tern-ssn:FrequencyDomainReflectometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Frequencydomainreflectometer">
-        tern-ssn:FrequencyDomainReflectometer
+       <a href="#Timedomainreflectometer">
+        tern-ssn:TimeDomainReflectometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2728,15 +3344,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer">
-        https://w3id.org/tern/ontologies/sensor/3DSonicAnemometer
+       <a href="#2Dsonicanemometer">
+        tern-ssn:2DSonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer">
-        https://w3id.org/tern/ontologies/sensor/2DSonicAnemometer
+       <a href="#3Dsonicanemometer">
+        tern-ssn:3DSonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2859,15 +3475,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Thermistor">
-        tern-ssn:Thermistor
+       <a href="#Thermocouple">
+        tern-ssn:Thermocouple
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Thermocouple">
-        tern-ssn:Thermocouple
+       <a href="#Thermistor">
+        tern-ssn:Thermistor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3178,6 +3794,190 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
      </tr>
     </table>
    </div>
+   <div class="entity class" id="SystemCapability">
+    <h3>
+     System Capability
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://www.w3.org/ns/ssn/systems/SystemCapability
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.
+
+    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/ssn/Property">
+        ssn:Property
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/ssn/forProperty">
+        ssn:forProperty
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/Property">
+        ssn:Property
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://www.w3.org/ns/ssn/systems/inCondition">
+        ssn-system:inCondition
+       </a>
+       <span class="cardinality">
+        min
+       </span>
+       1
+       <br/>
+       <a href="https://www.w3.org/ns/ssn/systems/inCondition">
+        ssn-system:inCondition
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="https://www.w3.org/ns/ssn/systems/Condition">
+        ssn-system:Condition
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="ub1bL770C22">
+        ub1bL770C22
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://www.w3.org/ns/ssn/systems/hasSystemProperty">
+        ssn-system:hasSystemProperty
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="https://www.w3.org/ns/ssn/systems/SystemProperty">
+        ssn-system:SystemProperty
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="SystemProperty">
+    <h3>
+     System Property
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://www.w3.org/ns/ssn/systems/SystemProperty
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/ssn/Property">
+        ssn:Property
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="ub1bL809C22">
+        ub1bL809C22
+       </a>
+       <span class="cardinality">
+        min
+       </span>
+       1
+       <br/>
+       <a href="ub1bL802C22">
+        ub1bL802C22
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="https://www.w3.org/ns/ssn/systems/SystemCapability">
+        ssn-system:SystemCapability
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
   </section>
   <section id="objectproperties">
    <h2>
@@ -3189,6 +3989,41 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
     </span>
    </h2>
    <ul class="hlist">
+    <li>
+     <a href="#hosts">
+      hosts
+     </a>
+    </li>
+    <li>
+     <a href="#ishostedby">
+      is hosted by
+     </a>
+    </li>
+    <li>
+     <a href="#observes">
+      observes
+     </a>
+    </li>
+    <li>
+     <a href="#deployedonplatform">
+      deployed on platform
+     </a>
+    </li>
+    <li>
+     <a href="#deployedsystem">
+      deployed system
+     </a>
+    </li>
+    <li>
+     <a href="#hasdeployment">
+      has deployment
+     </a>
+    </li>
+    <li>
+     <a href="#indeployment">
+      in deployment
+     </a>
+    </li>
     <li>
      <a href="#contactpoint">
       contact point
@@ -3204,7 +4039,357 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
       on system
      </a>
     </li>
+    <li>
+     <a href="#hassystemcapability">
+      has system capability
+     </a>
+    </li>
+    <li>
+     <a href="#hassystemproperty">
+      has system property
+     </a>
+    </li>
    </ul>
+   <div class="entity property" id="hosts">
+    <h3>
+     hosts
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/sosa/hosts
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       (
+       <a href="https://schema.org/domainIncludes">
+        sdo:domainIncludes
+       </a>
+       )
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       (
+       <a href="https://schema.org/domainIncludes">
+        sdo:rangeIncludes
+       </a>
+       )
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Sampler">
+        sosa:Sampler
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Actuator">
+        sosa:Actuator
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="ishostedby">
+    <h3>
+     is hosted by
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/sosa/isHostedBy
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       (
+       <a href="https://schema.org/domainIncludes">
+        sdo:domainIncludes
+       </a>
+       )
+       <a href="http://www.w3.org/ns/sosa/Actuator">
+        sosa:Actuator
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Sampler">
+        sosa:Sampler
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       (
+       <a href="https://schema.org/domainIncludes">
+        sdo:rangeIncludes
+       </a>
+       )
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="observes">
+    <h3>
+     observes
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/sosa/observes
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation between a Sensor and an ObservableProperty that it is capable of sensing.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       (
+       <a href="https://schema.org/domainIncludes">
+        sdo:domainIncludes
+       </a>
+       )
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       (
+       <a href="https://schema.org/domainIncludes">
+        sdo:rangeIncludes
+       </a>
+       )
+       <a href="http://www.w3.org/ns/sosa/ObservableProperty">
+        sosa:ObservableProperty
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="deployedonplatform">
+    <h3>
+     deployed on platform
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/ssn/deployedOnPlatform
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation between a Deployment and the Platform on which the Systems are deployed.
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="deployedsystem">
+    <h3>
+     deployed system
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/ssn/deployedSystem
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation between a Deployment and a deployed System.
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasdeployment">
+    <h3>
+     has deployment
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/ssn/hasDeployment
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation between a System and a Deployment, recording that the System is deployed in that Deployment.
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="indeployment">
+    <h3>
+     in deployment
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        http://www.w3.org/ns/ssn/inDeployment
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform.
+      </td>
+     </tr>
+    </table>
+   </div>
    <div class="entity property" id="contactpoint">
     <h3>
      contact point
@@ -3312,6 +4497,132 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
      </tr>
     </table>
    </div>
+   <div class="entity property" id="hassystemcapability">
+    <h3>
+     has system capability
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://www.w3.org/ns/ssn/systems/hasSystemCapability
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/ssn/hasProperty">
+        ssn:hasProperty
+       </a>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hassystemproperty">
+    <h3>
+     has system property
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://www.w3.org/ns/ssn/systems/hasSystemProperty
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/ssn/hasProperty">
+        ssn:hasProperty
+       </a>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="datatypeproperties">
+   <h2>
+    Datatype Properties
+    <span style="float:right; font-size:smaller;">
+     <a href="">
+      &uparrow
+     </a>
+    </span>
+   </h2>
+   <ul class="hlist">
+    <li>
+     <a href="#isdeployed">
+      is deployed
+     </a>
+    </li>
+   </ul>
+   <div class="entity property" id="isdeployed">
+    <h3>
+     is deployed
+     <sup class="sup-dp" title="datatype property">
+      dp
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/ssn/isDeployed
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="http://www.w3.org/2001/XMLSchema#boolean">
+        xsd:boolean
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
   </section>
   <section id="namespaces">
    <h2>
@@ -3403,6 +4714,22 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
     <dd>
      <code>
       http://www.w3.org/ns/ssn/
+     </code>
+    </dd>
+    <dt>
+     ssn-system
+    </dt>
+    <dd>
+     <code>
+      https://www.w3.org/ns/ssn/systems/
+     </code>
+    </dd>
+    <dt>
+     tern-org
+    </dt>
+    <dd>
+     <code>
+      https://w3id.org/tern/ontologies/org/
      </code>
     </dd>
     <dt>
