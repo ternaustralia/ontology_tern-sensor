@@ -219,6 +219,12 @@ tern-ssn:EddyCovarianceFluxTower a rdfs:Class,
     rdfs:label "Eddy covariance flux tower" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom skos:Concept ;
+            owl:onProperty tern-ssn:climateCode ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom skos:Concept ;
+            owl:onProperty tern-ssn:igbpCode ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom skos:Concept ;
             owl:onProperty tern-ssn:powerSupplyType ],
         [ a owl:Restriction ;
             owl:allValuesFrom skos:Concept ;
@@ -241,13 +247,7 @@ tern-ssn:ElectronicBarometer a rdfs:Class,
 tern-ssn:FixedPlatform a rdfs:Class,
         owl:Class ;
     rdfs:label "Fixed platform" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom skos:Concept ;
-            owl:onProperty tern-ssn:climateCode ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom skos:Concept ;
-            owl:onProperty tern-ssn:igbpCode ],
-        sosa:Platform .
+    rdfs:subClassOf sosa:Platform .
 
 tern-ssn:FrequencyDomainReflectometer a rdfs:Class,
         owl:Class ;
@@ -434,7 +434,10 @@ tern-ssn:Satellite a rdfs:Class,
 tern-ssn:Site a rdfs:Class,
         owl:Class ;
     rdfs:label "Site" ;
-    rdfs:subClassOf tern-ssn:FixedPlatform .
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty tern-ssn:locationDescription ],
+        tern-ssn:FixedPlatform .
 
 tern-ssn:SoilMoistureSensor a rdfs:Class,
         owl:Class ;
@@ -548,8 +551,8 @@ tern-ssn: a owl:Ontology ;
     rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
         tern-org: ;
-    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.2> ;
-    owl:versionInfo "0.0.2" .
+    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.3> ;
+    owl:versionInfo "0.0.3" .
 
 tern-ssn:DroneCampaign a owl:Class ;
     rdfs:label "Drone campaign" ;
@@ -698,6 +701,10 @@ tern-ssn:isDeployed a owl:DatatypeProperty ;
 
 tern-ssn:landOwnershipType a rdf:Property ;
     rdfs:label "land ownership type" .
+
+tern-ssn:locationDescription a rdf:Property ;
+    rdfs:label "location description" ;
+    rdfs:subPropertyOf schema:description .
 
 tern-ssn:measurementInterval a rdf:Property ;
     rdfs:label "measurement interval" ;

@@ -466,8 +466,8 @@ tern-ssn:
   rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports tern-org: ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.2> ;
-  owl:versionInfo "0.0.2" ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.3> ;
+  owl:versionInfo "0.0.3" ;
 .
 <https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
   a rdfs:Class ;
@@ -701,6 +701,16 @@ tern-ssn:EddyCovarianceFluxTower
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:allValuesFrom skos:Concept ;
+      owl:onProperty tern-ssn:climateCode ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom skos:Concept ;
+      owl:onProperty tern-ssn:igbpCode ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom skos:Concept ;
       owl:onProperty tern-ssn:powerSupplyType ;
     ] ;
   rdfs:subClassOf [
@@ -731,16 +741,6 @@ tern-ssn:FixedPlatform
   a owl:Class ;
   rdfs:label "Fixed platform" ;
   rdfs:subClassOf sosa:Platform ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:allValuesFrom skos:Concept ;
-      owl:onProperty tern-ssn:climateCode ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:allValuesFrom skos:Concept ;
-      owl:onProperty tern-ssn:igbpCode ;
-    ] ;
 .
 tern-ssn:FlightPlan
   a owl:Class ;
@@ -990,6 +990,11 @@ tern-ssn:Site
   a owl:Class ;
   rdfs:label "Site" ;
   rdfs:subClassOf tern-ssn:FixedPlatform ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty tern-ssn:locationDescription ;
+    ] ;
 .
 tern-ssn:SoilMoistureSensor
   a rdfs:Class ;
@@ -1186,6 +1191,11 @@ tern-ssn:isDeployed
 tern-ssn:landOwnershipType
   a rdf:Property ;
   rdfs:label "land ownership type" ;
+.
+tern-ssn:locationDescription
+  a rdf:Property ;
+  rdfs:label "location description" ;
+  rdfs:subPropertyOf schema:description ;
 .
 tern-ssn:measurementInterval
   a rdf:Property ;
