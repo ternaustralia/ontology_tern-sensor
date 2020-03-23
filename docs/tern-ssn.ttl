@@ -1,5 +1,6 @@
 # baseURI: https://w3id.org/tern/ontologies/ssn/
-# imports: https://w3id.org/tern/ontologies/org
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: https://w3id.org/tern/ontologies/org/
 # prefix: tern-ssn
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -33,12 +34,121 @@ schema:OwnershipInfo
 schema:manufacturer
   rdfs:range tern-org:Manufacturer ;
 .
+<http://www.w3.org/ns/prov#Activity>
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:dateTime ;
+      owl:onProperty <http://www.w3.org/ns/prov#endedAtTime> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:dateTime ;
+      owl:onProperty <http://www.w3.org/ns/prov#startedAtTime> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+      owl:someValuesFrom schema:Person ;
+    ] ;
+.
+<http://www.w3.org/ns/prov#Entity>
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Person ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasAttributedTo> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:dateTime ;
+      owl:onProperty <http://www.w3.org/ns/prov#generatedAtTime> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty schema:description ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty <http://www.w3.org/ns/prov#invalidatedAtTime> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://www.w3.org/ns/prov#Activity> ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://www.w3.org/ns/prov#Activity> ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasInvalidatedBy> ;
+    ] ;
+.
 sosa:Platform
   a rdfs:Class ;
   a owl:Class ;
   rdfs:comment "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
   rdfs:isDefinedBy sosa: ;
   rdfs:label "Platform"@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Place ;
+      owl:onProperty schema:location ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Role ;
+      owl:onProperty schema:funder ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Role ;
+      owl:onProperty tern-org:collaboratorOrganization ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Role ;
+      owl:onProperty tern-org:dataManager ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Role ;
+      owl:onProperty tern-org:landOwner ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Role ;
+      owl:onProperty tern-org:principalInvestigator ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Role ;
+      owl:onProperty tern-org:technician ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:dateTime ;
+      owl:onProperty <http://www.w3.org/ns/prov#generatedAtTime> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:dateTime ;
+      owl:onProperty <http://www.w3.org/ns/prov#invalidatedAtTime> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom skos:Concept ;
+      owl:onProperty tern-ssn:landOwnershipType ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://www.w3.org/ns/prov#Activity> ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://www.w3.org/ns/prov#Activity> ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasInvalidatedBy> ;
+    ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:allValuesFrom ssn:Deployment ;
@@ -48,6 +158,16 @@ sosa:Platform
       a owl:Restriction ;
       owl:allValuesFrom ssn:System ;
       owl:onProperty sosa:hosts ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty schema:identifier ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty schema:name ;
     ] ;
   skos:definition "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
   skos:example "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."@en ;
@@ -81,8 +201,28 @@ sosa:Sensor
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
+      owl:allValuesFrom sosa:Platform ;
+      owl:onProperty sosa:isHostedBy ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom ssn:Deployment ;
+      owl:onProperty ssn:hasDeployment ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
       owl:allValuesFrom ssn:Stimulus ;
       owl:onProperty ssn:detects ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom tern-ssn:Calibration ;
+      owl:onProperty tern-ssn:hasCalibration ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom tern-ssn:SensorConfiguration ;
+      owl:onProperty tern-ssn:hasConfiguration ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -154,6 +294,56 @@ ssn:Deployment
   rdfs:label "Deployment"@en ;
   rdfs:subClassOf [
       a owl:Restriction ;
+      owl:allValuesFrom schema:Place ;
+      owl:onProperty schema:location ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:deploymentDepth ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:deploymentHeight ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:deploymentOrientation ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:dateTime ;
+      owl:onProperty <http://www.w3.org/ns/prov#generatedAtTime> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:dateTime ;
+      owl:onProperty <http://www.w3.org/ns/prov#invalidatedAtTime> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty schema:description ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom skos:Concept ;
+      owl:onProperty tern-ssn:deploymentType ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://www.w3.org/ns/prov#Activity> ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://www.w3.org/ns/prov#Activity> ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasInvalidatedBy> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
       owl:allValuesFrom sosa:Platform ;
       owl:onProperty ssn:deployedOnPlatform ;
     ] ;
@@ -166,6 +356,11 @@ ssn:Deployment
       a owl:Restriction ;
       owl:allValuesFrom ssn:System ;
       owl:onProperty ssn:deployedSystem ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://www.w3.org/ns/prov#wasAttributedTo> ;
+      owl:someValuesFrom schema:Person ;
     ] ;
   skos:definition "Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform."@en ;
   skos:example "For example, a temperature Sensor deployed on a wall, or a whole network of Sensors deployed for an Observation campaign."@en ;
@@ -262,16 +457,17 @@ tern-ssn:
       schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
       schema:name "Edmond Chuc" ;
     ] ;
-  dct:modified "2020-02-12"^^xsd:date ;
+  dct:modified "2020-03-23"^^xsd:date ;
   dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
   vann:preferredNamespacePrefix "tern-ssn" ;
   vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
   rdfs:comment "A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System." ;
   rdfs:label "TERN SSN ontology extension and vocabulary" ;
   rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
-  owl:imports <https://w3id.org/tern/ontologies/org> ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.1> ;
-  owl:versionInfo "0.0.1" ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports tern-org: ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.2> ;
+  owl:versionInfo "0.0.2" ;
 .
 <https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
   a rdfs:Class ;
@@ -294,6 +490,12 @@ tern-ssn:Actinometer
   rdfs:label "Actinometer" ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Actinometer> ;
   rdfs:subClassOf tern-ssn:Radiometer ;
+.
+tern-ssn:AffiliateSuperSite
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Affiliate super site" ;
+  rdfs:subClassOf tern-ssn:Site ;
 .
 tern-ssn:Aircraft
   a rdfs:Class ;
@@ -324,6 +526,46 @@ tern-ssn:Barometer
   rdfs:label "Barometer" ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer> ;
   rdfs:subClassOf sosa:Sensor ;
+.
+tern-ssn:Calibration
+  a owl:Class ;
+  rdfs:label "Calibration" ;
+  rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:actualResult ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:calibrationOffset ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:calibrationSlope ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:referenceResult ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty schema:description ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty tern-ssn:actualResult ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty tern-ssn:referenceResult ;
+    ] ;
 .
 tern-ssn:CapactitiveSensor
   a rdfs:Class ;
@@ -405,17 +647,72 @@ tern-ssn:Drone
   rdfs:label "Drone" ;
   rdfs:subClassOf tern-ssn:Aircraft ;
 .
-tern-ssn:EcologicalPlot
+tern-ssn:DroneCampaign
+  a owl:Class ;
+  rdfs:label "Drone campaign" ;
+  rdfs:subClassOf schema:Event ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Role ;
+      owl:onProperty tern-org:droneOperator ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom tern-ssn:Drone ;
+      owl:onProperty tern-ssn:hasDrone ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom tern-ssn:FlightPlan ;
+      owl:onProperty tern-ssn:hasFlightPlan ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty schema:endDate ;
+      owl:someValuesFrom xsd:dateTime ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty schema:geo ;
+      owl:someValuesFrom schema:GeoCoordinates ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty schema:geo ;
+      owl:someValuesFrom schema:GeoShape ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty schema:startDate ;
+      owl:someValuesFrom xsd:dateTime ;
+    ] ;
+.
+tern-ssn:EcosystemProcessesSite
   a rdfs:Class ;
   a owl:Class ;
-  rdfs:label "Ecological plot" ;
-  rdfs:subClassOf tern-ssn:FixedPlatform ;
+  rdfs:label "Ecosystem processes site" ;
+  rdfs:subClassOf tern-ssn:Site ;
 .
 tern-ssn:EddyCovarianceFluxTower
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "Eddy covariance flux tower" ;
   rdfs:subClassOf tern-ssn:FixedPlatform ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom skos:Concept ;
+      owl:onProperty tern-ssn:powerSupplyType ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom skos:Concept ;
+      owl:onProperty tern-ssn:terrainType ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty tern-ssn:fluxnetID ;
+      owl:someValuesFrom xsd:string ;
+    ] ;
 .
 tern-ssn:ElectromagneticRadiationHygrometer
   a rdfs:Class ;
@@ -434,6 +731,31 @@ tern-ssn:FixedPlatform
   a owl:Class ;
   rdfs:label "Fixed platform" ;
   rdfs:subClassOf sosa:Platform ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom skos:Concept ;
+      owl:onProperty tern-ssn:climateCode ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom skos:Concept ;
+      owl:onProperty tern-ssn:igbpCode ;
+    ] ;
+.
+tern-ssn:FlightPlan
+  a owl:Class ;
+  rdfs:label "Flight plan" ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:Place ;
+      owl:onProperty schema:location ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty tern-ssn:asKML ;
+      owl:someValuesFrom xsd:string ;
+    ] ;
 .
 tern-ssn:FrequencyDomainReflectometer
   a rdfs:Class ;
@@ -531,6 +853,12 @@ tern-ssn:OpticalRainGauge
   rdfs:label "Optical rain gauge" ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge> ;
   rdfs:subClassOf tern-ssn:RainGauge ;
+.
+tern-ssn:PoleTower
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Pole tower" ;
+  rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower ;
 .
 tern-ssn:Psychrometer
   a rdfs:Class ;
@@ -637,6 +965,32 @@ tern-ssn:Satellite
   rdfs:label "Satellite" ;
   rdfs:subClassOf tern-ssn:MobilePlatform ;
 .
+tern-ssn:SensorConfiguration
+  a owl:Class ;
+  rdfs:label "Sensor configuration" ;
+  rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:averageDataInterval ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom schema:QuantitativeValue ;
+      owl:onProperty tern-ssn:measurementInterval ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty schema:description ;
+    ] ;
+.
+tern-ssn:Site
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Site" ;
+  rdfs:subClassOf tern-ssn:FixedPlatform ;
+.
 tern-ssn:SoilMoistureSensor
   a rdfs:Class ;
   a owl:Class ;
@@ -660,8 +1014,8 @@ tern-ssn:Spectrometer
 tern-ssn:SuperSite
   a rdfs:Class ;
   a owl:Class ;
-  rdfs:label "Super site" ;
-  rdfs:subClassOf tern-ssn:EcologicalPlot ;
+  rdfs:label "SuperSite" ;
+  rdfs:subClassOf tern-ssn:Site ;
 .
 tern-ssn:TemperatureSensor
   a rdfs:Class ;
@@ -704,6 +1058,24 @@ tern-ssn:TippingBucketRainGauge
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge> ;
   rdfs:subClassOf tern-ssn:RainGauge ;
 .
+tern-ssn:TriangleTower
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Triangle tower" ;
+  rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower ;
+.
+tern-ssn:TripodTower
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Tripod tower" ;
+  rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower ;
+.
+tern-ssn:WalkUpTower
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Walk-up Tower" ;
+  rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower ;
+.
 tern-ssn:WeatherStation
   a rdfs:Class ;
   a owl:Class ;
@@ -725,9 +1097,46 @@ tern-ssn:WindSensor
   rdfs:label "Wind sensor" ;
   rdfs:subClassOf sosa:Sensor ;
 .
+tern-ssn:actualResult
+  a rdf:Property ;
+  rdfs:label "actual result" ;
+  rdfs:subPropertyOf tern-ssn:sensorCalibrationValue ;
+.
+tern-ssn:asKML
+  a rdf:Property ;
+  rdfs:label "as KML" ;
+.
+tern-ssn:averageDataInterval
+  a rdf:Property ;
+  rdfs:label "average data interval" ;
+  rdfs:subPropertyOf tern-ssn:sensorConfigurationValue ;
+.
+tern-ssn:calibrationOffset
+  a rdf:Property ;
+  rdfs:label "calibration offset" ;
+  rdfs:subPropertyOf tern-ssn:sensorCalibrationValue ;
+.
+tern-ssn:calibrationSlope
+  a rdf:Property ;
+  rdfs:label "calibration slope" ;
+  rdfs:subPropertyOf tern-ssn:sensorCalibrationValue ;
+.
+tern-ssn:climateCode
+  a rdf:Property ;
+  rdfs:comment "Koeppen-Geiger Climate code" ;
+  rdfs:label "climate code" ;
+.
 tern-ssn:contactPoint
   a owl:ObjectProperty ;
   rdfs:label "contact point" ;
+.
+tern-ssn:deploymentDepth
+  a rdf:Property ;
+  rdfs:label "deployment depth" ;
+.
+tern-ssn:deploymentHeight
+  a rdf:Property ;
+  rdfs:label "deployment height" ;
 .
 tern-ssn:deploymentInfo
   a owl:ObjectProperty ;
@@ -735,16 +1144,81 @@ tern-ssn:deploymentInfo
   rdfs:label "deployment info" ;
   rdfs:range tern-ssn:DeploymentInfo ;
 .
+tern-ssn:deploymentOrientation
+  a rdf:Property ;
+  rdfs:label "deployment orientation" ;
+.
+tern-ssn:deploymentType
+  a rdf:Property ;
+  rdfs:label "deployment type" ;
+.
+tern-ssn:fluxnetID
+  a rdf:Property ;
+  rdfs:comment "The fluxnet ID is the SITE_ID of the flux site found at https://fluxnet.fluxdata.org/sites/site-list-and-pages/" ;
+  rdfs:label "fluxnet ID" ;
+.
+tern-ssn:hasCalibration
+  a rdf:Property ;
+  rdfs:label "has calibration" ;
+.
+tern-ssn:hasConfiguration
+  a rdf:Property ;
+  rdfs:label "has configuration" ;
+.
+tern-ssn:hasDrone
+  a rdf:Property ;
+  rdfs:label "has drone" ;
+.
+tern-ssn:hasFlightPlan
+  a rdf:Property ;
+  rdfs:label "has flight plan" ;
+.
+tern-ssn:igbpCode
+  a rdf:Property ;
+  rdfs:comment "International Geosphere-Biosphere Programme code" ;
+  rdfs:label "igbp code" ;
+.
 tern-ssn:isDeployed
   a owl:DatatypeProperty ;
   rdfs:label "is deployed" ;
   rdfs:range xsd:boolean ;
+.
+tern-ssn:landOwnershipType
+  a rdf:Property ;
+  rdfs:label "land ownership type" ;
+.
+tern-ssn:measurementInterval
+  a rdf:Property ;
+  rdfs:label "measurement interval" ;
+  rdfs:subPropertyOf tern-ssn:sensorConfigurationValue ;
 .
 tern-ssn:onSystem
   a owl:ObjectProperty ;
   rdfs:comment "Link deployment information to a system." ;
   rdfs:domain tern-ssn:DeploymentInfo ;
   rdfs:label "on system" ;
+.
+tern-ssn:powerSupplyType
+  a rdf:Property ;
+  rdfs:label "power supply type" ;
+.
+tern-ssn:referenceResult
+  a rdf:Property ;
+  rdfs:comment "The standard reference value used to calibrate the sensors. " ;
+  rdfs:label "reference result" ;
+  rdfs:subPropertyOf tern-ssn:sensorCalibrationValue ;
+.
+tern-ssn:sensorCalibrationValue
+  a rdf:Property ;
+  rdfs:label "sensor calibration value" ;
+.
+tern-ssn:sensorConfigurationValue
+  a rdf:Property ;
+  rdfs:label "sensor configuration value" ;
+.
+tern-ssn:terrainType
+  a rdf:Property ;
+  rdfs:label "terrain type" ;
 .
 <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66>
   a schema:Organization ;
