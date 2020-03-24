@@ -436,6 +436,12 @@ tern-ssn:Site a rdfs:Class,
     rdfs:label "Site" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
+            owl:onProperty tern-ssn:ozfluxID ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty tern-ssn:fluxnetID ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
             owl:onProperty tern-ssn:locationDescription ],
         tern-ssn:FixedPlatform .
 
@@ -543,7 +549,7 @@ tern-ssn: a owl:Ontology ;
             schema:email "e.chuc@uq.edu.au" ;
             schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
             schema:name "Edmond Chuc" ] ;
-    dct:modified "2020-03-23"^^xsd:date ;
+    dct:modified "2020-03-24"^^xsd:date ;
     dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
     vann:preferredNamespacePrefix "tern-ssn" ;
     vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
@@ -551,8 +557,8 @@ tern-ssn: a owl:Ontology ;
     rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
         tern-org: ;
-    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.3> ;
-    owl:versionInfo "0.0.3" .
+    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.4> ;
+    owl:versionInfo "0.0.4" .
 
 tern-ssn:DroneCampaign a owl:Class ;
     rdfs:label "Drone campaign" ;
@@ -675,10 +681,6 @@ tern-ssn:deploymentOrientation a rdf:Property ;
 tern-ssn:deploymentType a rdf:Property ;
     rdfs:label "deployment type" .
 
-tern-ssn:fluxnetID a rdf:Property ;
-    rdfs:label "fluxnet ID" ;
-    rdfs:comment "The fluxnet ID is the SITE_ID of the flux site found at https://fluxnet.fluxdata.org/sites/site-list-and-pages/" .
-
 tern-ssn:hasCalibration a rdf:Property ;
     rdfs:label "has calibration" .
 
@@ -709,6 +711,9 @@ tern-ssn:locationDescription a rdf:Property ;
 tern-ssn:measurementInterval a rdf:Property ;
     rdfs:label "measurement interval" ;
     rdfs:subPropertyOf tern-ssn:sensorConfigurationValue .
+
+tern-ssn:ozfluxID a rdf:Property ;
+    rdfs:label "ozflux ID" .
 
 tern-ssn:powerSupplyType a rdf:Property ;
     rdfs:label "power supply type" .
@@ -793,6 +798,10 @@ tern-ssn:DeploymentInfo a owl:Class ;
 tern-ssn:actualResult a rdf:Property ;
     rdfs:label "actual result" ;
     rdfs:subPropertyOf tern-ssn:sensorCalibrationValue .
+
+tern-ssn:fluxnetID a rdf:Property ;
+    rdfs:label "fluxnet ID" ;
+    rdfs:comment "The fluxnet ID is the SITE_ID of the flux site found at https://fluxnet.fluxdata.org/sites/site-list-and-pages/" .
 
 tern-ssn:onSystem a owl:ObjectProperty ;
     rdfs:label "on system" ;
