@@ -1119,6 +1119,11 @@ tern-ssn:Variable
   rdfs:subClassOf skos:Concept ;
   rdfs:subClassOf sosa:ObservableProperty ;
 .
+tern-ssn:ObservationTheme a owl:Class ;
+  rdfs:label "Observation Theme" ;
+  rdfs:comment "The observation theme contains links to all the variables (observable properties) in some domain." ;
+  rdfs:subClassOf skos:Concept ;
+.
 tern-ssn:WalkUpTower
   a rdfs:Class ;
   a owl:Class ;

@@ -607,6 +607,11 @@ tern-ssn:Method a owl:Class ;
     rdfs:subClassOf skos:Concept,
         sosa:Procedure .
 
+tern-ssn:ObservationTheme a owl:Class ;
+    rdfs:label "Observation Theme" ;
+    rdfs:comment "The observation theme contains links to all the variables (observable properties) in some domain." ;
+    rdfs:subClassOf skos:Concept .
+
 tern-ssn:Variable a owl:Class ;
     rdfs:label "Variable" ;
     rdfs:comment "Exactly the same as sosa:ObservableProperty. This was created because domain experts are more familiar with the term 'variable'." ;

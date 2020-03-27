@@ -8,160 +8,877 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <rdf:Description rdf:nodeID="ub1bL75C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/WalkUpTower">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Walk-up Tower</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/inDeployment">
+    <rdfs:comment xml:lang="en">Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform.</rdfs:comment>
+    <skos:example xml:lang="en">For example, a relation between a buoy and a deployment of several Sensors.</skos:example>
+    <rdfs:label xml:lang="en">in deployment</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:definition xml:lang="en">Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform.</skos:definition>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/deployedOnPlatform"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Drone">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Aircraft"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Drone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/HotWireAnemometer">
+    <rdfs:comment>A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Anemometer"/>
+    <rdfs:label>Hot wire anemometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:seeAlso rdf:resource="https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isHostedBy">
+    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+    <rdfs:comment xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</rdfs:comment>
+    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdfs:label xml:lang="en">is hosted by</rdfs:label>
+    <skos:definition xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</skos:definition>
+    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampler"/>
+    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/hosts"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/NetRadiometer">
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Net_radiometer"/>
+    <rdfs:comment>A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Net radiometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Actinometer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform">
+    <rdfs:subClassOf rdf:nodeID="ub1bL133C19"/>
+    <rdfs:label xml:lang="en">Platform</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="ub1bL148C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL118C19"/>
+    <skos:example xml:lang="en">A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.</skos:example>
+    <rdfs:subClassOf rdf:nodeID="ub1bL143C19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL128C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL163C19"/>
+    <rdfs:comment xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="ub1bL113C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL153C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL123C19"/>
+    <skos:definition xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</skos:definition>
+    <rdfs:subClassOf rdf:nodeID="ub1bL138C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL173C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL108C19"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL158C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL168C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL98C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL103C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/OpticalRainGauge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RainGauge"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge"/>
+    <rdfs:label>Optical rain gauge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/landOwnershipType">
+    <rdfs:label>land ownership type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/terrainType">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>terrain type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL667C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/droneOperator"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge">
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RainGauge"/>
+    <rdfs:comment>A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass.</rdfs:comment>
+    <skos:altLabel>Weighing rain gauge</skos:altLabel>
+    <rdfs:label>Weighing precipitation gauge</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.w3.org/ns/ssn/systems/hasSystemProperty">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/ssn/systems/"/>
+    <skos:definition xml:lang="en">Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System.</skos:definition>
+    <rdfs:label xml:lang="en">has system property</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/averageDataInterval">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorConfigurationValue"/>
+    <rdfs:label>average data interval</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
+    <rdfs:label>Gravimetric hygrometer</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hygrometer#Gravimetric"/>
+    <rdfs:comment>A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Pyranometer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Actinometer"/>
+    <rdfs:label>Pyranometer</rdfs:label>
+    <rdfs:comment>A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m²) from the hemisphere above within a wavelength range 0.3 μm to 3 μm.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pyranometer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL307C19">
+    <owl:onProperty rdf:resource="http://schema.org/location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL22C19">
+    <owl:onProperty rdf:resource="http://schema.org/acquiredFrom"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="ub1bL24C25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SapFlowSensor">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdfs:seeAlso rdf:resource="https://www.edaphic.com.au/products/sap-flow-sensors/"/>
+    <rdfs:comment>A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood.</rdfs:comment>
+    <rdfs:label>Sap flow sensor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower">
+    <rdfs:subClassOf rdf:nodeID="ub1bL724C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL714C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL719C19"/>
+    <rdfs:label>Eddy covariance flux tower</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/FixedPlatform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL734C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL729C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL697C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:onProperty rdf:resource="http://schema.org/startDate"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL395C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasDeployment"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL108C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/collaboratorOrganization"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL113C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/dataManager"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL163C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hosts"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1346C22">
+    <owl:inverseOf rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL572C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/actualResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Procedure">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+    <rdfs:label xml:lang="en">Procedure</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hosts">
+    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdfs:label xml:lang="en">hosts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampler"/>
+    <rdfs:comment xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</rdfs:comment>
+    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <owl:propertyChainAxiom rdf:nodeID="ff68b5d3c457647fd95c6eedb5631e224b3"/>
+    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <skos:definition xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</skos:definition>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
+    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SensorConfiguration">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1003C19"/>
+    <rdfs:label>Sensor configuration</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1008C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL998C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1304C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="ub1bL1307C22"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL80C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
     <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1316C19">
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/EcosystemProcessesSite">
+    <rdfs:label>Ecosystem processes site</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Site"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL209C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL214C19"/>
+    <rdfs:label xml:lang="en">Sensor</rdfs:label>
+    <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</skos:definition>
+    <rdfs:subClassOf rdf:nodeID="ub1bL249C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL254C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL219C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL199C19"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL204C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL244C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL224C19"/>
+    <rdfs:comment xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="ub1bL239C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL229C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL234C19"/>
+    <skos:example xml:lang="en">Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.</skos:example>
+    <rdfs:subClassOf rdf:nodeID="ub1bL194C19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Calibration">
+    <rdfs:subClassOf rdf:nodeID="ub1bL552C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL562C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL557C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL567C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL547C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL572C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL577C19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Calibration</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL677C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/tern/ontologies/ssn/FlightPlan"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/hasFlightPlan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Deployment">
+    <rdfs:comment xml:lang="en">Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="ub1bL347C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL322C19"/>
+    <skos:definition xml:lang="en">Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform.</skos:definition>
+    <rdfs:subClassOf rdf:nodeID="ub1bL332C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL317C19"/>
+    <skos:example xml:lang="en">For example, a temperature Sensor deployed on a wall, or a whole network of Sensors deployed for an Observation campaign.</skos:example>
+    <rdfs:subClassOf rdf:nodeID="ub1bL372C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL367C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL362C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL342C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL307C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL357C19"/>
+    <rdfs:label xml:lang="en">Deployment</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="ub1bL352C19"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL312C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL337C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL327C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/DroneCampaign">
+    <rdfs:subClassOf rdf:nodeID="ub1bL677C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL672C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL692C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL697C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL687C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL667C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL682C19"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
+    <rdfs:label>Drone campaign</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/MobilePlatform">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Mobile platform</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/RadiationSensor">
+    <rdfs:label>Radiation sensor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Radiometer">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RadiationSensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Radiometer</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Radiometer"/>
+    <rdfs:comment>A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Hygrometer">
+    <rdfs:label>Hygrometer</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hygrometer"/>
+    <rdfs:comment>A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.w3.org/ns/ssn/systems/SystemCapability">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/ssn/systems/"/>
+    <rdfs:comment xml:lang="en">Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.
+
+    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1321C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1311C19"/>
+    <rdfs:label xml:lang="en">System Capability</rdfs:label>
+    <skos:definition xml:lang="en">Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.
+
+    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations.</skos:definition>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1304C19"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1299C19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1316C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL626C19">
+    <owl:onProperty rdf:nodeID="ub1bL629C22"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/HeatFluxSensor">
+    <rdfs:label>Heat flux sensor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Heat_flux_sensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A heat flux sensor is a transducer that generates an electrical signal proportional to the total heat rate applied to the surface of the sensor. The measured heat rate is divided by the surface area of the sensor to determine the heat flux.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue">
+    <rdfs:label>sensor calibration value</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/RainGauge">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rain_gauge"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over an area in a predefined period of time.</rdfs:comment>
+    <rdfs:label>Rain gauge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer">
+    <rdfs:comment>Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.
+
+Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:seeAlso rdf:resource="https://soilsensor.com/articles/time-domain-reflectometry-tdr/"/>
+    <skos:altLabel>TDR</skos:altLabel>
+    <rdfs:label>Time domain reflectometer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Spectrometer">
+    <rdfs:label>Spectrometer</rdfs:label>
+    <rdfs:comment>A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Spectroradiometer"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1321C19">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/inCondition"/>
     <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/hasFlightPlan">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:label>has flight plan</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/locationDescription">
-    <rdfs:label>location description</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://schema.org/description"/>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/DewPointHygrometer">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Ceilometer">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ceilometer"/>
+    <rdfs:comment>A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar.</rdfs:comment>
+    <rdfs:label>Ceilometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/HairHygrometer">
     <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
-    <rdfs:label>Dew point hygrometer</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://www.britannica.com/science/hygrometer#ref111343"/>
+    <rdfs:comment>A hygrometer that measures relative humidity by means of the variation in length of a strand of human hair.
+
+The length variation of a properly treated hair is 2%–2.5% when the humidity changes from 0%–100%. The hair hygrometer is considered to be a satisfactory instrument in situations where extreme and very low humidities are seldom or never found. The rate of response is very dependent on air temperature; the lag time increases with decreasing temperature. For air temperatures between 0° and 30°C and relative humidities between 20% and 80%, a good hair hygrometer should indicate 90% of a sudden change in humidity within about three minutes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Hair hygrometer</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://glossary.ametsoc.org/wiki/Hair_hygrometer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Thermistor">
+    <rdfs:label>Thermistor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/TemperatureSensor"/>
+    <rdfs:comment>A thermistor is a type of resistor whose resistance is dependent on temperature, more so than in standard resistors. The word is a combination of thermal and resistor. Thermistors are widely used as inrush current limiters, temperature sensors (negative temperature coefficient or NTC type typically), self-resetting overcurrent protectors, and self-regulating heating elements (positive temperature coefficient or PTC type typically).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Thermistor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL562C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/referenceResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/fluxnetID">
+    <rdfs:label>fluxnet ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The fluxnet ID is the SITE_ID of the flux site found at https://fluxnet.fluxdata.org/sites/site-list-and-pages/</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Dendrometer">
+    <rdfs:seeAlso rdf:resource="https://www.edaphic.com.au/dendrometers-multi-purpose-sensors/"/>
+    <rdfs:comment>Dendrometers are precision sensors that can measure the growth of plants. More specifically, dendrometers are used by researchers, growers and foresters to measure the growth of a stem, trunk, branch, roots or fruits over time.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:seeAlso rdf:resource="https://www.edaphic.com.au/products/dendrometers/"/>
+    <rdfs:label>Dendrometer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ResistanceThermometer">
+    <rdfs:label>Resistance thermometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/TemperatureSensor"/>
+    <skos:altLabel>Electrical resistance thermometer</skos:altLabel>
+    <rdfs:comment>Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Resistance_thermometer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL724C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/powerSupplyType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/QuantumSensor">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RadiationSensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Quantum sensor</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Quantum_sensor"/>
+    <rdfs:comment>A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/WindSensor">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdfs:label>Wind sensor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/DeploymentInfo">
+    <rdfs:subClassOf rdf:nodeID="ub1bL633C19"/>
+    <rdfs:comment>Deployment information of a system.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:label>Deployment info</rdfs:label>
     <rdfs:subClassOf rdf:nodeID="ub1bL621C19"/>
-    <rdfs:comment>Deployment information of a system.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="ub1bL643C19"/>
     <rdfs:subClassOf rdf:nodeID="ub1bL626C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL633C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL643C19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:nodeID="ub1bL638C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Site">
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1019C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1024C19"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/FixedPlatform"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1029C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL352C19">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
+  <rdf:Description rdf:nodeID="ub1bL168C19">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/NetRadiometer">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Net_radiometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Actinometer"/>
-    <rdfs:comment>A net radiometer is a type of actinometer used to measure net radiation (NR) at the Earth's surface for meteorological applications.</rdfs:comment>
-    <rdfs:label>Net radiometer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL229C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/hasCalibration"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/tern/ontologies/ssn/Calibration"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL422C19">
-    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/SystemCapability"/>
-    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemCapability"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="fddb0aa0934824961b9d53a7f5a0589b7b1">
-    <rdf:rest rdf:nodeID="fddb0aa0934824961b9d53a7f5a0589b7b2"/>
-    <rdf:first rdf:resource="http://schema.org/Organization"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/MercuryBarometer">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Barometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Mercury barometer</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Barometer#Mercury_barometers"/>
-    <rdfs:comment>A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform">
-    <rdfs:subClassOf rdf:nodeID="ub1bL128C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL98C19"/>
-    <skos:example xml:lang="en">A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.</skos:example>
-    <rdfs:subClassOf rdf:nodeID="ub1bL168C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL153C19"/>
-    <rdfs:comment xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="ub1bL148C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL113C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL103C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL123C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL143C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-    <skos:definition xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</skos:definition>
-    <rdfs:subClassOf rdf:nodeID="ub1bL108C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL163C19"/>
-    <rdfs:label xml:lang="en">Platform</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="ub1bL158C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL138C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL173C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL118C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL133C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL572C19">
     <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/actualResult"/>
+    <owl:onProperty rdf:resource="http://schema.org/identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL337C19">
+    <owl:onProperty rdf:resource="http://schema.org/description"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer">
+    <rdfs:comment>In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <skos:altLabel>Electrical resistive hygrometer</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hygrometer#Resistive"/>
+    <rdfs:label>Resistive hygrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL98C19">
+    <owl:onProperty rdf:resource="http://schema.org/location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ozfluxID">
+    <rdfs:label>ozflux ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL239C19">
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="http://schema.org/model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/referenceResult">
+    <rdfs:label>reference result</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue"/>
+    <rdfs:comment>The standard reference value used to calibrate the sensors. </rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1299C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/forProperty"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL465C15">
+    <schema:email>e.chuc@uq.edu.au</schema:email>
+    <schema:identifier>https://orcid.org/0000-0002-6047-9864</schema:identifier>
+    <schema:affiliation rdf:resource="https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66"/>
+    <schema:name>Edmond Chuc</schema:name>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TripodTower">
+    <rdfs:label>Tripod tower</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL342C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL367C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/deployedSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL70C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#invalidatedAtTime"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Psychrometer">
+    <rdfs:comment>A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: 
+
+1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. 
+2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Psychrometer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL158C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/inDeployment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/System">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL390C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL417C19"/>
+    <skos:definition xml:lang="en">System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems.</skos:definition>
+    <rdfs:subClassOf rdf:nodeID="ub1bL385C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL395C19"/>
+    <rdfs:label xml:lang="en">System</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="ub1bL412C19"/>
+    <rdfs:comment xml:lang="en">System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="ub1bL422C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL405C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL400C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL48C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    <owl:someValuesFrom rdf:resource="http://schema.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL687C19">
+    <owl:onProperty rdf:resource="http://schema.org/geo"/>
+    <owl:someValuesFrom rdf:resource="http://schema.org/GeoCoordinates"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL103C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://schema.org/funder"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL714C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/climateCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66">
+    <schema:alternateName>TERN</schema:alternateName>
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <schema:name>Terrestrial Ecoystem Research Network</schema:name>
+    <schema:url rdf:resource="https://www.tern.org.au/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/CupAnemometer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Anemometer"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers"/>
+    <rdfs:label>Cup anemometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL194C19">
+    <owl:allValuesFrom rdf:resource="http://schema.org/Organization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://schema.org/manufacturer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL577C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/referenceResult"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity">
+    <rdfs:subClassOf rdf:nodeID="ub1bL38C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL48C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL43C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL199C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:onProperty rdf:resource="http://schema.org/model"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL362C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/forProperty"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.w3.org/ns/ssn/systems/SystemProperty">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/ssn/systems/"/>
+    <rdfs:label xml:lang="en">System Property</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1343C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1336C19"/>
+    <skos:definition xml:lang="en">An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings.</skos:definition>
+    <rdfs:comment xml:lang="en">An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/DewPointHygrometer">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
+    <rdfs:comment>Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://www.britannica.com/science/hygrometer#ref111343"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Dew point hygrometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1316C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/SystemProperty"/>
+    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL729C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/terrainType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="ub1bL234C19">
     <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/hasConfiguration"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:resource="https://w3id.org/tern/ontologies/ssn/SensorConfiguration"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/System">
-    <rdfs:subClassOf rdf:nodeID="ub1bL422C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL395C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL417C19"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL390C19"/>
-    <rdfs:comment xml:lang="en">System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="ub1bL405C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL400C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL412C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL385C19"/>
-    <skos:definition xml:lang="en">System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other systems.</skos:definition>
-    <rdfs:label xml:lang="en">System</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Variable">
+    <rdfs:comment>Exactly the same as sosa:ObservableProperty. This was created because domain experts are more familiar with the term 'variable'.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    <rdfs:label>Variable</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL390C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/implements"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+  <rdf:Description rdf:nodeID="ub1bL123C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/principalInvestigator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/FlightPlan">
+    <rdfs:label>Flight plan</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL762C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL767C19"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL327C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#generatedAtTime"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/isDeployed">
-    <rdfs:label>is deployed</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/AneroidBarometer">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Barometer"/>
+    <rdfs:label>Aneroid barometer</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1299C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="ub1bL1302C22"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/">
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-07</dct:created>
+    <vann:preferredNamespaceUri>https://w3id.org/tern/ontologies/ssn/</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>tern-ssn</vann:preferredNamespacePrefix>
+    <rdfs:seeAlso rdf:resource="https://github.com/ternaustralia/ontology_tern-ssn"/>
+    <owl:imports rdf:resource="https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl"/>
+    <dct:publisher rdf:resource="https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:versionInfo>0.0.6</owl:versionInfo>
+    <owl:versionIRI rdf:resource="https://w3id.org/tern/ontologies/ssn/0.0.6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>TERN SSN ontology extension and vocabulary</rdfs:label>
+    <dct:creator rdf:nodeID="ub1bL465C15"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-03-27</dct:modified>
+    <owl:imports rdf:resource="https://w3id.org/tern/ontologies/org/"/>
+    <rdfs:comment>A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="https://www.w3.org/ns/ssn/systems/hasSystemProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">has system property</rdfs:label>
-    <skos:definition xml:lang="en">Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System.</skos:definition>
-    <rdfs:comment xml:lang="en">Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System.</rdfs:comment>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Pyrheliometer">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Pyrheliometer</rdfs:label>
+    <rdfs:comment>A pyrheliometer is an instrument for measurement of direct beam solar irradiance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pyrheliometer"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RadiationSensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.w3.org/ns/ssn/systems/hasSystemCapability">
     <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/ssn/systems/"/>
+    <rdfs:comment xml:lang="en">Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions.</rdfs:comment>
+    <rdfs:label xml:lang="en">has system capability</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+    <skos:definition xml:lang="en">Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL621C19">
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/subject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>deployment info</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
+    <rdfs:range rdf:resource="https://w3id.org/tern/ontologies/ssn/DeploymentInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/calibrationSlope">
+    <rdfs:label>calibration slope</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
+    <rdfs:label xml:lang="en">Observable Property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL43C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#startedAtTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL219C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasDeployment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/QuantitativeVariable">
+    <rdfs:label>Quantitative Variable</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer">
+    <rdfs:comment>Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/SonicAnemometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>2D sonic anemometer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/manufacturer">
+    <rdfs:range rdf:resource="https://w3id.org/tern/ontologies/org/Manufacturer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/climateCode">
+    <rdfs:comment>Koeppen-Geiger Climate code</rdfs:comment>
+    <rdfs:label>climate code</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL719C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/igbpCode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL643C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/onSystem"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL557C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/calibrationSlope"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1003C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/measurementInterval"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Pyrradiometer">
+    <rdfs:comment>An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:seeAlso rdf:resource="https://www.energy.eu/dictionary/data/1446.html"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Radiometer"/>
+    <rdfs:label>Pyrradiometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL55C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Person"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Infrared_gas_analyzer"/>
+    <rdfs:label>Infrared gas analyzer</rdfs:label>
+    <rdfs:comment>An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/actualResult">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>actual result</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/asKML">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>as KML</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Thermocouple">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/TemperatureSensor"/>
+    <rdfs:label>Thermocouple</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://www.thermocoupleinfo.com/index.htm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Site">
+    <rdfs:subClassOf rdf:nodeID="ub1bL1019C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1024C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL1029C19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/FixedPlatform"/>
+    <rdfs:label>Site</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/onSystem">
     <rdfs:label>on system</rdfs:label>
@@ -169,127 +886,93 @@
     <rdfs:comment>Link deployment information to a system.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL567C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="ff68b5d3c457647fd95c6eedb5631e224b3">
+    <rdf:rest rdf:nodeID="ff68b5d3c457647fd95c6eedb5631e224b4"/>
+    <rdf:first rdf:resource="http://www.w3.org/ns/ssn/inDeployment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Method">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment>Exactly the same as sosa:Procedure. This was created because the domain experts are more familiar with the term 'method'.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Method</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1019C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/fluxnetID"/>
     <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:onProperty rdf:resource="http://schema.org/description"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL697C19">
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://schema.org/startDate"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer">
+  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/deployedOnPlatform">
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/inDeployment"/>
+    <skos:definition xml:lang="en">Relation between a Deployment and the Platform on which the Systems are deployed.</skos:definition>
+    <rdfs:label xml:lang="en">deployed on platform</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+    <rdfs:comment xml:lang="en">Relation between a Deployment and the Platform on which the Systems are deployed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL390C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/implements"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1336C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="ub1bL1339C22"/>
+    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/SystemCapability"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Anemometer">
+    <rdfs:comment>An anemometer is a device used for measuring wind speed and direction.</rdfs:comment>
+    <rdfs:label>Anemometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hygrometer#Gravimetric"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>A Gravimetric hygrometer measures the mass of an air sample compared to an equal volume of dry air.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
-    <rdfs:label>Gravimetric hygrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/WindSensor"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anemometer"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://www.w3.org/ns/ssn/systems/SystemCapability">
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/ssn/systems/"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1299C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1306C19"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1316C19"/>
-    <skos:definition xml:lang="en">Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.
-
-    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations.</skos:definition>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1294C19"/>
-    <rdfs:label xml:lang="en">System Capability</rdfs:label>
-    <rdfs:comment xml:lang="en">Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.
-
-    The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including conditions that don't affect the observations or the actuations.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1311C19"/>
+  <rdf:Description rdf:nodeID="ub1bL153C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/hasConfiguration">
+  <rdf:Description rdf:nodeID="ff68b5d3c457647fd95c6eedb5631e224b1">
+    <rdf:first rdf:resource="http://schema.org/Organization"/>
+    <rdf:rest rdf:nodeID="ff68b5d3c457647fd95c6eedb5631e224b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL143C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/landOwnershipType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL173C19">
+    <owl:onProperty rdf:resource="http://schema.org/name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/sensorConfigurationValue">
+    <rdfs:label>sensor configuration value</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:label>has configuration</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL113C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/dataManager"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SonicAnemometer">
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer">
+    <rdfs:label>3D sonic anemometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Anemometer"/>
-    <rdfs:label>Sonic anemometer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://schema.org/OwnershipInfo">
-    <rdfs:subClassOf rdf:nodeID="ub1bL22C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL385C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL562C19">
-    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/referenceResult"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL405C19">
-    <owl:onProperty rdf:nodeID="ub1bL408C22"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>2D sonic anemometer</rdfs:label>
-    <rdfs:comment>Two-dimensional (wind speed and wind direction) sonic anemometers are used in applications such as weather stations, ship navigation, wind turbines, aviation and weather buoys.</rdfs:comment>
+    <rdfs:comment>Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/SonicAnemometer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL672C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/hasDrone"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/tern/ontologies/ssn/Drone"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
+    <rdfs:label>Electromagnetic radiation absorption hygrometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Calibration">
-    <rdfs:subClassOf rdf:nodeID="ub1bL577C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL572C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL557C19"/>
-    <rdfs:label>Calibration</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="ub1bL552C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL567C19"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL562C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL547C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower">
-    <rdfs:label>Eddy covariance flux tower</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="ub1bL729C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL734C19"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/FixedPlatform"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL724C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL714C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL719C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/FlightPlan">
-    <rdfs:subClassOf rdf:nodeID="ub1bL767C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL762C19"/>
-    <rdfs:label>Flight plan</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/CapactitiveSensor">
-    <rdfs:comment>A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:label>Capactitive sensor</rdfs:label>
-    <rdfs:seeAlso rdf:resource="http://www.cs.cmu.edu/~ram/capsense/intro.html"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Dendrometer">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:label>Dendrometer</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://www.edaphic.com.au/products/dendrometers/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:comment>Dendrometers are precision sensors that can measure the growth of plants. More specifically, dendrometers are used by researchers, growers and foresters to measure the growth of a stem, trunk, branch, roots or fruits over time.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://www.edaphic.com.au/dendrometers-multi-purpose-sensors/"/>
+  <rdf:Description rdf:nodeID="ub1bL1008C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://schema.org/description"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Pyrgeometer">
     <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RadiationSensor"/>
@@ -299,1172 +982,495 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label>Pyrgeometer</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SonicAnemometer">
+    <rdfs:label>Sonic anemometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Anemometer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/ns/sosa/observes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <skos:definition xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</skos:definition>
-    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:comment xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isObservedBy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">observes</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</rdfs:comment>
+    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/HeatFluxSensor">
-    <rdfs:label>Heat flux sensor</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Heat_flux_sensor"/>
-    <rdfs:comment>A heat flux sensor is a transducer that generates an electrical signal proportional to the total heat rate applied to the surface of the sensor. The measured heat rate is divided by the surface area of the sensor to determine the heat flux.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/hasDeployment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <skos:definition xml:lang="en">Relation between a System and a Deployment, recording that the System is deployed in that Deployment.</skos:definition>
-    <rdfs:label xml:lang="en">has deployment</rdfs:label>
-    <rdfs:comment xml:lang="en">Relation between a System and a Deployment, recording that the System is deployed in that Deployment.</rdfs:comment>
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/deployedSystem"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66">
-    <schema:url rdf:resource="https://www.tern.org.au/"/>
-    <schema:name>Terrestrial Ecoystem Research Network</schema:name>
-    <rdf:type rdf:resource="http://schema.org/Organization"/>
-    <schema:alternateName>TERN</schema:alternateName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hosts">
-    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
-    <skos:definition xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</skos:definition>
-    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <rdfs:label xml:lang="en">hosts</rdfs:label>
-    <rdfs:comment xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</rdfs:comment>
-    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-    <owl:propertyChainAxiom rdf:nodeID="fddb0aa0934824961b9d53a7f5a0589b7b3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
-    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampler"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL43C19">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#startedAtTime"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1003C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/measurementInterval"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor">
-    <rdfs:subClassOf rdf:nodeID="ub1bL214C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL224C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL249C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL234C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL204C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL239C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</rdfs:comment>
-    <rdfs:label xml:lang="en">Sensor</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="ub1bL199C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL229C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL219C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL209C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL244C19"/>
-    <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</skos:definition>
-    <rdfs:subClassOf rdf:nodeID="ub1bL254C19"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL194C19"/>
-    <skos:example xml:lang="en">Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.</skos:example>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL128C19">
-    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/technician"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Satellite">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Satellite</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/MobilePlatform"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL687C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://schema.org/geo"/>
-    <owl:someValuesFrom rdf:resource="http://schema.org/GeoCoordinates"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentOrientation">
-    <rdfs:label>deployment orientation</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isObservedBy"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer">
     <rdfs:comment>The equilibrium vapour pressure at the surface of a saturated lithium chloride solution is exceptionally low. As a consequence, a solution of lithium chloride is extremely hygroscopic under typical conditions of surface atmospheric humidity; if the ambient vapour pressure exceeds the equilibrium vapour pressure of the solution, water vapour will condense over it (for example, at 0 °C water vapour condenses over a plane surface of a saturated solution of lithium chloride to only 15 %rh).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
     <rdfs:label>Lithium chloride heated condensation hygrometer</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:seeAlso rdf:resource="https://www.wmo.int/pages/prog/www/IMOP/publications/CIMO-Guide/Prelim_2018_ed/8_I_4_en_MR_clean.pdf"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentInfo">
-    <rdfs:range rdf:resource="https://w3id.org/tern/ontologies/ssn/DeploymentInfo"/>
-    <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
-    <rdfs:label>deployment info</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/CupAnemometer">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Anemometer"/>
-    <rdfs:comment>A cup anemometer consists of four hemispherical cups mounted on horizontal arms, mounted on a vertical shaft.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anemometer#Cup_anemometers"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Cup anemometer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Barometer">
-    <rdfs:label>Barometer</rdfs:label>
-    <rdfs:comment>A barometer is a scientific instrument that is used to measure air pressure in a certain environment.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Barometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/deployedSystem">
-    <skos:definition xml:lang="en">Relation between a Deployment and a deployed System.</skos:definition>
-    <rdfs:comment xml:lang="en">Relation between a Deployment and a deployed System.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/hasDeployment"/>
-    <rdfs:label xml:lang="en">deployed system</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL38C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#endedAtTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/averageDataInterval">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:label>average data interval</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorConfigurationValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL209C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL317C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentHeight"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/EcosystemProcessesSite">
-    <rdfs:label>Ecosystem processes site</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/AffiliateSuperSite">
     <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Site"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Pyranometer">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pyranometer"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Actinometer"/>
-    <rdfs:label>Pyranometer</rdfs:label>
-    <rdfs:comment>A pyranometer is a type of actinometer used for measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m²) from the hemisphere above within a wavelength range 0.3 μm to 3 μm.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL118C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/landOwner"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Ceilometer">
-    <rdfs:label>Ceilometer</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ceilometer"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL80C19">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Aircraft">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Aircraft</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/MobilePlatform"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/QuantumSensor">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RadiationSensor"/>
-    <rdfs:label>Quantum sensor</rdfs:label>
-    <rdfs:comment>A quantum sensor is a quantum device that responds to a stimulus. Usually this refers to a sensor which has quantized energy levels, uses quantum coherence to measure physical quantity, or uses entanglement to improve measurements beyond what can be done with classical sensors.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Quantum_sensor"/>
+    <rdfs:label>Affiliate super site</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ElectronicBarometer">
-    <rdfs:label>Electronic barometer</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Barometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/hasCalibration">
-    <rdfs:label>has calibration</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL244C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/isDeployed"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  <rdf:Description rdf:nodeID="ub1bL214C19">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL547C19">
-    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/actualResult"/>
+  <rdf:Description rdf:nodeID="ub1bL762C19">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Place"/>
+    <owl:onProperty rdf:resource="http://schema.org/location"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL362C19">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/forProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL557C19">
-    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/calibrationSlope"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL734C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/fluxnetID"/>
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/actualResult">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:label>actual result</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/landOwnershipType">
-    <rdfs:label>land ownership type</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Variable">
-    <rdfs:label>Variable</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:comment>Exactly the same as sosa:ObservableProperty. This was created because domain experts are more familiar with the term 'variable'.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL682C19">
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:onProperty rdf:resource="http://schema.org/endDate"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ResistanceThermometer">
-    <rdfs:label>Resistance thermometer</rdfs:label>
-    <rdfs:comment>Resistance thermometers, also called resistance temperature detectors (RTDs), are sensors used to measure temperature.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <skos:altLabel>Electrical resistance thermometer</skos:altLabel>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/TemperatureSensor"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Resistance_thermometer"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SensorConfiguration">
-    <rdfs:subClassOf rdf:nodeID="ub1bL998C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1008C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1003C19"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:label>Sensor configuration</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL204C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observes"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Hygrometer">
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hygrometer"/>
-    <rdfs:comment>A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:label>Hygrometer</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/FixedPlatform">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Fixed platform</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL552C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/calibrationOffset"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge">
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rain_gauge#Weighing_precipitation_gauge"/>
-    <rdfs:comment>A weighing-type precipitation gauge consists of a storage bin, which is weighed to record the mass.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge">
+    <rdfs:comment>The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RainGauge"/>
-    <skos:altLabel>Weighing rain gauge</skos:altLabel>
-    <rdfs:label>Weighing precipitation gauge</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Radiometer">
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Radiometer</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RadiationSensor"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Radiometer"/>
-    <rdfs:comment>A radiometer or roentgenometer is a device for measuring the radiant flux (power) of electromagnetic radiation. Generally, a radiometer is an infrared radiation detector or an ultraviolet detector.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Tipping bucket rain gauge</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Psychrometer">
-    <rdfs:seeAlso rdf:resource="https://kestrelmeters.com/blogs/news/6638286-what-is-a-psychrometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>A psychrometer measures the relative humidity in the atmosphere through the use of two thermometers: 
-
-1. a dry bulb thermometer, is used to measure the temperature by being exposed to the air. 
-2. a wet bulb thermometer, measures temperature by having the bulb dipped in a liquid.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Psychrometer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Deployment">
-    <rdfs:subClassOf rdf:nodeID="ub1bL317C19"/>
-    <rdfs:label xml:lang="en">Deployment</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="ub1bL367C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL372C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL312C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL322C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL362C19"/>
-    <rdfs:comment xml:lang="en">Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform.</rdfs:comment>
-    <skos:example xml:lang="en">For example, a temperature Sensor deployed on a wall, or a whole network of Sensors deployed for an Observation campaign.</skos:example>
-    <rdfs:subClassOf rdf:nodeID="ub1bL357C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL342C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL332C19"/>
-    <skos:definition xml:lang="en">Describes the Deployment of one or more Systems for a particular purpose. Deployment may be done on a Platform.</skos:definition>
-    <rdfs:subClassOf rdf:nodeID="ub1bL327C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL337C19"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL352C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL347C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL307C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentType">
-    <rdfs:label>deployment type</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:label>Soil moisture sensor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL55C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/Person"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL163C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hosts"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL342C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentType"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/RainGauge">
-    <rdfs:label>Rain gauge</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rain_gauge"/>
-    <rdfs:comment>A rain gauge (also known as an udometer, pluviometer, or an ombrometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over an area in a predefined period of time.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/measurementInterval">
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorConfigurationValue"/>
-    <rdfs:label>measurement interval</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer">
-    <rdfs:comment>Sensors that use the Time Domain Reflectometry (TDR) are somewhat similar way to FDR probes, but the mechanics behind the measurement system are different. TDR sensors use parallel rods, acting as transmission lines. A voltage is applied to the rods and reflected back to the sensor for analysis. The speed or velocity of the voltage pulse along the rod is related to the apparent permittivity of the substrate (Blonquist 2005-A). In relatively wet soil the velocity of the pulse is slower than in drier soil.
-
-Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime-Piko 32.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <skos:altLabel>TDR</skos:altLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:seeAlso rdf:resource="https://soilsensor.com/articles/time-domain-reflectometry-tdr/"/>
-    <rdfs:label>Time domain reflectometer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/terrainType">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:label>terrain type</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL22C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://schema.org/acquiredFrom"/>
-    <owl:allValuesFrom rdf:nodeID="ub1bL24C25"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer">
-    <rdfs:seeAlso rdf:resource="https://soilsensor.com/articles/capacitance-frequency-frequency-domain-reflectometry-fdr/"/>
-    <rdfs:label>Frequency domain reflectometer</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>A frequency domain reflectometry probe can measure the capitance from the change in frequency of a reflected radio wave or resonance frequency. An oscillator propagates an electromagnetic signal through a metal tine or other wave guide, and the difference in the output wave and the return wave frequency determines the soil moisture.</rdfs:comment>
-    <skos:altLabel>FDR</skos:altLabel>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1338C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:nodeID="ub1bL1341C22"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="fddb0aa0934824961b9d53a7f5a0589b7b4">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.w3.org/ns/ssn/deployedSystem"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Electromagnetic radiation absorption hygrometer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/powerSupplyType">
-    <rdfs:label>power supply type</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/hasDrone">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:label>has drone</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL148C19">
+  <rdf:Description rdf:nodeID="ub1bL75C19">
     <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
     <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL621C19">
+  <rdf:Description rdf:nodeID="ub1bL254C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/implements"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/hasFlightPlan">
+    <rdfs:label>has flight plan</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/hasConfiguration">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>has configuration</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL638C19">
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     <owl:onProperty rdf:resource="http://purl.org/dc/terms/subject"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL48C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://schema.org/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL98C19">
-    <owl:onProperty rdf:resource="http://schema.org/location"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/Place"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Anemometer">
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anemometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Anemometer</rdfs:label>
-    <rdfs:comment>An anemometer is a device used for measuring wind speed and direction.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/WindSensor"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL465C15">
-    <schema:email>e.chuc@uq.edu.au</schema:email>
-    <schema:identifier>https://orcid.org/0000-0002-6047-9864</schema:identifier>
-    <schema:name>Edmond Chuc</schema:name>
-    <rdf:type rdf:resource="http://schema.org/Person"/>
-    <schema:affiliation rdf:resource="https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Drone">
-    <rdfs:label>Drone</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Aircraft"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/WeatherStation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Weather station</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/FixedPlatform"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL219C19">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasDeployment"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/WindSensor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Barometer">
+    <rdfs:comment>A barometer is a scientific instrument that is used to measure air pressure in a certain environment.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Barometer"/>
+    <rdfs:label>Barometer</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Wind sensor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SapFlowSensor">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:seeAlso rdf:resource="https://www.edaphic.com.au/products/sap-flow-sensors/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Sap flow sensor</rdfs:label>
-    <rdfs:comment>A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Infrared_gas_analyzer"/>
-    <rdfs:comment>An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Infrared gas analyzer</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <vann:preferredNamespaceUri>https://w3id.org/tern/ontologies/ssn/</vann:preferredNamespaceUri>
-    <owl:versionIRI rdf:resource="https://w3id.org/tern/ontologies/ssn/0.0.6"/>
-    <rdfs:seeAlso rdf:resource="https://github.com/ternaustralia/ontology_tern-ssn"/>
-    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-    <dct:creator rdf:nodeID="ub1bL465C15"/>
-    <rdfs:label>TERN SSN ontology extension and vocabulary</rdfs:label>
-    <vann:preferredNamespacePrefix>tern-ssn</vann:preferredNamespacePrefix>
-    <rdfs:comment>A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System.</rdfs:comment>
-    <owl:imports rdf:resource="https://w3id.org/tern/ontologies/org/"/>
-    <owl:imports rdf:resource="https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl"/>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-03-27</dct:modified>
-    <owl:versionInfo>0.0.6</owl:versionInfo>
-    <dct:publisher rdf:resource="https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66"/>
-    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-07</dct:created>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/fluxnetID">
-    <rdfs:label>fluxnet ID</rdfs:label>
-    <rdfs:comment>The fluxnet ID is the SITE_ID of the flux site found at https://fluxnet.fluxdata.org/sites/site-list-and-pages/</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/DroneCampaign">
-    <rdfs:subClassOf rdf:nodeID="ub1bL672C19"/>
-    <rdfs:label>Drone campaign</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="ub1bL687C19"/>
-    <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL682C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL692C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL677C19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL697C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL667C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Thermocouple">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:comment>A Thermocouple is a sensor used to measure temperature. Thermocouples consist of two wire legs made from different metals. The wires legs are welded together at one end, creating a junction. This junction is where the temperature is measured. When the junction experiences a change in temperature, a voltage is created. The voltage can then be interpreted using thermocouple reference tables to calculate the temperature.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:seeAlso rdf:resource="https://www.thermocoupleinfo.com/index.htm"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/TemperatureSensor"/>
-    <rdfs:label>Thermocouple</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL724C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/powerSupplyType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/MobilePlatform">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Mobile platform</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL199C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <owl:onProperty rdf:resource="http://schema.org/model"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/referenceResult">
-    <rdfs:label>reference result</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue"/>
-    <rdfs:comment>The standard reference value used to calibrate the sensors. </rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL65C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:onProperty rdf:resource="http://schema.org/description"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isHostedBy">
-    <rdfs:label xml:lang="en">is hosted by</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/hosts"/>
-    <rdfs:comment xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampler"/>
-    <skos:definition xml:lang="en">Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by.</skos:definition>
-    <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity">
-    <rdfs:subClassOf rdf:nodeID="ub1bL48C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL38C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL43C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/HairHygrometer">
-    <rdfs:seeAlso rdf:resource="http://glossary.ametsoc.org/wiki/Hair_hygrometer"/>
-    <rdfs:label>Hair hygrometer</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
-    <rdfs:comment>A hygrometer that measures relative humidity by means of the variation in length of a strand of human hair.
-
-The length variation of a properly treated hair is 2%–2.5% when the humidity changes from 0%–100%. The hair hygrometer is considered to be a satisfactory instrument in situations where extreme and very low humidities are seldom or never found. The rate of response is very dependent on air temperature; the lag time increases with decreasing temperature. For air temperatures between 0° and 30°C and relative humidities between 20% and 80%, a good hair hygrometer should indicate 90% of a sudden change in humidity within about three minutes.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Spectrometer">
-    <rdfs:comment>A spectroradiometer is a light measurement tool that is able to measure both the wavelength and amplitude of the light emitted from a light source.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdfs:label>Spectrometer</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Spectroradiometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TriangleTower">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Triangle tower</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="ub1bL998C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
     <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/averageDataInterval"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL672C19">
-    <owl:allValuesFrom rdf:resource="https://w3id.org/tern/ontologies/ssn/Drone"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/hasDrone"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1294C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/forProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1331C19">
-    <owl:onProperty rdf:nodeID="ub1bL1334C22"/>
-    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/SystemCapability"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SuperSite">
-    <rdfs:label>SuperSite</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Site"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Aircraft">
+    <rdfs:label>Aircraft</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/MobilePlatform"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1311C19">
-    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/SystemProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL327C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#generatedAtTime"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL357C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/deployedOnPlatform"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Tipping bucket rain gauge</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RainGauge"/>
-    <rdfs:comment>The tipping bucket rain gauge consists of a funnel that collects and channels the precipitation into a small seesaw-like container.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rain_gauge#Tipping_bucket_rain_gauge"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/WalkUpTower">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower"/>
-    <rdfs:label>Walk-up Tower</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/RadiationSensor">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Radiation sensor</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL412C19">
-    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/hasOperatingRange"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/OperatingRange"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL312C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentDepth"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL714C19">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/climateCode"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL762C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://schema.org/location"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/Place"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL395C19">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasDeployment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/PoleTower">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower"/>
-    <rdfs:label>Pole tower</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity">
-    <rdfs:subClassOf rdf:nodeID="ub1bL60C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL80C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL65C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL55C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL70C19"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL75C19"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/calibrationOffset">
-    <rdfs:label>calibration offset</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://www.w3.org/ns/ssn/systems/SystemProperty">
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/ssn/systems/"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1338C19"/>
-    <skos:definition xml:lang="en">An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="ub1bL1331C19"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-    <rdfs:comment xml:lang="en">An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings.</rdfs:comment>
-    <rdfs:label xml:lang="en">System Property</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/AneroidBarometer">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Barometer"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers"/>
-    <rdfs:comment>An aneroid barometer is an instrument used for measuring pressure as a method that does not involve liquid.</rdfs:comment>
-    <rdfs:label>Aneroid barometer</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL400C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer">
-    <rdfs:label>Resistive hygrometer</rdfs:label>
-    <skos:altLabel>Electrical resistive hygrometer</skos:altLabel>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Hygrometer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hygrometer#Resistive"/>
-    <rdfs:comment>In resistive hygrometers, the change in electrical resistance of a material due to humidity is measured.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/SonicAnemometer"/>
-    <rdfs:label>3D sonic anemometer</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Three-dimensional sonic anemometers are widely used to measure gas emissions and ecosystem fluxes using the eddy covariance method when used with fast-response infrared gas analyzers or laser-based analyzers.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TripodTower">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower"/>
-    <rdfs:label>Tripod tower</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TemperatureSensor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Temperature sensor</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Actinometer">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:comment>Actinometers are instruments used to measure the heating power of radiation.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Radiometer"/>
-    <rdfs:label>Actinometer</rdfs:label>
     <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Actinometer"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL337C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:onProperty rdf:resource="http://schema.org/description"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/calibrationSlope">
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue"/>
-    <rdfs:label>calibration slope</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL332C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#invalidatedAtTime"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Thermistor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/TemperatureSensor"/>
-    <rdfs:comment>A thermistor is a type of resistor whose resistance is dependent on temperature, more so than in standard resistors. The word is a combination of thermal and resistor. Thermistors are widely used as inrush current limiters, temperature sensors (negative temperature coefficient or NTC type typically), self-resetting overcurrent protectors, and self-regulating heating elements (positive temperature coefficient or PTC type typically).</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label>Thermistor</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Thermistor"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL123C19">
-    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/principalInvestigator"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/QuantitativeVariable">
-    <rdfs:label>Quantitative Variable</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="fddb0aa0934824961b9d53a7f5a0589b7b2">
-    <rdf:first rdf:resource="http://schema.org/Person"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1008C19">
-    <owl:onProperty rdf:resource="http://schema.org/description"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-    <rdfs:label xml:lang="en">Observable Property</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1029C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/ozfluxID"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL677C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/hasFlightPlan"/>
-    <owl:allValuesFrom rdf:resource="https://w3id.org/tern/ontologies/ssn/FlightPlan"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL626C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="ub1bL629C22"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Method">
-    <rdfs:label>Method</rdfs:label>
-    <rdfs:comment>Exactly the same as sosa:Procedure. This was created because the domain experts are more familiar with the term 'method'.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Pyrradiometer">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>An instrument for measuring the total radiation, solar and terrestrial, falling from the solid angle 2 pi on a plane surface.</rdfs:comment>
+    <rdfs:label>Actinometer</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Radiometer"/>
-    <rdfs:seeAlso rdf:resource="https://www.energy.eu/dictionary/data/1446.html"/>
-    <rdfs:label>Pyrradiometer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL158C19">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/inDeployment"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL643C19">
-    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/onSystem"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue">
-    <rdfs:label>sensor calibration value</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentHeight">
-    <rdfs:label>deployment height</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL173C19">
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="http://schema.org/name"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL367C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/deployedSystem"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL103C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://schema.org/funder"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Pyrheliometer">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RadiationSensor"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pyrheliometer"/>
-    <rdfs:comment>A pyrheliometer is an instrument for measurement of direct beam solar irradiance.</rdfs:comment>
-    <rdfs:label>Pyrheliometer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1306C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/inCondition"/>
-    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/Condition"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL239C19">
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://schema.org/model"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1024C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/locationDescription"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL767C19">
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/asKML"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL577C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/referenceResult"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="ub1bL692C19">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://schema.org/geo"/>
     <owl:someValuesFrom rdf:resource="http://schema.org/GeoShape"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL307C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/Place"/>
-    <owl:onProperty rdf:resource="http://schema.org/location"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/locationDescription">
+    <rdfs:label>location description</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/description"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL214C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
+  <rdf:Description rdf:nodeID="ub1bL38C19">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#endedAtTime"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/deployedOnPlatform">
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/inDeployment"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-    <skos:definition xml:lang="en">Relation between a Deployment and the Platform on which the Systems are deployed.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:comment xml:lang="en">Relation between a Deployment and the Platform on which the Systems are deployed.</rdfs:comment>
-    <rdfs:label xml:lang="en">deployed on platform</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SuperSite">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SuperSite</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Site"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="ub1bL60C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#generatedAtTime"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL224C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/detects"/>
+  <rdf:Description rdf:nodeID="ub1bL148C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Stimulus"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/AffiliateSuperSite">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Site"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/WeatherStation">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/FixedPlatform"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Affiliate super site</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/HotWireAnemometer">
-    <rdfs:seeAlso rdf:resource="https://www.sciencedirect.com/topics/engineering/hot-wire-anemometer"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Anemometer"/>
-    <rdfs:comment>A hot-wire anemometer is a thermal transducer which has been widely used to measure instantaneous flow velocity.</rdfs:comment>
-    <rdfs:label>Hot wire anemometer</rdfs:label>
+    <rdfs:label>Weather station</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL138C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#invalidatedAtTime"/>
+  <rdf:Description rdf:nodeID="ub1bL422C19">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemCapability"/>
+    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/SystemCapability"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/contactPoint">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label>contact point</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/CapactitiveSensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A capacitive sensor is a proximity sensor that detects nearby objects by their effect on the electrical field created by the sensor.</rdfs:comment>
+    <rdfs:label>Capactitive sensor</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://www.cs.cmu.edu/~ram/capsense/intro.html"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity">
+    <rdfs:subClassOf rdf:nodeID="ub1bL60C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL65C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL75C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL80C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL70C19"/>
+    <rdfs:subClassOf rdf:nodeID="ub1bL55C19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL118C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/landOwner"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL734C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/fluxnetID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL357C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/deployedOnPlatform"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL65C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://schema.org/description"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/measurementInterval">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorConfigurationValue"/>
+    <rdfs:label>measurement interval</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/isDeployed">
+    <rdfs:label>is deployed</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/igbpCode">
     <rdfs:label>igbp code</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:comment>International Geosphere-Biosphere Programme code</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL194C19">
-    <owl:allValuesFrom rdf:resource="http://schema.org/Organization"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://schema.org/manufacturer"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1019C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/fluxnetID"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL638C19">
-    <owl:onProperty rdf:resource="http://purl.org/dc/terms/subject"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/OpticalRainGauge">
-    <rdfs:label>Optical rain gauge</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/RainGauge"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge"/>
-    <rdfs:comment>This type of gauge has a row of collection funnels. In an enclosed space below each is a laser diode and a photo transistor detector. When enough water is collected to make a single drop, it drops from the bottom, falling into the laser beam path. The sensor is set at right angles to the laser so that enough light is scattered to be detected as a sudden flash of lights. The flashes from these photodetectors are then read and transmitted or recorded.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1334C22">
-    <owl:inverseOf rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL70C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#invalidatedAtTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Procedure">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-    <rdfs:label xml:lang="en">Procedure</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1302C22">
-    <owl:inverseOf rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemCapability"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ozfluxID">
-    <rdfs:label>ozflux ID</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://www.w3.org/ns/ssn/systems/hasSystemCapability">
-    <rdfs:label xml:lang="en">has system capability</rdfs:label>
-    <rdfs:comment xml:lang="en">Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/ssn/systems/"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/deployedSystem">
+    <rdfs:comment xml:lang="en">Relation between a Deployment and a deployed System.</rdfs:comment>
+    <skos:definition xml:lang="en">Relation between a Deployment and a deployed System.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <skos:definition xml:lang="en">Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL133C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#generatedAtTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL667C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/droneOperator"/>
-    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/sensorConfigurationValue">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:label>sensor configuration value</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL168C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://schema.org/identifier"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/inDeployment">
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/hasDeployment"/>
+    <rdfs:label xml:lang="en">deployed system</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/deployedOnPlatform"/>
-    <rdfs:label xml:lang="en">in deployment</rdfs:label>
-    <skos:definition xml:lang="en">Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform.</skos:definition>
-    <rdfs:comment xml:lang="en">Relation between a Platform and a Deployment, meaning that the deployedSystems of the Deployment are hosted on the Platform.</rdfs:comment>
-    <skos:example xml:lang="en">For example, a relation between a buoy and a deployment of several Sensors.</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL143C19">
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/PoleTower">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower"/>
+    <rdfs:label>Pole tower</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL385C19">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/landOwnershipType"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL729C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/terrainType"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL347C19">
+  <rdf:Description rdf:nodeID="ub1bL352C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/asKML">
-    <rdfs:label>as KML</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TemperatureSensor">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Temperature sensor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/Satellite">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Satellite</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/MobilePlatform"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor">
+    <rdfs:label>Soil moisture sensor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentDepth">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>deployment depth</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL108C19">
-    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/collaboratorOrganization"/>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/TriangleTower">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Triangle tower</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL372C19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://schema.org/Person"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL254C19">
-    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/implements"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL322C19">
+  <rdf:Description rdf:nodeID="ub1bL547C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/actualResult"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentOrientation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/climateCode">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>Koeppen-Geiger Climate code</rdfs:comment>
-    <rdfs:label>climate code</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL633C19">
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/onSystem"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="fddb0aa0934824961b9d53a7f5a0589b7b3">
-    <rdf:rest rdf:nodeID="fddb0aa0934824961b9d53a7f5a0589b7b4"/>
-    <rdf:first rdf:resource="http://www.w3.org/ns/ssn/inDeployment"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="ub1bL249C19">
     <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://schema.org/manufacturer"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL408C22">
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL719C19">
+  <rdf:Description rdf:nodeID="ub1bL312C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentDepth"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/igbpCode"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL153C19">
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
+  <rdf:Description rdf:nodeID="ub1bL1024C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/locationDescription"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL224C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Stimulus"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/detects"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL347C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
     <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL405C19">
+    <owl:onProperty rdf:nodeID="ub1bL408C22"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/powerSupplyType">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>power supply type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL372C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://schema.org/Person"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentHeight">
+    <rdfs:label>deployment height</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL412C19">
+    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/hasOperatingRange"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL24C25">
-    <owl:unionOf rdf:nodeID="fddb0aa0934824961b9d53a7f5a0589b7b1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:nodeID="ub1bL552C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/calibrationOffset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL1341C22">
-    <owl:inverseOf rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
+  <rdf:Description rdf:nodeID="ub1bL1029C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/ozfluxID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ElectronicBarometer">
+    <rdfs:label>Electronic barometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Barometer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/ssn/hasDeployment">
+    <rdfs:label xml:lang="en">has deployment</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation between a System and a Deployment, recording that the System is deployed in that Deployment.</rdfs:comment>
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/deployedSystem"/>
+    <skos:definition xml:lang="en">Relation between a System and a Deployment, recording that the System is deployed in that Deployment.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/MercuryBarometer">
+    <rdfs:label>Mercury barometer</rdfs:label>
+    <rdfs:comment>A mercury barometer has a vertical glass tube closed at the top sitting in an open mercury-filled basin at the bottom. Mercury in the tube adjusts until the weight of the mercury column balances the atmospheric force exerted on the reservoir. High atmospheric pressure places more force on the reservoir, forcing mercury higher in the column. Low pressure allows the mercury to drop to a lower level in the column by lowering the force placed on the reservoir. Since higher temperature levels around the instrument will reduce the density of the mercury, the scale for reading the height of the mercury is adjusted to compensate for this effect. The tube has to be at least as long as the amount dipping in the mercury + head space + the maximum length of the column.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/Barometer"/>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Barometer#Mercury_barometers"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1311C19">
+    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/inCondition"/>
+    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/Condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ff68b5d3c457647fd95c6eedb5631e224b2">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://schema.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL138C19">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#invalidatedAtTime"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL400C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/hasDrone">
+    <rdfs:label>has drone</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/ObservationTheme">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label>Observation Theme</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The observation theme contains links to all the variables (observable properties) in some domain.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL417C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/hasSurvivalRange"/>
+    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/SurvivalRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/FixedPlatform">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Fixed platform</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer">
+    <skos:altLabel>FDR</skos:altLabel>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor"/>
+    <rdfs:label>Frequency domain reflectometer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A frequency domain reflectometry probe can measure the capitance from the change in frequency of a reflected radio wave or resonance frequency. An oscillator propagates an electromagnetic signal through a metal tine or other wave guide, and the difference in the output wave and the return wave frequency determines the soil moisture.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://soilsensor.com/articles/capacitance-frequency-frequency-domain-reflectometry-fdr/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1307C22">
+    <owl:inverseOf rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemCapability"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ff68b5d3c457647fd95c6eedb5631e224b4">
+    <rdf:first rdf:resource="http://www.w3.org/ns/ssn/deployedSystem"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL244C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/isDeployed"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL204C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observes"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL633C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/onSystem"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="ub1bL629C22">
     <owl:inverseOf rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentInfo"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentDepth">
-    <rdfs:label>deployment depth</rdfs:label>
+  <rdf:Description rdf:nodeID="ub1bL767C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/asKML"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/hasCalibration">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>has calibration</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL229C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/hasCalibration"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/tern/ontologies/ssn/Calibration"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL322C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentOrientation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL317C19">
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/ssn/deploymentHeight"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/QuantitativeValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL567C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://schema.org/description"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL332C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#invalidatedAtTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1343C19">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="ub1bL1346C22"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentOrientation">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>deployment orientation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/contactPoint">
+    <rdfs:label>contact point</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL128C19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/tern/ontologies/org/technician"/>
+    <owl:allValuesFrom rdf:resource="http://schema.org/Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/deploymentType">
+    <rdfs:label>deployment type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://schema.org/manufacturer">
-    <rdfs:range rdf:resource="https://w3id.org/tern/ontologies/org/Manufacturer"/>
+  <rdf:Description rdf:nodeID="ub1bL24C25">
+    <owl:unionOf rdf:nodeID="ff68b5d3c457647fd95c6eedb5631e224b1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ub1bL417C19">
-    <owl:allValuesFrom rdf:resource="https://www.w3.org/ns/ssn/systems/SurvivalRange"/>
+  <rdf:Description rdf:nodeID="ub1bL133C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="https://www.w3.org/ns/ssn/systems/hasSurvivalRange"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#generatedAtTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL408C22">
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL1339C22">
+    <owl:inverseOf rdf:resource="https://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL682C19">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:onProperty rdf:resource="http://schema.org/endDate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tern/ontologies/ssn/calibrationOffset">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/tern/ontologies/ssn/sensorCalibrationValue"/>
+    <rdfs:label>calibration offset</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub1bL209C19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/OwnershipInfo">
+    <rdfs:subClassOf rdf:nodeID="ub1bL22C19"/>
   </rdf:Description>
 </rdf:RDF>
