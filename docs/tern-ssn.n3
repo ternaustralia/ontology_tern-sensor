@@ -390,7 +390,8 @@ tern-ssn:Pyrradiometer a rdfs:Class,
 tern-ssn:QuantitativeVariable a rdfs:Class,
         owl:Class ;
     rdfs:label "Quantitative Variable" ;
-    rdfs:subClassOf skos:Concept .
+    rdfs:subClassOf skos:Concept,
+        ssn:Property .
 
 tern-ssn:QuantumSensor a rdfs:Class,
         owl:Class ;

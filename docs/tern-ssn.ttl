@@ -928,7 +928,7 @@ tern-ssn:QuantitativeVariable
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "Quantitative Variable" ;
-  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf skos:Concept, ssn:Property ;
 .
 tern-ssn:QuantumSensor
   a rdfs:Class ;
