@@ -480,8 +480,8 @@ tern-ssn:
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl> ;
   owl:imports tern-org: ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.5> ;
-  owl:versionInfo "0.0.5" ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.6> ;
+  owl:versionInfo "0.0.6" ;
 .
 <https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
   a rdfs:Class ;

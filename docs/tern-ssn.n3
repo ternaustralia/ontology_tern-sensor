@@ -573,8 +573,8 @@ tern-ssn: a owl:Ontology ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
         <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl>,
         tern-org: ;
-    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.5> ;
-    owl:versionInfo "0.0.5" .
+    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.6> ;
+    owl:versionInfo "0.0.6" .
 
 tern-ssn:DroneCampaign a owl:Class ;
     rdfs:label "Drone campaign" ;
