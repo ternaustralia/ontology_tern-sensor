@@ -14,12 +14,20 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+sosa:ObservableProperty a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Observable Property"@en ;
+    rdfs:isDefinedBy sosa: .
+
 sosa:Platform a rdfs:Class,
         owl:Class ;
     rdfs:label "Platform"@en ;
     rdfs:comment "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
     rdfs:isDefinedBy sosa: ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom schema:Role ;
+            owl:onProperty schema:funder ],
+        [ a owl:Restriction ;
             owl:allValuesFrom schema:Role ;
             owl:onProperty tern-org:collaboratorOrganization ],
         [ a owl:Restriction ;
@@ -63,12 +71,14 @@ sosa:Platform a rdfs:Class,
             owl:onProperty schema:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom schema:Place ;
-            owl:onProperty schema:location ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom schema:Role ;
-            owl:onProperty schema:funder ] ;
+            owl:onProperty schema:location ] ;
     skos:definition "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
     skos:example "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."@en .
+
+sosa:Procedure a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Procedure"@en ;
+    rdfs:isDefinedBy sosa: .
 
 sosa:Sensor a rdfs:Class,
         owl:Class ;
@@ -377,6 +387,11 @@ tern-ssn:Pyrradiometer a rdfs:Class,
     rdfs:seeAlso <https://www.energy.eu/dictionary/data/1446.html> ;
     rdfs:subClassOf tern-ssn:Radiometer .
 
+tern-ssn:QuantitativeVariable a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Quantitative Variable" ;
+    rdfs:subClassOf skos:Concept .
+
 tern-ssn:QuantumSensor a rdfs:Class,
         owl:Class ;
     rdfs:label "Quantum sensor" ;
@@ -436,13 +451,13 @@ tern-ssn:Site a rdfs:Class,
     rdfs:label "Site" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
-            owl:onProperty tern-ssn:ozfluxID ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
             owl:onProperty tern-ssn:fluxnetID ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty tern-ssn:locationDescription ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty tern-ssn:ozfluxID ],
         tern-ssn:FixedPlatform .
 
 tern-ssn:SoilMoistureSensor a rdfs:Class,
@@ -549,16 +564,17 @@ tern-ssn: a owl:Ontology ;
             schema:email "e.chuc@uq.edu.au" ;
             schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
             schema:name "Edmond Chuc" ] ;
-    dct:modified "2020-03-24"^^xsd:date ;
+    dct:modified "2020-03-27"^^xsd:date ;
     dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
     vann:preferredNamespacePrefix "tern-ssn" ;
     vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
     rdfs:comment "A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System." ;
     rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
+        <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl>,
         tern-org: ;
-    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.4> ;
-    owl:versionInfo "0.0.4" .
+    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.5> ;
+    owl:versionInfo "0.0.5" .
 
 tern-ssn:DroneCampaign a owl:Class ;
     rdfs:label "Drone campaign" ;
@@ -584,6 +600,18 @@ tern-ssn:DroneCampaign a owl:Class ;
             owl:onProperty schema:startDate ;
             owl:someValuesFrom xsd:dateTime ],
         schema:Event .
+
+tern-ssn:Method a owl:Class ;
+    rdfs:label "Method" ;
+    rdfs:comment "Exactly the same as sosa:Procedure. This was created because the domain experts are more familiar with the term 'method'." ;
+    rdfs:subClassOf skos:Concept,
+        sosa:Procedure .
+
+tern-ssn:Variable a owl:Class ;
+    rdfs:label "Variable" ;
+    rdfs:comment "Exactly the same as sosa:ObservableProperty. This was created because domain experts are more familiar with the term 'variable'." ;
+    rdfs:subClassOf skos:Concept,
+        sosa:ObservableProperty .
 
 tern-ssn:contactPoint a owl:ObjectProperty ;
     rdfs:label "contact point" .
@@ -636,13 +664,13 @@ tern-ssn:SensorConfiguration a owl:Class ;
     rdfs:label "Sensor configuration" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom schema:QuantitativeValue ;
-            owl:onProperty tern-ssn:averageDataInterval ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom schema:QuantitativeValue ;
             owl:onProperty tern-ssn:measurementInterval ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty schema:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom schema:QuantitativeValue ;
+            owl:onProperty tern-ssn:averageDataInterval ],
         <http://www.w3.org/ns/prov#Entity> .
 
 tern-ssn:asKML a rdf:Property ;

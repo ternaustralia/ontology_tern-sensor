@@ -1,5 +1,6 @@
 # baseURI: https://w3id.org/tern/ontologies/ssn/
 # imports: http://www.w3.org/2004/02/skos/core
+# imports: https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl
 # imports: https://w3id.org/tern/ontologies/org/
 # prefix: tern-ssn
 
@@ -82,6 +83,12 @@ schema:manufacturer
       owl:allValuesFrom <http://www.w3.org/ns/prov#Activity> ;
       owl:onProperty <http://www.w3.org/ns/prov#wasInvalidatedBy> ;
     ] ;
+.
+sosa:ObservableProperty
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:isDefinedBy sosa: ;
+  rdfs:label "Observable Property"@en ;
 .
 sosa:Platform
   a rdfs:Class ;
@@ -171,6 +178,12 @@ sosa:Platform
     ] ;
   skos:definition "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
   skos:example "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."@en ;
+.
+sosa:Procedure
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:isDefinedBy sosa: ;
+  rdfs:label "Procedure"@en ;
 .
 sosa:Sensor
   a rdfs:Class ;
@@ -457,7 +470,7 @@ tern-ssn:
       schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
       schema:name "Edmond Chuc" ;
     ] ;
-  dct:modified "2020-03-24"^^xsd:date ;
+  dct:modified "2020-03-27"^^xsd:date ;
   dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
   vann:preferredNamespacePrefix "tern-ssn" ;
   vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
@@ -465,9 +478,10 @@ tern-ssn:
   rdfs:label "TERN SSN ontology extension and vocabulary" ;
   rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl> ;
   owl:imports tern-org: ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.4> ;
-  owl:versionInfo "0.0.4" ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.5> ;
+  owl:versionInfo "0.0.5" ;
 .
 <https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
   a rdfs:Class ;
@@ -832,6 +846,13 @@ tern-ssn:MercuryBarometer
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer#Mercury_barometers> ;
   rdfs:subClassOf tern-ssn:Barometer ;
 .
+tern-ssn:Method
+  a owl:Class ;
+  rdfs:comment "Exactly the same as sosa:Procedure. This was created because the domain experts are more familiar with the term 'method'." ;
+  rdfs:label "Method" ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf sosa:Procedure ;
+.
 tern-ssn:MobilePlatform
   a rdfs:Class ;
   a owl:Class ;
@@ -902,6 +923,12 @@ tern-ssn:Pyrradiometer
   rdfs:label "Pyrradiometer" ;
   rdfs:seeAlso <https://www.energy.eu/dictionary/data/1446.html> ;
   rdfs:subClassOf tern-ssn:Radiometer ;
+.
+tern-ssn:QuantitativeVariable
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Quantitative Variable" ;
+  rdfs:subClassOf skos:Concept ;
 .
 tern-ssn:QuantumSensor
   a rdfs:Class ;
@@ -1084,6 +1111,13 @@ tern-ssn:TripodTower
   a owl:Class ;
   rdfs:label "Tripod tower" ;
   rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower ;
+.
+tern-ssn:Variable
+  a owl:Class ;
+  rdfs:comment "Exactly the same as sosa:ObservableProperty. This was created because domain experts are more familiar with the term 'variable'." ;
+  rdfs:label "Variable" ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf sosa:ObservableProperty ;
 .
 tern-ssn:WalkUpTower
   a rdfs:Class ;
