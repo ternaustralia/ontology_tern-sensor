@@ -470,7 +470,7 @@ tern-ssn:
       schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
       schema:name "Edmond Chuc" ;
     ] ;
-  dct:modified "2020-03-27"^^xsd:date ;
+  dct:modified "2020-04-06"^^xsd:date ;
   dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
   vann:preferredNamespacePrefix "tern-ssn" ;
   vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
@@ -480,8 +480,8 @@ tern-ssn:
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl> ;
   owl:imports tern-org: ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.6> ;
-  owl:versionInfo "0.0.6" ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.7> ;
+  owl:versionInfo "0.0.7" ;
 .
 <https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
   a rdfs:Class ;
@@ -509,7 +509,7 @@ tern-ssn:AffiliateSuperSite
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "Affiliate super site" ;
-  rdfs:subClassOf tern-ssn:Site ;
+  rdfs:subClassOf tern-ssn:EcologySite ;
 .
 tern-ssn:Aircraft
   a rdfs:Class ;
@@ -533,6 +533,12 @@ tern-ssn:AneroidBarometer
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers> ;
   rdfs:subClassOf tern-ssn:Barometer ;
 .
+tern-ssn:AutomaticWeatherStation
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Automatic weather station" ;
+  rdfs:subClassOf tern-ssn:InSituLandBasedPlatform ;
+.
 tern-ssn:Barometer
   a rdfs:Class ;
   a owl:Class ;
@@ -540,6 +546,12 @@ tern-ssn:Barometer
   rdfs:label "Barometer" ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer> ;
   rdfs:subClassOf sosa:Sensor ;
+.
+tern-ssn:CORVEGSite
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "CORVEG Site" ;
+  rdfs:subClassOf tern-ssn:EcologySite ;
 .
 tern-ssn:Calibration
   a owl:Class ;
@@ -655,12 +667,6 @@ tern-ssn:DewPointHygrometer
   rdfs:seeAlso <https://www.britannica.com/science/hygrometer#ref111343> ;
   rdfs:subClassOf tern-ssn:Hygrometer ;
 .
-tern-ssn:Drone
-  a rdfs:Class ;
-  a owl:Class ;
-  rdfs:label "Drone" ;
-  rdfs:subClassOf tern-ssn:Aircraft ;
-.
 tern-ssn:DroneCampaign
   a owl:Class ;
   rdfs:label "Drone campaign" ;
@@ -672,13 +678,13 @@ tern-ssn:DroneCampaign
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:allValuesFrom tern-ssn:Drone ;
-      owl:onProperty tern-ssn:hasDrone ;
+      owl:allValuesFrom tern-ssn:FlightPlan ;
+      owl:onProperty tern-ssn:hasFlightPlan ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:allValuesFrom tern-ssn:FlightPlan ;
-      owl:onProperty tern-ssn:hasFlightPlan ;
+      owl:allValuesFrom tern-ssn:UAV ;
+      owl:onProperty tern-ssn:hasDrone ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -701,17 +707,38 @@ tern-ssn:DroneCampaign
       owl:someValuesFrom xsd:dateTime ;
     ] ;
 .
+tern-ssn:EcologySite
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Ecology site" ;
+  rdfs:subClassOf tern-ssn:InSituLandBasedPlatform ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty tern-ssn:fluxnetID ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty tern-ssn:locationDescription ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty tern-ssn:ozfluxID ;
+    ] ;
+.
 tern-ssn:EcosystemProcessesSite
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "Ecosystem processes site" ;
-  rdfs:subClassOf tern-ssn:Site ;
+  rdfs:subClassOf tern-ssn:EcologySite ;
 .
 tern-ssn:EddyCovarianceFluxTower
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "Eddy covariance flux tower" ;
-  rdfs:subClassOf tern-ssn:FixedPlatform ;
+  rdfs:subClassOf tern-ssn:InSituLandBasedPlatform ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:allValuesFrom skos:Concept ;
@@ -749,12 +776,6 @@ tern-ssn:ElectronicBarometer
   a owl:Class ;
   rdfs:label "Electronic barometer" ;
   rdfs:subClassOf tern-ssn:Barometer ;
-.
-tern-ssn:FixedPlatform
-  a rdfs:Class ;
-  a owl:Class ;
-  rdfs:label "Fixed platform" ;
-  rdfs:subClassOf sosa:Platform ;
 .
 tern-ssn:FlightPlan
   a owl:Class ;
@@ -822,6 +843,12 @@ tern-ssn:Hygrometer
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Hygrometer> ;
   rdfs:subClassOf sosa:Sensor ;
 .
+tern-ssn:InSituLandBasedPlatform
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "In situ land-based platform" ;
+  rdfs:subClassOf sosa:Platform ;
+.
 tern-ssn:InfraredGasAnalyzer
   a rdfs:Class ;
   a owl:Class ;
@@ -866,6 +893,12 @@ tern-ssn:NetRadiometer
   rdfs:label "Net radiometer" ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Net_radiometer> ;
   rdfs:subClassOf tern-ssn:Actinometer ;
+.
+tern-ssn:ObservationTheme
+  a owl:Class ;
+  rdfs:comment "The observation theme contains links to all the variables (observable properties) in some domain." ;
+  rdfs:label "Observation Theme" ;
+  rdfs:subClassOf skos:Concept ;
 .
 tern-ssn:OpticalRainGauge
   a rdfs:Class ;
@@ -928,7 +961,8 @@ tern-ssn:QuantitativeVariable
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "Quantitative Variable" ;
-  rdfs:subClassOf skos:Concept, ssn:Property ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf ssn:Property ;
 .
 tern-ssn:QuantumSensor
   a rdfs:Class ;
@@ -1012,26 +1046,11 @@ tern-ssn:SensorConfiguration
       owl:onProperty schema:description ;
     ] ;
 .
-tern-ssn:Site
+tern-ssn:SoilMoisturePlatform
   a rdfs:Class ;
   a owl:Class ;
-  rdfs:label "Site" ;
-  rdfs:subClassOf tern-ssn:FixedPlatform ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:allValuesFrom xsd:string ;
-      owl:onProperty tern-ssn:fluxnetID ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:allValuesFrom xsd:string ;
-      owl:onProperty tern-ssn:locationDescription ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:allValuesFrom xsd:string ;
-      owl:onProperty tern-ssn:ozfluxID ;
-    ] ;
+  rdfs:label "Soil moisture platform" ;
+  rdfs:subClassOf tern-ssn:InSituLandBasedPlatform ;
 .
 tern-ssn:SoilMoistureSensor
   a rdfs:Class ;
@@ -1057,7 +1076,13 @@ tern-ssn:SuperSite
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "SuperSite" ;
-  rdfs:subClassOf tern-ssn:Site ;
+  rdfs:subClassOf tern-ssn:EcologySite ;
+.
+tern-ssn:SurveillanceSite
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Surveillance site" ;
+  rdfs:subClassOf tern-ssn:EcologySite ;
 .
 tern-ssn:TemperatureSensor
   a rdfs:Class ;
@@ -1112,6 +1137,12 @@ tern-ssn:TripodTower
   rdfs:label "Tripod tower" ;
   rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower ;
 .
+tern-ssn:UAV
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "UAV" ;
+  rdfs:subClassOf tern-ssn:Aircraft ;
+.
 tern-ssn:Variable
   a owl:Class ;
   rdfs:comment "Exactly the same as sosa:ObservableProperty. This was created because domain experts are more familiar with the term 'variable'." ;
@@ -1119,22 +1150,11 @@ tern-ssn:Variable
   rdfs:subClassOf skos:Concept ;
   rdfs:subClassOf sosa:ObservableProperty ;
 .
-tern-ssn:ObservationTheme a owl:Class ;
-  rdfs:label "Observation Theme" ;
-  rdfs:comment "The observation theme contains links to all the variables (observable properties) in some domain." ;
-  rdfs:subClassOf skos:Concept ;
-.
 tern-ssn:WalkUpTower
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "Walk-up Tower" ;
   rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower ;
-.
-tern-ssn:WeatherStation
-  a rdfs:Class ;
-  a owl:Class ;
-  rdfs:label "Weather station" ;
-  rdfs:subClassOf tern-ssn:FixedPlatform ;
 .
 tern-ssn:WeighingPrecipitationGauge
   a rdfs:Class ;

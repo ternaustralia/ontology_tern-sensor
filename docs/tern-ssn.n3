@@ -150,7 +150,7 @@ tern-ssn:Actinometer a rdfs:Class,
 tern-ssn:AffiliateSuperSite a rdfs:Class,
         owl:Class ;
     rdfs:label "Affiliate super site" ;
-    rdfs:subClassOf tern-ssn:Site .
+    rdfs:subClassOf tern-ssn:EcologySite .
 
 tern-ssn:Aircraft a rdfs:Class,
         owl:Class ;
@@ -171,12 +171,22 @@ tern-ssn:AneroidBarometer a rdfs:Class,
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer#Aneroid_barometers> ;
     rdfs:subClassOf tern-ssn:Barometer .
 
+tern-ssn:AutomaticWeatherStation a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Automatic weather station" ;
+    rdfs:subClassOf tern-ssn:InSituLandBasedPlatform .
+
 tern-ssn:Barometer a rdfs:Class,
         owl:Class ;
     rdfs:label "Barometer" ;
     rdfs:comment "A barometer is a scientific instrument that is used to measure air pressure in a certain environment." ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer> ;
     rdfs:subClassOf sosa:Sensor .
+
+tern-ssn:CORVEGSite a rdfs:Class,
+        owl:Class ;
+    rdfs:label "CORVEG Site" ;
+    rdfs:subClassOf tern-ssn:EcologySite .
 
 tern-ssn:CapactitiveSensor a rdfs:Class,
         owl:Class ;
@@ -214,15 +224,24 @@ tern-ssn:DewPointHygrometer a rdfs:Class,
     rdfs:seeAlso <https://www.britannica.com/science/hygrometer#ref111343> ;
     rdfs:subClassOf tern-ssn:Hygrometer .
 
-tern-ssn:Drone a rdfs:Class,
+tern-ssn:EcologySite a rdfs:Class,
         owl:Class ;
-    rdfs:label "Drone" ;
-    rdfs:subClassOf tern-ssn:Aircraft .
+    rdfs:label "Ecology site" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty tern-ssn:fluxnetID ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty tern-ssn:locationDescription ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty tern-ssn:ozfluxID ],
+        tern-ssn:InSituLandBasedPlatform .
 
 tern-ssn:EcosystemProcessesSite a rdfs:Class,
         owl:Class ;
     rdfs:label "Ecosystem processes site" ;
-    rdfs:subClassOf tern-ssn:Site .
+    rdfs:subClassOf tern-ssn:EcologySite .
 
 tern-ssn:EddyCovarianceFluxTower a rdfs:Class,
         owl:Class ;
@@ -242,7 +261,7 @@ tern-ssn:EddyCovarianceFluxTower a rdfs:Class,
         [ a owl:Restriction ;
             owl:onProperty tern-ssn:fluxnetID ;
             owl:someValuesFrom xsd:string ],
-        tern-ssn:FixedPlatform .
+        tern-ssn:InSituLandBasedPlatform .
 
 tern-ssn:ElectromagneticRadiationHygrometer a rdfs:Class,
         owl:Class ;
@@ -253,11 +272,6 @@ tern-ssn:ElectronicBarometer a rdfs:Class,
         owl:Class ;
     rdfs:label "Electronic barometer" ;
     rdfs:subClassOf tern-ssn:Barometer .
-
-tern-ssn:FixedPlatform a rdfs:Class,
-        owl:Class ;
-    rdfs:label "Fixed platform" ;
-    rdfs:subClassOf sosa:Platform .
 
 tern-ssn:FrequencyDomainReflectometer a rdfs:Class,
         owl:Class ;
@@ -303,6 +317,11 @@ tern-ssn:Hygrometer a rdfs:Class,
     rdfs:comment "A hygrometer is an instrument used to measure the amount of humidity and water vapour in the atmosphere, in soil, or in confined spaces." ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Hygrometer> ;
     rdfs:subClassOf sosa:Sensor .
+
+tern-ssn:InSituLandBasedPlatform a rdfs:Class,
+        owl:Class ;
+    rdfs:label "In situ land-based platform" ;
+    rdfs:subClassOf sosa:Platform .
 
 tern-ssn:InfraredGasAnalyzer a rdfs:Class,
         owl:Class ;
@@ -447,19 +466,10 @@ tern-ssn:Satellite a rdfs:Class,
     rdfs:label "Satellite" ;
     rdfs:subClassOf tern-ssn:MobilePlatform .
 
-tern-ssn:Site a rdfs:Class,
+tern-ssn:SoilMoisturePlatform a rdfs:Class,
         owl:Class ;
-    rdfs:label "Site" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty tern-ssn:fluxnetID ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty tern-ssn:locationDescription ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty tern-ssn:ozfluxID ],
-        tern-ssn:FixedPlatform .
+    rdfs:label "Soil moisture platform" ;
+    rdfs:subClassOf tern-ssn:InSituLandBasedPlatform .
 
 tern-ssn:SoilMoistureSensor a rdfs:Class,
         owl:Class ;
@@ -481,7 +491,12 @@ tern-ssn:Spectrometer a rdfs:Class,
 tern-ssn:SuperSite a rdfs:Class,
         owl:Class ;
     rdfs:label "SuperSite" ;
-    rdfs:subClassOf tern-ssn:Site .
+    rdfs:subClassOf tern-ssn:EcologySite .
+
+tern-ssn:SurveillanceSite a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Surveillance site" ;
+    rdfs:subClassOf tern-ssn:EcologySite .
 
 tern-ssn:TemperatureSensor a rdfs:Class,
         owl:Class ;
@@ -529,15 +544,15 @@ tern-ssn:TripodTower a rdfs:Class,
     rdfs:label "Tripod tower" ;
     rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower .
 
+tern-ssn:UAV a rdfs:Class,
+        owl:Class ;
+    rdfs:label "UAV" ;
+    rdfs:subClassOf tern-ssn:Aircraft .
+
 tern-ssn:WalkUpTower a rdfs:Class,
         owl:Class ;
     rdfs:label "Walk-up Tower" ;
     rdfs:subClassOf tern-ssn:EddyCovarianceFluxTower .
-
-tern-ssn:WeatherStation a rdfs:Class,
-        owl:Class ;
-    rdfs:label "Weather station" ;
-    rdfs:subClassOf tern-ssn:FixedPlatform .
 
 tern-ssn:WeighingPrecipitationGauge a rdfs:Class,
         owl:Class ;
@@ -565,7 +580,7 @@ tern-ssn: a owl:Ontology ;
             schema:email "e.chuc@uq.edu.au" ;
             schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
             schema:name "Edmond Chuc" ] ;
-    dct:modified "2020-03-27"^^xsd:date ;
+    dct:modified "2020-04-06"^^xsd:date ;
     dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
     vann:preferredNamespacePrefix "tern-ssn" ;
     vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
@@ -574,8 +589,8 @@ tern-ssn: a owl:Ontology ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
         <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl>,
         tern-org: ;
-    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.6> ;
-    owl:versionInfo "0.0.6" .
+    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.7> ;
+    owl:versionInfo "0.0.7" .
 
 tern-ssn:DroneCampaign a owl:Class ;
     rdfs:label "Drone campaign" ;
@@ -583,11 +598,11 @@ tern-ssn:DroneCampaign a owl:Class ;
             owl:allValuesFrom schema:Role ;
             owl:onProperty tern-org:droneOperator ],
         [ a owl:Restriction ;
-            owl:allValuesFrom tern-ssn:Drone ;
-            owl:onProperty tern-ssn:hasDrone ],
-        [ a owl:Restriction ;
             owl:allValuesFrom tern-ssn:FlightPlan ;
             owl:onProperty tern-ssn:hasFlightPlan ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom tern-ssn:UAV ;
+            owl:onProperty tern-ssn:hasDrone ],
         [ a owl:Restriction ;
             owl:onProperty schema:endDate ;
             owl:someValuesFrom xsd:dateTime ],
@@ -670,13 +685,13 @@ tern-ssn:SensorConfiguration a owl:Class ;
     rdfs:label "Sensor configuration" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom schema:QuantitativeValue ;
+            owl:onProperty tern-ssn:averageDataInterval ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom schema:QuantitativeValue ;
             owl:onProperty tern-ssn:measurementInterval ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty schema:description ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom schema:QuantitativeValue ;
-            owl:onProperty tern-ssn:averageDataInterval ],
         <http://www.w3.org/ns/prov#Entity> .
 
 tern-ssn:asKML a rdf:Property ;
