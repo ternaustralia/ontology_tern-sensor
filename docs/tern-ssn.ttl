@@ -480,8 +480,8 @@ tern-ssn:
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl> ;
   owl:imports tern-org: ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.8> ;
-  owl:versionInfo "0.0.8" ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.9> ;
+  owl:versionInfo "0.0.9" ;
 .
 <https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
   a rdfs:Class ;
@@ -915,6 +915,11 @@ tern-ssn:OpticalRainGauge
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge> ;
   rdfs:subClassOf tern-ssn:RainGauge ;
 .
+tern-ssn:Parameter
+  a owl:Class ;
+  rdfs:label "Parameter" ;
+  rdfs:subClassOf skos:Concept ;
+.
 tern-ssn:PoleTower
   a rdfs:Class ;
   a owl:Class ;
@@ -1142,13 +1147,6 @@ tern-ssn:UAV
   a owl:Class ;
   rdfs:label "UAV" ;
   rdfs:subClassOf tern-ssn:Aircraft ;
-.
-tern-ssn:Variable
-  a owl:Class ;
-  rdfs:comment "Exactly the same as sosa:ObservableProperty. This was created because domain experts are more familiar with the term 'variable'." ;
-  rdfs:label "Variable" ;
-  rdfs:subClassOf skos:Concept ;
-  rdfs:subClassOf sosa:ObservableProperty ;
 .
 tern-ssn:WalkUpTower
   a rdfs:Class ;

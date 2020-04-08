@@ -589,8 +589,8 @@ tern-ssn: a owl:Ontology ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
         <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl>,
         tern-org: ;
-    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.8> ;
-    owl:versionInfo "0.0.8" .
+    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.9> ;
+    owl:versionInfo "0.0.9" .
 
 tern-ssn:DroneCampaign a owl:Class ;
     rdfs:label "Drone campaign" ;
@@ -628,11 +628,9 @@ tern-ssn:ObservationTheme a owl:Class ;
     rdfs:comment "The observation theme contains links to all the variables (observable properties) in some domain." ;
     rdfs:subClassOf skos:Concept .
 
-tern-ssn:Variable a owl:Class ;
-    rdfs:label "Variable" ;
-    rdfs:comment "Exactly the same as sosa:ObservableProperty. This was created because domain experts are more familiar with the term 'variable'." ;
-    rdfs:subClassOf skos:Concept,
-        sosa:ObservableProperty .
+tern-ssn:Parameter a owl:Class ;
+    rdfs:label "Parameter" ;
+    rdfs:subClassOf skos:Concept .
 
 tern-ssn:contactPoint a owl:ObjectProperty ;
     rdfs:label "contact point" .
