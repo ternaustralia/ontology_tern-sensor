@@ -470,7 +470,7 @@ tern-ssn:
       schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
       schema:name "Edmond Chuc" ;
     ] ;
-  dct:modified "2020-04-06"^^xsd:date ;
+  dct:modified "2020-04-08"^^xsd:date ;
   dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
   vann:preferredNamespacePrefix "tern-ssn" ;
   vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
@@ -480,8 +480,8 @@ tern-ssn:
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl> ;
   owl:imports tern-org: ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.7> ;
-  owl:versionInfo "0.0.7" ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.8> ;
+  owl:versionInfo "0.0.8" ;
 .
 <https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
   a rdfs:Class ;
@@ -600,6 +600,13 @@ tern-ssn:CapactitiveSensor
   rdfs:label "Capactitive sensor" ;
   rdfs:seeAlso <http://www.cs.cmu.edu/~ram/capsense/intro.html> ;
   rdfs:subClassOf sosa:Sensor ;
+.
+tern-ssn:CategoricalVariable
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Categorical Variable" ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf ssn:Property ;
 .
 tern-ssn:Ceilometer
   a rdfs:Class ;
@@ -956,13 +963,6 @@ tern-ssn:Pyrradiometer
   rdfs:label "Pyrradiometer" ;
   rdfs:seeAlso <https://www.energy.eu/dictionary/data/1446.html> ;
   rdfs:subClassOf tern-ssn:Radiometer ;
-.
-tern-ssn:QuantitativeVariable
-  a rdfs:Class ;
-  a owl:Class ;
-  rdfs:label "Quantitative Variable" ;
-  rdfs:subClassOf skos:Concept ;
-  rdfs:subClassOf ssn:Property ;
 .
 tern-ssn:QuantumSensor
   a rdfs:Class ;
