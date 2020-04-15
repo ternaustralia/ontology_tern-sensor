@@ -515,7 +515,7 @@ tern-ssn:Aircraft
   a rdfs:Class ;
   a owl:Class ;
   rdfs:label "Aircraft" ;
-  rdfs:subClassOf tern-ssn:MobilePlatform ;
+  rdfs:subClassOf sosa:Platform ;
 .
 tern-ssn:Anemometer
   a rdfs:Class ;
@@ -714,6 +714,12 @@ tern-ssn:DroneCampaign
       owl:someValuesFrom xsd:dateTime ;
     ] ;
 .
+tern-ssn:EarthObservingSatellite
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Earth observing satellite" ;
+  rdfs:subClassOf sosa:Platform ;
+.
 tern-ssn:EcologySite
   a rdfs:Class ;
   a owl:Class ;
@@ -887,12 +893,6 @@ tern-ssn:Method
   rdfs:subClassOf skos:Concept ;
   rdfs:subClassOf sosa:Procedure ;
 .
-tern-ssn:MobilePlatform
-  a rdfs:Class ;
-  a owl:Class ;
-  rdfs:label "Mobile platform" ;
-  rdfs:subClassOf sosa:Platform ;
-.
 tern-ssn:NetRadiometer
   a rdfs:Class ;
   a owl:Class ;
@@ -1024,12 +1024,6 @@ tern-ssn:SapFlowSensor
   rdfs:label "Sap flow sensor" ;
   rdfs:seeAlso <https://www.edaphic.com.au/products/sap-flow-sensors/> ;
   rdfs:subClassOf sosa:Sensor ;
-.
-tern-ssn:Satellite
-  a rdfs:Class ;
-  a owl:Class ;
-  rdfs:label "Satellite" ;
-  rdfs:subClassOf tern-ssn:MobilePlatform ;
 .
 tern-ssn:SensorConfiguration
   a owl:Class ;

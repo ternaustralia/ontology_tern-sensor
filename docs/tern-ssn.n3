@@ -155,7 +155,7 @@ tern-ssn:AffiliateSuperSite a rdfs:Class,
 tern-ssn:Aircraft a rdfs:Class,
         owl:Class ;
     rdfs:label "Aircraft" ;
-    rdfs:subClassOf tern-ssn:MobilePlatform .
+    rdfs:subClassOf sosa:Platform .
 
 tern-ssn:Anemometer a rdfs:Class,
         owl:Class ;
@@ -229,6 +229,11 @@ tern-ssn:DewPointHygrometer a rdfs:Class,
     rdfs:comment "Dew-point hygrometers typically consist of a polished metal mirror that is cooled at a constant pressure and constant vapour content until moisture just starts to condense on it. The temperature of the metal at which condensation begins is the dew point." ;
     rdfs:seeAlso <https://www.britannica.com/science/hygrometer#ref111343> ;
     rdfs:subClassOf tern-ssn:Hygrometer .
+
+tern-ssn:EarthObservingSatellite a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Earth observing satellite" ;
+    rdfs:subClassOf sosa:Platform .
 
 tern-ssn:EcologySite a rdfs:Class,
         owl:Class ;
@@ -350,11 +355,6 @@ tern-ssn:MercuryBarometer a rdfs:Class,
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Barometer#Mercury_barometers> ;
     rdfs:subClassOf tern-ssn:Barometer .
 
-tern-ssn:MobilePlatform a rdfs:Class,
-        owl:Class ;
-    rdfs:label "Mobile platform" ;
-    rdfs:subClassOf sosa:Platform .
-
 tern-ssn:NetRadiometer a rdfs:Class,
         owl:Class ;
     rdfs:label "Net radiometer" ;
@@ -460,11 +460,6 @@ tern-ssn:SapFlowSensor a rdfs:Class,
     rdfs:comment "A sensor that measures sap flow. Sap flow is the movement of fluid in the roots, stems and branches of plants. Sap flow is typically measured in the xylem of plants. More specifically, sap flow is measured in the sapwood portion of xylem, or the conducting wood, which differs to the other portion of xylem known as heartwood." ;
     rdfs:seeAlso <https://www.edaphic.com.au/products/sap-flow-sensors/> ;
     rdfs:subClassOf sosa:Sensor .
-
-tern-ssn:Satellite a rdfs:Class,
-        owl:Class ;
-    rdfs:label "Satellite" ;
-    rdfs:subClassOf tern-ssn:MobilePlatform .
 
 tern-ssn:SoilMoisturePlatform a rdfs:Class,
         owl:Class ;
