@@ -149,8 +149,9 @@ tern-ssn:Actinometer a rdfs:Class,
 
 tern-ssn:AffiliateSuperSite a rdfs:Class,
         owl:Class ;
-    rdfs:label "Affiliate super site" ;
-    rdfs:subClassOf tern-ssn:EcologySite .
+    rdfs:label "Affiliate SuperSite" ;
+    rdfs:comment "A site that is part of the SuperSite network but is not directly funded by TERN." ;
+    rdfs:subClassOf tern-ssn:SuperSite .
 
 tern-ssn:Aircraft a rdfs:Class,
         owl:Class ;
@@ -208,6 +209,11 @@ tern-ssn:Ceilometer a rdfs:Class,
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Ceilometer> ;
     rdfs:subClassOf sosa:Sensor .
 
+tern-ssn:CosmOzSite a rdfs:Class,
+        owl:Class ;
+    rdfs:label "CosmOz site" ;
+    rdfs:subClassOf tern-ssn:EcologySite .
+
 tern-ssn:CupAnemometer a rdfs:Class,
         owl:Class ;
     rdfs:label "Cup anemometer" ;
@@ -230,9 +236,9 @@ tern-ssn:DewPointHygrometer a rdfs:Class,
     rdfs:seeAlso <https://www.britannica.com/science/hygrometer#ref111343> ;
     rdfs:subClassOf tern-ssn:Hygrometer .
 
-tern-ssn:EarthObservingSatellite a rdfs:Class,
+tern-ssn:EarthObservationSatellite a rdfs:Class,
         owl:Class ;
-    rdfs:label "Earth observing satellite" ;
+    rdfs:label "Earth observation satellite" ;
     rdfs:subClassOf sosa:Platform .
 
 tern-ssn:EcologySite a rdfs:Class,
@@ -575,7 +581,7 @@ tern-ssn: a owl:Ontology ;
             schema:email "e.chuc@uq.edu.au" ;
             schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
             schema:name "Edmond Chuc" ] ;
-    dct:modified "2020-04-15"^^xsd:date ;
+    dct:modified "2020-04-16"^^xsd:date ;
     dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
     vann:preferredNamespacePrefix "tern-ssn" ;
     vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
@@ -584,8 +590,8 @@ tern-ssn: a owl:Ontology ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
         <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl>,
         tern-org: ;
-    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.10> ;
-    owl:versionInfo "0.0.10" .
+    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.11> ;
+    owl:versionInfo "0.0.11" .
 
 tern-ssn:DroneCampaign a owl:Class ;
     rdfs:label "Drone campaign" ;

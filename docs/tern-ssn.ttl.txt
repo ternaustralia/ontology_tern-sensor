@@ -1,243 +1,246 @@
 @startuml
 title TERN SSN ontology extension and vocabulary
-"tern-ssn:EcologySite" <|-- "tern-ssn:CORVEGSite"
-"skos:Concept" <|-- "tern-ssn:Method"
-"sosa:Procedure" <|-- "tern-ssn:Method"
-"tern-ssn:SoilMoistureSensor" <|-- "tern-ssn:TimeDomainReflectometer"
-"sosa:Sensor" <|-- "tern-ssn:RadiationSensor"
-"skos:Concept" <|-- "tern-ssn:Parameter"
-"schema:Event" <|-- "tern-ssn:DroneCampaign"
-"skos:Concept" <|-- "tern-ssn:ObservationTheme"
-"tern-ssn:WindSensor" <|-- "tern-ssn:Anemometer"
-"tern-ssn:InSituLandBasedPlatform" <|-- "tern-ssn:SoilMoisturePlatform"
-"tern-ssn:Actinometer" <|-- "tern-ssn:Pyranometer"
-"tern-ssn:EcologySite" <|-- "tern-ssn:SurveillanceSite"
-"tern-ssn:Actinometer" <|-- "tern-ssn:NetRadiometer"
-"tern-ssn:RainGauge" <|-- "tern-ssn:OpticalRainGauge"
-"ssn:Property" <|-- "tern-ssn:SystemProperty"
-"tern-ssn:InSituLandBasedPlatform" <|-- "tern-ssn:AutomaticWeatherStation"
-"tern-ssn:TemperatureSensor" <|-- "tern-ssn:Thermocouple"
-"tern-ssn:EcologySite" <|-- "tern-ssn:SuperSite"
-"sosa:Sensor" <|-- "tern-ssn:SapFlowSensor"
-"sosa:Sensor" <|-- "tern-ssn:RainGauge"
-"tern-ssn:Hygrometer" <|-- "tern-ssn:ResistiveHygrometer"
-"sosa:Sensor" <|-- "tern-ssn:Ceilometer"
 "tern-ssn:EddyCovarianceFluxTower" <|-- "tern-ssn:WalkUpTower"
-"sosa:Sensor" <|-- "tern-ssn:InfraredGasAnalyzer"
-"tern-ssn:RadiationSensor" <|-- "tern-ssn:Pyrgeometer"
-"tern-ssn:Anemometer" <|-- "tern-ssn:HotWireAnemometer"
-"tern-ssn:Hygrometer" <|-- "tern-ssn:HairHygrometer"
-"tern-ssn:TemperatureSensor" <|-- "tern-ssn:ResistanceThermometer"
-"tern-ssn:Hygrometer" <|-- "tern-ssn:ElectromagneticRadiationHygrometer"
-"owl:Thing" <|-- "tern-ssn:FlightPlan"
-"ssn:Property" <|-- "tern-ssn:SystemCapability"
-"tern-ssn:Radiometer" <|-- "tern-ssn:Actinometer"
-"tern-ssn:EddyCovarianceFluxTower" <|-- "tern-ssn:TripodTower"
+"tern-ssn:SuperSite" <|-- "tern-ssn:AffiliateSuperSite"
+"tern-ssn:EcologySite" <|-- "tern-ssn:SurveillanceSite"
 "ssn:System" <|-- "sosa:Sensor"
-"prov:Entity" <|-- "tern-ssn:Calibration"
-"tern-ssn:Hygrometer" <|-- "tern-ssn:GravimetricHygrometer"
-"tern-ssn:RadiationSensor" <|-- "tern-ssn:QuantumSensor"
+"ssn:Property" <|-- "tern-ssn:SystemCapability"
+"sosa:Platform" <|-- "tern-ssn:EarthObservationSatellite"
+"prov:Entity" <|-- "tern-ssn:SensorConfiguration"
+"tern-ssn:Hygrometer" <|-- "tern-ssn:DewPointHygrometer"
+"tern-ssn:RadiationSensor" <|-- "tern-ssn:Radiometer"
+"sosa:Sensor" <|-- "tern-ssn:Barometer"
 "tern-ssn:Hygrometer" <|-- "tern-ssn:LithiumChlorideHeatedCondensationHygrometer"
+"sosa:Platform" <|-- "tern-ssn:Aircraft"
+"tern-ssn:SoilMoistureSensor" <|-- "tern-ssn:FrequencyDomainReflectometer"
+"tern-ssn:Radiometer" <|-- "tern-ssn:Actinometer"
 "tern-ssn:RainGauge" <|-- "tern-ssn:TippingBucketRainGauge"
 "tern-ssn:RainGauge" <|-- "tern-ssn:WeighingPrecipitationGauge"
-"sosa:Sensor" <|-- "tern-ssn:WindSensor"
-"tern-ssn:Hygrometer" <|-- "tern-ssn:Psychrometer"
-"tern-ssn:Barometer" <|-- "tern-ssn:MercuryBarometer"
-"sosa:Platform" <|-- "tern-ssn:Aircraft"
-"prov:Entity" <|-- "tern-ssn:SensorConfiguration"
-"sosa:Sensor" <|-- "tern-ssn:CapactitiveSensor"
-"sosa:Sensor" <|-- "tern-ssn:Hygrometer"
-"tern-ssn:TemperatureSensor" <|-- "tern-ssn:Thermistor"
-"sosa:Sensor" <|-- "tern-ssn:TemperatureSensor"
-"sosa:Sensor" <|-- "tern-ssn:Barometer"
-"tern-ssn:Anemometer" <|-- "tern-ssn:CupAnemometer"
-"tern-ssn:RadiationSensor" <|-- "tern-ssn:Pyrheliometer"
+"tern-ssn:Hygrometer" <|-- "tern-ssn:HairHygrometer"
 "sosa:Platform" <|-- "tern-ssn:InSituLandBasedPlatform"
-"tern-ssn:InSituLandBasedPlatform" <|-- "tern-ssn:EcologySite"
-"sosa:Sensor" <|-- "tern-ssn:HeatFluxSensor"
-"sosa:Sensor" <|-- "tern-ssn:Dendrometer"
-"tern-ssn:SoilMoistureSensor" <|-- "tern-ssn:FrequencyDomainReflectometer"
-"owl:Thing" <|-- "tern-ssn:DeploymentInfo"
-"tern-ssn:Barometer" <|-- "tern-ssn:AneroidBarometer"
-"tern-ssn:EddyCovarianceFluxTower" <|-- "tern-ssn:TriangleTower"
-"tern-ssn:Barometer" <|-- "tern-ssn:ElectronicBarometer"
-"tern-ssn:SonicAnemometer" <|-- "tern-ssn:3DSonicAnemometer"
-"ssn:Property" <|-- "tern-ssn:CategoricalVariable"
+"tern-ssn:TemperatureSensor" <|-- "tern-ssn:Thermocouple"
 "skos:Concept" <|-- "tern-ssn:CategoricalVariable"
+"ssn:Property" <|-- "tern-ssn:CategoricalVariable"
+"sosa:Sensor" <|-- "tern-ssn:SapFlowSensor"
+"tern-ssn:Barometer" <|-- "tern-ssn:AneroidBarometer"
 "tern-ssn:InSituLandBasedPlatform" <|-- "tern-ssn:EddyCovarianceFluxTower"
-"tern-ssn:Hygrometer" <|-- "tern-ssn:DewPointHygrometer"
-"sosa:Sensor" <|-- "tern-ssn:SoilMoistureSensor"
-"tern-ssn:EddyCovarianceFluxTower" <|-- "tern-ssn:PoleTower"
-"sosa:Platform" <|-- "tern-ssn:EarthObservingSatellite"
-"tern-ssn:EcologySite" <|-- "tern-ssn:EcosystemProcessesSite"
 "tern-ssn:Radiometer" <|-- "tern-ssn:Pyrradiometer"
-"tern-ssn:RadiationSensor" <|-- "tern-ssn:Radiometer"
-"tern-ssn:SonicAnemometer" <|-- "tern-ssn:2DSonicAnemometer"
-"sosa:Sensor" <|-- "tern-ssn:Spectrometer"
-"tern-ssn:EcologySite" <|-- "tern-ssn:AffiliateSuperSite"
-"tern-ssn:Aircraft" <|-- "tern-ssn:UAV"
+"skos:Concept" <|-- "tern-ssn:Method"
+"sosa:Procedure" <|-- "tern-ssn:Method"
+"tern-ssn:Actinometer" <|-- "tern-ssn:Pyranometer"
+"sosa:Sensor" <|-- "tern-ssn:Ceilometer"
+"tern-ssn:WindSensor" <|-- "tern-ssn:Anemometer"
 "tern-ssn:Anemometer" <|-- "tern-ssn:SonicAnemometer"
-Class "tern-ssn:CORVEGSite" [[https://w3id.org/tern/ontologies/ssn/CORVEGSite]] {
+"tern-ssn:Actinometer" <|-- "tern-ssn:NetRadiometer"
+"skos:Concept" <|-- "tern-ssn:Parameter"
+"sosa:Sensor" <|-- "tern-ssn:Hygrometer"
+"sosa:Sensor" <|-- "tern-ssn:RadiationSensor"
+"tern-ssn:Hygrometer" <|-- "tern-ssn:ResistiveHygrometer"
+"sosa:Sensor" <|-- "tern-ssn:RainGauge"
+"tern-ssn:SonicAnemometer" <|-- "tern-ssn:3DSonicAnemometer"
+"tern-ssn:TemperatureSensor" <|-- "tern-ssn:ResistanceThermometer"
+"tern-ssn:InSituLandBasedPlatform" <|-- "tern-ssn:AutomaticWeatherStation"
+"tern-ssn:RainGauge" <|-- "tern-ssn:OpticalRainGauge"
+"schema:Event" <|-- "tern-ssn:DroneCampaign"
+"prov:Entity" <|-- "tern-ssn:Calibration"
+"tern-ssn:Anemometer" <|-- "tern-ssn:HotWireAnemometer"
+"tern-ssn:Barometer" <|-- "tern-ssn:MercuryBarometer"
+"tern-ssn:EcologySite" <|-- "tern-ssn:CORVEGSite"
+"tern-ssn:RadiationSensor" <|-- "tern-ssn:Pyrgeometer"
+"tern-ssn:Hygrometer" <|-- "tern-ssn:GravimetricHygrometer"
+"sosa:Sensor" <|-- "tern-ssn:Spectrometer"
+"tern-ssn:Hygrometer" <|-- "tern-ssn:ElectromagneticRadiationHygrometer"
+"tern-ssn:SonicAnemometer" <|-- "tern-ssn:2DSonicAnemometer"
+"tern-ssn:Anemometer" <|-- "tern-ssn:CupAnemometer"
+"sosa:Sensor" <|-- "tern-ssn:WindSensor"
+"ssn:Property" <|-- "tern-ssn:SystemProperty"
+"tern-ssn:Aircraft" <|-- "tern-ssn:UAV"
+"sosa:Sensor" <|-- "tern-ssn:TemperatureSensor"
+"tern-ssn:SoilMoistureSensor" <|-- "tern-ssn:TimeDomainReflectometer"
+"owl:Thing" <|-- "tern-ssn:DeploymentInfo"
+"sosa:Sensor" <|-- "tern-ssn:CapactitiveSensor"
+"tern-ssn:Hygrometer" <|-- "tern-ssn:Psychrometer"
+"tern-ssn:EcologySite" <|-- "tern-ssn:EcosystemProcessesSite"
+"sosa:Sensor" <|-- "tern-ssn:Dendrometer"
+"tern-ssn:EcologySite" <|-- "tern-ssn:SuperSite"
+"tern-ssn:Barometer" <|-- "tern-ssn:ElectronicBarometer"
+"skos:Concept" <|-- "tern-ssn:ObservationTheme"
+"tern-ssn:RadiationSensor" <|-- "tern-ssn:Pyrheliometer"
+"tern-ssn:TemperatureSensor" <|-- "tern-ssn:Thermistor"
+"tern-ssn:InSituLandBasedPlatform" <|-- "tern-ssn:SoilMoisturePlatform"
+"sosa:Sensor" <|-- "tern-ssn:HeatFluxSensor"
+"tern-ssn:InSituLandBasedPlatform" <|-- "tern-ssn:EcologySite"
+"sosa:Sensor" <|-- "tern-ssn:InfraredGasAnalyzer"
+"sosa:Sensor" <|-- "tern-ssn:SoilMoistureSensor"
+"owl:Thing" <|-- "tern-ssn:FlightPlan"
+"tern-ssn:EddyCovarianceFluxTower" <|-- "tern-ssn:TripodTower"
+"tern-ssn:EcologySite" <|-- "tern-ssn:CosmOzSite"
+"tern-ssn:EddyCovarianceFluxTower" <|-- "tern-ssn:PoleTower"
+"tern-ssn:RadiationSensor" <|-- "tern-ssn:QuantumSensor"
+"tern-ssn:EddyCovarianceFluxTower" <|-- "tern-ssn:TriangleTower"
+Class "tern-ssn:WalkUpTower" [[https://w3id.org/tern/ontologies/ssn/WalkUpTower]] {
 }
-Class "tern-ssn:Method" [[https://w3id.org/tern/ontologies/ssn/Method]] {
-}
-Class "tern-ssn:TimeDomainReflectometer" [[https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer]] {
-}
-Class "tern-ssn:RadiationSensor" [[https://w3id.org/tern/ontologies/ssn/RadiationSensor]] {
-}
-Class "tern-ssn:Parameter" [[https://w3id.org/tern/ontologies/ssn/Parameter]] {
-}
-Class "tern-ssn:DroneCampaign" [[https://w3id.org/tern/ontologies/ssn/DroneCampaign]] {
+Class "ssn:System" [[http://www.w3.org/ns/ssn/System]] {
 }
 Class "tern-ssn:ub1bL24C25" [[ub1bL24C25]] {
 }
-Class "tern-ssn:ObservationTheme" [[https://w3id.org/tern/ontologies/ssn/ObservationTheme]] {
-}
-Class "tern-ssn:Anemometer" [[https://w3id.org/tern/ontologies/ssn/Anemometer]] {
-}
-Class "tern-ssn:SoilMoisturePlatform" [[https://w3id.org/tern/ontologies/ssn/SoilMoisturePlatform]] {
-}
-Class "sosa:ObservableProperty" [[http://www.w3.org/ns/sosa/ObservableProperty]] {
-}
-Class "tern-ssn:Pyranometer" [[https://w3id.org/tern/ontologies/ssn/Pyranometer]] {
+Class "tern-ssn:AffiliateSuperSite" [[https://w3id.org/tern/ontologies/ssn/AffiliateSuperSite]] {
 }
 Class "tern-ssn:SurveillanceSite" [[https://w3id.org/tern/ontologies/ssn/SurveillanceSite]] {
 }
-Class "tern-ssn:NetRadiometer" [[https://w3id.org/tern/ontologies/ssn/NetRadiometer]] {
-}
-Class "tern-ssn:OpticalRainGauge" [[https://w3id.org/tern/ontologies/ssn/OpticalRainGauge]] {
-}
-Class "tern-ssn:SystemProperty" [[https://www.w3.org/ns/ssn/systems/SystemProperty]] {
-}
-Class "tern-ssn:AutomaticWeatherStation" [[https://w3id.org/tern/ontologies/ssn/AutomaticWeatherStation]] {
-}
-Class "tern-ssn:Thermocouple" [[https://w3id.org/tern/ontologies/ssn/Thermocouple]] {
-}
-Class "tern-ssn:SuperSite" [[https://w3id.org/tern/ontologies/ssn/SuperSite]] {
-}
-Class "tern-ssn:SapFlowSensor" [[https://w3id.org/tern/ontologies/ssn/SapFlowSensor]] {
-}
-Class "tern-ssn:RainGauge" [[https://w3id.org/tern/ontologies/ssn/RainGauge]] {
-}
-Class "ssn:Deployment" [[http://www.w3.org/ns/ssn/Deployment]] {
-}
-Class "tern-ssn:ResistiveHygrometer" [[https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer]] {
-}
-Class "tern-ssn:Ceilometer" [[https://w3id.org/tern/ontologies/ssn/Ceilometer]] {
-}
-Class "tern-ssn:WalkUpTower" [[https://w3id.org/tern/ontologies/ssn/WalkUpTower]] {
-}
-Class "tern-ssn:InfraredGasAnalyzer" [[https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer]] {
-}
-Class "sosa:Platform" [[http://www.w3.org/ns/sosa/Platform]] {
-}
-Class "tern-ssn:Pyrgeometer" [[https://w3id.org/tern/ontologies/ssn/Pyrgeometer]] {
-}
-Class "tern-ssn:HotWireAnemometer" [[https://w3id.org/tern/ontologies/ssn/HotWireAnemometer]] {
-}
-Class "tern-ssn:HairHygrometer" [[https://w3id.org/tern/ontologies/ssn/HairHygrometer]] {
-}
-Class "tern-ssn:ResistanceThermometer" [[https://w3id.org/tern/ontologies/ssn/ResistanceThermometer]] {
-}
-Class "tern-ssn:ElectromagneticRadiationHygrometer" [[https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer]] {
-}
-Class "tern-ssn:FlightPlan" [[https://w3id.org/tern/ontologies/ssn/FlightPlan]] {
+Class "sosa:Sensor" [[http://www.w3.org/ns/sosa/Sensor]] {
 }
 Class "tern-ssn:SystemCapability" [[https://www.w3.org/ns/ssn/systems/SystemCapability]] {
 }
-Class "tern-ssn:Actinometer" [[https://w3id.org/tern/ontologies/ssn/Actinometer]] {
+Class "tern-ssn:EarthObservationSatellite" [[https://w3id.org/tern/ontologies/ssn/EarthObservationSatellite]] {
 }
-Class "tern-ssn:TripodTower" [[https://w3id.org/tern/ontologies/ssn/TripodTower]] {
+Class "tern-ssn:SensorConfiguration" [[https://w3id.org/tern/ontologies/ssn/SensorConfiguration]] {
 }
-Class "sosa:Sensor" [[http://www.w3.org/ns/sosa/Sensor]] {
+Class "tern-ssn:DewPointHygrometer" [[https://w3id.org/tern/ontologies/ssn/DewPointHygrometer]] {
 }
-Class "tern-ssn:Calibration" [[https://w3id.org/tern/ontologies/ssn/Calibration]] {
+Class "tern-ssn:Radiometer" [[https://w3id.org/tern/ontologies/ssn/Radiometer]] {
 }
-Class "tern-ssn:GravimetricHygrometer" [[https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer]] {
-}
-Class "tern-ssn:QuantumSensor" [[https://w3id.org/tern/ontologies/ssn/QuantumSensor]] {
+Class "tern-ssn:Barometer" [[https://w3id.org/tern/ontologies/ssn/Barometer]] {
 }
 Class "tern-ssn:LithiumChlorideHeatedCondensationHygrometer" [[https://w3id.org/tern/ontologies/ssn/LithiumChlorideHeatedCondensationHygrometer]] {
+}
+Class "tern-ssn:Aircraft" [[https://w3id.org/tern/ontologies/ssn/Aircraft]] {
+}
+Class "tern-ssn:FrequencyDomainReflectometer" [[https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer]] {
+}
+Class "tern-ssn:Actinometer" [[https://w3id.org/tern/ontologies/ssn/Actinometer]] {
 }
 Class "tern-ssn:TippingBucketRainGauge" [[https://w3id.org/tern/ontologies/ssn/TippingBucketRainGauge]] {
 }
 Class "tern-ssn:WeighingPrecipitationGauge" [[https://w3id.org/tern/ontologies/ssn/WeighingPrecipitationGauge]] {
 }
-Class "tern-ssn:WindSensor" [[https://w3id.org/tern/ontologies/ssn/WindSensor]] {
-}
-Class "tern-ssn:Psychrometer" [[https://w3id.org/tern/ontologies/ssn/Psychrometer]] {
-}
-Class "tern-ssn:MercuryBarometer" [[https://w3id.org/tern/ontologies/ssn/MercuryBarometer]] {
-}
-Class "tern-ssn:Aircraft" [[https://w3id.org/tern/ontologies/ssn/Aircraft]] {
-}
-Class "tern-ssn:SensorConfiguration" [[https://w3id.org/tern/ontologies/ssn/SensorConfiguration]] {
-}
-Class "tern-ssn:CapactitiveSensor" [[https://w3id.org/tern/ontologies/ssn/CapactitiveSensor]] {
-}
-Class "tern-ssn:Hygrometer" [[https://w3id.org/tern/ontologies/ssn/Hygrometer]] {
-}
-Class "tern-ssn:Thermistor" [[https://w3id.org/tern/ontologies/ssn/Thermistor]] {
-}
-Class "tern-ssn:TemperatureSensor" [[https://w3id.org/tern/ontologies/ssn/TemperatureSensor]] {
-}
-Class "tern-ssn:Barometer" [[https://w3id.org/tern/ontologies/ssn/Barometer]] {
-}
-Class "tern-ssn:CupAnemometer" [[https://w3id.org/tern/ontologies/ssn/CupAnemometer]] {
-}
-Class "tern-ssn:Pyrheliometer" [[https://w3id.org/tern/ontologies/ssn/Pyrheliometer]] {
+Class "tern-ssn:HairHygrometer" [[https://w3id.org/tern/ontologies/ssn/HairHygrometer]] {
 }
 Class "tern-ssn:InSituLandBasedPlatform" [[https://w3id.org/tern/ontologies/ssn/InSituLandBasedPlatform]] {
 }
-Class "tern-ssn:EcologySite" [[https://w3id.org/tern/ontologies/ssn/EcologySite]] {
-}
-Class "tern-ssn:HeatFluxSensor" [[https://w3id.org/tern/ontologies/ssn/HeatFluxSensor]] {
-}
-Class "tern-ssn:Dendrometer" [[https://w3id.org/tern/ontologies/ssn/Dendrometer]] {
-}
-Class "ssn:System" [[http://www.w3.org/ns/ssn/System]] {
-}
-Class "tern-ssn:FrequencyDomainReflectometer" [[https://w3id.org/tern/ontologies/ssn/FrequencyDomainReflectometer]] {
-}
-Class "tern-ssn:DeploymentInfo" [[https://w3id.org/tern/ontologies/ssn/DeploymentInfo]] {
-}
-Class "tern-ssn:AneroidBarometer" [[https://w3id.org/tern/ontologies/ssn/AneroidBarometer]] {
-}
-Class "tern-ssn:TriangleTower" [[https://w3id.org/tern/ontologies/ssn/TriangleTower]] {
-}
-Class "tern-ssn:ElectronicBarometer" [[https://w3id.org/tern/ontologies/ssn/ElectronicBarometer]] {
-}
-Class "tern-ssn:3DSonicAnemometer" [[https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer]] {
+Class "tern-ssn:Thermocouple" [[https://w3id.org/tern/ontologies/ssn/Thermocouple]] {
 }
 Class "tern-ssn:CategoricalVariable" [[https://w3id.org/tern/ontologies/ssn/CategoricalVariable]] {
 }
+Class "tern-ssn:SapFlowSensor" [[https://w3id.org/tern/ontologies/ssn/SapFlowSensor]] {
+}
+Class "tern-ssn:AneroidBarometer" [[https://w3id.org/tern/ontologies/ssn/AneroidBarometer]] {
+}
+Class "sosa:Platform" [[http://www.w3.org/ns/sosa/Platform]] {
+}
 Class "tern-ssn:EddyCovarianceFluxTower" [[https://w3id.org/tern/ontologies/ssn/EddyCovarianceFluxTower]] {
-}
-Class "tern-ssn:DewPointHygrometer" [[https://w3id.org/tern/ontologies/ssn/DewPointHygrometer]] {
-}
-Class "tern-ssn:SoilMoistureSensor" [[https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor]] {
-}
-Class "tern-ssn:PoleTower" [[https://w3id.org/tern/ontologies/ssn/PoleTower]] {
-}
-Class "tern-ssn:EarthObservingSatellite" [[https://w3id.org/tern/ontologies/ssn/EarthObservingSatellite]] {
-}
-Class "tern-ssn:EcosystemProcessesSite" [[https://w3id.org/tern/ontologies/ssn/EcosystemProcessesSite]] {
 }
 Class "tern-ssn:Pyrradiometer" [[https://w3id.org/tern/ontologies/ssn/Pyrradiometer]] {
 }
-Class "tern-ssn:Radiometer" [[https://w3id.org/tern/ontologies/ssn/Radiometer]] {
-}
-Class "tern-ssn:2DSonicAnemometer" [[https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer]] {
-}
-Class "tern-ssn:Spectrometer" [[https://w3id.org/tern/ontologies/ssn/Spectrometer]] {
+Class "tern-ssn:Method" [[https://w3id.org/tern/ontologies/ssn/Method]] {
 }
 Class "sosa:Procedure" [[http://www.w3.org/ns/sosa/Procedure]] {
 }
-Class "tern-ssn:AffiliateSuperSite" [[https://w3id.org/tern/ontologies/ssn/AffiliateSuperSite]] {
+Class "tern-ssn:Pyranometer" [[https://w3id.org/tern/ontologies/ssn/Pyranometer]] {
+}
+Class "tern-ssn:Ceilometer" [[https://w3id.org/tern/ontologies/ssn/Ceilometer]] {
+}
+Class "tern-ssn:Anemometer" [[https://w3id.org/tern/ontologies/ssn/Anemometer]] {
+}
+Class "tern-ssn:SonicAnemometer" [[https://w3id.org/tern/ontologies/ssn/SonicAnemometer]] {
+}
+Class "tern-ssn:NetRadiometer" [[https://w3id.org/tern/ontologies/ssn/NetRadiometer]] {
+}
+Class "tern-ssn:Parameter" [[https://w3id.org/tern/ontologies/ssn/Parameter]] {
+}
+Class "tern-ssn:Hygrometer" [[https://w3id.org/tern/ontologies/ssn/Hygrometer]] {
+}
+Class "tern-ssn:RadiationSensor" [[https://w3id.org/tern/ontologies/ssn/RadiationSensor]] {
+}
+Class "tern-ssn:ResistiveHygrometer" [[https://w3id.org/tern/ontologies/ssn/ResistiveHygrometer]] {
+}
+Class "tern-ssn:RainGauge" [[https://w3id.org/tern/ontologies/ssn/RainGauge]] {
+}
+Class "tern-ssn:3DSonicAnemometer" [[https://w3id.org/tern/ontologies/ssn/3DSonicAnemometer]] {
+}
+Class "tern-ssn:ResistanceThermometer" [[https://w3id.org/tern/ontologies/ssn/ResistanceThermometer]] {
+}
+Class "tern-ssn:AutomaticWeatherStation" [[https://w3id.org/tern/ontologies/ssn/AutomaticWeatherStation]] {
+}
+Class "tern-ssn:OpticalRainGauge" [[https://w3id.org/tern/ontologies/ssn/OpticalRainGauge]] {
+}
+Class "tern-ssn:DroneCampaign" [[https://w3id.org/tern/ontologies/ssn/DroneCampaign]] {
+}
+Class "tern-ssn:Calibration" [[https://w3id.org/tern/ontologies/ssn/Calibration]] {
+}
+Class "tern-ssn:HotWireAnemometer" [[https://w3id.org/tern/ontologies/ssn/HotWireAnemometer]] {
+}
+Class "tern-ssn:MercuryBarometer" [[https://w3id.org/tern/ontologies/ssn/MercuryBarometer]] {
+}
+Class "tern-ssn:CORVEGSite" [[https://w3id.org/tern/ontologies/ssn/CORVEGSite]] {
+}
+Class "tern-ssn:Pyrgeometer" [[https://w3id.org/tern/ontologies/ssn/Pyrgeometer]] {
+}
+Class "tern-ssn:GravimetricHygrometer" [[https://w3id.org/tern/ontologies/ssn/GravimetricHygrometer]] {
+}
+Class "tern-ssn:Spectrometer" [[https://w3id.org/tern/ontologies/ssn/Spectrometer]] {
+}
+Class "tern-ssn:ElectromagneticRadiationHygrometer" [[https://w3id.org/tern/ontologies/ssn/ElectromagneticRadiationHygrometer]] {
+}
+Class "tern-ssn:2DSonicAnemometer" [[https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer]] {
+}
+Class "tern-ssn:CupAnemometer" [[https://w3id.org/tern/ontologies/ssn/CupAnemometer]] {
+}
+Class "tern-ssn:WindSensor" [[https://w3id.org/tern/ontologies/ssn/WindSensor]] {
+}
+Class "tern-ssn:SystemProperty" [[https://www.w3.org/ns/ssn/systems/SystemProperty]] {
 }
 Class "tern-ssn:UAV" [[https://w3id.org/tern/ontologies/ssn/UAV]] {
 }
-Class "tern-ssn:SonicAnemometer" [[https://w3id.org/tern/ontologies/ssn/SonicAnemometer]] {
+Class "tern-ssn:TemperatureSensor" [[https://w3id.org/tern/ontologies/ssn/TemperatureSensor]] {
+}
+Class "tern-ssn:TimeDomainReflectometer" [[https://w3id.org/tern/ontologies/ssn/TimeDomainReflectometer]] {
+}
+Class "tern-ssn:DeploymentInfo" [[https://w3id.org/tern/ontologies/ssn/DeploymentInfo]] {
+}
+Class "tern-ssn:CapactitiveSensor" [[https://w3id.org/tern/ontologies/ssn/CapactitiveSensor]] {
+}
+Class "tern-ssn:Psychrometer" [[https://w3id.org/tern/ontologies/ssn/Psychrometer]] {
+}
+Class "tern-ssn:EcosystemProcessesSite" [[https://w3id.org/tern/ontologies/ssn/EcosystemProcessesSite]] {
+}
+Class "tern-ssn:Dendrometer" [[https://w3id.org/tern/ontologies/ssn/Dendrometer]] {
+}
+Class "tern-ssn:SuperSite" [[https://w3id.org/tern/ontologies/ssn/SuperSite]] {
+}
+Class "tern-ssn:ElectronicBarometer" [[https://w3id.org/tern/ontologies/ssn/ElectronicBarometer]] {
+}
+Class "tern-ssn:ObservationTheme" [[https://w3id.org/tern/ontologies/ssn/ObservationTheme]] {
+}
+Class "tern-ssn:Pyrheliometer" [[https://w3id.org/tern/ontologies/ssn/Pyrheliometer]] {
+}
+Class "tern-ssn:Thermistor" [[https://w3id.org/tern/ontologies/ssn/Thermistor]] {
+}
+Class "tern-ssn:SoilMoisturePlatform" [[https://w3id.org/tern/ontologies/ssn/SoilMoisturePlatform]] {
+}
+Class "tern-ssn:HeatFluxSensor" [[https://w3id.org/tern/ontologies/ssn/HeatFluxSensor]] {
+}
+Class "ssn:Deployment" [[http://www.w3.org/ns/ssn/Deployment]] {
+}
+Class "tern-ssn:EcologySite" [[https://w3id.org/tern/ontologies/ssn/EcologySite]] {
+}
+Class "tern-ssn:InfraredGasAnalyzer" [[https://w3id.org/tern/ontologies/ssn/InfraredGasAnalyzer]] {
+}
+Class "tern-ssn:SoilMoistureSensor" [[https://w3id.org/tern/ontologies/ssn/SoilMoistureSensor]] {
+}
+Class "tern-ssn:FlightPlan" [[https://w3id.org/tern/ontologies/ssn/FlightPlan]] {
+}
+Class "tern-ssn:TripodTower" [[https://w3id.org/tern/ontologies/ssn/TripodTower]] {
+}
+Class "tern-ssn:CosmOzSite" [[https://w3id.org/tern/ontologies/ssn/CosmOzSite]] {
+}
+Class "sosa:ObservableProperty" [[http://www.w3.org/ns/sosa/ObservableProperty]] {
+}
+Class "tern-ssn:PoleTower" [[https://w3id.org/tern/ontologies/ssn/PoleTower]] {
+}
+Class "tern-ssn:QuantumSensor" [[https://w3id.org/tern/ontologies/ssn/QuantumSensor]] {
+}
+Class "tern-ssn:TriangleTower" [[https://w3id.org/tern/ontologies/ssn/TriangleTower]] {
 }
 header
 Creator: Edmond Chuc (e.chuc@uq.edu.au) 
