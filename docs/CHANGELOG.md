@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.0.12] - 2020-04-16
+### Added
+- tern-ssn:ImagingRadar
+- tern-ssn:Lidar
+
+
 ## [0.0.11] - 2020-04-16
 ### Changed
 - tern-ssn:EarthObservingSatellite to tern-ssn:EarthObservationSatellite same as naming in GCMD.

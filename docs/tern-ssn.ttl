@@ -470,7 +470,7 @@ tern-ssn:
       schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
       schema:name "Edmond Chuc" ;
     ] ;
-  dct:modified "2020-04-16"^^xsd:date ;
+  dct:modified "2020-04-30"^^xsd:date ;
   dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
   vann:preferredNamespacePrefix "tern-ssn" ;
   vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
@@ -480,8 +480,8 @@ tern-ssn:
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl> ;
   owl:imports tern-org: ;
-  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.11> ;
-  owl:versionInfo "0.0.11" ;
+  owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.12> ;
+  owl:versionInfo "0.0.12" ;
 .
 <https://w3id.org/tern/ontologies/ssn/2DSonicAnemometer>
   a rdfs:Class ;
@@ -863,6 +863,14 @@ tern-ssn:Hygrometer
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Hygrometer> ;
   rdfs:subClassOf sosa:Sensor ;
 .
+tern-ssn:ImagingRadar
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "An instrument that transmit signals at frequencies between 1 GHz to 10 GHz and measures the backscattered signals to generate microwave images of Earth’s surface." ;
+  rdfs:label "Imaging radar" ;
+  rdfs:seeAlso <http://www.eohandbook.com/eohb2014/sat_earth_obs_imaging_microwave.html> ;
+  rdfs:subClassOf sosa:Sensor ;
+.
 tern-ssn:InSituLandBasedPlatform
   a rdfs:Class ;
   a owl:Class ;
@@ -875,6 +883,14 @@ tern-ssn:InfraredGasAnalyzer
   rdfs:comment "An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample." ;
   rdfs:label "Infrared gas analyzer" ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Infrared_gas_analyzer> ;
+  rdfs:subClassOf sosa:Sensor ;
+.
+tern-ssn:Lidar
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:comment "An instrument that emits laser and measures the radiation returned from the illuminated surface." ;
+  rdfs:label "Lidar" ;
+  rdfs:seeAlso <http://www.eohandbook.com/eohb2014/sat_earth_obs_lidars.html> ;
   rdfs:subClassOf sosa:Sensor ;
 .
 tern-ssn:LithiumChlorideHeatedCondensationHygrometer

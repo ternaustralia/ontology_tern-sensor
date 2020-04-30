@@ -66,20 +66,20 @@
      Modified
     </dt>
     <dd>
-     2020-04-16
+     2020-04-30
     </dd>
     <dt>
      Version Information
     </dt>
     <dd>
-     0.0.11
+     0.0.12
     </dd>
     <dt>
      Version IRI
     </dt>
     <dd>
-     <a href="https://w3id.org/tern/ontologies/ssn/0.0.11">
-      https://w3id.org/tern/ontologies/ssn/0.0.11
+     <a href="https://w3id.org/tern/ontologies/ssn/0.0.12">
+      https://w3id.org/tern/ontologies/ssn/0.0.12
      </a>
     </dd>
     <dt>
@@ -361,6 +361,11 @@
      </a>
     </li>
     <li>
+     <a href="#Imagingradar">
+      Imaging radar
+     </a>
+    </li>
+    <li>
      <a href="#Insituland-basedplatform">
       In situ land-based platform
      </a>
@@ -368,6 +373,11 @@
     <li>
      <a href="#Infraredgasanalyzer">
       Infrared gas analyzer
+     </a>
+    </li>
+    <li>
+     <a href="#Lidar">
+      Lidar
      </a>
     </li>
     <li>
@@ -660,29 +670,58 @@
         c
        </sup>
        <br/>
-       <a href="http://schema.org/name">
-        schema:name
+       <a href="http://schema.org/location">
+        schema:location
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://schema.org/Place">
+        schema:Place
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/prov#wasInvalidatedBy">
+        http://www.w3.org/ns/prov#wasInvalidatedBy
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/prov#Activity">
+        http://www.w3.org/ns/prov#Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://schema.org/identifier">
+        schema:identifier
        </a>
        <span class="cardinality">
         exactly
        </span>
        1
        <br/>
-       <a href="https://w3id.org/tern/ontologies/org/principalInvestigator">
-        tern-org:principalInvestigator
+       <a href="http://www.w3.org/ns/ssn/inDeployment">
+        ssn:inDeployment
        </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
        <span class="cardinality">
         only
        </span>
-       <a href="http://schema.org/Role">
-        schema:Role
+       <a href="http://www.w3.org/ns/ssn/Deployment">
+        ssn:Deployment
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="https://w3id.org/tern/ontologies/org/dataManager">
-        tern-org:dataManager
+       <a href="https://w3id.org/tern/ontologies/org/principalInvestigator">
+        tern-org:principalInvestigator
        </a>
        <span class="cardinality">
         only
@@ -707,21 +746,8 @@
         c
        </sup>
        <br/>
-       <a href="http://www.w3.org/ns/prov#wasInvalidatedBy">
-        http://www.w3.org/ns/prov#wasInvalidatedBy
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/prov#Activity">
-        http://www.w3.org/ns/prov#Activity
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="https://w3id.org/tern/ontologies/org/collaboratorOrganization">
-        tern-org:collaboratorOrganization
+       <a href="https://w3id.org/tern/ontologies/org/dataManager">
+        tern-org:dataManager
        </a>
        <span class="cardinality">
         only
@@ -746,76 +772,8 @@
         c
        </sup>
        <br/>
-       <a href="http://schema.org/location">
-        schema:location
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://schema.org/Place">
-        schema:Place
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/prov#invalidatedAtTime">
-        http://www.w3.org/ns/prov#invalidatedAtTime
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/2001/XMLSchema#dateTime">
-        xsd:dateTime
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/prov#wasGeneratedBy">
-        http://www.w3.org/ns/prov#wasGeneratedBy
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/prov#Activity">
-        http://www.w3.org/ns/prov#Activity
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/ssn/inDeployment">
-        ssn:inDeployment
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/ssn/Deployment">
-        ssn:Deployment
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/prov#generatedAtTime">
-        http://www.w3.org/ns/prov#generatedAtTime
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/2001/XMLSchema#dateTime">
-        xsd:dateTime
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://schema.org/identifier">
-        schema:identifier
+       <a href="http://schema.org/name">
+        schema:name
        </a>
        <span class="cardinality">
         exactly
@@ -851,6 +809,58 @@
         c
        </sup>
        <br/>
+       <a href="http://www.w3.org/ns/prov#invalidatedAtTime">
+        http://www.w3.org/ns/prov#invalidatedAtTime
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/2001/XMLSchema#dateTime">
+        xsd:dateTime
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/tern/ontologies/org/collaboratorOrganization">
+        tern-org:collaboratorOrganization
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://schema.org/Role">
+        schema:Role
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/prov#wasGeneratedBy">
+        http://www.w3.org/ns/prov#wasGeneratedBy
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/prov#Activity">
+        http://www.w3.org/ns/prov#Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/prov#generatedAtTime">
+        http://www.w3.org/ns/prov#generatedAtTime
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/2001/XMLSchema#dateTime">
+        xsd:dateTime
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -858,15 +868,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Insituland-basedplatform">
-        tern-ssn:InSituLandBasedPlatform
+       <a href="#Aircraft">
+        tern-ssn:Aircraft
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Aircraft">
-        tern-ssn:Aircraft
+       <a href="#Insituland-basedplatform">
+        tern-ssn:InSituLandBasedPlatform
        </a>
        <sup class="sup-c" title="class">
         c
@@ -962,18 +972,111 @@
        Restrictions
       </th>
       <td>
-       <a href="http://www.w3.org/ns/sosa/madeObservation">
-        sosa:madeObservation
+       <a href="http://www.w3.org/ns/ssn/detects">
+        ssn:detects
        </a>
        <span class="cardinality">
         only
        </span>
-       <a href="http://www.w3.org/ns/sosa/Observation">
-        sosa:Observation
+       <a href="http://www.w3.org/ns/ssn/Stimulus">
+        ssn:Stimulus
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
+       <br/>
+       <a href="#hascalibration">
+        tern-ssn:hasCalibration
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="#Calibration">
+        tern-ssn:Calibration
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/sosa/isHostedBy">
+        sosa:isHostedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/sosa/observes">
+        sosa:observes
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/sosa/ObservableProperty">
+        sosa:ObservableProperty
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/implements">
+        ssn:implements
+       </a>
+       <span class="cardinality">
+        min
+       </span>
+       1
+       <br/>
+       <a href="http://schema.org/manufacturer">
+        schema:manufacturer
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://schema.org/Organization">
+        schema:Organization
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/hasDeployment">
+        ssn:hasDeployment
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/Deployment">
+        ssn:Deployment
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#isdeployed">
+        tern-ssn:isDeployed
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
+       </sup>
+       <span class="cardinality">
+        exactly
+       </span>
+       1
        <br/>
        <a href="http://schema.org/model">
         schema:model
@@ -1000,95 +1103,18 @@
         schema:manufacturer
        </a>
        <span class="cardinality">
-        only
-       </span>
-       <a href="http://schema.org/Organization">
-        schema:Organization
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/sosa/isHostedBy">
-        sosa:isHostedBy
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/sosa/Platform">
-        sosa:Platform
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/ssn/implements">
-        ssn:implements
-       </a>
-       <span class="cardinality">
         min
        </span>
        1
        <br/>
-       <a href="#isdeployed">
-        tern-ssn:isDeployed
-       </a>
-       <sup class="sup-dp" title="datatype property">
-        dp
-       </sup>
-       <span class="cardinality">
-        exactly
-       </span>
-       1
-       <br/>
-       <a href="http://schema.org/manufacturer">
-        schema:manufacturer
-       </a>
-       <span class="cardinality">
-        min
-       </span>
-       1
-       <br/>
-       <a href="http://www.w3.org/ns/ssn/detects">
-        ssn:detects
+       <a href="http://www.w3.org/ns/sosa/madeObservation">
+        sosa:madeObservation
        </a>
        <span class="cardinality">
         only
        </span>
-       <a href="http://www.w3.org/ns/ssn/Stimulus">
-        ssn:Stimulus
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/ssn/hasDeployment">
-        ssn:hasDeployment
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/ssn/Deployment">
-        ssn:Deployment
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#hascalibration">
-        tern-ssn:hasCalibration
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="#Calibration">
-        tern-ssn:Calibration
+       <a href="http://www.w3.org/ns/sosa/Observation">
+        sosa:Observation
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1107,22 +1133,6 @@
         c
        </sup>
        <br/>
-       <a href="http://www.w3.org/ns/sosa/observes">
-        sosa:observes
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/sosa/ObservableProperty">
-        sosa:ObservableProperty
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
       </td>
      </tr>
      <tr>
@@ -1130,64 +1140,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Sapflowsensor">
-        tern-ssn:SapFlowSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Raingauge">
-        tern-ssn:RainGauge
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Spectrometer">
-        tern-ssn:Spectrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Soilmoisturesensor">
-        tern-ssn:SoilMoistureSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Barometer">
-        tern-ssn:Barometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Ceilometer">
-        tern-ssn:Ceilometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Temperaturesensor">
-        tern-ssn:TemperatureSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Windsensor">
         tern-ssn:WindSensor
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Hygrometer">
-        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1200,8 +1154,15 @@
         c
        </sup>
        <br/>
-       <a href="#Radiationsensor">
-        tern-ssn:RadiationSensor
+       <a href="#Soilmoisturesensor">
+        tern-ssn:SoilMoistureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Hygrometer">
+        tern-ssn:Hygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1214,8 +1175,22 @@
         c
        </sup>
        <br/>
-       <a href="#Heatfluxsensor">
-        tern-ssn:HeatFluxSensor
+       <a href="#Raingauge">
+        tern-ssn:RainGauge
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Radiationsensor">
+        tern-ssn:RadiationSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Sapflowsensor">
+        tern-ssn:SapFlowSensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1223,6 +1198,55 @@
        <br/>
        <a href="#Infraredgasanalyzer">
         tern-ssn:InfraredGasAnalyzer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Imagingradar">
+        tern-ssn:ImagingRadar
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Spectrometer">
+        tern-ssn:Spectrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Lidar">
+        tern-ssn:Lidar
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Ceilometer">
+        tern-ssn:Ceilometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Heatfluxsensor">
+        tern-ssn:HeatFluxSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Temperaturesensor">
+        tern-ssn:TemperatureSensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Barometer">
+        tern-ssn:Barometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1263,27 +1287,14 @@
        Restrictions
       </th>
       <td>
-       <a href="#deploymenttype">
-        tern-ssn:deploymentType
+       <a href="http://schema.org/description">
+        schema:description
        </a>
        <span class="cardinality">
         only
        </span>
-       <a href="http://www.w3.org/2004/02/skos/core#Concept">
-        skos:Concept
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#deploymentorientation">
-        tern-ssn:deploymentOrientation
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://schema.org/QuantitativeValue">
-        schema:QuantitativeValue
+       <a href="http://www.w3.org/2001/XMLSchema#string">
+        xsd:string
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1302,19 +1313,6 @@
         c
        </sup>
        <br/>
-       <a href="http://schema.org/description">
-        schema:description
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/2001/XMLSchema#string">
-        xsd:string
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="http://www.w3.org/ns/prov#generatedAtTime">
         http://www.w3.org/ns/prov#generatedAtTime
        </a>
@@ -1323,32 +1321,6 @@
        </span>
        <a href="http://www.w3.org/2001/XMLSchema#dateTime">
         xsd:dateTime
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#deploymentheight">
-        tern-ssn:deploymentHeight
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://schema.org/QuantitativeValue">
-        schema:QuantitativeValue
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/ssn/forProperty">
-        ssn:forProperty
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/ssn/Property">
-        ssn:Property
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1396,8 +1368,37 @@
         c
        </sup>
        <br/>
-       <a href="#deploymentdepth">
-        tern-ssn:deploymentDepth
+       <a href="#deploymentorientation">
+        tern-ssn:deploymentOrientation
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://schema.org/QuantitativeValue">
+        schema:QuantitativeValue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/deployedOnPlatform">
+        ssn:deployedOnPlatform
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#deploymentheight">
+        tern-ssn:deploymentHeight
        </a>
        <span class="cardinality">
         only
@@ -1422,6 +1423,45 @@
         c
        </sup>
        <br/>
+       <a href="#deploymentdepth">
+        tern-ssn:deploymentDepth
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://schema.org/QuantitativeValue">
+        schema:QuantitativeValue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#deploymenttype">
+        tern-ssn:deploymentType
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/forProperty">
+        ssn:forProperty
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/Property">
+        ssn:Property
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="http://www.w3.org/ns/prov#wasGeneratedBy">
         http://www.w3.org/ns/prov#wasGeneratedBy
        </a>
@@ -1430,22 +1470,6 @@
        </span>
        <a href="http://www.w3.org/ns/prov#Activity">
         http://www.w3.org/ns/prov#Activity
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/ssn/deployedOnPlatform">
-        ssn:deployedOnPlatform
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/sosa/Platform">
-        sosa:Platform
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1500,27 +1524,43 @@
        Restrictions
       </th>
       <td>
-       <a href="http://www.w3.org/ns/ssn/implements">
-        ssn:implements
+       <a href="https://www.w3.org/ns/ssn/systems/hasSystemCapability">
+        ssn-system:hasSystemCapability
        </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
        <span class="cardinality">
         only
        </span>
-       <a href="http://www.w3.org/ns/sosa/Procedure">
-        sosa:Procedure
+       <a href="https://www.w3.org/ns/ssn/systems/SystemCapability">
+        ssn-system:SystemCapability
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="https://www.w3.org/ns/ssn/systems/hasOperatingRange">
-        ssn-system:hasOperatingRange
+       <a href="https://www.w3.org/ns/ssn/systems/hasSurvivalRange">
+        ssn-system:hasSurvivalRange
        </a>
        <span class="cardinality">
         only
        </span>
-       <a href="https://www.w3.org/ns/ssn/systems/OperatingRange">
-        ssn-system:OperatingRange
+       <a href="https://www.w3.org/ns/ssn/systems/SurvivalRange">
+        ssn-system:SurvivalRange
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="ub1bL408C22">
+        ub1bL408C22
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1542,17 +1582,14 @@
         c
        </sup>
        <br/>
-       <a href="https://www.w3.org/ns/ssn/systems/hasSystemCapability">
-        ssn-system:hasSystemCapability
+       <a href="http://www.w3.org/ns/ssn/hasSubSystem">
+        ssn:hasSubSystem
        </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
        <span class="cardinality">
         only
        </span>
-       <a href="https://www.w3.org/ns/ssn/systems/SystemCapability">
-        ssn-system:SystemCapability
+       <a href="http://www.w3.org/ns/ssn/System">
+        ssn:System
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1574,40 +1611,27 @@
         c
        </sup>
        <br/>
-       <a href="ub1bL408C22">
-        ub1bL408C22
+       <a href="http://www.w3.org/ns/ssn/implements">
+        ssn:implements
        </a>
        <span class="cardinality">
         only
        </span>
-       <a href="http://www.w3.org/ns/ssn/System">
-        ssn:System
+       <a href="http://www.w3.org/ns/sosa/Procedure">
+        sosa:Procedure
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="https://www.w3.org/ns/ssn/systems/hasSurvivalRange">
-        ssn-system:hasSurvivalRange
+       <a href="https://www.w3.org/ns/ssn/systems/hasOperatingRange">
+        ssn-system:hasOperatingRange
        </a>
        <span class="cardinality">
         only
        </span>
-       <a href="https://www.w3.org/ns/ssn/systems/SurvivalRange">
-        ssn-system:SurvivalRange
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://www.w3.org/ns/ssn/hasSubSystem">
-        ssn:hasSubSystem
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/ssn/System">
-        ssn:System
+       <a href="https://www.w3.org/ns/ssn/systems/OperatingRange">
+        ssn-system:OperatingRange
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1760,15 +1784,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Pyranometer">
-        tern-ssn:Pyranometer
+       <a href="#Netradiometer">
+        tern-ssn:NetRadiometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Netradiometer">
-        tern-ssn:NetRadiometer
+       <a href="#Pyranometer">
+        tern-ssn:Pyranometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1913,8 +1937,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Sonicanemometer">
-        tern-ssn:SonicAnemometer
+       <a href="#Hotwireanemometer">
+        tern-ssn:HotWireAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1927,8 +1951,8 @@
         c
        </sup>
        <br/>
-       <a href="#Hotwireanemometer">
-        tern-ssn:HotWireAnemometer
+       <a href="#Sonicanemometer">
+        tern-ssn:SonicAnemometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2066,15 +2090,15 @@
         c
        </sup>
        <br/>
-       <a href="#Mercurybarometer">
-        tern-ssn:MercuryBarometer
+       <a href="#Aneroidbarometer">
+        tern-ssn:AneroidBarometer
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Aneroidbarometer">
-        tern-ssn:AneroidBarometer
+       <a href="#Mercurybarometer">
+        tern-ssn:MercuryBarometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2155,34 +2179,8 @@
        Restrictions
       </th>
       <td>
-       <a href="http://schema.org/description">
-        schema:description
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/2001/XMLSchema#string">
-        xsd:string
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#actualresult">
         tern-ssn:actualResult
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://schema.org/QuantitativeValue">
-        schema:QuantitativeValue
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#calibrationslope">
-        tern-ssn:calibrationSlope
        </a>
        <span class="cardinality">
         only
@@ -2223,6 +2221,32 @@
        </span>
        <a href="http://schema.org/QuantitativeValue">
         schema:QuantitativeValue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#calibrationslope">
+        tern-ssn:calibrationSlope
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://schema.org/QuantitativeValue">
+        schema:QuantitativeValue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://schema.org/description">
+        schema:description
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/2001/XMLSchema#string">
+        xsd:string
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2305,15 +2329,15 @@
        Super-classes
       </th>
       <td>
-       <a href="http://www.w3.org/2004/02/skos/core#Concept">
-        skos:Concept
+       <a href="http://www.w3.org/ns/ssn/Property">
+        ssn:Property
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="http://www.w3.org/ns/ssn/Property">
-        ssn:Property
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2528,30 +2552,6 @@
        Restrictions
       </th>
       <td>
-       <a href="#onsystem">
-        tern-ssn:onSystem
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <span class="cardinality">
-        min
-       </span>
-       1
-       <br/>
-       <a href="http://purl.org/dc/terms/subject">
-        dct:subject
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/2004/02/skos/core#Concept">
-        skos:Concept
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="ub1bL655C22">
         ub1bL655C22
        </a>
@@ -2564,6 +2564,25 @@
        <sup class="sup-c" title="class">
         c
        </sup>
+       <br/>
+       <a href="http://purl.org/dc/terms/subject">
+        dct:subject
+       </a>
+       <span class="cardinality">
+        exactly
+       </span>
+       1
+       <br/>
+       <a href="#onsystem">
+        tern-ssn:onSystem
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <span class="cardinality">
+        min
+       </span>
+       1
        <br/>
        <a href="#onsystem">
         tern-ssn:onSystem
@@ -2585,9 +2604,14 @@
         dct:subject
        </a>
        <span class="cardinality">
-        exactly
+        only
        </span>
-       1
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
        <br/>
       </td>
      </tr>
@@ -2700,58 +2724,6 @@
        Restrictions
       </th>
       <td>
-       <a href="http://schema.org/geo">
-        schema:geo
-       </a>
-       <span class="cardinality">
-        some
-       </span>
-       <a href="http://schema.org/GeoShape">
-        schema:GeoShape
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://schema.org/startDate">
-        schema:startDate
-       </a>
-       <span class="cardinality">
-        some
-       </span>
-       <a href="http://www.w3.org/2001/XMLSchema#dateTime">
-        xsd:dateTime
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://schema.org/geo">
-        schema:geo
-       </a>
-       <span class="cardinality">
-        some
-       </span>
-       <a href="http://schema.org/GeoCoordinates">
-        schema:GeoCoordinates
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="http://schema.org/endDate">
-        schema:endDate
-       </a>
-       <span class="cardinality">
-        some
-       </span>
-       <a href="http://www.w3.org/2001/XMLSchema#dateTime">
-        xsd:dateTime
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#hasdrone">
         tern-ssn:hasDrone
        </a>
@@ -2786,6 +2758,58 @@
        </span>
        <a href="#Flightplan">
         tern-ssn:FlightPlan
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://schema.org/geo">
+        schema:geo
+       </a>
+       <span class="cardinality">
+        some
+       </span>
+       <a href="http://schema.org/GeoCoordinates">
+        schema:GeoCoordinates
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://schema.org/geo">
+        schema:geo
+       </a>
+       <span class="cardinality">
+        some
+       </span>
+       <a href="http://schema.org/GeoShape">
+        schema:GeoShape
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://schema.org/startDate">
+        schema:startDate
+       </a>
+       <span class="cardinality">
+        some
+       </span>
+       <a href="http://www.w3.org/2001/XMLSchema#dateTime">
+        xsd:dateTime
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="http://schema.org/endDate">
+        schema:endDate
+       </a>
+       <span class="cardinality">
+        some
+       </span>
+       <a href="http://www.w3.org/2001/XMLSchema#dateTime">
+        xsd:dateTime
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2866,8 +2890,8 @@
        Restrictions
       </th>
       <td>
-       <a href="#fluxnetID">
-        tern-ssn:fluxnetID
+       <a href="#locationdescription">
+        tern-ssn:locationDescription
        </a>
        <span class="cardinality">
         only
@@ -2879,8 +2903,8 @@
         c
        </sup>
        <br/>
-       <a href="#locationdescription">
-        tern-ssn:locationDescription
+       <a href="#fluxnetID">
+        tern-ssn:fluxnetID
        </a>
        <span class="cardinality">
         only
@@ -2912,8 +2936,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Surveillancesite">
-        tern-ssn:SurveillanceSite
+       <a href="#CosmOzsite">
+        tern-ssn:CosmOzSite
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2926,15 +2950,8 @@
         c
        </sup>
        <br/>
-       <a href="#Ecosystemprocessessite">
-        tern-ssn:EcosystemProcessesSite
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#CosmOzsite">
-        tern-ssn:CosmOzSite
+       <a href="#Surveillancesite">
+        tern-ssn:SurveillanceSite
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2942,6 +2959,13 @@
        <br/>
        <a href="#CORVEGSite">
         tern-ssn:CORVEGSite
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Ecosystemprocessessite">
+        tern-ssn:EcosystemProcessesSite
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3022,45 +3046,6 @@
        Restrictions
       </th>
       <td>
-       <a href="#igbpcode">
-        tern-ssn:igbpCode
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/2004/02/skos/core#Concept">
-        skos:Concept
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#fluxnetID">
-        tern-ssn:fluxnetID
-       </a>
-       <span class="cardinality">
-        some
-       </span>
-       <a href="http://www.w3.org/2001/XMLSchema#string">
-        xsd:string
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#terraintype">
-        tern-ssn:terrainType
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/2004/02/skos/core#Concept">
-        skos:Concept
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#climatecode">
         tern-ssn:climateCode
        </a>
@@ -3087,6 +3072,45 @@
         c
        </sup>
        <br/>
+       <a href="#terraintype">
+        tern-ssn:terrainType
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#igbpcode">
+        tern-ssn:igbpCode
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#fluxnetID">
+        tern-ssn:fluxnetID
+       </a>
+       <span class="cardinality">
+        some
+       </span>
+       <a href="http://www.w3.org/2001/XMLSchema#string">
+        xsd:string
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -3094,13 +3118,6 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Walk-upTower">
-        tern-ssn:WalkUpTower
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Poletower">
         tern-ssn:PoleTower
        </a>
@@ -3117,6 +3134,13 @@
        <br/>
        <a href="#Tripodtower">
         tern-ssn:TripodTower
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Walk-upTower">
+        tern-ssn:WalkUpTower
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3231,19 +3255,6 @@
        Restrictions
       </th>
       <td>
-       <a href="#asKML">
-        tern-ssn:asKML
-       </a>
-       <span class="cardinality">
-        some
-       </span>
-       <a href="http://www.w3.org/2001/XMLSchema#string">
-        xsd:string
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="http://schema.org/location">
         schema:location
        </a>
@@ -3252,6 +3263,19 @@
        </span>
        <a href="http://schema.org/Place">
         schema:Place
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#asKML">
+        tern-ssn:asKML
+       </a>
+       <span class="cardinality">
+        some
+       </span>
+       <a href="http://www.w3.org/2001/XMLSchema#string">
+        xsd:string
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3518,20 +3542,6 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Hairhygrometer">
-        tern-ssn:HairHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Dewpointhygrometer">
-        tern-ssn:DewPointHygrometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Gravimetrichygrometer">
         tern-ssn:GravimetricHygrometer
        </a>
@@ -3539,8 +3549,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Psychrometer">
-        tern-ssn:Psychrometer
+       <a href="#Resistivehygrometer">
+        tern-ssn:ResistiveHygrometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3560,8 +3570,64 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Resistivehygrometer">
-        tern-ssn:ResistiveHygrometer
+       <a href="#Psychrometer">
+        tern-ssn:Psychrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Dewpointhygrometer">
+        tern-ssn:DewPointHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Hairhygrometer">
+        tern-ssn:HairHygrometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Imagingradar">
+    <h3>
+     Imaging radar
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/ssn/ImagingRadar
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       An instrument that transmit signals at frequencies between 1 GHz to 10 GHz and measures the backscattered signals to generate microwave images of Earth’s surface.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3608,15 +3674,8 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Soilmoistureplatform">
-        tern-ssn:SoilMoisturePlatform
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Ecologysite">
-        tern-ssn:EcologySite
+       <a href="#Eddycovariancefluxtower">
+        tern-ssn:EddyCovarianceFluxTower
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3629,8 +3688,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Eddycovariancefluxtower">
-        tern-ssn:EddyCovarianceFluxTower
+       <a href="#Ecologysite">
+        tern-ssn:EcologySite
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Soilmoistureplatform">
+        tern-ssn:SoilMoisturePlatform
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3664,6 +3730,48 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
       </th>
       <td>
        An infrared gas analyzer measures trace gases by determining the absorption of an emitted infrared light source through a certain air sample.
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Lidar">
+    <h3>
+     Lidar
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       IRI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/tern/ontologies/ssn/Lidar
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       An instrument that emits laser and measures the radiation returned from the illuminated surface.
       </td>
      </tr>
      <tr>
@@ -3797,15 +3905,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Super-classes
       </th>
       <td>
-       <a href="http://www.w3.org/2004/02/skos/core#Concept">
-        skos:Concept
+       <a href="http://www.w3.org/ns/sosa/Procedure">
+        sosa:Procedure
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="http://www.w3.org/ns/sosa/Procedure">
-        sosa:Procedure
+       <a href="http://www.w3.org/2004/02/skos/core#Concept">
+        skos:Concept
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4301,13 +4409,6 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Radiometer">
-        tern-ssn:Radiometer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Pyrgeometer">
         tern-ssn:Pyrgeometer
        </a>
@@ -4317,6 +4418,13 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        <br/>
        <a href="#Pyrheliometer">
         tern-ssn:Pyrheliometer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Radiometer">
+        tern-ssn:Radiometer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4441,15 +4549,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Sub-classes
       </th>
       <td>
-       <a href="#Tippingbucketraingauge">
-        tern-ssn:TippingBucketRainGauge
+       <a href="#Opticalraingauge">
+        tern-ssn:OpticalRainGauge
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Opticalraingauge">
-        tern-ssn:OpticalRainGauge
+       <a href="#Tippingbucketraingauge">
+        tern-ssn:TippingBucketRainGauge
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4629,14 +4737,14 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
        Restrictions
       </th>
       <td>
-       <a href="http://schema.org/description">
-        schema:description
+       <a href="#measurementinterval">
+        tern-ssn:measurementInterval
        </a>
        <span class="cardinality">
         only
        </span>
-       <a href="http://www.w3.org/2001/XMLSchema#string">
-        xsd:string
+       <a href="http://schema.org/QuantitativeValue">
+        schema:QuantitativeValue
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4655,14 +4763,14 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#measurementinterval">
-        tern-ssn:measurementInterval
+       <a href="http://schema.org/description">
+        schema:description
        </a>
        <span class="cardinality">
         only
        </span>
-       <a href="http://schema.org/QuantitativeValue">
-        schema:QuantitativeValue
+       <a href="http://www.w3.org/2001/XMLSchema#string">
+        xsd:string
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4984,15 +5092,15 @@ The length variation of a properly treated hair is 2%–2.5% when the humidity c
         c
        </sup>
        <br/>
-       <a href="#Thermocouple">
-        tern-ssn:Thermocouple
+       <a href="#Thermistor">
+        tern-ssn:Thermistor
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Thermistor">
-        tern-ssn:Thermistor
+       <a href="#Thermocouple">
+        tern-ssn:Thermocouple
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5449,10 +5557,18 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
         ssn-system:inCondition
        </a>
        <span class="cardinality">
+        min
+       </span>
+       1
+       <br/>
+       <a href="http://www.w3.org/ns/ssn/forProperty">
+        ssn:forProperty
+       </a>
+       <span class="cardinality">
         only
        </span>
-       <a href="https://www.w3.org/ns/ssn/systems/Condition">
-        ssn-system:Condition
+       <a href="http://www.w3.org/ns/ssn/Property">
+        ssn:Property
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5474,21 +5590,8 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
         c
        </sup>
        <br/>
-       <a href="http://www.w3.org/ns/ssn/forProperty">
-        ssn:forProperty
-       </a>
-       <span class="cardinality">
-        only
-       </span>
-       <a href="http://www.w3.org/ns/ssn/Property">
-        ssn:Property
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="ub1bL1326C22">
-        ub1bL1326C22
+       <a href="ub1bL1342C22">
+        ub1bL1342C22
        </a>
        <span class="cardinality">
         only
@@ -5504,9 +5607,14 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
         ssn-system:inCondition
        </a>
        <span class="cardinality">
-        min
+        only
        </span>
-       1
+       <a href="https://www.w3.org/ns/ssn/systems/Condition">
+        ssn-system:Condition
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
        <br/>
       </td>
      </tr>
@@ -5557,16 +5665,16 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
        Restrictions
       </th>
       <td>
-       <a href="ub1bL1365C22">
-        ub1bL1365C22
+       <a href="ub1bL1381C22">
+        ub1bL1381C22
        </a>
        <span class="cardinality">
         min
        </span>
        1
        <br/>
-       <a href="ub1bL1358C22">
-        ub1bL1358C22
+       <a href="ub1bL1374C22">
+        ub1bL1374C22
        </a>
        <span class="cardinality">
         only
@@ -5708,18 +5816,6 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
         sdo:rangeIncludes
        </a>
        )
-       <a href="http://www.w3.org/ns/sosa/Platform">
-        sosa:Platform
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <a href="http://www.w3.org/ns/sosa/Sampler">
-        sosa:Sampler
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
        <a href="http://www.w3.org/ns/sosa/Actuator">
         sosa:Actuator
        </a>
@@ -5728,6 +5824,18 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
        </sup>
        <a href="http://www.w3.org/ns/sosa/Sensor">
         sosa:Sensor
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Sampler">
+        sosa:Sampler
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5772,14 +5880,8 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
         sdo:domainIncludes
        </a>
        )
-       <a href="http://www.w3.org/ns/sosa/Actuator">
-        sosa:Actuator
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <a href="http://www.w3.org/ns/sosa/Platform">
-        sosa:Platform
+       <a href="http://www.w3.org/ns/sosa/Sensor">
+        sosa:Sensor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -5790,8 +5892,14 @@ Examples of this sensor include the Campbell Scientific CS650 and the IMKO Trime
        <sup class="sup-c" title="class">
         c
        </sup>
-       <a href="http://www.w3.org/ns/sosa/Sensor">
-        sosa:Sensor
+       <a href="http://www.w3.org/ns/sosa/Platform">
+        sosa:Platform
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <a href="http://www.w3.org/ns/sosa/Actuator">
+        sosa:Actuator
        </a>
        <sup class="sup-c" title="class">
         c
