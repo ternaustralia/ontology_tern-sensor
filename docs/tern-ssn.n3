@@ -679,6 +679,7 @@ tern-ssn: a owl:Ontology ;
     rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
         sosa:,
+        ssn:,
         <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl>,
         loc:,
         tern-org: ;
@@ -713,8 +714,7 @@ tern-ssn:DroneCampaign a owl:Class ;
 tern-ssn:Method a owl:Class ;
     rdfs:label "Method" ;
     rdfs:comment "Exactly the same as sosa:Procedure. This was created because the domain experts are more familiar with the term 'method'." ;
-    rdfs:subClassOf skos:Concept,
-        sosa:Procedure .
+    rdfs:subClassOf skos:Concept .
 
 tern-ssn:ObservationTheme a owl:Class ;
     rdfs:label "Observation Theme" ;
@@ -724,7 +724,7 @@ tern-ssn:ObservationTheme a owl:Class ;
 tern-ssn:Parameter a owl:Class ;
     rdfs:label "Parameter" ;
     rdfs:subClassOf skos:Concept,
-        sosa:ObservableProperty .
+        ssn:Property .
 
 tern-ssn:StateIdentification a owl:Class ;
     rdfs:label "State identification" ;

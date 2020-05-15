@@ -1,6 +1,7 @@
 # baseURI: https://w3id.org/tern/ontologies/ssn/
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.w3.org/ns/sosa/
+# imports: http://www.w3.org/ns/ssn/
 # imports: https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl
 # imports: https://w3id.org/tern/ontologies/loc/
 # imports: https://w3id.org/tern/ontologies/org/
@@ -647,6 +648,7 @@ tern-ssn:
   rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports sosa: ;
+  owl:imports ssn: ;
   owl:imports <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl> ;
   owl:imports loc: ;
   owl:imports tern-org: ;
@@ -1121,7 +1123,6 @@ tern-ssn:Method
   rdfs:comment "Exactly the same as sosa:Procedure. This was created because the domain experts are more familiar with the term 'method'." ;
   rdfs:label "Method" ;
   rdfs:subClassOf skos:Concept ;
-  rdfs:subClassOf sosa:Procedure ;
 .
 tern-ssn:NationalTaxon
   a owl:Class ;
@@ -1200,7 +1201,7 @@ tern-ssn:Parameter
   a owl:Class ;
   rdfs:label "Parameter" ;
   rdfs:subClassOf skos:Concept ;
-  rdfs:subClassOf sosa:ObservableProperty ;
+  rdfs:subClassOf ssn:Property ;
 .
 tern-ssn:Photograph
   a rdfs:Class ;
