@@ -1,5 +1,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix loc: <https://w3id.org/tern/ontologies/loc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -25,6 +27,9 @@ sosa:Platform a rdfs:Class,
     rdfs:comment "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
     rdfs:isDefinedBy sosa: ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom schema:Place ;
+            owl:onProperty schema:location ],
+        [ a owl:Restriction ;
             owl:allValuesFrom schema:Role ;
             owl:onProperty schema:funder ],
         [ a owl:Restriction ;
@@ -68,10 +73,7 @@ sosa:Platform a rdfs:Class,
             owl:onProperty schema:identifier ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty schema:name ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom schema:Place ;
-            owl:onProperty schema:location ] ;
+            owl:onProperty schema:name ] ;
     skos:definition "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
     skos:example "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."@en .
 
@@ -208,6 +210,30 @@ tern-ssn:Ceilometer a rdfs:Class,
     rdfs:comment "A ceilometer is a device that uses a laser or other light source to determine the height of a cloud ceiling or cloud base. Ceilometers can also be used to measure the aerosol concentration within the atmosphere. When based on laser, it is a type of atmospheric lidar." ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Ceilometer> ;
     rdfs:subClassOf sosa:Sensor .
+
+tern-ssn:CollectedSample a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Collected sample" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:materialSampleID ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty rdfs:comment ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty rdfs:label ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom loc:Point ;
+            owl:onProperty tern-ssn:sampleStorageLocation ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty dwc:materialSampleID ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty rdfs:label ],
+        dwc:MaterialSample,
+        sosa:Sample .
 
 tern-ssn:CosmOzSite a rdfs:Class,
         owl:Class ;
@@ -389,6 +415,44 @@ tern-ssn:OpticalRainGauge a rdfs:Class,
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Rain_gauge#Optical_rain_gauge> ;
     rdfs:subClassOf tern-ssn:RainGauge .
 
+tern-ssn:Photograph a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Photograph" ;
+    rdfs:comment "A sub-sample of the feature of interest as a photograph." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom tern-ssn:PhotopointCollection ;
+            owl:onProperty sosa:isSampleOf ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty sosa:isSampleOf ],
+        tern-ssn:CollectedSample .
+
+tern-ssn:PhotopointCollection a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Photopoint collection" ;
+    rdfs:comment "A sub-sample of the feature of interest as a series of photopoints." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom tern-ssn:Photograph ;
+            owl:onProperty sosa:hasSample ],
+        [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty sosa:hasSample ],
+        tern-ssn:CollectedSample .
+
+tern-ssn:PlantGenetics a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Plant genetics" ;
+    rdfs:comment "A plant genetics sample." ;
+    rdfs:subClassOf tern-ssn:CollectedSample .
+
+tern-ssn:PlantSpecimen a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Plant specimen" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom dwc:Identification ;
+            owl:onProperty dwc:nameAccordingTo ],
+        tern-ssn:CollectedSample .
+
 tern-ssn:PoleTower a rdfs:Class,
         owl:Class ;
     rdfs:label "Pole tower" ;
@@ -481,6 +545,12 @@ tern-ssn:SapFlowSensor a rdfs:Class,
     rdfs:seeAlso <https://www.edaphic.com.au/products/sap-flow-sensors/> ;
     rdfs:subClassOf sosa:Sensor .
 
+tern-ssn:SoilMetagenomics a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Soil metagenomics" ;
+    rdfs:comment "A soil metagenomics sample." ;
+    rdfs:subClassOf tern-ssn:CollectedSample .
+
 tern-ssn:SoilMoisturePlatform a rdfs:Class,
         owl:Class ;
     rdfs:label "Soil moisture platform" ;
@@ -490,6 +560,12 @@ tern-ssn:SoilMoistureSensor a rdfs:Class,
         owl:Class ;
     rdfs:label "Soil moisture sensor" ;
     rdfs:subClassOf sosa:Sensor .
+
+tern-ssn:SoilSpecimen a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Soil specimen" ;
+    rdfs:comment "A soil sample." ;
+    rdfs:subClassOf tern-ssn:CollectedSample .
 
 tern-ssn:SonicAnemometer a rdfs:Class,
         owl:Class ;
@@ -595,17 +671,19 @@ tern-ssn: a owl:Ontology ;
             schema:email "e.chuc@uq.edu.au" ;
             schema:identifier "https://orcid.org/0000-0002-6047-9864" ;
             schema:name "Edmond Chuc" ] ;
-    dct:modified "2020-04-30"^^xsd:date ;
+    dct:modified "2020-05-15"^^xsd:date ;
     dct:publisher <https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> ;
     vann:preferredNamespacePrefix "tern-ssn" ;
     vann:preferredNamespaceUri "https://w3id.org/tern/ontologies/ssn/" ;
     rdfs:comment "A vocabulary of TERN sensors and platforms and an extension of SOSA, SSN, and SSN System." ;
     rdfs:seeAlso <https://github.com/ternaustralia/ontology_tern-ssn> ;
     owl:imports <http://www.w3.org/2004/02/skos/core>,
+        sosa:,
         <https://raw.githack.com/w3c/sdw/gh-pages/ssn-extensions/rdf/ssn-ext.ttl>,
+        loc:,
         tern-org: ;
-    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.12> ;
-    owl:versionInfo "0.0.12" .
+    owl:versionIRI <https://w3id.org/tern/ontologies/ssn/0.0.13> ;
+    owl:versionInfo "0.0.13" .
 
 tern-ssn:DroneCampaign a owl:Class ;
     rdfs:label "Drone campaign" ;
@@ -645,10 +723,135 @@ tern-ssn:ObservationTheme a owl:Class ;
 
 tern-ssn:Parameter a owl:Class ;
     rdfs:label "Parameter" ;
-    rdfs:subClassOf skos:Concept .
+    rdfs:subClassOf skos:Concept,
+        sosa:ObservableProperty .
+
+tern-ssn:StateIdentification a owl:Class ;
+    rdfs:label "State identification" ;
+    rdfs:comment "An identification performed by the state herbarium." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:dateIdentified ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:identificationID ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:identificationRemarks ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:identifiedBy ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty rdfs:comment ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty rdfs:label ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom tern-ssn:NationalTaxon ;
+            owl:onProperty tern-ssn:nationalIdentification ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom tern-ssn:StateTaxon ;
+            owl:onProperty tern-ssn:stateIdentification ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty dwc:dateIdentified ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty rdfs:label ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty tern-ssn:stateIdentification ],
+        dwc:Identification .
 
 tern-ssn:contactPoint a owl:ObjectProperty ;
     rdfs:label "contact point" .
+
+dwc:MaterialSample a owl:Class ;
+    rdfs:label "Material Sample" ;
+    rdfs:comment "A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample." .
+
+dwc:class a rdf:Property ;
+    rdfs:label "class" ;
+    rdfs:comment "The full scientific name of the class in which the taxon is classified." ;
+    rdfs:isDefinedBy dwc: .
+
+dwc:family a rdf:Property ;
+    rdfs:label "family" ;
+    rdfs:comment "The full scientific name of the family in which the taxon is classified." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "Felidae, Monocleaceae" .
+
+dwc:genus a rdf:Property ;
+    rdfs:label "genus" ;
+    rdfs:comment "The full scientific name of the genus in which the taxon is classified." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "Puma, Monoclea" .
+
+dwc:identificationRemarks a rdf:Property ;
+    rdfs:label "identification remarks" ;
+    rdfs:comment "Comments or notes about the Identification." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas." .
+
+dwc:identifiedBy a rdf:Property ;
+    rdfs:label "identified by" ;
+    rdfs:comment "A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "James L. Patton, Theodore Pappenfuss | Robert Macey" ;
+    skos:note "Recommended best practice is to separate the values in a list with space vertical bar space ( | )." .
+
+dwc:infraspecificEpithet a rdf:Property ;
+    rdfs:label "infraspecific epithet" ;
+    rdfs:comment "The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "	concolor, oxyadenia, sayi" .
+
+dwc:kingdom a rdf:Property ;
+    rdfs:label "kingdom" ;
+    rdfs:comment "The full scientific name of the kingdom in which the taxon is classified." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "Animalia, Archaea, Bacteria, Chromista, Fungi, Plantae, Protozoa, Viruses" .
+
+dwc:nameAccordingTo a rdf:Property ;
+    rdfs:label "name according to" ;
+    rdfs:comment "The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin \"sensu\" or \"sec.\" (from secundum, meaning \"according to\"). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "Lilljeborg 1861, Upsala Univ. Arsskrift, Math. Naturvet., pp. 4, 5",
+        "McCranie, J. R., D. B. Wake, and L. D. Wilson. 1996. The taxonomic status of Bolitoglossa schmidti, with comments on the biology of the Mesoamerican salamander Bolitoglossa dofleini (Caudata: Plethodontidae). Carib. J. Sci. 32:395-398.",
+        "Werner Greuter 2008" .
+
+dwc:order a rdf:Property ;
+    rdfs:label "order" ;
+    rdfs:comment "The full scientific name of the order in which the taxon is classified." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "Carnivora, Monocleales" .
+
+dwc:phylum a rdf:Property ;
+    rdfs:label "phylum" ;
+    rdfs:comment "The full scientific name of the phylum or division in which the taxon is classified." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "Chordata (phylum). Bryophyta (division)." .
+
+dwc:scientificNameAuthorship a rdf:Property ;
+    rdfs:label "scientific name authorship" ;
+    rdfs:comment "The authorship information for the scientificName formatted according to the conventions of the applicable nomenclaturalCode." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "(Torr.) J.T. Howell, (Martinovský) Tzvelev, (Györfi, 1952)" .
+
+dwc:specificEpithet a rdf:Property ;
+    rdfs:label "specific epithet" ;
+    rdfs:comment "The name of the first or species epithet of the scientificName." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "concolor, gottschei" .
+
+dwc:taxonRemarks a rdf:Property ;
+    rdfs:label "taxon remarks" ;
+    rdfs:comment "Comments or notes about the taxon or name." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "this name is a misspelling in common use" .
 
 sosa:observes a owl:ObjectProperty ;
     rdfs:label "observes"@en ;
@@ -706,6 +909,59 @@ tern-ssn:SensorConfiguration a owl:Class ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty schema:description ],
         <http://www.w3.org/ns/prov#Entity> .
+
+tern-ssn:StateTaxon a owl:Class ;
+    rdfs:label "State taxon" ;
+    rdfs:comment "A taxon identified by the state herbarium." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:class ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:family ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:genus ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:infraspecificEpithet ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:kingdom ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:order ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:phylum ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:scientificName ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:scientificNameAuthorship ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:specificEpithet ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:taxonRemarks ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty rdfs:comment ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty rdfs:label ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom tern-ssn:NationalTaxon ;
+            owl:onProperty tern-ssn:nationalIdentification ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty dwc:scientificName ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty rdfs:label ],
+        dwc:Taxon .
 
 tern-ssn:asKML a rdf:Property ;
     rdfs:label "as KML" .
@@ -780,6 +1036,11 @@ tern-ssn:ozfluxID a rdf:Property ;
 tern-ssn:powerSupplyType a rdf:Property ;
     rdfs:label "power supply type" .
 
+tern-ssn:sampleStorageLocation a owl:ObjectProperty ;
+    rdfs:label "sample storage location" ;
+    rdfs:comment "Link a collected sample to the geo point of where it is stored." ;
+    rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasGeometry> .
+
 tern-ssn:terrainType a rdf:Property ;
     rdfs:label "terrain type" .
 
@@ -795,6 +1056,51 @@ ssn-system:SystemProperty a owl:Class ;
             owl:onProperty [ owl:inverseOf ssn-system:hasSystemProperty ] ],
         ssn:Property ;
     skos:definition "An identifiable and observable characteristic that represents the System's ability to operate its primary purpose: a Sensor to make Observations, an Actuator to make Actuations, or a Sampler to make Samplings."@en .
+
+dwc:Identification a owl:Class ;
+    rdfs:label "Identification" ;
+    rdfs:comment "A taxonomic determination (e.g., the assignment to a taxon)." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "A subspecies determination of an organism." .
+
+dwc:Taxon a owl:Class ;
+    rdfs:label "Taxon" ;
+    rdfs:comment "A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) considered by taxonomists to form a homogeneous unit." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "The genus Truncorotaloides as published by Brönnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820." .
+
+dwc:dateIdentified a rdf:Property ;
+    rdfs:label "dateIdentified" ;
+    rdfs:comment "The date on which the subject was identified as representing the Taxon." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "1809-02-12 (some time during 12 February 1809).",
+        "1900/1909 (some time during the interval between the beginning of the year 1900 and the end of the year 1909).",
+        "1906-06 (some time in June 1906). ",
+        "1963-03-08T14:07-0600 (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC).",
+        "1971 (some time in the year 1971).",
+        "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z (some time during the interval between 1 March 2007 1pm UTC and 11 May 2008 3:30pm UTC).",
+        "2007-11-13/15 (some time in the interval between 13 November 2007 and 15 November 2007).",
+        "2009-02-20T08:40Z (20 February 2009 8:40am UTC).",
+        "2018-08-29T15:19 (3:19pm local time on 29 August 2018)." ;
+    skos:note "Recommended best practice is to use a date that conforms to ISO 8601:2004(E)." .
+
+dwc:materialSampleID a rdf:Property ;
+    rdfs:label "material sample ID" ;
+    rdfs:comment "An identifier for the MaterialSample (as opposed to a particular digital record of the material sample). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the materialSampleID globally unique." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "06809dc5-f143-459a-be1a-6f03e63fc083" .
+
+dwc:scientificNameID a rdf:Property ;
+    rdfs:label "scientific name ID" ;
+    rdfs:comment "An identifier for the nomenclatural (not taxonomic) details of a scientific name." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "urn:lsid:ipni.org:names:37829-1:1.3" .
+
+dwc:taxonConceptID a rdf:Property ;
+    rdfs:label "taxon concept ID" ;
+    rdfs:comment "An identifier for the taxonomic concept to which the record refers - not for the nomenclatural details of a taxon." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "8fa58e08-08de-4ac1-b69c-1235340b7001" .
 
 schema:manufacturer rdfs:range tern-org:Manufacturer .
 
@@ -857,6 +1163,38 @@ tern-ssn:DeploymentInfo a owl:Class ;
             owl:onProperty tern-ssn:onSystem ],
         owl:Thing .
 
+tern-ssn:NationalTaxon a owl:Class ;
+    rdfs:label "National taxon" ;
+    rdfs:comment "A taxon identified by the national herbarium." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty dwc:scientificName ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty rdfs:comment ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty rdfs:label ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty dwc:scientificName ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty dwc:scientificNameID ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty dwc:taxonConceptID ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty rdfs:label ],
+        [ a owl:Restriction ;
+            owl:onProperty dwc:scientificNameID ;
+            owl:someValuesFrom xsd:anyURI ],
+        [ a owl:Restriction ;
+            owl:onProperty dwc:taxonConceptID ;
+            owl:someValuesFrom xsd:anyURI ],
+        dwc:Taxon .
+
 tern-ssn:actualResult a rdf:Property ;
     rdfs:label "actual result" ;
     rdfs:subPropertyOf tern-ssn:sensorCalibrationValue .
@@ -864,6 +1202,11 @@ tern-ssn:actualResult a rdf:Property ;
 tern-ssn:fluxnetID a rdf:Property ;
     rdfs:label "fluxnet ID" ;
     rdfs:comment "The fluxnet ID is the SITE_ID of the flux site found at https://fluxnet.fluxdata.org/sites/site-list-and-pages/" .
+
+tern-ssn:nationalIdentification a rdf:Property ;
+    rdfs:label "national identification" ;
+    rdfs:comment "Link an Identification or Taxon to a National Taxon." ;
+    rdfs:subPropertyOf dwc:identificationID .
 
 tern-ssn:onSystem a owl:ObjectProperty ;
     rdfs:label "on system" ;
@@ -878,9 +1221,13 @@ tern-ssn:referenceResult a rdf:Property ;
 tern-ssn:sensorConfigurationValue a rdf:Property ;
     rdfs:label "sensor configuration value" .
 
-<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> a schema:Organization ;
-    schema:alternateName "TERN" ;
-    schema:name "Terrestrial Ecoystem Research Network" ;
+tern-ssn:stateIdentification a rdf:Property ;
+    rdfs:label "state identification" ;
+    rdfs:comment "Link an Identification or a Taxon to a State Taxon." ;
+    rdfs:subPropertyOf dwc:identificationID .
+
+<https://w3id.org/tern/resources/a083902d-d821-41be-b663-1d7cb33eea66> schema:alternateName "TERN" ;
+    schema:name "Terrestrial Ecosystem Research Network" ;
     schema:url <https://www.tern.org.au/> .
 
 ssn-system:SystemCapability a owl:Class ;
@@ -915,6 +1262,12 @@ ssn-system:hasSystemCapability a owl:ObjectProperty ;
     rdfs:isDefinedBy ssn-system: ;
     rdfs:subPropertyOf ssn:hasProperty ;
     skos:definition "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."@en .
+
+dwc:identificationID a rdf:Property ;
+    rdfs:label "identification ID" ;
+    rdfs:comment "An identifier for the Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set." ;
+    rdfs:isDefinedBy dwc: ;
+    skos:example "9992" .
 
 sosa:isHostedBy a owl:ObjectProperty ;
     rdfs:label "is hosted by"@en ;
@@ -956,6 +1309,11 @@ ssn-system:hasSystemProperty a owl:ObjectProperty ;
     rdfs:isDefinedBy ssn-system: ;
     rdfs:subPropertyOf ssn:hasProperty ;
     skos:definition "Relation from an SystemCapability of a System to a SystemProperty describing the capabilities of the System."@en .
+
+dwc:scientificName a rdf:Property ;
+    rdfs:label "scientific name" ;
+    rdfs:comment "The full scientific name, with authorship and date information if known. When forming part of an Identification, this should be the name in lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the IdentificationQualifier term." ;
+    rdfs:isDefinedBy dwc: .
 
 tern-ssn:sensorCalibrationValue a rdf:Property ;
     rdfs:label "sensor calibration value" .

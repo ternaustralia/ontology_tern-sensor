@@ -5,6 +5,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.0.13] - 2020-05-15
+### Added
+- Added a few classes and properties from Darwin Core Terms. 
+- tern-ssn:CollectedSample
+- tern-ssn:PlantSample
+- tern-ssn:StateIdentification
+- tern-ssn:StateTaxon
+- tern-ssn:NationalTaxon
+- tern-ssn:stateIdentification
+- tern-ssn:nationalIdentification
+- tern-ssn:sampleStorageLocation
+- tern-ssn:Photograph
+- tern-ssn:PhotopointCollection
+- tern-ssn:SoilSpecimen
+- tern-ssn:SoilMetagenomics
+- tern-ssn:PlantGenetics
+
+
 ## [0.0.12] - 2020-04-16
 ### Added
 - tern-ssn:ImagingRadar
